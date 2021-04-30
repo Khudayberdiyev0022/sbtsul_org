@@ -8,7 +8,6 @@
     margin: 0;
     padding-top: 150px;
     padding-bottom: 50px;
-    background-color: #0F2B53;
     height: 100vh;
 }
 .inMain{
@@ -18,19 +17,17 @@
     align-items: center;
     width: 90%;
     margin: auto;
-    /* max-width: 1170px; */
 }
 .head{
     display: flex;
     flex-direction: column;
     justify-content: left;
-    /* align-items: center; */
     width: 100%;
     height: 100%;
     margin: 0;
 }
 .head h2{
-    color: #fff;
+    color: #0F2B53;
     font-size: 32px;
     font-weight: 650;
     line-height: 1.5;
@@ -41,21 +38,19 @@
 }
 .head span{
     width: 100%;
-    height: 5px;
-    background-color: #fff;
+    height: 2px;
+    background-color: #0F2B53;
     text-align: left;
     margin-bottom: 40px;
 }
 .head p{
-    color:#fff;
     font-size: 18px;
     font-weight: 550;
     line-height: 1.5;
     margin-bottom: 30px;
 }
-/* .head p span{
-    margin-left: 50px;
-} */
+
+
 @media screen and ( max-width: 756px ) {
     .inMain{
         width: 90%;

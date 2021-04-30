@@ -46,11 +46,12 @@
 }
 .text h3{
     color: #0F2B54;
-    font-size: 36px;
+    font-size: 32px;
     font-weight: 600;
     line-height: 1.5;
     margin-bottom: 35px;
     margin-top: 25px;
+    text-align: center;
 }
 .text p{
     color: #0F2B54;

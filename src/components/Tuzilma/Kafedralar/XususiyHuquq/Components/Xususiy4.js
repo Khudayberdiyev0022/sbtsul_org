@@ -16,7 +16,7 @@ const Xususiy4 = () => {
                         {/* <div className={style.img} style={{backgroundImage:`url(${img1})`}} ></div> */}
                         <div className={style.text1} >
                             <p>
-                            Ўқув-услубий фаолият доирасида кафедра доценти Л.Бурханованинг Юриспруденция (ҳуқуқбузарликлар профилактикаси ва жамоат хавфсизлигини таъминлаш) таълим йўналиши талабалари учун “Семейное право” ўқув қўлланмаси (125 бет) чоп этилиши кутилмоқда. Шунингдек, 2020-2021 ўқув йили якунига қадар “Гражданкое право” дарслиги ва “Интеллектуал мулк ҳуқуқи” ўқув қўлланмаси тайёрланиб чоп этилиши режалаштирилган. 
+                            Oʼquv-uslubiy faoliyat doirasida kafedra dotsenti L.Burxanovaning Yurisprudentsiya (huquqbuzarliklar profilaktikasi va jamoat xavfsizligini taʼminlash) taʼlim yoʼnalishi talabalari uchun “Semeynoe pravo” oʼquv qoʼllanmasi (125 bet) chop etilishi kutilmoqda. Shuningdek, 2020-2021 oʼquv yili yakuniga qadar “Grajdankoe pravo” darsligi va “Intellektual mulk huquqi” oʼquv qoʼllanmasi tayyorlanib chop etilishi rejalashtirilgan.
                             </p>
                         </div>
                     </div>

@@ -13,7 +13,6 @@ const Kengash2 = () => {
             </h2>
             <span></span>
             </Zoom>
-            <Zoom top cascade>
             <div className={style.map} >
                 {
                     teachers.map((teacher, index) => {
@@ -39,13 +38,13 @@ const Kengash2 = () => {
 
 
 
+            
                                 </div>
                             </div>
                         )
                     })
                 }
             </div>
-            </Zoom>
         </div>
     </div>
     )

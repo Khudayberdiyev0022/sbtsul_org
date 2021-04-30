@@ -1,16 +1,14 @@
 import React from 'react'
 import style from './Baxtiyorovich.module.css'
 import img from '../../../assets/img/xurozov.jpg'
-import Fade from 'react-reveal/Fade';
+// import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 
 const Kaxramonovich = () => {
     return (
         <div className={style.main} >
             <div className={style.inMain} >
-            <Fade top cascade>
                 <div className={style.img} style={{backgroundImage:`url(${img})`}} ></div>
-            </Fade>
             <Zoom top cascade>
                 <div className={style.text} >
                     <h2>

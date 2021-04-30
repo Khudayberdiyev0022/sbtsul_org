@@ -2,7 +2,6 @@ import React from 'react'
 import style from './Filial1.module.css'
 import pdf from '../../Data/УСТАВ ФИЛИАЛ Назорат режа 1-банд.pdf'
 import bg from '../../../assets/img/bg.jpg'
-import Zoom from 'react-reveal/Zoom';
 import {BsCloudDownload} from 'react-icons/bs';
 import Roll from 'react-reveal/Roll'
 import Bounce from 'react-reveal/Bounce'
@@ -13,13 +12,11 @@ const Filial1 = () => {
         <div className={style.main} >
             <div className={style.inMain} >
                 <div className={style.flex} >
-                    <Zoom top cascade>
                         <div className={style.img} style={{backgroundImage:`url(${bg})`}} ></div>
-                    </Zoom>
                     <div className={style.text} >
                         <Roll right cascade>
                         <h3>
-                        O'ZBEKISTON RESPUBLIKASI PREZIDENTINING 7 FEVRAL 2019 YILDAGI PQ–4166-SON QARORI
+                        O'ZBEKISTON RESPUBLIKASI PREZIDENTINING <br /> 7 FEVRAL 2019 YILDAGI PQ–4166-SON QARORI
                         </h3>
                         </Roll>
                         <Bounce right cascade>

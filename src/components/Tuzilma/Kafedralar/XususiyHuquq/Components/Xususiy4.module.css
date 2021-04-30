@@ -7,7 +7,6 @@
     margin: 0;
     padding: 70px 0;
     height: 100%;
-    background-color: #0F2B53;
 }
 .inMain{
     display: flex;
@@ -17,15 +16,15 @@
     /* max-width: 1170px; */
 }
 .inMain h2{
-    color: #fff;
+    color: #0F2B53;
     font-size: 36px;
     font-weight: 650;
     line-height: 1.5;
 }
 .inMain span{
-    background-color: #fff;
+    background-color: #0F2B53;
     width: 100%;
-    height: 10px;
+    height: 2px;
     margin-bottom: 35px;
 }
 .column{
@@ -53,12 +52,11 @@
     height: 100%;
 }
 .flex .text1 p{
-
     color: #fff;
     font-size: 18px;
     font-weight: 550;
     line-height: 1.5;
-    background-color: rgba(0, 0, 0, 0.316);
+    background-color: #0F2B53;
     padding: 50px 35px;
 }
 

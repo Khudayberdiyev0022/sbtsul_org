@@ -34,18 +34,5 @@ export const teachers = [
         email: 'elbek.eshmurodov.91@mail.ru '
     },
 ]
-// {
-//     img: t1,
-//     name: '',
-//     abTeach1: '',
-//     abTeach2: '',
-//     yutuqlari:[
-//         {
-//             a:''
-//         }   
-//     ],
-//     email: ''
-// },
-
 
 export const nameKaf = `${"Xususiy-huquqiy fanlar "}` 

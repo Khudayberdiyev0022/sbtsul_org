@@ -1,170 +1,241 @@
-import React from 'react'
-import style from './Qabul2.module.css'
+import React from "react";
+import style from "./Qabul2.module.css";
 
 const Qabul2 = () => {
+  return (
+    <div className={style.main}>
+      <div className="block">
+        <div className="container">
+          <h5>Hurmatli Toshkent shahri va Toshkent viloyati abiturientlari</h5>
+          <p className={style.paragraf}>
+            Sizlarni Toshkent davlat yuridik universitetining
+            Ixtisoslashtirilgan filiali (keyingi oʼrinlarda Filial)ga 2020/2021
+            oʼquv yili uchun oʼqishga kirish maqsadida hujjatlaringizni
+            topshirishga taklif etamiz. Filial Oʼzbekiston Respublikasi
+            Prezidentining tashabbusi bilan Toshkent shahri va Toshkent
+            viloyatida huquqbuzarliklar profilaktikasi va jamoat xavfsizligini
+            taʼminlash sohasida Oʼzbekiston Respublikasi Ichki ishlar vazirligi
+            va Milliy gvardiyasi tizimiga zamonaviy va yuqori malakali yuridik
+            kadrlar tayyorlash maqsadida tashkil etilgan. Filial toʼgʼrisida
+            toʼliqroq maʼlumot bilan <a href="https://sbtsul.uz">sbtsul.uz</a>{" "}
+            sayti,{" "}
+            <a href="https://t.me/TDYU_ixtisoslashtirilgan_filiali">
+              {" "}
+              telegram kanali
+            </a>{" "}
+            – yoki <a href="https://www.lex.uz">www.lex.uz</a> saytida:
+            Oʼzbekiston Respublikasi Prezidentining 2019 yil 7 fevraldagi
+            PQ–4166-son qarori; Oʼzbekiston Respublikasi Vazirlar Mahkamasining
+            2019 yil 12 iyundagi 490-son qarori orqali tanishish mumkin.
+          </p>
+          <h5 className={style.title}>
+            Toshkent davlat yuridik universitetining Ixtisoslashtirilgan
+            filialiga 2020/2021 oʼquv yili uchun belgilangan umumiy qabul
+            kvotasi boʼyicha
+          </h5>
 
-    
-    return (
-        <div className={style.main} >
-            <div className="block">
-                <div className="container">
-                    <h5>Ҳурматли Тошкент шаҳри ва Тошкент вилояти абитуриентлари</h5>
-                    <p className={style.paragraf}>Сизларни Тошкент давлат юридик университетининг Ихтисослаштирилган филиали (кейинги ўринларда Филиал)га 2020/2021 ўқув йили учун ўқишга кириш мақсадида ҳужжатларингизни топширишга таклиф этамиз.
-
-                    Филиал Ўзбекистон Республикаси Президентининг ташаббуси билан Тошкент шаҳри ва Тошкент вилоятида ҳуқуқбузарликлар профилактикаси ва жамоат хавфсизлигини таъминлаш соҳасида Ўзбекистон Республикаси Ички ишлар вазирлиги ва Миллий гвардияси тизимига замонавий ва юқори малакали юридик кадрлар тайёрлаш мақсадида ташкил этилган.
-
-                    Филиал тўғрисида тўлиқроқ маълумот билан sbtsul.uz сайти,  https://t.me/TDYU_ixtisoslashtirilgan_filiali – телеграм канали ёки www.lex.uz сайтида:
-
-                    Ўзбекистон Республикаси Президентининг 2019 йил 7 февралдаги ПҚ–4166-сон қарори;
-                    Ўзбекистон Республикаси Вазирлар Маҳкамасининг 2019 йил 12 июндаги 490-сон қарори орқали танишиш мумкин.</p>
-                    <h5 className={style.title}>Тошкент давлат юридик университетининг Ихтисослаштирилган филиалига 2020/2021 ўқув йили учун белгиланган умумий қабул квотаси бўйича</h5>
-
-
-                    <table className={style.table}>
-                        <thead>
-                            <tr>
-                                <th rowSpan="12">Таълим йўналиши коди (шифр)</th>
-                                <th rowSpan="10">Таълим йўналиши</th>
-                                <th rowSpan="10">Жами</th>
-                                <th colSpan="6">Шу жумладан</th>
-                            </tr>
-                            <tr>
-                                <td colSpan="3">Ўзбек гуруҳи</td>
-                                <td colSpan="3">Рус гуруҳи</td>
-                            </tr>
-                            <tr>
-                                <th rowSpan="5">Жами</th>
-                                <td colSpan="2">шундан</td>
-                                <th rowSpan="5">Жами</th>
-                                <td colSpan="2">шундан</td>
-                            </tr>
-                            <tr>
-                                <td rowSpan="2">Эркаклар</td>
-                                <td rowSpan="2">Аёллар</td>
-                                <td rowSpan="2">Эркаклар</td>
-                                <td rowSpan="2">Аёллар</td>
-                            </tr>
-                        </thead>
-                        <tbody className="border">
-                            <tr>
-                                <td>5240100</td>
-                                <td>Юриспруденция (ҳуқуқбузарликлар профилактикаси ва жамоат хавфсизлигини таъминлаш)</td>
-                                <th>255</th>
-                                <th>230</th>
-                                <td>210</td>
-                                <td>20</td>
-                                <th>25</th>
-                                <td>20</td>
-                                <td>5</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <h5 className={style.title}>Тошкент давлат юридик университетининг Ихтисослаштирилган филиалига белгиланган имтиёзли кабул <i>параметрлари</i>  тасдикланди</h5>
-                    <table className={style.table} style={{ width: "70%" }}>
-                        <thead>
-                            <tr>
-                                <th>№</th>
-                                <th>Имтиёзлар тоифаси</th>
-                                <th>Давлат гранти асосидаги кабул курсаткичлари</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                                <th></th>
-                                <th>Филиал буйича жами</th>
-                                <th>24</th>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <td>1.</td>
-                                <td>"Мехрибонлик" уйи ва Болалар шаҳарчасининг битирувчилари бўлган чин етимлар учун </td>
-                                <td>3</td>
-                            </tr>
-                            <tr>
-                                <td>2.</td>
-                                <td>Ҳуқуқбузарлик профилактикаси ва жиноятчиликка қарши курашда муносиб ҳисса қушган, хизмат ёки илмий фаолиятида юқори натижаларга эришган ички ишлар органларининг амалдаги ходимлари фарзандлари учун</td>
-                                <td>8</td>
-                            </tr>
-                            <tr>
-                                <td>3.</td>
-                                <td>Ўзбекистон Республикаси Қуролли Кучлари сафида муддатли ҳарбий ҳизматни ўтаб, ҳарбий қисм кўмондонлигининг тавсияномаларига эга бўлганлар учун </td>
-                                <td>13</td>
-                            </tr>
-                        </tfoot>
-                    </table>
-                    <h5 className={style.title}>Тошкент давлат юридик университетининг Ихтисослаштирилган филиалига топширилган ҳужжатларни қабул қилиш ҳақида</h5>
-                    <h3>МАЪЛУМОТ</h3>
-                    <p>2020 йил 20 июль ҳолатига</p>
-                    <table className={style.table} style={{ width: "70%" }}>
-                        <thead>
-                            <tr>
-                                <th rowSpan="2">Таълим тили</th>
-                                <th rowSpan="2">Хужжатлари қабул қилинган шахслар сони</th>
-                                <th colSpan="2">Шундан</th>
-                            </tr>
-                            <tr>
-                                <th>Эркаклар</th>
-                                <th>Аёллар</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Ўзбек тилида таълим олувчилар гуруҳи</td>
-                                <td>1102</td>
-                                <td>989</td>
-                                <td>113</td>
-                            </tr>
-                            <tr>
-                                <td>Рус тилида таълим олувчилар гуруҳи</td>
-                                <td>132</td>
-                                <td>97</td>
-                                <td>35</td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <th>Жами</th>
-                                <th>1234</th>
-                                <th>1086</th>
-                                <th>148</th>
-                            </tr>
-                        </tfoot>
-                    </table>
-                    <p>Талабаларга белгиланган тартибда стипендия тўланади ҳамда улар Талабалар турар жойи билан таъминланади.</p>
-                    <p>Филиалда ўқиш замонавий халқаро тажриба ва хорижий давлатларнинг соҳа мутахассислиги бўйича тажрибасини қўллаган ҳолда амалга оширилади.</p>
-                    <p>Филиални тамомлаган битирувчиларга “Юриспруденция” таълим йўналиши бўйича диплом берилади ва “лейтенант” махсус унвони берилган ҳолда хизматга қабул қилинади.</p>
-                    <br />
-                    <p>Филиалга қабул жорий йилнинг 20 июнидан 20 июлигача (шу куни ҳам) амалга оширилади.</p>
-                    <p>Танловда иштирок этиш учун талабгорга қўйилган талаблар:</p>
-                    <p>ёши 18 ёшдан кичик ва 25 ёшдан катта бўлмаслик;</p>
-                    <p>бўйи эркаклар учун 165 см.дан ва аёллар учун 160 см.дан паст бўлмаслик;</p>
-                    <p>судланмаган бўлиши;</p>
-                    <p>жисмонан соғлом бўлиши.</p>
-                    <p>доимий яшаш жойи бўйича Тошкент шаҳри ёки Тошкент вилоятида доимий рўйхатга олинган шахслар.</p>
-                    <br />
-                    <h5>Талаб қилинадиган ҳужжатлар:</h5>
-                    <p>Паспорт нусхаси (аслини кўрсатган ҳолда);</p>
-                    <p>Ўқишга киришда имтиёзлардан фойдаланиш ҳуқуқини тасдиқловчи ҳужжатлар (агар мавжуд бўлса);</p>
-                    <p>Умумий ўрта таълим (11-синф негизида) ёки ўрта махсус, касб-ҳунар таълими муассасасини тугатганлиги ҳақидаги ҳужжат (иловаси билан бирга)нинг асл нусхаси;</p>
-                    <p>Асли кўрсатилган ҳолда ҳарбий хизматга чақирилувчининг қайд этилганлиги тўғрисидаги гувоҳнома (чақирилиш муддати узайтирилган ҳолда) нусхаси ёки ҳарбий гувоҳнома нусхаси;</p>
-                    <p>Доимий яшаш жойи бўйича белгиланган намунадаги соғлиғининг ҳолати ҳақида маълумотнома (бўй параметри кўрсатилган ҳолда);</p>
-                    <p>3,5x4,5 см ўлчамдаги 6 дона рангли фотосурат (бош кийимсиз);</p>
-                    <p>Судланган ёки судланмаганлик ҳолати бўйича маълумотнома (Давлат хизматлари марказидан).</p>
-                    <br />
-                    <p>Ўзингизни қизиқтирган маълумотлар бўйича Филиалда ташкил этилган call center билан қуйидаги телефон рақами орқали боғланган ҳолда маълумот олишингиз мумкин:</p>
-                    <p>(71) 207-03-78 (Call center)</p>
-                    <p>(90) 019-95-43 (Шавкат Хамрақулов) </p>
-                    <p>(90) 904-06-60 (Кадиркулов Адхам)</p>
-                    <p>(90) 931-81-66 (Каракетова Дилноза)</p>
-                    <p>(90) 925-27-72 (Абдуллаева Дилфуза)</p>
-                    <p>(90) 978-94-33 (Жаббаров Аҳмад)</p>
-                    <p>(90) 349-22-44 (Жалилов Нодир)</p>
-                    <p>(94) 188-00-44 (Абдувалиев Машрабжон)</p>
-                </div>
-            </div>
+          <table className={style.table}>
+            <thead>
+              <tr>
+                <th rowSpan="12">Ta'lim yo'nalishi kodi (shifr)</th>
+                <th rowSpan="10">Ta'lim yo'nalishi</th>
+                <th rowSpan="10">Jami</th>
+                <th colSpan="6">Shu jumladan</th>
+              </tr>
+              <tr>
+                <td colSpan="3">O'zbek guruhi</td>
+                <td colSpan="3">Rus guruhi</td>
+              </tr>
+              <tr>
+                <th rowSpan="5">Jami</th>
+                <td colSpan="2">shundan</td>
+                <th rowSpan="5">Jami</th>
+                <td colSpan="2">shundan</td>
+              </tr>
+              <tr>
+                <td rowSpan="2">Erkaklar</td>
+                <td rowSpan="2">Ayollar</td>
+                <td rowSpan="2">Erkaklar</td>
+                <td rowSpan="2">Ayollar</td>
+              </tr>
+            </thead>
+            <tbody className="border">
+              <tr>
+                <td>5240100</td>
+                <td>
+                  Yurisprudentsiya (huquqbuzarliklar profilaktikasi va jamoat
+                  xavfsizligini taʼminlash)
+                </td>
+                <th>255</th>
+                <th>230</th>
+                <td>210</td>
+                <td>20</td>
+                <th>25</th>
+                <td>20</td>
+                <td>5</td>
+              </tr>
+            </tbody>
+          </table>
+          <h5 className={style.title}>
+            Toshkent davlat yuridik universitetining Ixtisoslashtirilgan
+            filialiga белгиланган имтиёзли кабул <i>paramterlari</i> tasdiqlandi
+          </h5>
+          <table className={style.table} style={{ width: "70%" }}>
+            <thead>
+              <tr>
+                <th>№</th>
+                <th>Imtiyozlar toifasi</th>
+                <th>Davlat granti asosidagi kabul kursatkichlari</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th></th>
+                <th>Filial bo'yicha jami</th>
+                <th>24</th>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>1.</td>
+                <td>
+                  "Mehribonlik" uyi va Bolalar shaharchasining bitiruvchilari
+                  bo'lgan chin yetimlar uchun{" "}
+                </td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <td>2.</td>
+                <td>
+                  Huquqbuzarlik profilaktikasi va jinoyatchilikka qarshi
+                  kurashda munosib hissa qushgan, xizmat yoki ilmiy faoliyatida
+                  yuqori natijalarga erishgan ichki ishlar organlarining
+                  amaldagi xodimlari farzandlari uchun
+                </td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>3.</td>
+                <td>
+                  Oʼzbekiston Respublikasi Qurolli Kuchlari safida muddatli
+                  harbiy hizmatni oʼtab, harbiy qism koʼmondonligining
+                  tavsiyanomalariga ega boʼlganlar uchun{" "}
+                </td>
+                <td>13</td>
+              </tr>
+            </tfoot>
+          </table>
+          <h5 className={style.title}>
+            Toshkent davlat yuridik universitetining Ixtisoslashtirilgan
+            filialiga topshirilgan hujjatlarni qabul qilish haqida
+          </h5>
+          <h3>MA'LUMOT</h3>
+          <p>2020 yil 20 iyul holatiga</p>
+          <table className={style.table} style={{ width: "70%" }}>
+            <thead>
+              <tr>
+                <th rowSpan="2">Ta'lim tili</th>
+                <th rowSpan="2">Hujjatlari qabul qilingan shaxslar soni</th>
+                <th colSpan="2">shundan</th>
+              </tr>
+              <tr>
+                <th>Erkaklar</th>
+                <th>Ayollar</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>O'zbek tilida ta'lim oluvchilar guruhi</td>
+                <td>1102</td>
+                <td>989</td>
+                <td>113</td>
+              </tr>
+              <tr>
+                <td>Rus tilida ta'lim oluvchilar guruhi</td>
+                <td>132</td>
+                <td>97</td>
+                <td>35</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th>Jami</th>
+                <th>1234</th>
+                <th>1086</th>
+                <th>148</th>
+              </tr>
+            </tfoot>
+          </table>
+          <p>
+            Talabalarga belgilangan tartibda stipendiya toʼlanadi hamda ular
+            Talabalar turar joyi bilan taʼminlanadi.
+          </p>
+          <p>
+            Filialda oʼqish zamonaviy xalqaro tajriba va xorijiy davlatlarning
+            soha mutaxassisligi boʼyicha tajribasini qoʼllagan holda amalga
+            oshiriladi.
+          </p>
+          <p>
+            Filialni tamomlagan bitiruvchilarga “Yurisprudentsiya” taʼlim
+            yoʼnalishi boʼyicha diplom beriladi va “leytenant” maxsus unvoni
+            berilgan holda xizmatga qabul qilinadi.
+          </p>
+          <br />
+          <p>
+            Filialga qabul joriy yilning 20 iyunidan 20 iyuligacha (shu kuni
+            ham) amalga oshiriladi.
+          </p>
+          <p>Tanlovda ishtirok etish uchun talabgorga qoʼyilgan talablar:</p>
+          <p>yoshi 18 yoshdan kichik va 25 yoshdan katta boʼlmaslik;</p>
+          <p>
+            boʼyi erkaklar uchun 165 sm.dan va ayollar uchun 160 sm.dan past
+            boʼlmaslik;
+          </p>
+          <p>sudlanmagan boʼlishi;</p>
+          <p>jismonan sogʼlom boʼlishi.</p>
+          <p>
+            doimiy yashash joyi boʼyicha Toshkent shahri yoki Toshkent
+            viloyatida doimiy roʼyxatga olingan shaxslar.
+          </p>
+          <br />
+          <h5>Talab qilinadigan hujjatlar:</h5>
+          <p>Pasport nusxasi (aslini koʼrsatgan holda);</p>
+          <p>
+            Oʼqishga kirishda imtiyozlardan foydalanish huquqini tasdiqlovchi
+            hujjatlar (agar mavjud boʼlsa);
+          </p>
+          <p>
+            Umumiy oʼrta taʼlim (11-sinf negizida) yoki oʼrta maxsus, kasb-hunar
+            taʼlimi muassasasini tugatganligi haqidagi hujjat (ilovasi bilan
+            birga)ning asl nusxasi;
+          </p>
+          <p>
+            Umumiy oʼrta taʼlim (11-sinf negizida) yoki oʼrta maxsus, kasb-hunar
+            taʼlimi muassasasini tugatganligi haqidagi hujjat (ilovasi bilan
+            birga)ning asl nusxasi;
+          </p>
+          <p>
+            Doimiy yashash joyi boʼyicha belgilangan namunadagi sogʼligʼining
+            holati haqida maʼlumotnoma (boʼy parametri koʼrsatilgan holda);
+          </p>
+          <p>3,5x4,5 sm o'lchamdagi 6 dona rangli fotosurat (bosh kiyimsiz);</p>
+          <p>
+            Sudlangan yoki sudlanmaganlik holati boʼyicha maʼlumotnoma (Davlat
+            xizmatlari markazidan).
+          </p>
+          <br />
+          <p>
+            Oʼzingizni qiziqtirgan maʼlumotlar boʼyicha Filialda tashkil etilgan
+            call center bilan quyidagi telefon raqami orqali bogʼlangan holda
+            maʼlumot olishingiz mumkin:
+          </p>
+          <p>(71) 207-03-78 (Ishonch raqami)</p>
+          <p>(55) 501-11-58 (Call markazi) </p>
+          <p>(55) 501-11-59 (Call markazi)</p>
         </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
 
-export default Qabul2
+export default Qabul2;

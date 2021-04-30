@@ -28,7 +28,8 @@
   width: 50%;
   height: 100vh;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .rightText {
@@ -42,9 +43,9 @@
   align-items: center;
 }
 .rightCenter {
-  width: 60%;
+  width: 50%;
   position: absolute;
-  min-height: 40%;
+  /* min-height: 40%; */
   left: 23%;
   top: 50%;
   background-color: #0f2b53;
@@ -80,9 +81,9 @@
   }
   .rightText {
     width: 100%;
+    min-height: 100vh;
     background-size: contain;
     background-position: center;
-    min-height: 100vh;
     position: static;
   }
 }

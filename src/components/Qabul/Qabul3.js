@@ -21,7 +21,7 @@ function Qabul3() {
                 </h3>
                 <table className={Style.table} style={{width: "100%" , textAlign: "center"}}>
                     <thead className={Style.border}>
-                        <tr style={{background: "lightblue"}} className={Style.border}>
+                        <tr style={{background: "#0F2B53", color: "#fff"}} className={Style.border}>
                             <th >T/r</th>
                             <th className={Style.border}>Tinglovchining F.I.Sh.</th>
                             <th className={Style.border}>Jami to'plangan ball</th>

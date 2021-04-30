@@ -6,20 +6,19 @@
 
 .title {
     margin: 2rem 0;
-    /* width: 90%; */
     font-weight: 500;
 }
 
 .h3 {
     margin: 1rem 0;
     padding-bottom: 1rem;
-    border-bottom: 5px solid blue;
+    border-bottom: 5px solid #0F2B53;
 }
 
 .h3one {
     margin: 1rem 0;
     padding-bottom: 1rem;
-    border-bottom: 5px solid blue;
+    border-bottom: 5px solid #0F2B53;
 }
 
 .container{

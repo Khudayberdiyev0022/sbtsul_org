@@ -13,7 +13,6 @@ const Qayta2 = () => {
                 </h2>
                 <span></span>
                 </Zoom>
-                <Zoom top cascade>
                 <div className={style.map} >
                     {
                         teachers.map((teacher, index) => {
@@ -21,9 +20,13 @@ const Qayta2 = () => {
                                 <div className={style.card} key={index}  >
                                     <div className={style.teachImg} style={{backgroundImage:`url(${teacher.img})`}} >
                                         <div className={style.hov} >
+       
+
                                             <p>
                                                 {teacher.name}
                                             </p>
+             
+
                                         </div>
                                     </div>
                                     <div className={style.text} >
@@ -44,7 +47,6 @@ const Qayta2 = () => {
                         })
                     }
                 </div>
-                </Zoom>
             </div>
         </div>
     )
