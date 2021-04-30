@@ -1,0 +1,54 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    background-color: #0F2B53;
+}
+.inMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 90%;
+    margin: auto;
+    color: #fff;
+    line-height: 1.5;
+}
+.inMain h2{
+    font-size: 36px;
+    font-weight: 650;
+}
+.inMain span{
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    margin-bottom: 35px;
+}
+.inMain p{
+    font-size: 18px;
+    font-weight: 550;
+    margin-bottom: 25px;
+}
+
+@media screen and ( max-width: 756px ) {
+    .inMain{
+        width: 90%;
+    }
+    .inMain h2{
+        font-size: 22px;
+    }
+    .inMain span{
+        width: 50px;
+        height: 5px;
+        margin-bottom: 15px;
+    }
+    .inMain p{
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+}

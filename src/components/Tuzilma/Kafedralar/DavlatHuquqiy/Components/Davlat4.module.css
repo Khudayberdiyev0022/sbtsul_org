@@ -1,0 +1,148 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 70px 0;
+    height: 100%;
+    background-color: #0F2B53;
+}
+.inMain{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    /* max-width: 1170px; */
+}
+.inMain h2{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 650;
+    line-height: 1.5;
+}
+.inMain span{
+    background-color: #fff;
+    width: 100%;
+    height: 10px;
+    margin-bottom: 35px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 70px;
+}
+.img{
+    width: 100%;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.flex .text1{
+    position: relative;
+    width: 80%;
+    height: 100%;
+}
+.flex .text1 p{
+    position: absolute;
+    top: -150px;
+    left: -100px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 550;
+    line-height: 1.5;
+    background-color: rgba(0, 0, 0, 0.316);
+    padding: 50px 35px;
+}
+.text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.316);
+    padding: 50px 35px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 550;
+    line-height: 1.5;
+    margin-bottom: 35px;
+}
+.flex2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 35px;
+}
+.flex2 .text1{
+    position: relative;
+    width: 80%;
+    height: 100%;
+}
+.flex2 .text1 p{
+    position: absolute;
+    top: -130px;
+    right: -100px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 550;
+    line-height: 1.5;
+    background-color: rgba(0, 0, 0, 0.316);
+    padding: 50px 35px;
+}
+
+@media screen and ( max-width: 756px ) {
+    .inMain{
+        width: 90%;
+    }
+    .inMain h2{
+        font-size: 22px;
+    }
+    .inMain span{
+        width: 60px;
+        height: 5px;
+    }
+    .flex{
+        flex-direction: column;
+        width: 100%;
+    }
+    .flex2{
+        flex-direction: column;
+    }
+    .text{
+        font-size: 14px;
+        padding: 15px;
+    }
+    .text1{
+        width: 100%;
+    }
+    .flex .text1 p{
+        position: unset;
+        padding: 15px;
+        font-size: 14px;
+        margin-bottom: 15px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .flex2 .text1 p{
+        font-size: 14px;
+        padding: 15px;
+        margin-bottom: 15px;
+        position: unset;
+    }
+    .img{
+        height: 20vh;
+    }
+}

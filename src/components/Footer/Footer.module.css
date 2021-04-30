@@ -1,0 +1,129 @@
+.main {
+  width: 100%;
+  padding-top: 50px;
+  box-sizing: border-box;
+  background: #0f2b53;
+}
+.container {
+  width: 80%;
+  height: 100%;
+  color: #fff;
+  margin: auto;
+}
+.list {
+  /* width: 95%; */
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+.links {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.sections {
+  list-style: none;
+  width: 33%;
+  font-size: 18px;
+  padding: 0;
+  margin: 10px 0;
+  text-align: center;
+}
+.list {
+  list-style: none;
+  font-size: 18px;
+  margin: 10px 0;
+  text-align: center;
+}
+.list a {
+  color: rgb(177, 177, 177);
+  text-decoration: none;
+  position: relative;
+  margin: 5px 0px;
+}
+.list a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  transition: all 1s ease;
+}
+.list a::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+  transition: all 1s ease;
+}
+.list a:hover::after {
+  width: 100%;
+  transition: all 1s ease;
+}
+.list a:hover::before {
+  width: 100%;
+  transition: all 1s ease;
+}
+.list a:hover {
+  color: #fff;
+}
+.blogLinks {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blogLinks a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 100;
+  transition: all 1s ease;
+}
+.blogLinks:hover a {
+  color: #1752a37e;
+  transition: all 1s ease;
+}
+.blogLinks a:hover {
+  color: #fff;
+  transition: all 1s ease;
+}
+.copy {
+  padding-top: 50px;
+  padding-left: 0;
+  opacity: 0.6;
+  margin: 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  .list {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  } */
+  .sections {
+    width: 50%;
+  }
+  .blogLinks {
+    flex-direction: column;
+  }
+  .blogLinks a {
+    display: none;
+  }
+  .main .sections h3 {
+    text-align: center;
+    display: inline-block;
+  }
+  /* .main .sections {
+    display: flex;
+  } */
+}
