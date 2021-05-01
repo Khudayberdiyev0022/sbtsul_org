@@ -13,7 +13,9 @@
   padding: 80px 0px 20px 0px;
 }
 .textPresident h2 {
+  width: 85%;
   font-weight: 700;
+  margin: auto;
 }
 .textPresident h3 {
   font-weight: 600;
@@ -45,16 +47,15 @@
 .rightCenter {
   width: 50%;
   position: absolute;
-  /* min-height: 40%; */
   left: 23%;
-  top: 50%;
+  top: 65%;
   background-color: #0f2b53;
   padding: 1rem;
   opacity: 0.8;
 }
 .rightCenter p {
   font-weight: 600;
-  font-size: 22px;
+  font-size: 16px;
   color: #fff;
 }
 

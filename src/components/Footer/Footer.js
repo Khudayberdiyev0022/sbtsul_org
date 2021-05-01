@@ -11,9 +11,9 @@ const Footer = () => {
           <div className={style.sections}>
             <h3>Sahifalar</h3>
             <div className={style.links}>
-              <Link to="/filial">Filial</Link>
+              <Link to="/talim">Bo'sh ish o'rinlari</Link>
               <Link to="/tuzilma">Tuzilma</Link>
-              <Link to="/talim">Ta'lim</Link>
+              <Link to="/filial">Filial</Link>
             </div>
           </div>
           <div className={style.sections}>
@@ -34,11 +34,27 @@ const Footer = () => {
           </div>
         </div>
         <div className={style.blogLinks}>
-          <Link to="/">Facebook</Link>
-          <Link to="/">Telegram</Link>
+          <a rel="noreferrer" target="_blank" href="https://fb.me/sbtsul">
+            Facebook
+          </a>
+          <a
+            rel="noreferrer"
+            target="_blank"
+            href="https://t.me/TDYU_ixtisoslashtirilgan_filiali"
+          >
+            Telegram
+          </a>
           <img width="110px" src={logoFooter} alt="logoFooter" />
-          <Link to="/">Youtube</Link>
-          <Link to="/">Instagram</Link>
+          <a rel="noreferrer" target="_blank" href="#www">
+            Youtube
+          </a>
+          <a
+            rel="noreferrer"
+            target="_blank"
+            href="https://www.instagram.com/invites/contact/?i=1z2xa69waflg&utm_content=k91uf44"
+          >
+            Instagram
+          </a>
         </div>
         <p className={style.copy}>
           Copyright ©2021 TDYU Ixtisoslashtirilgan filiali. All right Reserved

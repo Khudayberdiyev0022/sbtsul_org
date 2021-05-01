@@ -1,14 +1,14 @@
-import React from 'react'
-import Baxtiyorovich from './Baxtiyorovich'
-import Kaxramonovich from './Kaxramonovich'
+import React from "react";
+import Baxtiyorovich from "./Baxtiyorovich";
+import Kaxramonovich from "./Kaxramonovich";
 
 const Rahbariyat = () => {
-   return (
-      <div>
-         <Baxtiyorovich />
-         <Kaxramonovich />
-      </div>
-   )
-}
+  return (
+    <div>
+      <Baxtiyorovich />
+      <Kaxramonovich />
+    </div>
+  );
+};
 
-export default Rahbariyat
+export default Rahbariyat;

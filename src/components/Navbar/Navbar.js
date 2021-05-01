@@ -1,12 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import style from "./Navbar.module.css";
 import logo from "../../assets/icons/logoFT.svg";
 import { NavLink } from "react-router-dom";
 import { AiFillCaretDown } from "react-icons/ai";
 
 const Navbar = () => {
+  const [scroll, setScroll] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", (e) => {
+      if (window.self.scrollY > 300) {
+        setScroll(true);
+      } else {
+        setScroll(false);
+      }
+    });
+  });
+
   return (
-    <div className={style.main}>
+    <div
+      className={
+        scroll
+          ? `${style.mainFixed} ${style.main}`
+          : `${style.mainStatic} ${style.main}`
+      }
+    >
       <div className={style.container}>
         <div className={style.navbar}>
           <NavLink to="/" activeStyle={{ color: "#0f2b53" }}>
@@ -31,6 +48,7 @@ const Navbar = () => {
                 <div className={style.hoverDiv}>
                   <NavLink to="/kengash">Kengash</NavLink>
                   <NavLink to="/rahbariyat">Rahbariyat</NavLink>
+                  <NavLink to="/direktorat">Direktorat</NavLink>
                   <NavLink to="/dekanatlar">Dekanatlar</NavLink>
                   <NavLink to="/kafedralar">Kafedralar</NavLink>
                   <NavLink to="/bolimlar">Bo'limlar</NavLink>

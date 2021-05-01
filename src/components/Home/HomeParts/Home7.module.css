@@ -2,6 +2,7 @@
   width: 100%;
   box-sizing: border-box;
   padding: 150px 0;
+  background-color: #0f2b53;
 }
 .linkBlock {
   width: 80%;
@@ -12,7 +13,7 @@
 }
 .linkBlock a {
   width: 100%;
-  color: #0f2b53;
+  color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 3px;
   font-size: 3em;
@@ -28,7 +29,7 @@
   left: 50%;
   width: 1%;
   height: 2px;
-  background-color: #0f2b53;
+  background-color: #ffffff;
   text-align: center;
   transition: all 1s ease;
 }
@@ -44,13 +45,13 @@
   justify-content: space-between;
 }
 .box {
-  border: 1px solid #0f2b53;
+  border: 1px solid #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  box-shadow: 0 4px 15px #0f2b539f;
+  box-shadow: 0 4px 15px #ffffff9f;
   padding: 10px;
   margin: 10px;
   cursor: pointer;
@@ -71,14 +72,14 @@
   transition: all 1s ease;
   padding: 15px;
   border-radius: 5px;
-  border: 1px solid #0f2b53;
+  border: 1px solid #ffffff;
 }
 
 .box a {
   padding-top: 10px;
   font-size: 20px;
   text-align: center;
-  color: #0f2b53;
+  color: #ffffff;
   text-transform: capitalize;
 }
 @media screen and (max-width: 1200px) {

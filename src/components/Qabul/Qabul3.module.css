@@ -1,27 +1,30 @@
-.main{
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    margin: 40px auto;
-    height: auto;
-    justify-content: center;
-    align-self: center;
-    background-position: right top;
-    background-size: contain;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: 40px auto;
+  height: auto;
+  justify-content: center;
+  align-self: center;
+  background-position: right top;
+  background-size: contain;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
-.main h1{
-    font-size: 30px;
-    text-align: center;
-    color: #273656;
+.main h1 {
+  font-size: 30px;
+  text-align: center;
+  color: #273656;
 }
-.main h3{
-    text-align: center;
-    color: #273656;
+.main h3 {
+  text-align: center;
+  color: #273656;
 }
 
-.main table ,.main tr,.main td,.main th  {
-    border:1px solid #272727;
-    border-collapse: collapse;
+.main table,
+.main tr,
+.main td,
+.main th {
+  border: 1px solid #272727;
+  border-collapse: collapse;
 }

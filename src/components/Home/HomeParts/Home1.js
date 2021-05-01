@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import img1 from "../../../assets/img/univer.jpg";
-import img2 from "../../../assets/img/Slider-1.jpg";
-import img3 from "../../../assets/img/Slider-2.jpg";
+import img2 from "../../../assets/img/slider2.jpg";
+import img3 from "../../../assets/img/slider3.jpg";
 import style from "./Home1.module.css";
+import { Fragment } from "react";
 
 class Home1 extends Component {
   constructor(props) {
@@ -42,10 +43,13 @@ class Home1 extends Component {
 
   render() {
     return (
-      <div
-        className={style.Home1}
-        style={{ backgroundImage: `url(${this.state.img})` }}
-      ></div>
+      <Fragment>
+        <div className={style.bg}></div>
+        <div
+          className={style.Home1}
+          style={{ backgroundImage: `url(${this.state.img})` }}
+        ></div>
+      </Fragment>
     );
   }
 }

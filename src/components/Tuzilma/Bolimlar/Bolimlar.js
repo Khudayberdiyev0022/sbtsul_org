@@ -1,14 +1,14 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import style from './Bolimlar.module.css'
+import React from "react";
+import { Link } from "react-router-dom";
+import style from "./Bolimlar.module.css";
 
 const Bolimlar = () => {
-   return (
-      <div className={style.main}>
-         <div className={style.bgImg}>
-            <h2>Bo'limlar</h2>
-         </div>
-         <ul>
+  return (
+    <div className={style.main}>
+      <div className={style.bgImg}>
+        <h2>Bo'limlar</h2>
+      </div>
+      <ul>
         <Link to="/buxgalteriya-bolimi">
           <li>BUXGALTERIYA BO'LIMI</li>
         </Link>
@@ -34,8 +34,8 @@ const Bolimlar = () => {
           <li>IKKINCHI BO'LIM</li>
         </Link>
       </ul>
-      </div>
-   )
-}
+    </div>
+  );
+};
 
-export default Bolimlar
+export default Bolimlar;

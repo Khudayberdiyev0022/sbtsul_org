@@ -20,7 +20,7 @@ const Davlat2 = () => {
                   style={{ backgroundImage: `url(${teacher.img})` }}
                 >
                   <div className={style.hov}>
-                      <p>{teacher.name}</p>
+                    <p>{teacher.name}</p>
                   </div>
                 </div>
                 <div className={style.text}>
@@ -30,7 +30,8 @@ const Davlat2 = () => {
                     {nameKaf} {teacher.abTeach1}
                   </p>
                   <p>
-                    <span></span> {teacher.abTeach2}
+                    <span></span>
+                    <strong>Email:</strong> {teacher.email}
                   </p>
                 </div>
               </div>

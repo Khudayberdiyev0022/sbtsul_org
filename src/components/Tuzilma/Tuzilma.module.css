@@ -4,12 +4,10 @@
   height: 100%;
   box-sizing: border-box;
   background: #0e305f;
-  /* padding: 100px 0; */
   position: relative;
 }
 .linkBlock {
   width: 80%;
-  /* border: 1px solid #fff; */
   margin: auto;
   text-align: center;
   margin-left: auto;

@@ -23,10 +23,8 @@ const Home5 = () => {
               kelinmoqda...
             </p>
             <div className={style.button}>
-              <div className={style.bgColor}>
-
-              </div>
-              <Link to='/www'> Batafsil... </Link>
+              <div className={style.bgColor}></div>
+              <Link to="/www"> Batafsil... </Link>
             </div>
           </div>
           <div className={style.box}>
@@ -39,10 +37,8 @@ const Home5 = () => {
               kelinmoqda...
             </p>
             <div className={style.button}>
-              <div className={style.bgColor}>
-
-              </div>
-              <Link to='/www'> Batafsil... </Link>
+              <div className={style.bgColor}></div>
+              <Link to="/www"> Batafsil... </Link>
             </div>
           </div>
         </div>
@@ -59,12 +55,10 @@ const Home5 = () => {
             qadriyatlarga hurmat ruhida, zararli taʼsirlar va oqimlarga qarshi
             tura oladigan qilib tarbiyalash, jamiyat hayotida ularning roli
             hamda faolligini oshirishga doir tadbirlar tashkil etilmoqda.
-            </p>
+          </p>
           <div className={style.button}>
-            <div className={style.bgColor}>
-
-            </div>
-            <Link to='/www'> Batafsil... </Link>
+            <div className={style.bgColor}></div>
+            <Link to="/www"> Batafsil... </Link>
           </div>
         </div>
       </div>

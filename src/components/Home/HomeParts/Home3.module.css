@@ -78,7 +78,6 @@
   background-color: #3771c2;
   position: absolute;
   top: 40px;
-  /* transform: scale(3); */
   width: 60px;
   height: 60px;
   border-radius: 30%;
@@ -122,7 +121,6 @@
   background-color: #ffffff;
   position: absolute;
   top: 40px;
-  /* transform: scale(3); */
   width: 60px;
   height: 60px;
   border-radius: 30%;
@@ -203,7 +201,6 @@
   .main .rektor {
     font-size: 22px;
     line-height: 1;
-    /* margin-bottom: 20px; */
   }
   .rahbariyatLink a {
     font-size: 2em;

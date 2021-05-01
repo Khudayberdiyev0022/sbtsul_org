@@ -10,7 +10,6 @@ const Ekspluatatsiya3 = () => {
         <Fade top cascade>
           <div className={style.head}>
             <h2>BO‘LIMNING VAZIFALARI</h2>
-            <p>Bo‘limning asosiy vazifalari etib quyidagilar belgilangan:</p>
             <span></span>
           </div>
         </Fade>

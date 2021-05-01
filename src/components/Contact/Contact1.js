@@ -11,9 +11,6 @@ const Contact1 = () => {
   const [surName, setSurName] = useState("");
   const [message, setMessage] = useState("");
 
-
-
-
   const submit = (e) => {
     e.preventDefault();
     console.log(name, email, surName, message);
@@ -75,8 +72,8 @@ const Contact1 = () => {
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2994.0434755864935!2d69.26968392479239!3d41.37314014827015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8cc35f730131%3A0xabfc68fc1c7bbde4!2z0K7QvdGD0YHQsNCx0LDQtC03LCDQotCw0YjQutC10L3RgiAxMDAxOTAsINCj0LfQsdC10LrQuNGB0YLQsNC9!5e0!3m2!1sru!2s!4v1619079284992!5m2!1sru!2s"
               title="maps"
-              width='330'
-              height="400"
+              width="100%"
+              height="450"
               frameBorder="0"
               style={{ border: 0 }}
               allowFullScreen=""

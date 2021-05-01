@@ -1,12 +1,18 @@
 .main {
   width: 100%;
   box-sizing: border-box;
-  /* padding: 10px; */
-  background-color: #0f2b53;
-  position: fixed;
   z-index: 20;
-  opacity: 0.9;
   transition: all 1s ease;
+  position: static;
+  margin-bottom: 40px;
+  position: fixed;
+}
+.mainStatic {
+  background-color: #0f2b53;
+  opacity: 0.9;
+}
+.mainFixed {
+  background-color: #0f2b53;
 }
 .container {
   width: 100%;
@@ -26,7 +32,6 @@
 .navbar img {
   height: 100px;
   width: 100%;
-  /* padding-left: 1rem; */
 }
 .titleAll {
   width: 73%;
@@ -112,9 +117,7 @@
   align-items: center;
   padding: 15px;
   width: 200px;
-  /* height: 55vh; */
   background: #0f2b53;
-  /* border: 1px solid #0F2B53; */
   transition: all 1s ease;
 }
 .navbarLink .hoverDiv a {

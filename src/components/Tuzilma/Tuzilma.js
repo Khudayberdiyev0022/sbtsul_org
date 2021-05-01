@@ -1,11 +1,11 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 import { structures } from "../Home/ExtraCards/Photo";
-import style from './Tuzilma.module.css'
+import style from "./Tuzilma.module.css";
 
 const Tuzilma = () => {
-   return (
-      <div className={style.main}>
+  return (
+    <div className={style.main}>
       <div className={style.container}>
         {structures.map((structure, index) => {
           return (
@@ -17,7 +17,7 @@ const Tuzilma = () => {
         })}
       </div>
     </div>
-   )
-}
+  );
+};
 
-export default Tuzilma
+export default Tuzilma;

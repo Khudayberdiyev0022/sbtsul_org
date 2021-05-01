@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import style from "./Home7.module.css";
-// import icon from "../../../assets/icons/website.svg";
 import { structures } from "../ExtraCards/Photo";
 
 const Home7 = () => {

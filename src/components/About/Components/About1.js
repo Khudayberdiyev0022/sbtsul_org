@@ -16,7 +16,7 @@ const About1 = () => {
           ></div>
           <Rotate top left cascade>
             <div className={style.text}>
-              <h3>Filialning ishchi jamoasi</h3>
+              <h3>Filial jamoasi</h3>
               <p>
                 <span></span> Filialning qayta tayyorlash kursi o'quv
                 mashg'ulotlariga mehnatga soatbay haq to'lash asosida 29 nafar

@@ -3,13 +3,20 @@
 }
 @media screen and (max-width: 800px) {
   .main {
-    display: block;
     width: 100%;
-    min-height: 12vh;
-    background-color: #0f2b53d0;
-    /* background-color: #fff; */
-    position: fixed;
+    box-sizing: border-box;
     z-index: 20;
+    transition: all 1s ease;
+    display: block;
+    min-height: 12vh;
+    position: fixed;
+  }
+  .mainStatic {
+    background-color: #0f2b53;
+    opacity: 0.9;
+  }
+  .mainFixed {
+    background-color: #0f2b53;
   }
   .container {
     width: 100%;
@@ -32,7 +39,6 @@
   }
   .main img {
     height: 12vh;
-    /* padding-left: 1rem; */
   }
   .subPart {
     width: 100%;
@@ -89,13 +95,12 @@
     align-items: center;
     font-size: 3.6em;
     color: rgba(0, 0, 0, 0.1);
-    /* border-radius: 50%; */
     opacity: 0;
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 500px;
     z-index: -1;
-    transition: letter-spacing 0.5s ease, left 0.5s ease;
+    transition: 0.5s ease, left 0.5s ease;
     width: 100%;
     height: 100vh;
   }

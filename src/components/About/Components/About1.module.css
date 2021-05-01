@@ -94,7 +94,6 @@
 .btn:hover a{
     transition: all .4s ease;
     color: #164e9c;
-    /* text-decoration: underline; */
 }
 .btn:active a{
     color: red;

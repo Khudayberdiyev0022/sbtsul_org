@@ -1,12 +1,12 @@
-import React, { Fragment } from 'react'
-import { BrowserRouter as Router, Switch , Route } from 'react-router-dom'
+import React, { Fragment , useEffect} from 'react'
+import { BrowserRouter as Router, Switch , Route,useLocation } from 'react-router-dom'
 import Navbar from './Navbar/Navbar'
 import NavbarMobile from './Navbar/NavbarMobile'
 import Home from './Home/Home'
 import Filial from './Filial/Filial'
 import About from './About/About'
 import Contact from './Contact/Contact'
-import Arm1 from './Tuzilma/ARM/Arm1'
+import Arm from './Tuzilma/ARM/Arm'
 import Kengash from './Tuzilma/Kengash/Kengash'
 import Kafedra from './Tuzilma/Kafedralar/Kafedra'
 import Umumtalim from './Tuzilma/Kafedralar/Umumtalim/Umumtalim'
@@ -30,6 +30,7 @@ import Tayyorlash from './Tuzilma/Dekanatlar/Tayyorlash'
 import QaytaTayyorlash from './Tuzilma/Dekanatlar/QaytaTayyorlash'
 import Ikkinchi from './Tuzilma/Bolimlar/Ikkinchi/Ikkinchi'
 import Rahbariyat from './Tuzilma/Rahbariyat/Rahbariyat'
+import Direktorat from './Tuzilma/Direktorat/Direktorat'
 import OquvUslubiy from './Tuzilma/Bolimlar/OquvUslubiy/OquvUslubiy'
 
 
@@ -37,6 +38,7 @@ function App() {
     return (
         <Fragment>
             <Router>
+                <ScrollToTop />
                 <Navbar />
                 <NavbarMobile />
                 <Switch>
@@ -104,7 +106,7 @@ function App() {
                         <OquvUslubiy />
                     </Route>
                     <Route path='/axborot-resurs-markazi'>
-                        <Arm1 />
+                        <Arm />
                     </Route>
                     <Route path='/dekanatlar'>
                         <Dekanatlar/>
@@ -127,6 +129,9 @@ function App() {
                     <Route path='/dekanatlar'>
                         <Dekanatlar />
                     </Route>
+                    <Route path='/direktorat'>
+                        <Direktorat />
+                    </Route>
                 </Switch>
                 <Footer />
             </Router>
@@ -135,3 +140,12 @@ function App() {
 }
 
 export default App
+function ScrollToTop() {
+    const { pathname } = useLocation();
+  
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+  
+    return null;
+  }
