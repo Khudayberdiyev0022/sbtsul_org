@@ -9,6 +9,9 @@ const Bolimlar = () => {
         <h2>Bo'limlar</h2>
       </div>
       <ul>
+      <Link to="/direktorat">
+          <li>DIREKTORAT</li>
+        </Link>
         <Link to="/buxgalteriya-bolimi">
           <li>BUXGALTERIYA BO'LIMI</li>
         </Link>

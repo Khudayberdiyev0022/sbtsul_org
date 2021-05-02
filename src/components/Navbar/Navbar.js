@@ -48,7 +48,6 @@ const Navbar = () => {
                 <div className={style.hoverDiv}>
                   <NavLink to="/kengash">Kengash</NavLink>
                   <NavLink to="/rahbariyat">Rahbariyat</NavLink>
-                  <NavLink to="/direktorat">Direktorat</NavLink>
                   <NavLink to="/dekanatlar">Dekanatlar</NavLink>
                   <NavLink to="/kafedralar">Kafedralar</NavLink>
                   <NavLink to="/bolimlar">Bo'limlar</NavLink>

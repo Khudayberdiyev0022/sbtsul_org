@@ -30,7 +30,7 @@ import Tayyorlash from './Tuzilma/Dekanatlar/Tayyorlash'
 import QaytaTayyorlash from './Tuzilma/Dekanatlar/QaytaTayyorlash'
 import Ikkinchi from './Tuzilma/Bolimlar/Ikkinchi/Ikkinchi'
 import Rahbariyat from './Tuzilma/Rahbariyat/Rahbariyat'
-import Direktorat from './Tuzilma/Direktorat/Direktorat'
+import Direktorat from './Tuzilma/Bolimlar/Direktorat/Direktorat'
 import OquvUslubiy from './Tuzilma/Bolimlar/OquvUslubiy/OquvUslubiy'
 import Tarbiyaviy from './Tuzilma/Bolimlar/Tarbiyaviy/Tarbiyaviy'
 
