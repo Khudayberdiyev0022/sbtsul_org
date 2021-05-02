@@ -44,11 +44,13 @@ class Home1 extends Component {
   render() {
     return (
       <Fragment>
-        <div className={style.bg}></div>
+        <div className={style.main}>
         <div
           className={style.Home1}
           style={{ backgroundImage: `url(${this.state.img})` }}
         ></div>
+        </div>
+      
       </Fragment>
     );
   }

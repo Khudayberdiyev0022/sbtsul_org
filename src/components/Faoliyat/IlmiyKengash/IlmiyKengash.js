@@ -9,18 +9,12 @@ const IlmiyKengash = () => {
         <Rotate bottom left cascade>
           <div className={style.head}>
             <h2>
-              PhD.07/28.08.2020.Yu.22a.04 рақамли илмий Кенгашнинг фаолияти
-              юзасидан МАЪЛУМОТНОМА
+              PhD.07/28.08.2020.Yu.22a.04 raqamli ilmiy Kengashning faoliyati
+              yuzasidan <br /> MA'LUMOTNOMA
             </h2>
             <span></span>
             <p>
-              Тошкент давлат юридик университети Ихтисослаштирилган филиали
-              ҳузурида Олий аттестация комиссияси Раёсатининг 28.08.2020 йилдаги
-              285/2-сон, 285/3-сон қарорлари билан тузилган “12.00.14 –
-              Ҳуқуқбузарликлар профилактикаси. Жамоат хавфсизлигини таъминлаш.
-              Пробация фаолияти” ихтисослиги бўйича юридик фанлар бўйича фалсафа
-              доктори (PhD) илмий даражасини берувчи PhD.07/28.08.2020.Yu.22a.04
-              рақамли илмий кенгаш фаолият юритиб келмоқда.
+            Toshkent davlat yuridik universiteti Ixtisoslashtirilgan filiali huzurida Oliy attestatsiya komissiyasi Rayosatining 28.08.2020 yildagi 285/2-son, 285/3-son qarorlari bilan tuzilgan “12.00.14 – Huquqbuzarliklar profilaktikasi. Jamoat xavfsizligini taʼminlash. Probatsiya faoliyati” ixtisosligi boʼyicha yuridik fanlar boʼyicha falsafa doktori (PhD) ilmiy darajasini beruvchi PhD.07/28.08.2020.Yu.22a.04 raqamli ilmiy kengash faoliyat yuritib kelmoqda.
             </p>
           </div>
         </Rotate>

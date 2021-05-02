@@ -24,6 +24,9 @@ const Bolimlar = () => {
         <Link to="/kadrlar-bolimi">
           <li>KADRLAR BO'LIMI</li>
         </Link>
+        <Link to="/tarbiyaviy-ishlar-bolimi">
+          <li>TARBIYAVIY ISHLAR BO'LIMI</li>
+        </Link>
         <Link to="/ka-bolimi">
           <li>KANSELYARIYA VA ARXIV BO'LIMI</li>
         </Link>

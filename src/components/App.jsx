@@ -32,6 +32,7 @@ import Ikkinchi from './Tuzilma/Bolimlar/Ikkinchi/Ikkinchi'
 import Rahbariyat from './Tuzilma/Rahbariyat/Rahbariyat'
 import Direktorat from './Tuzilma/Direktorat/Direktorat'
 import OquvUslubiy from './Tuzilma/Bolimlar/OquvUslubiy/OquvUslubiy'
+import Tarbiyaviy from './Tuzilma/Bolimlar/Tarbiyaviy/Tarbiyaviy'
 
 
 function App() {
@@ -98,6 +99,9 @@ function App() {
                     </Route>
                     <Route path='/kadrlar-bolimi'>
                         <Kadrlar />
+                    </Route>
+                    <Route path='/tarbiyaviy-ishlar-bolimi'>
+                        <Tarbiyaviy />
                     </Route>
                     <Route path='/ikkinchi-bolim'>
                         <Ikkinchi />

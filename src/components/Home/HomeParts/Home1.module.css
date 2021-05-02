@@ -1,16 +1,24 @@
+.main {
+  padding-top: 115px;
+}
+
 .Home1 {
+  padding-top: 150px;
   width: 100%;
   height: 100vh;
   transition: linear 0.7s;
   background-size: cover;
-  background-attachment: fixed;
+  background-repeat: no-repeat;
   background-origin: border-box;
   background-position: center;
 }
 @media screen and (max-width: 950px) {
+  .main {
+    padding-top: 0;
+  }
   .Home1 {
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    height: 70vh;
+    height: 55vh;
   }
 }
