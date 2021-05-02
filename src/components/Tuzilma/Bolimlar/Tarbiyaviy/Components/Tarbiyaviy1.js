@@ -1,12 +1,12 @@
 import React from "react";
 import style from "./Tarbiyaviy1.module.css";
-import Rotate from "react-reveal/Rotate";
+// import Rotate from "react-reveal/Rotate";
 
 const Tarbiyaviy1 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        <Rotate bottom left cascade>
+        {/* <Rotate bottom left cascade> */}
           <div className={style.head}>
             <h2>TARBIYAVIY ISHLAR BO’LIMI</h2>
             <span></span>
@@ -20,7 +20,7 @@ const Tarbiyaviy1 = () => {
               PQ-4166-sonli qaroriga muvofiq tashkil etilgan.
             </p>
           </div>
-        </Rotate>
+        {/* </Rotate> */}
       </div>
     </div>
   );

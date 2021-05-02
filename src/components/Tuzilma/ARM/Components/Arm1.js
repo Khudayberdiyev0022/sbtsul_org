@@ -1,12 +1,12 @@
 import React from "react";
 import style from "./Arm1.module.css";
-import Rotate from "react-reveal/Rotate";
+// import Rotate from "react-reveal/Rotate";
 
 const Arm1 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        <Rotate bottom left cascade>
+        {/* <Rotate bottom left cascade> */}
           <div className={style.head}>
             <h2>AXBOROT-RESURS MARKAZI </h2>
             <span></span>
@@ -20,7 +20,7 @@ const Arm1 = () => {
               muvofiq tashkil etilgan.
             </p>
           </div>
-        </Rotate>
+        {/* </Rotate> */}
       </div>
     </div>
   );

@@ -1,12 +1,12 @@
 import React from "react";
 import style from "./Kengash1.module.css";
-import Rotate from "react-reveal/Rotate";
+// import Rotate from "react-reveal/Rotate";
 
 const Kengash1 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        <Rotate bottom left cascade>
+        {/* <Rotate bottom left cascade> */}
           <div className={style.head}>
             <h2>KENGASH</h2>
             <span></span>
@@ -16,7 +16,7 @@ const Kengash1 = () => {
               kollegial organi hisoblanadi.{" "}
             </p>
           </div>
-        </Rotate>
+        {/* </Rotate> */}
       </div>
     </div>
   );

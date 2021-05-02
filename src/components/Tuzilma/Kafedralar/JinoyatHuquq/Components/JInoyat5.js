@@ -1,12 +1,12 @@
 import React from "react";
 import style from "./Jinoyat5.module.css";
-import Zoom from "react-reveal/Zoom";
+// import Zoom from "react-reveal/Zoom";
 
 const JInoyat5 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        <Zoom top>
+        {/* <Zoom top> */}
           <h2>ILMIY VA ILMIY-USLUBIY ISHLAR</h2>
           <span></span>
           <p>
@@ -20,7 +20,7 @@ const JInoyat5 = () => {
             mаtеriаllаri to`plаmlаridа chоp etilgаn mаqоlаlаr – jаmi 18 tа bilan
             ishtirok etgan.
           </p>
-        </Zoom>
+        {/* </Zoom> */}
       </div>
     </div>
   );

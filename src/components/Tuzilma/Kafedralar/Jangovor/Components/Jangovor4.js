@@ -2,12 +2,12 @@ import React from "react";
 import style from "./Jangovor4.module.css";
 import img1 from "../../../../../assets/img/ou1.jpg";
 import img2 from "../../../../../assets/img/ou2.jpg";
-import Bounce from "react-reveal/Bounce";
+// import Bounce from "react-reveal/Bounce";
 
 const Jangovor4 = () => {
   return (
     <div className={style.main}>
-      <Bounce top cascade>
+      {/* <Bounce top cascade> */}
         <div className={style.inMain}>
           <h2>O‘QUV VA O‘QUV-USLUBIY ISHLAR</h2>
           <span></span>
@@ -58,7 +58,7 @@ const Jangovor4 = () => {
             </div>
           </div>
         </div>
-      </Bounce>
+      {/* </Bounce> */}
     </div>
   );
 };

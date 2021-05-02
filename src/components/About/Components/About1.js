@@ -2,7 +2,7 @@ import React from "react";
 import style from "./About1.module.css";
 import doc from "../../Data/МАЪЛУМОТ_матбуот_анжуманига_тўлиқ.doc";
 import bg from "../../../assets/img/about.jpg";
-import Rotate from "react-reveal/Rotate";
+// import Rotate from "react-reveal/Rotate";
 import { BsCloudDownload } from "react-icons/bs";
 
 const About1 = () => {
@@ -14,7 +14,6 @@ const About1 = () => {
             className={style.img}
             style={{ backgroundImage: `url(${bg})` }}
           ></div>
-          <Rotate top left cascade>
             <div className={style.text}>
               <h3>Filial jamoasi</h3>
               <p>
@@ -70,7 +69,6 @@ const About1 = () => {
                 </p>
               </div>
             </div>
-          </Rotate>
         </div>
       </div>
     </div>

@@ -1,12 +1,12 @@
 import React from "react";
 import style from "./AT1.module.css";
-import Rotate from "react-reveal/Rotate";
+// import Rotate from "react-reveal/Rotate";
 
 const AT1 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        <Rotate bottom left cascade>
+        {/* <Rotate bottom left cascade> */}
           <div className={style.head}>
             <h2>AXBOROT TEXNOLOGIYALARI BO’LIMI</h2>
             <span></span>
@@ -20,7 +20,7 @@ const AT1 = () => {
               tashkil etilgan.
             </p>
           </div>
-        </Rotate>
+        {/* </Rotate> */}
       </div>
     </div>
   );

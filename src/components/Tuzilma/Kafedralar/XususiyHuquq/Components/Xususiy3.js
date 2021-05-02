@@ -1,19 +1,19 @@
 import React from "react";
 import style from "./Xususiy3.module.css";
-import Fade from "react-reveal/Fade";
-import Zoom from "react-reveal/Zoom";
+// import Fade from "react-reveal/Fade";
+// import Zoom from "react-reveal/Zoom";
 
 const Xususiy3 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        <Fade top cascade>
+        {/* <Fade top cascade> */}
           <div className={style.head}>
             <h2>KAFEDRANING VAZIFALARI</h2>
             <span></span>
           </div>
-        </Fade>
-        <Zoom top cascade>
+        {/* </Fade> */}
+        {/* <Zoom top cascade> */}
           <div className={style.grid}>
             <div className={style.block}>
               <div className={style.svg}>{/* <VscOrganization/> */}</div>
@@ -100,7 +100,7 @@ const Xususiy3 = () => {
               </p>
             </div>
           </div>
-        </Zoom>
+        {/* </Zoom> */}
       </div>
     </div>
   );

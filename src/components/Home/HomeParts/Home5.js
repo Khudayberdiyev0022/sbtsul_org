@@ -6,6 +6,27 @@ import news2 from "../../../assets/img/news2.jpg";
 import news3 from "../../../assets/img/news3.jpg";
 
 const Home5 = () => {
+
+  // import api from backend with name faceapi and after that we cannot need to chabeg more things
+  const fakeAPI = [
+    {
+      image: news2,
+      title: 'MА\'NАVIY VА MА\'RIFIY TАSHАBBUS АMАLDА',
+      paragraph: 'Mamlakatimizda mustaqil va erkin fikrlaydigan, zamonaviy ilm-fan yutuqlarini, oʼz kasbini puxta oʼzlashtirgan talaba yoshlarni malakaliy mutaxassis qilib yetkazishga alohida eʼtibor berib kelinmoqda...Mamlakatimizda mustaqil va erkin fikrlaydigan, zamonaviy ilm-fan yutuqlarini, oʼz kasbini puxta oʼzlashtirgan talaba yoshlarni malakaliy mutaxassis qilib yetkazishga alohida eʼtibor berib kelinmoqda...',
+    },
+    {
+      image: news1,
+      title: 'MА\'NАVIY VА MА\'RIFIY TАSHАBBUS АMАLDА',
+      paragraph: 'Mamlakatimizda mustaqil va erkin fikrlaydigan, zamonaviy ilm-fan yutuqlarini, oʼz kasbini puxta oʼzlashtirgan talaba yoshlarni malakaliy mutaxassis qilib yetkazishga alohida eʼtibor berib kelinmoqda...Mamlakatimizda mustaqil va erkin fikrlaydigan, zamonaviy ilm-fan yutuqlarini, oʼz kasbini puxta oʼzlashtirgan talaba yoshlarni malakaliy mutaxassis qilib yetkazishga alohida eʼtibor berib kelinmoqda...',
+    },
+    {
+      image: news3,
+      title: 'MА\'NАVIY VА MА\'RIFIY TАSHАBBUS АMАLDА',
+      paragraph: 'Mamlakatimizda mustaqil va erkin fikrlaydigan, zamonaviy ilm-fan yutuqlarini, oʼz kasbini puxta oʼzlashtirgan talaba yoshlarni malakaliy mutaxassis qilib yetkazishga alohida eʼtibor berib kelinmoqda...Mamlakatimizda mustaqil va erkin fikrlaydigan, zamonaviy ilm-fan yutuqlarini, oʼz kasbini puxta oʼzlashtirgan talaba yoshlarni malakaliy mutaxassis qilib yetkazishga alohida eʼtibor berib kelinmoqda...',
+    }
+  ]
+
+
   return (
     <div className={style.main}>
       <div className={style.linkBlock}>
@@ -13,52 +34,42 @@ const Home5 = () => {
       </div>
       <div className={style.container}>
         <div className={style.leftBlock}>
-          <div className={style.box}>
-            <img src={news1} alt="news1" />
-            <h4>MА'NАVIY VА MА'RIFIY TАSHАBBUS АMАLDА</h4>
-            <p>
-              Mamlakatimizda mustaqil va erkin fikrlaydigan, zamonaviy ilm-fan
-              yutuqlarini, oʼz kasbini puxta oʼzlashtirgan talaba yoshlarni
-              malakaliy mutaxassis qilib yetkazishga alohida eʼtibor berib
-              kelinmoqda...
-            </p>
-            <div className={style.button}>
-              <div className={style.bgColor}></div>
-              <Link to="/www"> Batafsil... </Link>
-            </div>
-          </div>
-          <div className={style.box}>
-            <img src={news2} alt="news2" />
-            <h4>MА'NАVIY VА MА'RIFIY TАSHАBBUS АMАLDА</h4>
-            <p>
-              Mamlakatimizda mustaqil va erkin fikrlaydigan, zamonaviy ilm-fan
-              yutuqlarini, oʼz kasbini puxta oʼzlashtirgan talaba yoshlarni
-              malakaliy mutaxassis qilib yetkazishga alohida eʼtibor berib
-              kelinmoqda...
-            </p>
-            <div className={style.button}>
-              <div className={style.bgColor}></div>
-              <Link to="/www"> Batafsil... </Link>
-            </div>
-          </div>
+          {
+            // eslint-disable-next-line array-callback-return
+            fakeAPI.map((api, index) => {
+              if (index >= 1) {
+                return (
+                  <div key={index} className={style.box}>
+                    <img src={api.image} alt={api.image} />
+                    <h4>{api.title}</h4>
+                    <p>
+                      {api.paragraph.split(' ').length > 20 ? `${api.paragraph.split(' ').slice(0, 20).join(' ')}...` : api.paragraph}
+                    </p>
+                    <div className={style.button}>
+                      <div className={style.bgColor}>
+
+                      </div>
+                      <Link to={`/each/news/${index}`}> Batafsil... </Link>
+                    </div>
+                  </div>
+                )
+              }
+            })
+          }
         </div>
+
+
         <div className={style.rightBlock}>
-          <img src={news3} alt="news3" />
-          <h4>MА'NАVIY VА MА'RIFIY TАSHАBBUS АMАLDА</h4>
+          <img src={fakeAPI[0].image} alt="news3" />
+          <h4>{fakeAPI[0].title}</h4>
           <p>
-            Mamlakatimizda mustaqil va erkin fikrlaydigan, zamonaviy ilm-fan
-            yutuqlarini, oʼz kasbini puxta oʼzlashtirgan talaba yoshlarni
-            malakaliy mutaxassis qilib yetkazishga alohida eʼtibor berib
-            kelinmoqda. Xususan, yoshlarni, ayniqsa boʼlajak huquqbuzarlik
-            profilaktika inspektorlarida oʼz kasbiga boʼlgan qatʼiy ishonch va
-            qarashlarni shakllantirishda, ularni milliy va umuminsoniy
-            qadriyatlarga hurmat ruhida, zararli taʼsirlar va oqimlarga qarshi
-            tura oladigan qilib tarbiyalash, jamiyat hayotida ularning roli
-            hamda faolligini oshirishga doir tadbirlar tashkil etilmoqda.
+            {fakeAPI[0].paragraph}
           </p>
           <div className={style.button}>
-            <div className={style.bgColor}></div>
-            <Link to="/www"> Batafsil... </Link>
+            <div className={style.bgColor}>
+
+            </div>
+            <Link to={`/each/news/0`}> Batafsil... </Link>
           </div>
         </div>
       </div>

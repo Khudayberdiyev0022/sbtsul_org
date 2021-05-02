@@ -1,17 +1,17 @@
 import React from "react";
 import style from "./Ekspluatatsiya2.module.css";
 import { nameKaf, teachers } from "../ExtraCard/Json";
-import Zoom from "react-reveal/Zoom";
+// import Zoom from "react-reveal/Zoom";
 
 const Ekspluatatsiya2 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        <Zoom right>
+        {/* <Zoom right> */}
           <h2>EKSPLUATATSIYA-XO‘JALIK BO‘LIMI XODIMLARINING TARKIBI</h2>
           <span></span>
-        </Zoom>
-        <Zoom top cascade>
+        {/* </Zoom> */}
+        {/* <Zoom top cascade> */}
           <div className={style.map}>
             {teachers.map((teacher, index) => {
               return (
@@ -39,7 +39,7 @@ const Ekspluatatsiya2 = () => {
               );
             })}
           </div>
-        </Zoom>
+        {/* </Zoom> */}
       </div>
     </div>
   );

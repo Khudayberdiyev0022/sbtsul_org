@@ -1,12 +1,12 @@
 import React from "react";
-import Zoom from "react-reveal/Zoom";
+// import Zoom from "react-reveal/Zoom";
 import style from "./Tayyorlash6.module.css";
 
 const Tayyorlash6 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        <Zoom top>
+        {/* <Zoom top> */}
           <h2>YOSHLAR BILAN OLIB BORILAYOTGAN ISHLAR</h2>
           <span></span>
           <p>
@@ -61,7 +61,7 @@ const Tayyorlash6 = () => {
             taqdim etildi. Filial kibersport jamoasi “Uzbekistan Cyber Cup”
             musobaqasida faol ishtirok etdi.
           </p>
-        </Zoom>
+        {/* </Zoom> */}
       </div>
     </div>
   );

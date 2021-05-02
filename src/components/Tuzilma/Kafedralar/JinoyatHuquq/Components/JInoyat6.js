@@ -2,12 +2,12 @@ import React from "react";
 import style from "./Jinoyat6.module.css";
 import bg from "../../../../../assets/img/section_bg04.jpg";
 import img from "../../../../../assets/img/manav121.jpg";
-import Bounce from "react-reveal/Bounce";
+// import Bounce from "react-reveal/Bounce";
 
 const JInoyat6 = () => {
   return (
     <div className={style.main} style={{ backgroundImage: `url(${bg})` }}>
-      <Bounce top cascade>
+      {/* <Bounce top cascade> */}
         <div className={style.inMain}>
           <h2>MA’NAVIY-MA’RIFIY VA TARBIYAVIY-AXLOQIY ISHLAR</h2>
           <span></span>
@@ -29,7 +29,7 @@ const JInoyat6 = () => {
             </p>
           </div>
         </div>
-      </Bounce>
+      {/* </Bounce> */}
     </div>
   );
 };

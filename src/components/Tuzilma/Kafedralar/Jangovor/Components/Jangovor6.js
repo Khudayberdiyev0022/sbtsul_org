@@ -2,12 +2,12 @@ import React from "react";
 import style from "./Jangovor6.module.css";
 import bg from "../../../../../assets/img/section_bg04.jpg";
 import img from "../../../../../assets/img/mm1.jpg";
-import Bounce from "react-reveal/Bounce";
+// import Bounce from "react-reveal/Bounce";
 
 const Jangovor6 = () => {
   return (
     <div className={style.main} style={{ backgroundImage: `url(${bg})` }}>
-      <Bounce top cascade>
+      {/* <Bounce top cascade> */}
         <div className={style.inMain}>
           <h2>MA’NAVIY-MA’RIFIY VA TARBIYAVIY-AXLOQIY ISHLAR</h2>
           <span></span>
@@ -49,7 +49,7 @@ const Jangovor6 = () => {
             musobaqalarda ishtirok etish rejalashtirilgan.
           </p>
         </div>
-      </Bounce>
+      {/* </Bounce> */}
     </div>
   );
 };

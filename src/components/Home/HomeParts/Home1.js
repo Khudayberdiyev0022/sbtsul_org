@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import img1 from "../../../assets/img/univer.jpg";
-import img2 from "../../../assets/img/slider2.jpg";
+import img2 from "../../../assets/img/students.jpg";
 import img3 from "../../../assets/img/slider3.jpg";
 import style from "./Home1.module.css";
 import { Fragment } from "react";

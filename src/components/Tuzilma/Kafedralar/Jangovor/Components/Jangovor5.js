@@ -1,12 +1,12 @@
 import React from "react";
 import style from "./Jangovor5.module.css";
-import Zoom from "react-reveal/Zoom";
+// import Zoom from "react-reveal/Zoom";
 
 const Jangovor5 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        <Zoom top>
+        {/* <Zoom top> */}
           <h2>ILMIY VA ILMIY-USLUBIY ISHLAR</h2>
           <span></span>
           <p>
@@ -28,7 +28,7 @@ const Jangovor5 = () => {
             tayyorgarligini tashkillashtirishda zamonaviy yondashuvlar”
             mavzusida xalqaro onlayn ilmiy-amaliy konferentsiya rejalashtrilgan;
           </p>
-        </Zoom>
+        {/* </Zoom> */}
       </div>
     </div>
   );

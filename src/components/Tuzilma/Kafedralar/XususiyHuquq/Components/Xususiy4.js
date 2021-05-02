@@ -1,11 +1,11 @@
 import React from "react";
 import style from "./Xususiy4.module.css";
-import Bounce from "react-reveal/Bounce";
+// import Bounce from "react-reveal/Bounce";
 
 const Xususiy4 = () => {
   return (
     <div className={style.main}>
-      <Bounce top cascade>
+      {/* <Bounce top cascade> */}
         <div className={style.inMain}>
           <h2>O‘QUV VA O‘QUV-USLUBIY ISHLAR</h2>
           <span></span>
@@ -26,7 +26,7 @@ const Xususiy4 = () => {
             </div>
           </div>
         </div>
-      </Bounce>
+      {/* </Bounce> */}
     </div>
   );
 };

@@ -1,19 +1,19 @@
 import React from "react";
 import style from "./KonAr3.module.css";
-import Fade from "react-reveal/Fade";
-import Zoom from "react-reveal/Zoom";
+// import Fade from "react-reveal/Fade";
+// import Zoom from "react-reveal/Zoom";
 
 const KonAr3 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        <Fade top cascade>
+        {/* <Fade top cascade> */}
           <div className={style.head}>
             <h2>BO‘LIMNING VAZIFALARI</h2>
             <span></span>
           </div>
-        </Fade>
-        <Zoom top cascade>
+        {/* </Fade> */}
+        {/* <Zoom top cascade> */}
           <div className={style.grid}>
             <div className={style.block}>
               <div className={style.svg}>{/* <VscOrganization/> */}</div>
@@ -59,7 +59,7 @@ const KonAr3 = () => {
               </p>
             </div>
           </div>
-        </Zoom>
+        {/* </Zoom> */}
       </div>
     </div>
   );

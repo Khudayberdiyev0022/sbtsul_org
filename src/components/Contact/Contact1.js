@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import style from "./Contact1.module.css";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdMail, MdLocationOn } from "react-icons/md";
-import Rotate from "react-reveal/Rotate";
-import Flip from "react-reveal/Flip";
+// import Rotate from "react-reveal/Rotate";
+// import Flip from "react-reveal/Flip";
 
 const Contact1 = () => {
   const [name, setName] = useState("");
@@ -24,7 +24,7 @@ const Contact1 = () => {
     <div className={style.main}>
       <div className={style.inMain}>
         <div className={style.top}>
-          <Rotate top left cascade>
+          {/* <Rotate top left cascade> */}
             <div className={style.inTop}>
               <div className={style.icon}>
                 <MdLocationOn />{" "}
@@ -65,7 +65,7 @@ const Contact1 = () => {
                 </a>
               </div>
             </div>
-          </Rotate>
+          {/* </Rotate> */}
         </div>
         <div className={style.flex}>
           <div className={style.map}>
@@ -83,7 +83,7 @@ const Contact1 = () => {
             />
           </div>
           <div className={style.inputDiv}>
-            <Flip left cascade>
+            {/* <Flip left cascade> */}
               <h2>Biz bilan bog'lanish</h2>
               <form onSubmit={submit}>
                 <input
@@ -116,7 +116,7 @@ const Contact1 = () => {
                 />
                 <button type="submit">Xabarni jo'natish</button>
               </form>
-            </Flip>
+            {/* </Flip> */}
           </div>
         </div>
       </div>

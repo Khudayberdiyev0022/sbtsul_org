@@ -1,12 +1,12 @@
 import React from 'react'
-import Zoom from 'react-reveal/Zoom';
+// import Zoom from 'react-reveal/Zoom';
 import style from './Tayyorlash5.module.css'
 
 const Tayyorlash7 = () => {
     return (
         <div className={style.main}   >
         <div className={style.inMain} >
-        <Zoom top >
+        {/* <Zoom top > */}
 
             <h2>
             YOSHLAR BILAN OLIB BORILAYOTGAN ISHLAR
@@ -27,7 +27,7 @@ const Tayyorlash7 = () => {
             <p>
                 <span></span> Filialning talabalar turar joylarida yashovchi talabalari bilan muntazam ravishda uchrashuvlar oʼtkazilib, ular orasida huquqbuzarlik va jinoyatchilikni oldini olish mavzusida suhbatlar oʼtkazilmoqda.
             </p>
-        </Zoom>
+        {/* </Zoom> */}
         </div>
     </div>
     )

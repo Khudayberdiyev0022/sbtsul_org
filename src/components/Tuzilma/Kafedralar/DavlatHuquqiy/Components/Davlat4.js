@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./Davlat4.module.css";
 import img1 from "../../../../../assets/img/oquv111.jpg";
-import Bounce from "react-reveal/Bounce";
+// import Bounce from "react-reveal/Bounce";
 
 const Davlat4 = () => {
   return (
@@ -16,7 +16,7 @@ const Davlat4 = () => {
               className={style.img}
               style={{ backgroundImage: `url(${img1})` }}
             ></div>
-            <Bounce top cascade>
+            {/* <Bounce top cascade> */}
               <div className={style.text1}>
                 <p>
                   O‘quv-uslubiy faoliyat doirasida bugungi kunga qadar bir qator
@@ -31,9 +31,9 @@ const Davlat4 = () => {
                   rejalashtirilgan;{" "}
                 </p>
               </div>
-            </Bounce>
+            {/* </Bounce> */}
           </div>
-          <Bounce top cascade>
+          {/* <Bounce top cascade> */}
             <div className={style.text}>
               <p>
                 O'quv ishlari bo‘yicha tegishli o‘quv dastur va rejalar ishlab
@@ -43,7 +43,7 @@ const Davlat4 = () => {
                 kelinmoqda.{" "}
               </p>
             </div>
-          </Bounce>
+          {/* </Bounce> */}
         </div>
       </div>
     </div>

@@ -1,12 +1,12 @@
 import React from "react";
 import style from "./Jinoyat4.module.css";
 import img1 from "../../../../../assets/img/oquvvv1.jpg";
-import Bounce from "react-reveal/Bounce";
+// import Bounce from "react-reveal/Bounce";
 
 const JInoyat4 = () => {
   return (
     <div className={style.main}>
-      <Bounce top cascade>
+      {/* <Bounce top cascade> */}
         <div className={style.inMain}>
           <h2>O‘QUV VA O‘QUV-USLUBIY ISHLAR</h2>
           <span></span>
@@ -49,7 +49,7 @@ const JInoyat4 = () => {
             </div>
           </div>
         </div>
-      </Bounce>
+      {/* </Bounce> */}
     </div>
   );
 };

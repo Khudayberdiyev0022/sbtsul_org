@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./Baxtiyorovich.module.css";
 import img from "../../../assets/img/djuraev.jpg";
-import Zoom from "react-reveal/Zoom";
+// import Zoom from "react-reveal/Zoom";
 
 const Baxtiyorovich = () => {
   return (
@@ -11,7 +11,7 @@ const Baxtiyorovich = () => {
           className={style.img}
           style={{ backgroundImage: `url(${img})` }}
         ></div>
-        <Zoom top cascade>
+        {/* <Zoom top cascade> */}
           <div className={style.text}>
             <h2>Djuraev Ixtiyor Baxtiyorovich</h2>
             <h4>Oʼquv-tarbiyaviy ishlar boʼyicha direktor oʼrinbosari</h4>
@@ -45,7 +45,7 @@ const Baxtiyorovich = () => {
               tayinlangan.
             </p>
           </div>
-        </Zoom>
+        {/* </Zoom> */}
       </div>
     </div>
   );

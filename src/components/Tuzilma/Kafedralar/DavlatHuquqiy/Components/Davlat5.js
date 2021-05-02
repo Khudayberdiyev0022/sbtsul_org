@@ -1,13 +1,13 @@
 import React from "react";
 import style from "./Davlat5.module.css";
-import Zoom from "react-reveal/Zoom";
+// import Zoom from "react-reveal/Zoom";
 import img from "../../../../../assets/img/manaviy111.jpg";
 
 const Davlat5 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        <Zoom top>
+        {/* <Zoom top> */}
           <h2>ILMIY VA ILMIY-USLUBIY ISHLAR</h2>
           <span></span>
           <div className={style.flex}>
@@ -44,7 +44,7 @@ const Davlat5 = () => {
             club”; “Government” va “Qonunchilik texnikasi –rasmiy hujjatlar
             tayyorlash” ilmiy to‘garaklari shular jumlasidan.
           </p>
-        </Zoom>
+        {/* </Zoom> */}
       </div>
     </div>
   );

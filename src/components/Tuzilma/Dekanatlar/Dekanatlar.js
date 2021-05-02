@@ -1,20 +1,30 @@
-import { Link } from "react-router-dom";
-import React from "react";
-import style from "./Dekanatlar.module.css";
+import { Link } from 'react-router-dom'
+import React from 'react'
+import style from './Dekanatlar.module.css'
+
 
 const Dekanatlar = () => {
   return (
     <div className={style.main}>
-      <ul>
+      <h1>DEKANATLAR</h1>
+      <div className={style.container}>
         <Link to="/tayyorlash">
-          <li>TAYYORLASH KURSLARI DEKANATI</li>
+          <span>TAYYORLASH KURSLARI DEKANATI</span>
         </Link>
         <Link to="/qayta-tayyorlash">
-          <li>QAYTA TAYYORLASH KURSLARI DEKANATI</li>
+          <span>QAYTA TAYYORLASH KURSLARI DEKANATI</span>
         </Link>
-      </ul>
+      </div>
+      <div className={style.mobile}>
+        <Link to="/tayyorlash">
+          <span>TAYYORLASH KURSLARI DEKANATI</span>
+        </Link>
+        <Link to="/qayta-tayyorlash">
+          <span>QAYTA TAYYORLASH KURSLARI DEKANATI</span>
+        </Link>
+      </div>
     </div>
-  );
-};
+  )
+}
 
-export default Dekanatlar;
+export default Dekanatlar

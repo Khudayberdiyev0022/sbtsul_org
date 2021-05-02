@@ -1,12 +1,12 @@
 import React from "react";
 import style from "./Xususiy1.module.css";
-import Rotate from "react-reveal/Rotate";
+// import Rotate from "react-reveal/Rotate";
 
 const Xususiy1 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        <Rotate bottom left cascade>
+        {/* <Rotate bottom left cascade> */}
           <div className={style.head}>
             <h2>XUSUSIY-HUQUQIY FANLAR KAFEDRASI</h2>
             <span></span>
@@ -19,7 +19,7 @@ const Xususiy1 = () => {
               toʼgʼrisida”gi PQ-4166-sonli qaroriga muvofiq tashkil etilgan.
             </p>
           </div>
-        </Rotate>
+        {/* </Rotate> */}
       </div>
     </div>
   );
