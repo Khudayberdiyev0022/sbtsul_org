@@ -9,6 +9,8 @@ const Home4 = () => {
             <div className={style.staticBlock}>
                <div className={style.card1}>
                   <div className={style.staticBox}>
+                  <p>TDYU Ixtisoslashtirilgan filiali tashkil topgan</p>
+
                      <Countup
                         start={1991}
                         end={2019}
@@ -17,9 +19,9 @@ const Home4 = () => {
                         className={style.countText}
                      >
                      </Countup>
-                     <p>TDYU Ixtisoslashtirilgan filiali tashkil topgan</p>
                   </div>
                   <div className={style.staticBoxBg}>
+                  <p>TDYU Ixtisoslashtirilgan filiali tashkil topgan</p>
                      <Countup
                         start={1991}
                         end={2019}
@@ -28,53 +30,51 @@ const Home4 = () => {
                         className={style.countText}
                      >
                      </Countup>
-                     <p>TDYU Ixtisoslashtirilgan filiali tashkil topgan</p>
                   </div>
                </div>
                <div className={style.card1}>
                   <div className={style.staticBox}>
+                  <p>TDYU Ixtisoslashtirilgan filialida Professor-o'qituvchilar soni</p>
                      <Countup
-                        end={5}
+                        end={39}
                         duration={15}
                         separator=","
                         className={style.countText}
                      >
                      </Countup>
-                     <p>TDYU Ixtisoslashtirilgan filialida kafedralar soni</p>
                   </div>
                   <div className={style.staticBoxBg}>
+                  <p>TDYU Ixtisoslashtirilgan filialida Professor-o'qituvchilar soni</p>
                      <Countup
-                        end={5}
+                        end={39}
                         duration={15}
                         separator=","
                         className={style.countText}
                      >
                      </Countup>
-                     <p>TDYU Ixtisoslashtirilgan filialida kafedralar soni</p>
                   </div>
                </div>
                <div className={style.card1}>
                   <div className={style.staticBox}>
+                  <p>TDYU Ixtisoslashtirilgan filialida talabalar soni</p>
                      <Countup
-                        end={2347}
+                        end={572}
                         duration={15}
                         separator=","
                         suffix="ta"
                         className={style.countText}
                      >
                      </Countup>
-                     <p>TDYU Ixtisoslashtirilgan filialida talabalar soni</p>
                   </div>
                   <div className={style.staticBoxBg}>
+                  <p>TDYU Ixtisoslashtirilgan filialida talabalar soni</p>
                      <Countup
-                        end={2347}
+                        end={572}
                         duration={15}
-                        separator=","
                         suffix="ta"
                         className={style.countText}
                      >
                      </Countup>
-                     <p>TDYU Ixtisoslashtirilgan filialida talabalar soni</p>
                   </div>
                </div>
             </div>
