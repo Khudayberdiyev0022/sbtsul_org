@@ -1,6 +1,6 @@
 import t1 from '../../../../../assets/img/maxmudovAT.jpg'
 import t2 from '../../../../../assets/img/urazmuhammedovAT.jpg'
-import t3 from '../../../../../assets/img/abdiaxatovAT.jpg'
+import t3 from '../../../../../assets/img/abdiaxatovAT.webp'
 
 
 export const teachers = [

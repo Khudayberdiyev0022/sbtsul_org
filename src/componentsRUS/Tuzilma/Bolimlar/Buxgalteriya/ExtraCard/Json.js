@@ -1,6 +1,6 @@
 import t1 from "../../../../../assets/img/saimov.jpg";
 import t2 from "../../../../../assets/img/feruzarajabova.jpg";
-import t3 from "../../../../../assets/img/akbarshox.abdulatipov.jpg";
+import t3 from "../../../../../assets/img/akbarshox.abdulatipov.webp";
 
 export const teachers = [
   {

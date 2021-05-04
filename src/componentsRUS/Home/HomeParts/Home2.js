@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./Home2.module.css";
-import president from "../../../assets/img/pr.jpg";
+import president from "../../../assets/img/pr.webp";
 
 const Home2 = () => {
   return (

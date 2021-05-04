@@ -1,6 +1,6 @@
 import React from 'react'
 import style from './Pictures.module.css'
-import img1 from "../../assets/img/students.jpg";
+import img1 from "../../assets/img/slider2.webp";
 import img2 from "../../assets/img/football.jpg";
 import img3 from "../../assets/img/sertificate.jpg";
 import img4 from "../../assets/img/army.jpg";
