@@ -40,7 +40,7 @@ const NavbarEng = (props) => {
       >
         <div className={style.container}>
           <div className={style.navbar}>
-            <NavLink to="/eng/" activeStyle={{ color: "#0f2b53" }}>
+            <NavLink to="/eng" activeStyle={{ color: "#0f2b53" }}>
               <img src={logo} alt="logo" />
             </NavLink>
             <div className={style.titleAll}>

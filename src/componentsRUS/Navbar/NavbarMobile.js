@@ -6,6 +6,9 @@ import logo from "../../assets/icons/logoFT.svg";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { changeLanguage } from "../../actions";
+
+
+
 function NavbarMobileRus(props) {
   const [clicked, setClicked] = useState(false);
   const [scroll, setScroll] = useState(false);
@@ -29,7 +32,7 @@ function NavbarMobileRus(props) {
     >
       <div className={style.container}>
         <div className={style.mainPart}>
-          <Link onClick={() => setClicked(false)} to="/rus/">
+          <Link onClick={() => setClicked(false)} to="/rus">
             <img src={logo} alt="logo" />
           </Link>
           {clicked ? (

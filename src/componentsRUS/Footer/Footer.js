@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import style from "./Footer.module.css";
 import logoFooter from "../../assets/icons/logoFooter.svg";
 
-const Footer = () => {
+const FooterRus = () => {
   return (
     <div className={style.main}>
       <div className={style.container}>
@@ -64,4 +64,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default FooterRus;

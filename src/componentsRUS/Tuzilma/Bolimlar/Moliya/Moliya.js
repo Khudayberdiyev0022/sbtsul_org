@@ -3,7 +3,7 @@ import Moliya1 from "./Components/Moliya1";
 import Moliya2 from "./Components/Moliya2";
 import Moliya3 from "./Components/Moliya3";
 
-const Moliya = () => {
+const MoliyaRus = () => {
   return (
     <div>
       <Moliya1 />
@@ -13,4 +13,4 @@ const Moliya = () => {
   );
 };
 
-export default Moliya;
+export default MoliyaRus;

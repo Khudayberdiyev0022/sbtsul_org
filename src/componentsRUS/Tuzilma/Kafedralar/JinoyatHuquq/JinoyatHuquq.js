@@ -6,7 +6,7 @@ import JInoyat4 from "./Components/JInoyat4";
 import JInoyat5 from "./Components/JInoyat5";
 import JInoyat6 from "./Components/JInoyat6";
 
-const JinoyatHuquq = () => {
+const JinoyatHuquqRus = () => {
   return (
     <div>
       <JInoyat1 />
@@ -19,4 +19,4 @@ const JinoyatHuquq = () => {
   );
 };
 
-export default JinoyatHuquq;
+export default JinoyatHuquqRus;

@@ -4,7 +4,7 @@ import Xususiy2 from './Components/Xususiy2'
 import Xususiy3 from './Components/Xususiy3'
 import Xususiy4 from './Components/Xususiy4'
 
-const XususiyHuquqiy = () => {
+const XususiyHuquqiyRus = () => {
     return (
         <>
             <Xususiy1/>
@@ -15,4 +15,4 @@ const XususiyHuquqiy = () => {
     )
 }
 
-export default XususiyHuquqiy
+export default XususiyHuquqiyRus;

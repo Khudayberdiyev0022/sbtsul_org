@@ -3,7 +3,7 @@ import React from 'react'
 import style from './Dekanatlar.module.css'
 
 
-const Dekanatlar = () => {
+const DekanatlarRus = () => {
   return (
     <div className={style.main}>
       <h1>DEKANATLAR</h1>
@@ -27,4 +27,4 @@ const Dekanatlar = () => {
   )
 }
 
-export default Dekanatlar
+export default DekanatlarRus;

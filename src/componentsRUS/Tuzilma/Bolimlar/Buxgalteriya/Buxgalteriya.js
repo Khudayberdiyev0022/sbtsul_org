@@ -3,7 +3,7 @@ import Buxgal1 from './Components/Buxgal1'
 import Buxgal2 from './Components/Buxgal2'
 import Buxgal3 from './Components/Buxgal3'
 
-const Buxgalteriya = () => {
+const BuxgalteriyaRus = () => {
     return (
         <>
             <Buxgal1/>
@@ -13,4 +13,4 @@ const Buxgalteriya = () => {
     )
 }
 
-export default Buxgalteriya
+export default BuxgalteriyaRus;

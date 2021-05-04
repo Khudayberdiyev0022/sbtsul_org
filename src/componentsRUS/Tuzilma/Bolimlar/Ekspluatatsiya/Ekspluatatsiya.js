@@ -3,7 +3,7 @@ import Ekspluatatsiya1 from "./Components/Ekspluatatsiya1";
 import Ekspluatatsiya2 from "./Components/Ekspluatatsiya2";
 import Ekspluatatsiya3 from "./Components/Ekspluatatsiya3";
 
-const Ekspluatatsiya = () => {
+const EkspluatatsiyaRus = () => {
   return (
     <>
       <Ekspluatatsiya1 />
@@ -13,4 +13,4 @@ const Ekspluatatsiya = () => {
   );
 };
 
-export default Ekspluatatsiya;
+export default EkspluatatsiyaRus;

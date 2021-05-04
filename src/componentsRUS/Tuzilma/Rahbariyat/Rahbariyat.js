@@ -2,7 +2,7 @@ import React from "react";
 import Baxtiyorovich from "./Baxtiyorovich";
 import Kaxramonovich from "./Kaxramonovich";
 
-const Rahbariyat = () => {
+const RahbariyatRus = () => {
   return (
     <div>
       <Baxtiyorovich />
@@ -11,4 +11,4 @@ const Rahbariyat = () => {
   );
 };
 
-export default Rahbariyat;
+export default RahbariyatRus;

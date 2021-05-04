@@ -7,7 +7,7 @@ import img3 from "../../../assets/img/kafedra2.jpg";
 import img4 from "../../../assets/img/kafedra3.jpg";
 import img5 from "../../../assets/img/kafedra4.jpg";
 
-const Kafedra = () => {
+const KafedraRus = () => {
   return (
     <div className={style.main}>
       <div className={style.bg}>
@@ -93,4 +93,4 @@ const Kafedra = () => {
   // );
 };
 
-export default Kafedra;
+export default KafedraRus;

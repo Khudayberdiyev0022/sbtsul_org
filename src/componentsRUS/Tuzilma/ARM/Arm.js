@@ -3,7 +3,7 @@ import Arm1 from './Components/Arm1'
 import Arm2 from './Components/Arm2'
 import Arm3 from './Components/Arm3'
 
-const Arm = () => {
+const ArmRus = () => {
     return (
         <>
             <Arm1/>
@@ -13,4 +13,4 @@ const Arm = () => {
     )
 }
 
-export default Arm
+export default ArmRus;

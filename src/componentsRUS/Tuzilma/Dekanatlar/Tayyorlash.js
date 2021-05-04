@@ -7,7 +7,7 @@ import Tayyorlash5 from "./Tayyorlash/Tayyorlash5";
 import Tayyorlash6 from "./Tayyorlash/Tayyorlash6";
 import Tayyorlash7 from "./Tayyorlash/Tayyorlash7";
 
-const Tayyorlash = () => {
+const TayyorlashRus = () => {
   return (
     <div>
       <Tayyorlash1 />
@@ -21,4 +21,4 @@ const Tayyorlash = () => {
   );
 };
 
-export default Tayyorlash;
+export default TayyorlashRus;

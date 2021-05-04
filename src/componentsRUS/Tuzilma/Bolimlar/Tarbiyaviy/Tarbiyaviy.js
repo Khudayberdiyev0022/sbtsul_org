@@ -4,7 +4,7 @@ import Tarbiyaviy1 from "./Components/Tarbiyaviy1";
 import Tarbiyaviy2 from "./Components/Tarbiyaviy2";
 import Tarbiyaviy3 from "./Components/Tarbiyaviy3";
 
-const Tarbiyaviy = () => {
+const TarbiyaviyRus = () => {
   return (
     <Fragment>
       <Tarbiyaviy1 />
@@ -14,4 +14,4 @@ const Tarbiyaviy = () => {
   );
 };
 
-export default Tarbiyaviy;
+export default TarbiyaviyRus;

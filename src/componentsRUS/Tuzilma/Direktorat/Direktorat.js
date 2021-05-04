@@ -5,7 +5,7 @@ import nurxodjayevDR from "../../../assets/img/nurxodjayevDR.jpg";
 import yusupovDR from "../../../assets/img/yusupovDR.jpg";
 import { Link } from "react-router-dom";
 
-const Kadrlar = () => {
+const DirektoratRus = () => {
   return (
     <div className={style.main}>
       <div className={style.container}>
@@ -175,4 +175,4 @@ const Kadrlar = () => {
   );
 };
 
-export default Kadrlar;
+export default DirektoratRus;

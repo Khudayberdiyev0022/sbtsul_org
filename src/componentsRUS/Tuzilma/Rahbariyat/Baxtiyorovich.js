@@ -3,7 +3,7 @@ import style from "./Baxtiyorovich.module.css";
 import img from "../../../assets/img/djuraev.jpg";
 // import Zoom from "react-reveal/Zoom";
 
-const Baxtiyorovich = () => {
+const BaxtiyorovichRus = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
@@ -26,4 +26,4 @@ const Baxtiyorovich = () => {
   );
 };
 
-export default Baxtiyorovich;
+export default BaxtiyorovichRus;

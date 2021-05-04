@@ -4,7 +4,7 @@ import zarifa from "../../../../assets/img/zarifa.jpg";
 import aziza from "../../../../assets/img/aziza.jpg";
 import { Link } from "react-router-dom";
 
-const Kadrlar = () => {
+const KadrlarRus = () => {
   return (
     <div className={style.main}>
       <div className={style.container}>
@@ -123,4 +123,4 @@ const Kadrlar = () => {
   );
 };
 
-export default Kadrlar;
+export default KadrlarRus;

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { structures } from "../Home/ExtraCards/Photo";
 import style from "./Tuzilma.module.css";
 
-const Tuzilma = () => {
+const TuzilmaRus = () => {
   return (
     <div className={style.main}>
       <div className={style.container}>
@@ -20,4 +20,4 @@ const Tuzilma = () => {
   );
 };
 
-export default Tuzilma;
+export default TuzilmaRus;

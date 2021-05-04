@@ -3,7 +3,7 @@ import AT1 from "./Components/AT1";
 import AT2 from "./Components/AT2";
 import AT3 from "./Components/AT3";
 
-const AT = () => {
+const ATRus = () => {
   return (
     <>
       <AT1 />
@@ -13,4 +13,4 @@ const AT = () => {
   );
 };
 
-export default AT;
+export default ATRus;

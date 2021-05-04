@@ -30,7 +30,7 @@ function NavbarMobileEng(props) {
     >
       <div className={style.container}>
         <div className={style.mainPart}>
-          <Link onClick={() => setClicked(false)} to="/eng/">
+          <Link onClick={() => setClicked(false)} to="/eng">
             <img src={logo} alt="logo" />
           </Link>
           {clicked ? (

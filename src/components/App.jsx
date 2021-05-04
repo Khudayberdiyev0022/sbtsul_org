@@ -54,8 +54,8 @@ import MainAdmin from './admin-dashboard/MainAdmin'
 
 
 import NavbarEng from '../componenttsENG/Navbar/Navbar'
-import HomeEng from '../componenttsENG/Home/Home'
 import NavbarMobileEng from '../componenttsENG/Navbar/NavbarMobile'
+import HomeEng from '../componenttsENG/Home/Home'
 import AboutEng from '../componenttsENG/About/About'
 import ContactEng from '../componenttsENG/Contact/Contact'
 import IlmiyKengashEng from '../componenttsENG/Faoliyat/IlmiyKengash/IlmiyKengash'
@@ -85,8 +85,41 @@ import JangovorEng from '../componenttsENG/Tuzilma/Kafedralar/Jangovor/Jangovor'
 import DavlatHuquqiyEng from '../componenttsENG/Tuzilma/Kafedralar/DavlatHuquqiy/DavlatHuquqiy'
 import RahbariyatEng from '../componenttsENG/Tuzilma/Rahbariyat/Rahbariyat'
 import Home7Eng from '../componenttsENG/Home/HomeParts/Home7'
+
+
+import NavbarRus from '../componentsRUS/Navbar/Navbar'
+import NavbarMobileRus from '../componentsRUS/Navbar/NavbarMobile'
+import HomeRus from '../componentsRUS/Home/Home'
+import Home7Rus from '../componentsRUS/Home/HomeParts/Home7'
 import AboutRus from '../componentsRUS/About/About'
 import ContactRus from '../componentsRUS/Contact/Contact'
+import IlmiyKengashRus from '../componentsRUS/Faoliyat/IlmiyKengash/IlmiyKengash'
+import FilialRus from '../componentsRUS/Filial/Filial'
+import FooterRus from '../componentsRUS/Footer/Footer'
+import QabulRus from '../componentsRUS/Qabul/Qabul'
+import ArmRus from '../componentsRUS/Tuzilma/ARM/Arm'
+import ATRus from '../componentsRUS/Tuzilma/Bolimlar/AT/AT'
+import BuxgalteriyaRus from '../componentsRUS/Tuzilma/Bolimlar/Buxgalteriya/Buxgalteriya'
+import DirektoratRus from '../componentsRUS/Tuzilma/Bolimlar/Direktorat/Direktorat'
+import EkspluatatsiyaRus from '../componentsRUS/Tuzilma/Bolimlar/Ekspluatatsiya/Ekspluatatsiya'
+import IkkinchiRus from '../componentsRUS/Tuzilma/Bolimlar/Ikkinchi/Ikkinchi'
+import KadrlarRus from '../componentsRUS/Tuzilma/Bolimlar/Kadrlar/Kadrlar'
+import KonselyariyaArxivRus from '../componentsRUS/Tuzilma/Bolimlar/KonselyariyaArxiv/KonselyariyaArxiv'
+import MoliyaRus from '../componentsRUS/Tuzilma/Bolimlar/Moliya/Moliya'
+import OquvUslubiyRus from '../componentsRUS/Tuzilma/Bolimlar/OquvUslubiy/OquvUslubiy'
+import TarbiyaviyRus from '../componentsRUS/Tuzilma/Bolimlar/Tarbiyaviy/Tarbiyaviy'
+import BolimlarRus from '../componentsRUS/Tuzilma/Bolimlar/Bolimlar'
+import DekanatlarRus from '../componentsRUS/Tuzilma/Dekanatlar/Dekanatlar'
+import TayyorlashRus from '../componentsRUS/Tuzilma/Dekanatlar/Tayyorlash'
+import QaytaTayyorlashRus from '../componentsRUS/Tuzilma/Dekanatlar/QaytaTayyorlash'
+import DavlatHuquqiyRus from '../componentsRUS/Tuzilma/Kafedralar/DavlatHuquqiy/DavlatHuquqiy'
+import JangovorRus from '../componentsRUS/Tuzilma/Kafedralar/Jangovor/Jangovor'
+import JinoyatHuquqRus from '../componentsRUS/Tuzilma/Kafedralar/JinoyatHuquq/JinoyatHuquq'
+import UmumtalimRus from '../componentsRUS/Tuzilma/Kafedralar/Umumtalim/Umumtalim'
+import XususiyHuquqiyRus from '../componentsRUS/Tuzilma/Kafedralar/XususiyHuquq/XususiyHuquqiy'
+import KafedraRus from '../componentsRUS/Tuzilma/Kafedralar/Kafedra'
+import KengashRus from '../componentsRUS/Tuzilma/Kengash/Kengash'
+import RahbariyatRus from '../componentsRUS/Tuzilma/Rahbariyat/Rahbariyat'
 
 
 
@@ -425,98 +458,96 @@ function App(props) {
             <Fragment>
                 <Router>
                     <ScrollToTop />
-                    <NavbarEng />
-                    <NavbarMobileEng />
+                    <NavbarRus />
+                    <NavbarMobileRus />
                     <Switch>
-                        <Route exact path='/rus/'>
-                            <HomeEng />
+                        <Route exact path='/rus'>
+                            <HomeRus />
                         </Route>
                         <Route path='/rus/filial'>
-                            <Filial />
+                            <FilialRus />
                         </Route>
                         <Route path='/rus/tuzilma'>
-                            <Home7 />
+                            <Home7Rus />
                         </Route>
                         <Route path='/rus/kengash'>
-                            <Kengash />
+                            <KengashRus />
                         </Route>
                         <Route path='/rus/ilmiy-kengash'>
-                            <IlmiyKengash />
+                            <IlmiyKengashRus />
                         </Route>
                         <Route path='/rus/kafedralar'>
-                            <Kafedra />
+                            <KafedraRus />
                         </Route>
                         <Route path='/rus/rahbariyat'>
-                            <Rahbariyat />
+                            <RahbariyatRus />
                         </Route>
                         <Route path='/rus/dx-fanlar-kafedrasi'>
-                            <DavlatHuquqiy />
+                            <DavlatHuquqiyRus />
                         </Route>
                         <Route path='/rus/jh-fanlar-kafedrasi'>
-                            <JinoyatHuquq />
+                            <JinoyatHuquqRus />
                         </Route>
                         <Route path='/rus/u-fanlar-kafedrasi'>
-                            <Umumtalim />
+                            <UmumtalimRus />
                         </Route>
                         <Route path='/rus/kjt-fanlar-kafedrasi'>
-                            <Jangovor />
+                            <JangovorRus />
                         </Route>
                         <Route path='/rus/xh-fanlar-kafedrasi'>
-                            <XususiyHuquq />
+                            <XususiyHuquqiyRus />
                         </Route>
                         <Route path='/rus/bolimlar'>
-                            <Bolimlar />
+                            <BolimlarRus />
                         </Route>
                         <Route path='/rus/mi-bolimi'>
-                            <Moliya />
+                            <MoliyaRus />
                         </Route>
                         <Route path='/rus/at-bolimi'>
-                            <AT />
+                            <ATRus />
                         </Route>
                         <Route path='/rus/ex-bolimi'>
-                            <Ekspluatatsiya />
+                            <EkspluatatsiyaRus />
                         </Route>
                         <Route path='/rus/buxgalteriya-bolimi'>
-                            <Buxgalteriya />
+                            <BuxgalteriyaRus />
                         </Route>
                         <Route path='/rus/ka-bolimi'>
-                            <KonselyariyaArxiv />
+                            <KonselyariyaArxivRus />
                         </Route>
                         <Route path='/rus/kadrlar-bolimi'>
-                            <Kadrlar />
+                            <KadrlarRus />
                         </Route>
                         <Route path='/rus/ikkinchi-bolim'>
-                            <Ikkinchi />
+                            <IkkinchiRus />
                         </Route>
                         <Route path='/rus/ou-bolimi'>
-                            <OquvUslubiy />
+                            <OquvUslubiyRus />
                         </Route>
                         <Route path='/rus/axborot-resurs-markazi'>
-                            <Arm />
+                            <ArmRus />
                         </Route>
                         <Route path='/rus/dekanatlar'>
-                            <Dekanatlar/>
+                            <DekanatlarRus />
                         </Route>
                         <Route path='/rus/tayyorlash'>
-                            <Tayyorlash />
+                            <TayyorlashRus />
                         </Route>
                         <Route path='/rus/qayta-tayyorlash'>
-                            <QaytaTayyorlash />
+                            <QaytaTayyorlashRus />
                         </Route>
                         <Route path='/rus/bizhaqimizda'>
                             <AboutRus />
                         </Route>
                         <Route path='/rus/qabul'>
-                            <Qabul />
+                            <QabulRus />
                         </Route>
                         <Route path='/rus/aloqa'>
                             <ContactRus />
                         </Route>
-                        <Route path='/rus/dekanatlar'>
-                            <Dekanatlar />
-                        </Route>
+                      
                         <Route path='/rus/direktorat'>
-                            <Direktorat />
+                            <DirektoratRus />
                         </Route>
     
                         <Route path='/rus/fotolavhalar'>
@@ -526,7 +557,7 @@ function App(props) {
                             <h1>Hellooooooooooooo</h1>
                         </Route>
                         <Route path='/rus/tarbiyaviy-ishlar-bolimi'>
-                            <Tarbiyaviy />
+                            <TarbiyaviyRus />
                         </Route>
     
     
@@ -578,7 +609,7 @@ function App(props) {
                             <NewsDelete />
                         </Route>
                     </Switch>
-                    <Footer />
+                    <FooterRus />
                 </Router>
             </Fragment>
         )

@@ -6,7 +6,7 @@ import Jangovor4 from "./Components/Jangovor4";
 import Jangovor5 from "./Components/Jangovor5";
 import Jangovor6 from "./Components/Jangovor6";
 
-const Jangovor = () => {
+const JangovorRus = () => {
   return (
     <div>
       <Jangovor1 />
@@ -19,4 +19,4 @@ const Jangovor = () => {
   );
 };
 
-export default Jangovor;
+export default JangovorRus;

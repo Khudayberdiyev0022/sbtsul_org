@@ -6,7 +6,7 @@ import Davlat4 from "./Components/Davlat4";
 import Davlat5 from "./Components/Davlat5";
 import Davlat6 from "./Components/Davlat6";
 
-const DavlatHuquqiy = () => {
+const DavlatHuquqiyRus = () => {
   return (
     <div>
       <Davlat1 />
@@ -19,4 +19,4 @@ const DavlatHuquqiy = () => {
   );
 };
 
-export default DavlatHuquqiy;
+export default DavlatHuquqiyRus;

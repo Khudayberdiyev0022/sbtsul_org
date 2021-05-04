@@ -3,7 +3,7 @@ import Umum1 from "./Components/Umum1";
 import Umum2 from "./Components/Umum2";
 import Umum3 from "./Components/Umum3";
 
-const Umumtalim = () => {
+const UmumtalimRus = () => {
   return (
     <div>
       <Umum1 />
@@ -13,4 +13,4 @@ const Umumtalim = () => {
   );
 };
 
-export default Umumtalim;
+export default UmumtalimRus;

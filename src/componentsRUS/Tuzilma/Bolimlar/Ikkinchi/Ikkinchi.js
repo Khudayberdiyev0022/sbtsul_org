@@ -3,7 +3,7 @@ import Ikkinchi1 from "./Components/Ikkinchi1";
 import Ikkinchi2 from "./Components/Ikkinchi2";
 import Ikkinchi3 from "./Components/Ikkinchi3";
 
-const Buxgalteriya = () => {
+const IkkinchiRus = () => {
   return (
     <>
       <Ikkinchi1 />
@@ -13,4 +13,4 @@ const Buxgalteriya = () => {
   );
 };
 
-export default Buxgalteriya;
+export default IkkinchiRus;

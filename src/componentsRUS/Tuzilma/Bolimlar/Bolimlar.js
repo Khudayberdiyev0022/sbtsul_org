@@ -11,7 +11,7 @@ import { GiTeacher } from 'react-icons/gi'
 import { RiHistoryLine } from 'react-icons/ri'
 
 
-const Bolimlar = () => {
+const BolimlarRus = () => {
   return (
     <div className={style.main}>
       <div className={style.bgImg}>
@@ -83,7 +83,7 @@ const Bolimlar = () => {
   );
 };
 
-export default Bolimlar;
+export default BolimlarRus;
 
 
 

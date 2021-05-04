@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import style from "./Home7.module.css";
 import { structures } from "../ExtraCards/Photo";
 
-const Home7 = () => {
+const Home7Rus = () => {
   return (
     <div className={style.main}>
       <div className={style.linkBlock}>
@@ -25,4 +25,4 @@ const Home7 = () => {
   );
 };
 
-export default Home7;
+export default Home7Rus;

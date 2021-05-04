@@ -3,7 +3,7 @@ import Qabul1 from "./Qabul1";
 import Qabul2 from "./Qabul2";
 import Qabul3 from "./Qabul3";
 
-const Qabul = () => {
+const QabulRus = () => {
   return (
     <div>
       <Qabul1 />
@@ -13,4 +13,4 @@ const Qabul = () => {
   );
 };
 
-export default Qabul;
+export default QabulRus;

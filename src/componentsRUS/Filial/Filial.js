@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import Filial1 from './Components/Filial1'
 
-const Filial = () => {
+const FilialRus = () => {
     return (
         <Fragment>
             <Filial1/>
@@ -9,4 +9,4 @@ const Filial = () => {
     )
 }
 
-export default Filial
+export default FilialRus;

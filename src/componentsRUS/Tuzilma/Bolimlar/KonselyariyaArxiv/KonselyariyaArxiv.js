@@ -3,7 +3,7 @@ import KonAr1 from './Components/KonAr1'
 import KonAr2 from './Components/KonAr2'
 import KonAr3 from './Components/KonAr3'
 
-const KonselyariyaArxiv = () => {
+const KonselyariyaArxivRus = () => {
     return (
         <div>
             <KonAr1/>
@@ -13,4 +13,4 @@ const KonselyariyaArxiv = () => {
     )
 }
 
-export default KonselyariyaArxiv
+export default KonselyariyaArxivRus;
