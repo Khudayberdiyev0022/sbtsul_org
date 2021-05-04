@@ -4,8 +4,10 @@ import { FiMenu } from "react-icons/fi";
 import { VscClose } from "react-icons/vsc";
 import logo from "../../assets/icons/logoFT.svg";
 import { Link } from "react-router-dom";
+import { connect } from "react-redux";
+import { changeLanguage } from "../../actions";
 
-function NavbarMobile() {
+function NavbarMobile(props) {
   const [clicked, setClicked] = useState(false);
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
@@ -111,17 +113,35 @@ function NavbarMobile() {
           </div>
           <div className={style.languageBlock}>
             <div className={style.languageBox}>
-              <Link onClick={() => setClicked(false)} to="/uzb">
+              <Link
+                onClick={() => {
+                  setClicked(false);
+                  props.changeLanguage("UZB");
+                }}
+                to="/"
+              >
                 UZB
               </Link>
             </div>
             <div className={style.languageBox}>
-              <Link onClick={() => setClicked(false)} to="/rus">
+              <Link
+                onClick={() => {
+                  setClicked(false);
+                  props.changeLanguage("RUS");
+                }}
+                to="/rus"
+              >
                 RUS
               </Link>
             </div>
             <div className={style.languageBox}>
-              <Link onClick={() => setClicked(false)} to="eng">
+              <Link
+                onClick={() => {
+                  setClicked(false);
+                  props.changeLanguage("ENG");
+                }}
+                to="/eng"
+              >
                 ENG
               </Link>
             </div>
@@ -132,4 +152,4 @@ function NavbarMobile() {
   );
 }
 
-export default NavbarMobile;
+export default connect(null, { changeLanguage })(NavbarMobile);

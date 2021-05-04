@@ -1,0 +1,215 @@
+.main {
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 20;
+  transition: all 1s ease;
+  position: static;
+  margin-bottom: 40px;
+  position: fixed;
+}
+.mainStatic {
+  background-color: #0f2b53;
+  opacity: 0.9;
+}
+.mainFixed {
+  background-color: #0f2b53;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar a {
+  width: 10%;
+}
+.navbar img {
+  height: 100px;
+  width: 100%;
+}
+.titleAll {
+  width: 73%;
+  text-align: center;
+}
+.titleAll h2 {
+  font-size: 22px;
+  width: 90%;
+  color: #fff;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+  margin: 15px auto 0px auto;
+}
+
+.languageBlock {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 18%;
+  margin-right: 20px;
+  justify-content: space-around;
+}
+.languageBox {
+  padding: 10px;
+  border: 1px solid rgb(150, 150, 150);
+  margin: 20px 0px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: ease-in-out 0.4s all;
+}
+
+.languageBox:hover {
+  border: 1px solid #fff;
+}
+
+.languageBox a {
+  font-weight: 500;
+  text-decoration: none;
+  color: rgb(150, 150, 150);
+}
+.languageBox:hover a {
+  color: #fff;
+  transition: ease-in-out 0.4s all;
+}
+.languageBox a:focus {
+  color: #fff;
+  transition: ease-in-out 0.4s all;
+}
+
+.titleName {
+  width: 123%;
+  height: 50px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: auto;
+}
+.navbarLink {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0px 5px;
+  position: relative;
+  height: 100%;
+}
+
+.navbarLink .hoverDiv {
+  transition: all 1s ease;
+  display: none;
+}
+
+.navbarLink .hoverDiv:hover {
+  display: flex;
+}
+.navbarLink:hover .hoverDiv {
+  position: absolute;
+  top: 50px;
+  left: -15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  padding: 15px;
+  width: 200px;
+  background: #0f2b53;
+  transition: all 1s ease;
+}
+.navbarLink .hoverDiv a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 1s ease;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  display: flex;
+}
+.navbarLink .hoverDiv a:hover {
+  color: rgb(180, 180, 180);
+}
+.navbarLink .hoverDiv a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 1px;
+  width: 0%;
+  background-color: #fff;
+  transition: all 1s ease;
+  left: 0;
+}
+.navbarLink .hoverDiv a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 1px;
+  width: 0%;
+  background-color: #0f2b53;
+  transition: all 1s ease;
+}
+.hoverDiv a:hover::after,
+.hoverDiv a:hover::before {
+  width: 100%;
+  transition: all 1s ease;
+}
+
+.navbarLink svg {
+  vertical-align: text-top;
+}
+.navbarLink:hover svg {
+  transform: rotate(-180deg);
+}
+
+.navbarLink a {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(150, 150, 150);
+  position: relative;
+  transition: all 0.4s linear;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.navbarLink a:focus {
+  color: #fff;
+  transition: all 0.4s linear;
+}
+.navbarLink a span {
+  width: 0;
+  height: 2px;
+  background: linear-gradient(to bottom, white, #0f2b53, #fff);
+  position: absolute;
+  top: 40px;
+  left: 0;
+  transition: all 0.4s linear;
+}
+.navbarLink a:hover span {
+  width: 100%;
+}
+.navbarLink a:focus span {
+  background-color: #fff;
+  width: 100%;
+}
+.navbarLink a:hover {
+  color: #ffffff;
+  opacity: 0.9;
+  transition: all 0.4s ease-in-out;
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+    display: none;
+  }
+}

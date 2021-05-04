@@ -1,0 +1,36 @@
+.main {
+  width: 100%;
+  min-height: 40vh;
+  margin: 20px 0px;
+}
+.container {
+  width: 90%;
+  margin: auto;
+  height: 100%;
+}
+.image {
+  width: 200px;
+  height: 100px;
+  background-position: center;
+  background-size: contain;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  border: 1px solid;
+  box-shadow: 0px 0px 10px 0px;
+  height: 180px;
+  border-radius: 5px;
+}
+.card h4 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: #0f2b53;
+}
+.main button {
+  background-color: #fff !important;
+}

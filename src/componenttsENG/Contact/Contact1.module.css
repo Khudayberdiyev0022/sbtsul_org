@@ -1,0 +1,212 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  height: 100%;
+  padding: 150px 0;
+}
+.inMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+}
+.inTop {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  margin-bottom: 35px;
+}
+.inTop:hover .icon {
+  border-color: #0f2b54;
+  transition: all 0.5s ease;
+}
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #adadad;
+  margin-right: 20px;
+}
+.icon svg {
+  width: 25px;
+  height: 25px;
+  color: #adadad;
+  transition: all 0.5s ease;
+}
+.inTop:hover .icon > svg {
+  color: #0f2b54;
+  transition: all 0.5s ease;
+}
+.infoTop {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  max-width: 50%;
+}
+.inTop:hover .infoTop > h3 {
+  color: #0f2b54;
+  transition: all 0.5s ease;
+}
+.infoTop h3 {
+  color: #adadad;
+  font-size: 22px;
+  font-weight: 550;
+  line-height: 1.5;
+}
+.inTop:hover .infoTop > p {
+  color: #0f2b54;
+  transition: all 0.5s ease;
+}
+.infoTop p {
+  color: #adadad;
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 1.5;
+}
+
+.infoTop a {
+  color: #adadad;
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.inTop:hover a {
+  color: #0f2b54;
+  text-decoration: underline;
+  transition: all 0.5s ease;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  height: 100%;
+}
+.map {
+  width: 100%;
+  height: 100%;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 100%;
+  margin: 0;
+}
+.inputDiv h2 {
+  color: #0f2b54;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+.inputDiv form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.inputDiv input {
+  height: 50px;
+  width: 100%;
+  font-size: 16px;
+  color: rgb(173, 173, 173);
+  padding-left: 20px;
+  font-weight: 300;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(225, 225, 225, 0.5);
+  border-radius: 10px;
+  border-image: initial;
+  background: 0px 0px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.inputDiv input:focus {
+  transition: all 0.5s ease;
+  box-shadow: 2px 2px 10px #0f2b54;
+}
+.inputDiv textarea {
+  height: 100px;
+  width: 100%;
+  font-size: 16px;
+  color: rgb(173, 173, 173);
+  padding-left: 20px;
+  font-weight: 300;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(225, 225, 225, 0.5);
+  border-image: initial;
+  border-radius: 10px;
+  background: 0px 0px;
+  outline: none;
+  transition: all 0s ease 0s, all 0.3s ease 0s;
+}
+.inputDiv textarea:focus {
+  transition: all 0.5s ease;
+  box-shadow: 2px 2px 10px #0f2b54;
+}
+.inputDiv button {
+  width: 100%;
+  margin: 0;
+  height: 50px;
+  color: #fff;
+  background-color: #0f2b54;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.inputDiv button:hover {
+  background-color: #0f2b54;
+  transition: all 0.5s ease;
+}
+.inputDiv button:active {
+  transform: scale(0.9);
+  transition: all 0.2s ease;
+}
+
+@media screen and (max-width: 720px) {
+  .flex {
+    flex-direction: column;
+  }
+  .inputDiv {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 756px) {
+  .top {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

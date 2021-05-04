@@ -5,7 +5,7 @@ import nurxodjayevDR from "../../../assets/img/nurxodjayevDR.jpg";
 import yusupovDR from "../../../assets/img/yusupovDR.jpg";
 import { Link } from "react-router-dom";
 
-const Kadrlar = () => {
+const Direktorat = () => {
   return (
     <div className={style.main}>
       <div className={style.container}>
@@ -15,7 +15,7 @@ const Kadrlar = () => {
             Toshkent davlat yuridik universitetining Ixtisoslashtirilgan filiali
             Direktorati O‘zbekiston Respublikasi Prezidentining 2019-yil
             7-fevraldagi “Huquqbuzarliklar profilaktikasi va jamoat xafsizligini
-            ta’minlash sohasida kadrlar tayyorlash tizimini takomillashtirishga
+            ta’minlash sohasida Direktorat tayyorlash tizimini takomillashtirishga
             doir qo‘shimcha chora-tadbirlar to‘g‘risida”gi PQ-4166-sonli
             qaroriga muvofiq tashkil etilgan.{" "}
           </p>
@@ -233,4 +233,4 @@ const Kadrlar = () => {
   );
 };
 
-export default Kadrlar;
+export default Direktorat;

@@ -1,0 +1,198 @@
+.main {
+  width: 100%;
+  /* height: 100vh; */
+  padding: 80px 0;
+  background: #0f2b53;
+}
+.container {
+  width: 80%;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.leftBlock {
+  width: 100%;
+  /* height: 80%; */
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid #fff; */
+}
+.leftBlock .box {
+  width: 90%;
+  /* border: 1px solid #fff; */
+  /* height: 50%; */
+}
+.box img {
+  width: inherit;
+}
+.rightBlock {
+  width: 100%;
+  margin: auto;
+  padding-top: 10px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+}
+.rightBlock img {
+  width: 100%;
+  /* height: 50%; */
+  /* background-size: contain; */
+}
+.linkBlock {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-left: auto;
+  padding-bottom: 50px;
+}
+.linkBlock a {
+  width: 100%;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 3em;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+}
+.linkBlock a::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 50%;
+  width: 1%;
+  height: 2px;
+  background-color: #fff;
+  text-align: center;
+  transition: all 1s ease;
+}
+.linkBlock a:hover::after {
+  transition: all 1s ease;
+  left: 0%;
+  width: 100%;
+}
+.container h4 {
+  font-size: 1.5em;
+  color: #fff;
+  padding: 10px 0;
+  margin: 0;
+  border-bottom: 2px solid rgb(194, 194, 194);
+  width: 90%;
+}
+
+.container p {
+  font-weight: 300;
+  font-size: 1.2em;
+  color: #fff;
+  /* padding: 10px 0; */
+  margin: 0;
+  opacity: 0.7;
+  width: 80%;
+}
+.rightBlock p {
+  font-weight: 300;
+  font-size: 1.2em;
+  color: #fff;
+  /* padding: 10px 0; */
+  margin: 0;
+  opacity: 0.7;
+  width: 100%;
+}
+.rightBlock h4 {
+  font-size: 1.5em;
+  color: #fff;
+  padding: 10px 0;
+  margin: 0;
+  border-bottom: 2px solid rgb(194, 194, 194);
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .linkBlock a {
+    font-size: 2em;
+  }
+  .leftBlock {
+    flex-direction: column;
+  }
+  .leftBlock .box {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  .container h4 {
+    width: 100%;
+  }
+  .container p {
+    width: 100%;
+    font-size: 16px;
+  }
+  .rightBlock p {
+    font-size: 16px;
+  }
+}
+
+.button {
+  padding: 5px 20px;
+  font-size: 1.2em;
+  font-weight: 300;
+  margin: 20px 0px;
+  border-radius: 4px;
+  background: #e1e7ee;
+  outline: none;
+  cursor: pointer;
+  width: 120px;
+  position: relative;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+.bgColor {
+  transition: all 0.5s ease;
+  background-color: #ffffff;
+  position: absolute;
+  top: 30px;
+  /* transform: scale(3); */
+  width: 60px;
+  height: 60px;
+  border-radius: 30%;
+}
+.button:hover .bgColor {
+  transform: scale(3.5) rotateZ(360deg);
+  border-radius: 50%;
+}
+.button:hover a {
+  transition: all 0.5s ease;
+  color: #0f2b53;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.button a {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  color: #3771c2;
+  z-index: 10;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .container h4 {
+    font-size: 18px;
+  }
+}
