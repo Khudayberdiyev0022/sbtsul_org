@@ -85,6 +85,8 @@ import JangovorEng from '../componenttsENG/Tuzilma/Kafedralar/Jangovor/Jangovor'
 import DavlatHuquqiyEng from '../componenttsENG/Tuzilma/Kafedralar/DavlatHuquqiy/DavlatHuquqiy'
 import RahbariyatEng from '../componenttsENG/Tuzilma/Rahbariyat/Rahbariyat'
 import Home7Eng from '../componenttsENG/Home/HomeParts/Home7'
+import AboutRus from '../componentsRUS/About/About'
+import ContactRus from '../componentsRUS/Contact/Contact'
 
 
 
@@ -426,104 +428,104 @@ function App(props) {
                     <NavbarEng />
                     <NavbarMobileEng />
                     <Switch>
-                        <Route exact path='/eng/'>
+                        <Route exact path='/rus/'>
                             <HomeEng />
                         </Route>
-                        <Route path='/eng/filial'>
+                        <Route path='/rus/filial'>
                             <Filial />
                         </Route>
-                        <Route path='/eng/tuzilma'>
+                        <Route path='/rus/tuzilma'>
                             <Home7 />
                         </Route>
-                        <Route path='/eng/kengash'>
+                        <Route path='/rus/kengash'>
                             <Kengash />
                         </Route>
-                        <Route path='/eng/ilmiy-kengash'>
+                        <Route path='/rus/ilmiy-kengash'>
                             <IlmiyKengash />
                         </Route>
-                        <Route path='/eng/kafedralar'>
+                        <Route path='/rus/kafedralar'>
                             <Kafedra />
                         </Route>
-                        <Route path='/eng/rahbariyat'>
+                        <Route path='/rus/rahbariyat'>
                             <Rahbariyat />
                         </Route>
-                        <Route path='/eng/dx-fanlar-kafedrasi'>
+                        <Route path='/rus/dx-fanlar-kafedrasi'>
                             <DavlatHuquqiy />
                         </Route>
-                        <Route path='/eng/jh-fanlar-kafedrasi'>
+                        <Route path='/rus/jh-fanlar-kafedrasi'>
                             <JinoyatHuquq />
                         </Route>
-                        <Route path='/eng/u-fanlar-kafedrasi'>
+                        <Route path='/rus/u-fanlar-kafedrasi'>
                             <Umumtalim />
                         </Route>
-                        <Route path='/eng/kjt-fanlar-kafedrasi'>
+                        <Route path='/rus/kjt-fanlar-kafedrasi'>
                             <Jangovor />
                         </Route>
-                        <Route path='/eng/xh-fanlar-kafedrasi'>
+                        <Route path='/rus/xh-fanlar-kafedrasi'>
                             <XususiyHuquq />
                         </Route>
-                        <Route path='/eng/bolimlar'>
+                        <Route path='/rus/bolimlar'>
                             <Bolimlar />
                         </Route>
-                        <Route path='/eng/mi-bolimi'>
+                        <Route path='/rus/mi-bolimi'>
                             <Moliya />
                         </Route>
-                        <Route path='/eng/at-bolimi'>
+                        <Route path='/rus/at-bolimi'>
                             <AT />
                         </Route>
-                        <Route path='/eng/ex-bolimi'>
+                        <Route path='/rus/ex-bolimi'>
                             <Ekspluatatsiya />
                         </Route>
-                        <Route path='/eng/buxgalteriya-bolimi'>
+                        <Route path='/rus/buxgalteriya-bolimi'>
                             <Buxgalteriya />
                         </Route>
-                        <Route path='/eng/ka-bolimi'>
+                        <Route path='/rus/ka-bolimi'>
                             <KonselyariyaArxiv />
                         </Route>
-                        <Route path='/eng/kadrlar-bolimi'>
+                        <Route path='/rus/kadrlar-bolimi'>
                             <Kadrlar />
                         </Route>
-                        <Route path='/eng/ikkinchi-bolim'>
+                        <Route path='/rus/ikkinchi-bolim'>
                             <Ikkinchi />
                         </Route>
-                        <Route path='/eng/ou-bolimi'>
+                        <Route path='/rus/ou-bolimi'>
                             <OquvUslubiy />
                         </Route>
-                        <Route path='/eng/axborot-resurs-markazi'>
+                        <Route path='/rus/axborot-resurs-markazi'>
                             <Arm />
                         </Route>
-                        <Route path='/eng/dekanatlar'>
+                        <Route path='/rus/dekanatlar'>
                             <Dekanatlar/>
                         </Route>
-                        <Route path='/eng/tayyorlash'>
+                        <Route path='/rus/tayyorlash'>
                             <Tayyorlash />
                         </Route>
-                        <Route path='/eng/qayta-tayyorlash'>
+                        <Route path='/rus/qayta-tayyorlash'>
                             <QaytaTayyorlash />
                         </Route>
-                        <Route path='/eng/bizhaqimizda'>
-                            <AboutEng />
+                        <Route path='/rus/bizhaqimizda'>
+                            <AboutRus />
                         </Route>
-                        <Route path='/eng/qabul'>
+                        <Route path='/rus/qabul'>
                             <Qabul />
                         </Route>
-                        <Route path='/eng/aloqa'>
-                            <Contact />
+                        <Route path='/rus/aloqa'>
+                            <ContactRus />
                         </Route>
-                        <Route path='/eng/dekanatlar'>
+                        <Route path='/rus/dekanatlar'>
                             <Dekanatlar />
                         </Route>
-                        <Route path='/eng/direktorat'>
+                        <Route path='/rus/direktorat'>
                             <Direktorat />
                         </Route>
     
-                        <Route path='/eng/fotolavhalar'>
+                        <Route path='/rus/fotolavhalar'>
                             <Pictures />
                         </Route>
-                        <Route path='/eng/each/news/:id'>
+                        <Route path='/rus/each/news/:id'>
                             <h1>Hellooooooooooooo</h1>
                         </Route>
-                        <Route path='/eng/tarbiyaviy-ishlar-bolimi'>
+                        <Route path='/rus/tarbiyaviy-ishlar-bolimi'>
                             <Tarbiyaviy />
                         </Route>
     

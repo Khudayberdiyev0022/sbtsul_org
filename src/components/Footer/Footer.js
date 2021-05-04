@@ -1,19 +1,20 @@
-import React, { useEffect, useadmin } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import style from "./Footer.module.css";
 import logoFooter from "../../assets/icons/logoFooter.svg";
 
 const Footer = () => {
-  const [admin, setadmin] = useadmin(false)
+  const [admin, setadmin] = useState(false);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
-    if (window.location.pathname.includes('admin')) {
-      setadmin(true)
+    if (window.location.pathname.includes("admin")) {
+      setadmin(true);
     } else {
-      setadmin(false)
+      setadmin(false);
     }
-  })
+  });
   if (admin) {
-    return null
+    return null;
   } else {
     return (
       <div className={style.main}>
@@ -74,8 +75,6 @@ const Footer = () => {
       </div>
     );
   }
-
-
 };
 
 export default Footer;
