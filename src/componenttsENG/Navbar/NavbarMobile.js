@@ -55,7 +55,7 @@ function NavbarMobile(props) {
                 datatext="Filial"
                 to="/filial"
               >
-                Filial <span></span>
+                Branch <span></span>
               </Link>
             </div>
             <div className={style.navbarLink}>
@@ -64,7 +64,7 @@ function NavbarMobile(props) {
                 datatext="Tuzilma"
                 to="/tuzilma"
               >
-                Tuzilma <span></span>
+                Structure <span></span>
               </Link>
             </div>
             <div className={style.navbarLink}>
@@ -73,7 +73,7 @@ function NavbarMobile(props) {
                 datatext="Faoliyat"
                 to="/faoliyat"
               >
-                Faoliyat <span></span>
+                Activity <span></span>
               </Link>
             </div>
             <div className={style.navbarLink}>
@@ -82,7 +82,7 @@ function NavbarMobile(props) {
                 datatext="Talabalar"
                 to="/talabalar"
               >
-                Talabalar <span></span>
+                Students <span></span>
               </Link>
             </div>
             <div className={style.navbarLink}>
@@ -91,7 +91,7 @@ function NavbarMobile(props) {
                 datatext="Qabul"
                 to="/qabul"
               >
-                Qabul <span></span>
+                Acceptance <span></span>
               </Link>
             </div>
             <div className={style.navbarLink}>
@@ -100,7 +100,7 @@ function NavbarMobile(props) {
                 datatext="Biz haqimizda"
                 to="/bizhaqimizda"
               >
-                Biz haqimizda <span></span>
+                About Us <span></span>
               </Link>
             </div>
             <div className={style.navbarLink}>
@@ -109,7 +109,7 @@ function NavbarMobile(props) {
                 datatext="Aloqa"
                 to="/aloqa"
               >
-                Aloqa <span></span>
+                Contact <span></span>
               </Link>
             </div>
           </div>

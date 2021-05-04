@@ -145,55 +145,55 @@ function NavbarRus(props) {
               <div className={style.titleName}>
                 <div className={style.navbarLink}>
                   <NavLink to="/filial" activeStyle={{ color: "white" }}>
-                    Filial <span></span>
+                    Филиал <span></span>
                   </NavLink>
                 </div>
                 <div className={style.navbarLink}>
                   <NavLink to="/tuzilma" activeStyle={{ color: "white" }}>
-                    Tuzilma <span></span>
+                    Структура <span></span>
                     <AiFillCaretDown />
                   </NavLink>
                   <div className={style.hoverDiv}>
-                    <NavLink to="/rus/kengash">Kengash</NavLink>
-                    <NavLink to="/rus/rahbariyat">Rahbariyat</NavLink>
+                    <NavLink to="/rus/kengash">Совет</NavLink>
+                    <NavLink to="/rus/rahbariyat">Руководство</NavLink>
                     {/* <NavLink to="/rus/direktorat">Direktorat</NavLink> */}
-                    <NavLink to="/rus/dekanatlar">Dekanatlar</NavLink>
-                    <NavLink to="/rus/kafedralar">Kafedralar</NavLink>
-                    <NavLink to="/rus/bolimlar">Bo'limlar</NavLink>
+                    <NavLink to="/rus/dekanatlar">Деканаты</NavLink>
+                    <NavLink to="/rus/kafedralar">Кафедры</NavLink>
+                    <NavLink to="/rus/bolimlar">Отделы</NavLink>
                     <NavLink to="/rus/axborot-resurs-markazi">
-                      Axborot Resurs markazi
+                    Информационно-ресурсный центр
                     </NavLink>
                   </div>
                 </div>
                 <div className={style.navbarLink}>
                   {/* /Link ='/faoliyat' */}
                   <NavLink to="/rus/faoliyat" activeStyle={{ color: "white" }}>
-                    Faoliyat <span></span>
+                  Деятельность <span></span>
                     <AiFillCaretDown />
                   </NavLink>
                   <div className={style.hoverDiv}>
-                    <NavLink to="/rus/ilmiy-kengash">Ilmiy Kengash</NavLink>
-                    <NavLink to="/rus/xalqaro-hamkorlik">Xalqaro Hamkorlik</NavLink>
+                    <NavLink to="/rus/ilmiy-kengash">Научная Деятельность</NavLink>
+                    <NavLink to="/rus/xalqaro-hamkorlik">Международное Сотрудничество</NavLink>
                   </div>
                 </div>
                 <div className={style.navbarLink}>
                   <NavLink to="/rus/talabalar" activeStyle={{ color: "white" }}>
-                    Talabalar <span></span>
+                    Студенты <span></span>
                   </NavLink>
                 </div>
                 <div className={style.navbarLink}>
                   <NavLink to="/rus/qabul" activeStyle={{ color: "white" }}>
-                    Qabul <span></span>
+                    Приём <span></span>
                   </NavLink>
                 </div>
                 <div className={style.navbarLink}>
                   <NavLink to="/rus/bizhaqimizda" activeStyle={{ color: "white" }}>
-                    Biz haqimizda <span></span>
+                    О нас <span></span>
                   </NavLink>
                 </div>
                 <div className={style.navbarLink}>
                   <NavLink to="/rus/aloqa" activeStyle={{ color: "white" }}>
-                    Aloqa <span></span>
+                    Контакт <span></span>
                   </NavLink>
                 </div>
               </div>
