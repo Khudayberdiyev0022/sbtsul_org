@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import About1 from './Components/About1'
 
-const About = () => {
+const AboutRus = () => {
     return (
         <Fragment>
             <About1/>
@@ -9,4 +9,4 @@ const About = () => {
     )
 }
 
-export default About
+export default AboutRus;

@@ -263,7 +263,7 @@ function App(props) {
                     <NavbarEng />
                     <NavbarMobileEng />
                     <Switch>
-                        <Route exact path='/eng/'>
+                        <Route exact path='/eng'>
                             <HomeEng />
                         </Route>
                         <Route path='/eng/filial'>

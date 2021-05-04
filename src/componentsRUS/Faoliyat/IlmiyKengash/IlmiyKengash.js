@@ -2,7 +2,7 @@ import React from "react";
 import style from "./IlmiyKengash.module.css";
 // import Rotate from "react-reveal/Rotate";
 
-const IlmiyKengash = () => {
+const IlmiyKengashRus = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
@@ -29,4 +29,4 @@ const IlmiyKengash = () => {
   );
 };
 
-export default IlmiyKengash;
+export default IlmiyKengashRus;

@@ -1,18 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useadmin } from "react";
 import { Link } from "react-router-dom";
 import style from "./Footer.module.css";
 import logoFooter from "../../assets/icons/logoFooter.svg";
 
 const Footer = () => {
-  const [state, setstate] = useState(false)
+  const [admin, setadmin] = useadmin(false)
   useEffect(() => {
     if (window.location.pathname.includes('admin')) {
-      setstate(true)
+      setadmin(true)
     } else {
-      setstate(false)
+      setadmin(false)
     }
   })
-  if (state) {
+  if (admin) {
     return null
   } else {
     return (

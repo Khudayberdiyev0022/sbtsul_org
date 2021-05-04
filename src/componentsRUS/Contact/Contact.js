@@ -1,7 +1,7 @@
 import React from 'react'
 import Contact1 from './Contact1'
 
-const Contact = () => {
+const ContactRus = () => {
     return (
         <div>
             <Contact1 /> 
@@ -9,4 +9,4 @@ const Contact = () => {
     )
 }
 
-export default Contact
+export default ContactRus;

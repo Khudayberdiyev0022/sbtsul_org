@@ -115,7 +115,7 @@ const Navbar = (props) => {
               <div className={style.languageBox}>
                 <NavLink
                   onClick={() => props.changeLanguage("RUS")}
-                  to="/"
+                  to="/rus"
                   activeStyle={{ color: "white" }}
                 >
                   RUS
@@ -124,7 +124,7 @@ const Navbar = (props) => {
               <div className={style.languageBox}>
                 <NavLink
                   onClick={() => props.changeLanguage("ENG")}
-                  to="/"
+                  to="/eng"
                   activeStyle={{ color: "white" }}
                 >
                   ENG
