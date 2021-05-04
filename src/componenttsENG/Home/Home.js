@@ -1,5 +1,5 @@
 import React from "react";
-import Home1 from "./HomeParts/Home1";
+// import Home1 from "./HomeParts/Home1";
 import Home2 from "./HomeParts/Home2";
 import Home3 from "./HomeParts/Home3";
 import Home4 from "./HomeParts/Home4";
@@ -11,7 +11,6 @@ import Home8 from "./HomeParts/Home8";
 const HomeEng = () => {
   return (
     <div>
-      <Home1 />
       <Home2 />
       <Home7 />
       <Home3 />

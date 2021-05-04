@@ -4,10 +4,12 @@ import { FiMenu } from "react-icons/fi";
 import { VscClose } from "react-icons/vsc";
 import logo from "../../assets/icons/logoFT.svg";
 import { Link } from "react-router-dom";
-import { connect } from "react-redux";
-import { changeLanguage } from "../../actions";
+import { connect } from 'react-redux'
+import { changeLanguage } from '../../actions'
 
-function NavbarMobileEng(props) {
+
+
+function NavbarMobile(props) {
   const [clicked, setClicked] = useState(false);
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
@@ -30,7 +32,7 @@ function NavbarMobileEng(props) {
     >
       <div className={style.container}>
         <div className={style.mainPart}>
-          <Link onClick={() => setClicked(false)} to="/eng">
+          <Link onClick={() => setClicked(false)} to="/">
             <img src={logo} alt="logo" />
           </Link>
           {clicked ? (
@@ -51,97 +53,88 @@ function NavbarMobileEng(props) {
               <Link
                 onClick={() => setClicked(false)}
                 datatext="Filial"
-                to="/eng/filial"
+                to="/filial"
               >
-                Branch <span></span>
+                Filial <span></span>
               </Link>
             </div>
             <div className={style.navbarLink}>
               <Link
                 onClick={() => setClicked(false)}
                 datatext="Tuzilma"
-                to="/eng/tuzilma"
+                to="/tuzilma"
               >
-                Structure <span></span>
+                Tuzilma <span></span>
               </Link>
             </div>
             <div className={style.navbarLink}>
               <Link
                 onClick={() => setClicked(false)}
                 datatext="Faoliyat"
-                to="/eng/faoliyat"
+                to="/faoliyat"
               >
-                Activity <span></span>
+                Faoliyat <span></span>
               </Link>
             </div>
             <div className={style.navbarLink}>
               <Link
                 onClick={() => setClicked(false)}
                 datatext="Talabalar"
-                to="/eng/talabalar"
+                to="/talabalar"
               >
-                Students <span></span>
+                Talabalar <span></span>
               </Link>
             </div>
             <div className={style.navbarLink}>
               <Link
                 onClick={() => setClicked(false)}
                 datatext="Qabul"
-                to="/eng/qabul"
+                to="/qabul"
               >
-                Acceptance <span></span>
+                Qabul <span></span>
               </Link>
             </div>
             <div className={style.navbarLink}>
               <Link
                 onClick={() => setClicked(false)}
                 datatext="Biz haqimizda"
-                to="/eng/bizhaqimizda"
+                to="/bizhaqimizda"
               >
-                About Us <span></span>
+                Biz haqimizda <span></span>
               </Link>
             </div>
             <div className={style.navbarLink}>
               <Link
                 onClick={() => setClicked(false)}
                 datatext="Aloqa"
-                to="/eng/aloqa"
+                to="/aloqa"
               >
-                Communication <span></span>
+                Aloqa <span></span>
               </Link>
             </div>
           </div>
           <div className={style.languageBlock}>
             <div className={style.languageBox}>
-              <Link
-                onClick={() => {
-                  setClicked(false);
-                  props.changeLanguage("UZB");
-                }}
-                to="/"
-              >
+              <Link onClick={() => {
+                setClicked(false)
+                props.changeLanguage('UZB')
+              }} to="/uzb">
                 UZB
               </Link>
             </div>
             <div className={style.languageBox}>
-              <Link
-                onClick={() => {
-                  setClicked(false);
-                  props.changeLanguage("RUS");
-                }}
-                to="/rus"
-              >
+              <Link onClick={() => {
+                setClicked(false)
+                props.changeLanguage('RUS')
+              }} to="/rus">
                 RUS
               </Link>
             </div>
             <div className={style.languageBox}>
-              <Link
-                onClick={() => {
-                  setClicked(false);
-                  props.changeLanguage("ENG");
-                }}
-                to="/eng"
-              >
+              <Link onClick={() => {
+                setClicked(false)
+                props.changeLanguage('ENG')
+              }} to="eng">
                 ENG
               </Link>
             </div>
@@ -152,4 +145,4 @@ function NavbarMobileEng(props) {
   );
 }
 
-export default connect(null, { changeLanguage })(NavbarMobileEng);
+export default connect(null, { changeLanguage })(NavbarMobile);

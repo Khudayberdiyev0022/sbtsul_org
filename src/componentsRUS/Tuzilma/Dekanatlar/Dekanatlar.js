@@ -6,12 +6,12 @@ import style from './Dekanatlar.module.css'
 const DekanatlarRus = () => {
   return (
     <div className={style.main}>
-      <h1>DEKANATLAR</h1>
+      <h1>Деканаты</h1>
       <div className={style.container}>
-        <Link to="/tayyorlash">
+        <Link to="/rus/tayyorlash">
           <span>ДЕКАНАТ ПОДГОТОВИТЕЛЬНЫХ КУРСОВ</span>
         </Link>
-        <Link to="/qayta-tayyorlash">
+        <Link to="/rus/qayta-tayyorlash">
           <span>ДЕКАНАТ КУРСОВ ПЕРЕПОДГОТОВКИ</span>
         </Link>
       </div>
@@ -19,7 +19,7 @@ const DekanatlarRus = () => {
         <Link to="/tayyorlash">
           <span>ДЕКАНАТ ПОДГОТОВИТЕЛЬНЫХ КУРСОВ</span>
         </Link>
-        <Link to="/qayta-tayyorlash">
+        <Link to="/rus/qayta-tayyorlash">
           <span>ДЕКАНАТ КУРСОВ ПЕРЕПОДГОТОВКИ</span>
         </Link>
       </div>

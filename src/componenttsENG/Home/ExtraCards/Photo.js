@@ -47,32 +47,32 @@ export const pictures = [
 export const structures = [
   {
     icon: icon1,
-    title: "Kengash",
+    title: "Council",
     to: "/kengash",
   },
   {
     icon: icon2,
-    title: "Rahbariyat",
+    title: "Directors",
     to: "/rahbariyat",
   },
   {
     icon: icon3,
-    title: "Dekanatlar",
+    title: "Dean's offices",
     to: "/dekanatlar",
   },
   {
     icon: icon4,
-    title: "Kafedralar",
+    title: "Chairs",
     to: "/kafedralar",
   },
   {
     icon: icon5,
-    title: "Bo'limlar",
+    title: "Sections",
     to: "/bolimlar",
   },
   {
     icon: icon6,
-    title: "Axborot-Resurs Markazi",
+    title: "Information Resource Center",
     to: "/axborot-resurs-markazi",
   },
 ];

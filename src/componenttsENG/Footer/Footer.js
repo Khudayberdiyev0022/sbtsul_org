@@ -39,7 +39,7 @@ const FooterEng = () => {
           </a>
           <a
             rel="noreferrer"
-            target="_blank"
+            target="__blank"
             href="https://t.me/TDYU_ixtisoslashtirilgan_filiali"
           >
             Telegram
@@ -50,7 +50,7 @@ const FooterEng = () => {
           </a>
           <a
             rel="noreferrer"
-            target="_blank"
+            target="__blank"
             href="https://www.instagram.com/invites/contact/?i=1z2xa69waflg&utm_content=k91uf44"
           >
             Instagram

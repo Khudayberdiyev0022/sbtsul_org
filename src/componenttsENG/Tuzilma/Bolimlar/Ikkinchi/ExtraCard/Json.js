@@ -6,7 +6,7 @@ export const teachers = [
     {
         img: t1,
         name: 'Niyazov Maqsud Kadamovich',
-        abTeach1: 'ikkinchi bo`lim muhandisi, 2-darajali adliya maslahatchisi.',
+        abTeach1: 'Engineer of the second department, Counselor of Justice of the 2nd level.',
         abTeach2: '',
         yutuqlari:[
             {
@@ -18,7 +18,7 @@ export const teachers = [
     {
         img: t2,
         name: 'Kiyamova Nasiba Gulmuradovna',
-        abTeach1: 'ikkinchi bo`lim muhandisi.',
+        abTeach1: 'engineer of the second department.',
         abTeach2: '',
         email: 'nasibakiyamova20@mail.ru'
     },

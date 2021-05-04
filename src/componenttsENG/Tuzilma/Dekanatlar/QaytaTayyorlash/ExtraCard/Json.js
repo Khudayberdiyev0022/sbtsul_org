@@ -37,4 +37,4 @@ export const teachers = [
 //     ]
 // },
 
-export const nameKaf = `${"Qayta tayyorlash kurslari "}`;
+export const nameKaf = `${"Retraining courses"}`;

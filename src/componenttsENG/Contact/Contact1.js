@@ -87,14 +87,14 @@ const Contact1 = () => {
             <form onSubmit={submit}>
               <input
                 type="text"
-                placeholder="Ismingiz"
+                placeholder="Name"
                 name="name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
               <input
                 type="text"
-                placeholder="Familiyangiz"
+                placeholder="Surname"
                 name="site"
                 value={surName}
                 onChange={(e) => setSurName(e.target.value)}
@@ -110,7 +110,7 @@ const Contact1 = () => {
               <textarea
                 name="message"
                 value={message}
-                placeholder="Biz bilan bog'lanishdan maqsadingiz"
+                placeholder="Your purpose in contacting us"
                 onChange={(e) => setMessage(e.target.value)}
               />
               <button type="submit">Send message</button>

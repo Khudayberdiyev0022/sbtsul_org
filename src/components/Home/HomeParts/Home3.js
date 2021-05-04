@@ -41,9 +41,11 @@ const Home3 = () => {
             oʼquv-tarbiyaviy ishlar boʼyicha oʼrinbosari lavozimiga tayinlangan. */}
           </p>
 
-          <div className={style.button}>
-            <div className={style.bgColor}></div>
-            <Link to="/rahbariyat"> Batafsil... </Link>
+          <div className={style.containerButton}>
+            <Link to="/rahbariyat">
+              <span>Batafsil...</span>
+              <span>Batafsil...</span>
+            </Link>
           </div>
         </div>
       </div>
@@ -79,9 +81,11 @@ const Home3 = () => {
           universiteti Ixtisoslashtirilgan filiali direktorining moliya-xoʼjalik
           ishlari boʼyicha oʼrinbosari lavozimiga tayinlangan. */}
         </p>
-        <div className={style.button2}>
-          <div className={style.bgColor2}></div>
-          <Link to="/rahbariyat"> Batafsil... </Link>
+        <div className={style.containerButton2}>
+          <Link to="/rahbariyat">
+            <span>Batafsil...</span>
+            <span>Batafsil...</span>
+          </Link>
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@ const FooterRus = () => {
       <div className={style.container}>
         <div className={style.list}>
           <div className={style.sections}>
-            <h3>Sahifalar</h3>
+            <h3>Страницы</h3>
             <div className={style.links}>
               <Link to="/rus/talim">Вакансии</Link>
               <Link to="/rus/tuzilma">Состав</Link>

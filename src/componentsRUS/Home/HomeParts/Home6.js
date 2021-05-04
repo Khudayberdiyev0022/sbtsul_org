@@ -24,9 +24,12 @@ function Home6() {
           ></div>
         ))}
       </Carousel>
-      <button className={style.button} type="submit">
-        <Link to="/rus/fotolavhalar">Просмотр всех изображений...</Link>
-      </button>
+      <div className={style.containerButton}>
+        <Link to="/fotolavhalar">
+          <span>Просмотр всех изображений...</span>
+          <span>Просмотр всех изображений...</span>
+        </Link>
+      </div>
     </div>
   );
 }

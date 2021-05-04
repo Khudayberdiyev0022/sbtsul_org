@@ -32,4 +32,4 @@ export const teachers = [
 // },
 
 
-export const nameKaf = `${"Moliya-iqtisod bo‘limi"}` 
+export const nameKaf = `${"Department of Finance and Economics"}` 

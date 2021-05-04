@@ -37,4 +37,4 @@ export const teachers = [
   },
 ];
 
-export const nameKaf = `${"Xususiy-huquqiy fanlar "}`;
+export const nameKaf = `${"Private-legal sciences"}`;

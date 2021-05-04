@@ -37,7 +37,6 @@ class Home1 extends Component {
     }, 5000);
   }
   componentDidUpdate() {
-
     clearInterval(this.setInterval);
   }
 
@@ -52,9 +51,10 @@ class Home1 extends Component {
           <div
             className={style.Home1}
             style={{ backgroundImage: `url(${this.state.img})` }}
-          ></div>
+          >
+            <div className={style.bg}></div>
+          </div>
         </div>
-
       </Fragment>
     );
   }

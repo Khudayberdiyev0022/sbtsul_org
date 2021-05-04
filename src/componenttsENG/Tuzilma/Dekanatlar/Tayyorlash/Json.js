@@ -20,7 +20,7 @@ export const dek = [
   },
 ];
 
-export const nameDek = "Tayyorlash kurslari ";
+export const nameDek = "Preparatory courses";
 // {
 //     img: '',
 //     name: '',

@@ -85,6 +85,8 @@ import JangovorEng from '../componenttsENG/Tuzilma/Kafedralar/Jangovor/Jangovor'
 import DavlatHuquqiyEng from '../componenttsENG/Tuzilma/Kafedralar/DavlatHuquqiy/DavlatHuquqiy'
 import RahbariyatEng from '../componenttsENG/Tuzilma/Rahbariyat/Rahbariyat'
 import Home7Eng from '../componenttsENG/Home/HomeParts/Home7'
+import KengashEng from '../componenttsENG/Tuzilma/Kengash/Kengash'
+
 
 
 import NavbarRus from '../componentsRUS/Navbar/Navbar'
@@ -120,6 +122,7 @@ import XususiyHuquqiyRus from '../componentsRUS/Tuzilma/Kafedralar/XususiyHuquq/
 import KafedraRus from '../componentsRUS/Tuzilma/Kafedralar/Kafedra'
 import KengashRus from '../componentsRUS/Tuzilma/Kengash/Kengash'
 import RahbariyatRus from '../componentsRUS/Tuzilma/Rahbariyat/Rahbariyat'
+import Home1 from '../componentsRUS/Home/HomeParts/Home1'
 
 
 
@@ -134,6 +137,7 @@ function App(props) {
                     <ScrollToTop />
                     <Navbar />
                     <NavbarMobile />
+                    <Home1 />
                     <Switch>
                         <Route exact path='/'>
                             <Home />
@@ -297,6 +301,7 @@ function App(props) {
                     <ScrollToTop />
                     <NavbarEng />
                     <NavbarMobileEng />
+                    <Home1 />
                     <Switch>
                         <Route exact path='/eng'>
                             <HomeEng />
@@ -308,7 +313,7 @@ function App(props) {
                             <Home7Eng />
                         </Route>
                         <Route path='/eng/kengash'>
-                            <Kengash />
+                            <KengashEng />
                         </Route>
                         <Route path='/eng/ilmiy-kengash'>
                             <IlmiyKengashEng />
@@ -460,6 +465,7 @@ function App(props) {
                     <ScrollToTop />
                     <NavbarRus />
                     <NavbarMobileRus />
+                    <Home1/>
                     <Switch>
                         <Route exact path='/rus'>
                             <HomeRus />

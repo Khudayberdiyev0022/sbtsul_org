@@ -25,46 +25,42 @@ const Contact1 = () => {
       <div className={style.inMain}>
         <div className={style.top}>
           {/* <Rotate top left cascade> */}
-            <div className={style.inTop}>
-              <div className={style.icon}>
-                <MdLocationOn />{" "}
-              </div>
-              <div className={style.infoTop}>
-                <h3>Наш адресс:</h3>
-                <p>Город Ташкент, улица Риксилий, 9</p>
-              </div>
+          <div className={style.inTop}>
+            <div className={style.icon}>
+              <MdLocationOn />{" "}
             </div>
-            <div className={style.inTop}>
-              <div className={style.icon}>
-                {" "}
-                <FaPhoneAlt />{" "}
-              </div>
-              <div className={style.infoTop}>
-                <h3>Телефон:</h3>
-                <a
-                  href="tel://+998 71 207 03 78"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  +998 71 207 03 78
-                </a>
-              </div>
+            <div className={style.infoTop}>
+              <h3>Наш адресс:</h3>
+              <p>Город Ташкент, улица Риксилий, 9</p>
             </div>
-            <div className={style.inTop}>
-              <div className={style.icon}>
-                <MdMail />{" "}
-              </div>
-              <div className={style.infoTop}>
-                <h3>Электронное почта</h3>
-                <a
-                  href="mailto:info@sbtsul.uz"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  info@sbtsul.uz
-                </a>
-              </div>
+          </div>
+          <div className={style.inTop}>
+            <div className={style.icon}>
+              {" "}
+              <FaPhoneAlt />{" "}
             </div>
+            <div className={style.infoTop}>
+              <h3>Телефон:</h3>
+              <a
+                href="tel://+998 71 207 03 78"
+                rel="noreferrer"
+                target="_blank"
+              >
+                +998 71 207 03 78
+              </a>
+            </div>
+          </div>
+          <div className={style.inTop}>
+            <div className={style.icon}>
+              <MdMail />{" "}
+            </div>
+            <div className={style.infoTop}>
+              <h3>Электронное почта</h3>
+              <a href="mailto:info@sbtsul.uz" rel="noreferrer" target="_blank">
+                info@sbtsul.uz
+              </a>
+            </div>
+          </div>
           {/* </Rotate> */}
         </div>
         <div className={style.flex}>
@@ -84,39 +80,39 @@ const Contact1 = () => {
           </div>
           <div className={style.inputDiv}>
             {/* <Flip left cascade> */}
-              <h2>Biz bilan bog'lanish</h2>
-              <form onSubmit={submit}>
-                <input
-                  type="text"
-                  placeholder="Ваше имя"
-                  name="name"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                />
-                <input
-                  type="text"
-                  placeholder="
+            <h2>Свяжитесь с нами</h2>
+            <form onSubmit={submit}>
+              <input
+                type="text"
+                placeholder="Ваше имя"
+                name="name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+              <input
+                type="text"
+                placeholder="
                   Ваша фамилия"
-                  name="site"
-                  value={surName}
-                  onChange={(e) => setSurName(e.target.value)}
-                />
-                <input
-                  type="email"
-                  placeholder="Электронное почта"
-                  name="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
+                name="site"
+                value={surName}
+                onChange={(e) => setSurName(e.target.value)}
+              />
+              <input
+                type="email"
+                placeholder="Электронное почта"
+                name="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
 
-                <textarea
-                  name="message"
-                  value={message}
-                  placeholder="Ваша цель связаться с нами"
-                  onChange={(e) => setMessage(e.target.value)}
-                />
-                <button type="submit">Послать сообщение</button>
-              </form>
+              <textarea
+                name="message"
+                value={message}
+                placeholder="Ваша цель связаться с нами"
+                onChange={(e) => setMessage(e.target.value)}
+              />
+              <button type="submit">Послать сообщение</button>
+            </form>
             {/* </Flip> */}
           </div>
         </div>

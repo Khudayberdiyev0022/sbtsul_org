@@ -15,67 +15,67 @@ const BolimlarRus = () => {
   return (
     <div className={style.main}>
       <div className={style.bgImg}>
-        <h2>Bo'limlar</h2>
+        <h2>Отделы</h2>
       </div>
       <div className={style.container}>
         <div className={style.card}>
           <MdMonetizationOn />
           <Link to="/buxgalteriya-bolimi">
-            BUXGALTERIYA BO'LIMI
+            ОТДЕЛ БУХГАЛТЕРИИ
           </Link>
         </div>
         <div className={style.card}>
           <BiDollar />
           <Link to="/mi-bolimi">
-            MOLIYA-IQTISOD BO'LIMI
+          ОТДЕЛ ФИНАНСОВ И ЭКОНОМИКИ
           </Link>
         </div>
         <div className={style.card}>
           <IoBookOutline />
           <Link to="/ou-bolimi">
-            O'QUV USLUBIY BO'LIMI
+          УЧЕБНО-МЕТОДОЛОГИЧЕСКОЕ ОТДЕЛЕНИЕ
           </Link>
         </div>
         <div className={style.card}>
           <FaHeadphonesAlt />
           <Link to="/at-bolimi">
-            AXBOROT TEXNOLOGIYA BO'LIMI
+          ОТДЕЛЕНИЕ ИНФОРМАЦИОННЫХ ТЕХНОЛОГИЙ
           </Link>
         </div>
         <div className={style.card}>
           <BsFillPeopleFill />
           <Link to="/kadrlar-bolimi">
-            KADRLAR BO'LIMI
+           ОТДЕЛ КАДРОВ
           </Link>
         </div>
         <div className={style.card}>
           <GiTeacher />
           <Link to="/tarbiyaviy-ishlar-bolimi">
-            TARBIYAVIY ISHLAR BO'LIMI
+          ОТДЕЛЕНИЕ ОБРАЗОВАТЕЛЬНЫХ ДЕЛ
           </Link>
         </div>
         <div className={style.card}>
           <RiHistoryLine />
           <Link to="/ka-bolimi">
-            KANSELYARIYA VA ARXIV BO'LIMI
+          ОТДЕЛЕНИЕ ОФИСА И АРХИВОВ
           </Link>
         </div>
         <div className={style.card}>
           <BiStreetView />
           <Link to="/ex-bolimi">
-            EKSPLUATATSIYA VA XO'JALIK BO'LIMI
+          ОТДЕЛ ЭКСПЛУАТАЦИИ И ЭКОНОМИКИ
           </Link>
         </div>
         <div className={style.card}>
           <BiNetworkChart />
           <Link to="/ikkinchi-bolim">
-            IKKINCHI BO'LIM
+        ВТОРОЙ ОТДЕЛ
           </Link>
         </div>
         <div className={style.card}>
           <AiOutlineBank />
           <Link to="/direktorat">
-            DIREKTORAT
+            ДИРЕКТОРАТ
           </Link>
         </div>
       </div>

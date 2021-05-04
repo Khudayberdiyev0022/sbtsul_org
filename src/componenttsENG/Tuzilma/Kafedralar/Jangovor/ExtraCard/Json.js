@@ -82,4 +82,4 @@ export const teachers = [
 
 
 
-export const nameKaf = `${"Kasbiy-jangovar tayyorgarlik"}` 
+export const nameKaf = `${"Vocational training"}` 

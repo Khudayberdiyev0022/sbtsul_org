@@ -11,7 +11,7 @@ const KafedraRus = () => {
   return (
     <div className={style.main}>
       <div className={style.bg}>
-        <h1>Kafedralar</h1>
+        <h1>Кафедры</h1>
       </div>
       <div className={style.container}>
         <div className={style.box}>
@@ -20,8 +20,8 @@ const KafedraRus = () => {
           </div>
           <div className={style.content}>
             {/* <h2>Kafedra</h2> */}
-            <p>DAVLAT-XUQUQIY FANLAR KAFEDRASI</p>
-            <Link to="/dx-fanlar-kafedrasi">Malumotlar</Link>
+            <p>КАФЕДРА ГОСУДАРСТВЕННЫХ ПРАВОВЫХ НАУК</p>
+            <Link to="/dx-fanlar-kafedrasi">Инфомация</Link>
           </div>
         </div>
         <div className={style.box}>
@@ -30,8 +30,8 @@ const KafedraRus = () => {
           </div>
           <div className={style.content}>
             {/* <h2>Kafedra</h2> */}
-            <p>JINOYAT HUQUQIY FANLAR KAFEDRASI</p>
-            <Link to="/jh-fanlar-kafedrasi">Malumotlar</Link>
+            <p>КАФЕДРА УГОЛОВНО-ПРАВОВОЙ НАУКИ</p>
+            <Link to="/jh-fanlar-kafedrasi">Инфомация</Link>
           </div>
         </div>
         <div className={style.box}>
@@ -40,8 +40,8 @@ const KafedraRus = () => {
           </div>
           <div className={style.content}>
             {/* <h2>Kafedra</h2> */}
-            <p>XUSUSIY-HUQUQIY FANLAR KAFEDRASI</p>
-            <Link to="/xh-fanlar-kafedrasi">Malumotlar</Link>
+            <p>КАФЕДРА ЧАСТНЫХ ПРАВОВЫХ НАУК</p>
+            <Link to="/xh-fanlar-kafedrasi">Инфомация</Link>
           </div>
         </div>
         <div className={style.box}>
@@ -50,8 +50,8 @@ const KafedraRus = () => {
           </div>
           <div className={style.content}>
             {/* <h2>Kafedra</h2> */}
-            <p>UMUMTA'LIM FANLAR KAFEDRASI</p>
-            <Link to="/u-fanlar-kafedrasi">Malumotlar</Link>
+            <p>КАФЕДРА ОБЩИХ НАУК</p>
+            <Link to="/u-fanlar-kafedrasi">Инфомация</Link>
           </div>
         </div>
         <div className={style.box}>
@@ -60,37 +60,14 @@ const KafedraRus = () => {
           </div>
           <div className={style.content}>
             {/* <h2>Kafedra</h2>/ */}
-            <p>KASBIY-JANGOVOR TAYYORGARLIK FANLAR KAFEDRASI</p>
-            <Link to="/kjt-fanlar-kafedrasi">Malumotlar</Link>
+            <p>КАФЕДРА ПРОФЕССИОНАЛЬНЫХ БОЕВЫХ НАУК</p>
+            <Link to="/kjt-fanlar-kafedrasi">Инфомация</Link>
           </div>
         </div>
       </div>
     </div>
   )
-  // return (
-  //   <div classNameName={style.main}>
-  //     <div classNameName={style.bg}>
-  //       <h2>Kafedralar</h2>
-  //     </div>
-  //     <div classNameName={style.container}>
-  //       <Link to="/dx-fanlar-kafedrasi">
-  //         <span>DAVLAT-XUQUQIY FANLAR KAFEDRASI</span>
-  //       </Link>
-  //       <Link to="/jh-fanlar-kafedrasi">
-  //         <span>JINOYAT HUQUQIY FANLAR KAFEDRASI</span>
-  //       </Link>
-  //       <Link to="/xh-fanlar-kafedrasi">
-  //         <span>XUSUSIY-HUQUQIY FANLAR KAFEDRASI</span>
-  //       </Link>
-  //       <Link to="/u-fanlar-kafedrasi">
-  //         <span>UMUMTA'LIM FANLAR KAFEDRASI</span>
-  //       </Link>
-  //       <Link to="/kjt-fanlar-kafedrasi">
-  //         <span>KASBIY-JANGOVOR TAYYORGARLIK FANLAR KAFEDRASI</span>
-  //       </Link>
-  //     </div>
-  //   </div>
-  // );
+ 
 };
 
 export default KafedraRus;

@@ -15,7 +15,7 @@ const About1 = () => {
             style={{ backgroundImage: `url(${bg})` }}
           ></div>
             <div className={style.text}>
-              <h3>Filial jamoasi</h3>
+              <h3>Команда филиала</h3>
               <p>
                 <span></span> Курс переподготовки филиалов
                 29 человек в час на обучение

@@ -15,7 +15,7 @@ const About1 = () => {
             style={{ backgroundImage: `url(${bg})` }}
           ></div>
             <div className={style.text}>
-              <h3>Filial jamoasi</h3>
+              <h3>Branch team</h3>
               <p>
                 <span></span> Branch retraining course training
                  29 people on an hourly basis for training

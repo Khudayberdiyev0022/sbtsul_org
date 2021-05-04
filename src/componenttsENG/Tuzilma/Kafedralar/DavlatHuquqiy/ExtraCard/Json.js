@@ -40,4 +40,4 @@ export const teachers = [
 // },
 
 
-export const nameKaf = `${"Davlat-huquqiy fanlar kafedrasi  "}` 
+export const nameKaf = `${"Department of State and Legal Sciences"}` 

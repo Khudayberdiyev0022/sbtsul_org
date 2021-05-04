@@ -313,4 +313,4 @@ export const teachers = [
 // },
 
 
-export const nameKaf = `${"Umumtaʼlim fanlari kafedrasi"}` 
+export const nameKaf = `${"Department of General Education"}` 

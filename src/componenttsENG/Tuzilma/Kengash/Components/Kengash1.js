@@ -8,7 +8,7 @@ const Kengash1 = () => {
       <div className={style.inMain}>
         {/* <Rotate bottom left cascade> */}
           <div className={style.head}>
-            <h2>Council</h2>
+            <h2>COUNCIL</h2>
             <span></span>
             <p>
             Council of Tashkent State Law University

@@ -32,41 +32,50 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-.main .button {
-  width: 50%;
-  padding: 10px;
-  height: 50px;
-  margin: 10px auto;
-  cursor: pointer;
-  border: 1px solid #fff;
-  background: #0f2b53;
-  position: relative;
-  border-radius: 10px;
-  transition: all 0.5s ease;
+.containerButton {
+  width: 40%;
+  margin: auto;
 }
-.main .button a {
-  font-size: 16px;
-  color: #0f2b53;
-  text-decoration: none;
-  color: #fff;
+.containerButton a {
+  margin-top: 15px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+}
+.containerButton a span {
+  position: absolute;
+  left: -1px;
+  top: 0;
   width: 100%;
   height: 100%;
+  color: #fff;
+  background: #011b7c;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: all 0.5s ease;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 18px;
+  overflow: hidden;
 }
-.main .button:hover {
-  border: 1px solid #0f2b53;
-  background-color: #fff;
-  transition: all 0.5s ease;
-}
-.main .button:hover a {
+.containerButton a span:nth-child(2) {
   color: #0f2b53;
-  transition: all 0.5s ease;
+  background: #fff;
+  top: -0.8px;
+  height: 103%;
+  overflow: hidden;
+  z-index: 2;
+  transition: 0.5s;
+  clip-path: polygon(60% 0, 100% 0, 100% 100%, 60% 100%, 40% 53%);
+}
+.containerButton a span:nth-child(2):hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 50%);
+}
+.containerButton a span:nth-child(1):hover ~ span:nth-child(2) {
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%, 100% 50%);
 }
 
 @media screen and (max-width: 900px) {
@@ -90,6 +99,9 @@
   .container .image {
     width: 95%;
     background-size: contain;
+  }
+  .containerButton {
+    width: 90%;
   }
 }
 @media screen and (max-width: 550px) {
