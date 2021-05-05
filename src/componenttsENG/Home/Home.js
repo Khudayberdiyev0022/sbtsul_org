@@ -17,7 +17,7 @@ const HomeEng = () => {
       <Home4 />
       <Home5 />
       <Home6 />
-      <Home8 />
+      {/* <Home8 /> */}
       <Home9 />
     </div>
   );

@@ -32,43 +32,43 @@ const Home4 = () => {
           <div className={style.card1}>
             <div className={style.staticBox}>
               <Countup
-                end={5}
+                end={39}
                 duration={15}
                 separator=","
                 className={style.countText}
               ></Countup>
-              <p>Количество кафедр в Специализированном филиале ТДЮУ</p>
+              <p>Количество профессоров и преподавателей в профильном отделении ТГУ</p>
             </div>
             <div className={style.staticBoxBg}>
               <Countup
-                end={5}
+                end={39}
                 duration={15}
                 separator=","
                 className={style.countText}
               ></Countup>
-              <p>Количество кафедр в Специализированном филиале ТДЮУ</p>
+              <p>Количество профессоров и преподавателей в профильном отделении ТГУ</p>
             </div>
           </div>
           <div className={style.card1}>
             <div className={style.staticBox}>
               <Countup
-                end={2347}
+                end={572}
                 duration={15}
                 separator=","
                 suffix=""
                 className={style.countText}
               ></Countup>
-              <p>Количество студентов в Специализированном филиале ТДЮУ</p>
+              <p>Количество студентов в профильном филиале ТГУ</p>
             </div>
             <div className={style.staticBoxBg}>
               <Countup
-                end={2347}
+                end={572}
                 duration={15}
                 separator=","
                 suffix=""
                 className={style.countText}
               ></Countup>
-              <p>Количество студентов в Специализированном филиале ТДЮУ</p>
+              <p>Количество студентов в профильном филиале ТГУ</p>
             </div>
           </div>
         </div>

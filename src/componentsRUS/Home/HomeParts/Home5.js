@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import style from "./Home5.module.css";
-import news1 from "../../../assets/img/news1.jpg";
+import news1 from "../../../assets/img/army.jpg";
 import news2 from "../../../assets/img/news2.jpg";
 import news3 from "../../../assets/img/news3.jpg";
 import { SelectedNew } from "../../../actions";
