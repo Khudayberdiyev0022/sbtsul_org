@@ -5,7 +5,7 @@ import Home4 from "./HomeParts/Home4";
 import Home5 from "./HomeParts/Home5";
 import Home6 from "./HomeParts/Home6";
 import Home7 from "./HomeParts/Home7";
-import Home8 from "./HomeParts/Home8";
+// import Home8 from "./HomeParts/Home8";
 import Home9 from "./HomeParts/Home9";
 
 const Home = () => {

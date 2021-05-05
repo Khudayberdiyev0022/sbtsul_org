@@ -1,63 +1,102 @@
-import React, { Component } from "react";
+import React, { useEffect, useState } from "react";
 import img1 from "../../../assets/img/slider1.webp";
 import img2 from "../../../assets/img/slider2.webp";
 import img3 from "../../../assets/img/slider3.webp";
 import style from "./Home1.module.css";
 import { Fragment } from "react";
 
-class Home1 extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      img: img1,
-      img1: img2,
-      img2: img3,
-      img3: img1,
-    };
-  }
-
-  componentDidMount() {
-    this.interval = setInterval(() => {
-      switch (this.state.img) {
+function Home1() {
+  const [image, setImage] = useState(img1);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      switch (image) {
         case img1:
-          this.setState({ img: img2 });
+          setImage(img2);
           break;
         case img2:
-          this.setState({ img: img3 });
+          setImage(img3);
           break;
         case img3:
-          this.setState({ img: img1 });
+          setImage(img1);
           break;
-
         default:
-          this.setState({ img: null });
-          break;
+          setImage(img1);
       }
-    }, 5000);
-  }
-  componentDidUpdate() {
-    clearInterval(this.setInterval);
-  }
+    }, 3000);
+    return () => {
+      clearInterval(interval);
+    };
+  });
 
-  componentWillUnmount() {
-    clearInterval(this.setInterval);
-  }
-
-  render() {
-    return (
-      <Fragment>
-        <div className={style.main}>
-          <div
-            className={style.Home1}
-            style={{ backgroundImage: `url(${this.state.img})` }}
-          >
-            <div className={style.bg}></div>
-          </div>
+  return (
+    <Fragment>
+      <div className={style.main}>
+        <div
+          className={style.Home1}
+          style={{ backgroundImage: `url(${image})` }}
+        >
+          <div className={style.bg}></div>
         </div>
-      </Fragment>
-    );
-  }
+      </div>
+    </Fragment>
+  );
 }
 
 export default Home1;
+
+// class Home1 extends Component {
+//   constructor(props) {
+//     super(props);
+
+//     this.state = {
+//       img: img1,
+//       img1: img2,
+//       img2: img3,
+//       img3: img1,
+//     };
+//   }
+
+//   componentDidMount() {
+//     this.interval = setInterval(() => {
+//       switch (this.state.img) {
+//         case img1:
+//           this.setState({ img: img2 });
+//           break;
+//         case img2:
+//           this.setState({ img: img3 });
+//           break;
+//         case img3:
+//           this.setState({ img: img1 });
+//           break;
+
+//         default:
+//           this.setState({ img: null });
+//           break;
+//       }
+//     }, 5000);
+//   }
+//   componentDidUpdate() {
+//     clearInterval(this.setInterval);
+//   }
+
+//   componentWillUnmount() {
+//     clearInterval(this.setInterval);
+//   }
+
+//   render() {
+//     return (
+//       <Fragment>
+//         <div className={style.main}>
+//           <div
+//             className={style.Home1}
+//             style={{ backgroundImage: `url(${this.state.img})` }}
+//           >
+//             <div className={style.bg}></div>
+//           </div>
+//         </div>
+//       </Fragment>
+//     );
+//   }
+// }
+
+// export default Home1;
