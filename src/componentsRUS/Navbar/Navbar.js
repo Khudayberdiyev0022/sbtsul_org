@@ -2,23 +2,28 @@ import React, { useEffect, useState } from "react";
 import style from "./Navbar.module.css";
 import { NavLink, Link } from "react-router-dom";
 import logo from "../../assets/icons/logoFT.svg";
-import { AiFillCaretDown, AiOutlineInstagram, AiTwotoneHome } from "react-icons/ai";
+import {
+  AiFillCaretDown,
+  AiOutlineInstagram,
+  AiTwotoneHome,
+} from "react-icons/ai";
 import { FaFacebook, FaYoutube, FaTelegram, FaTwitter } from "react-icons/fa";
 import { connect } from "react-redux";
 import { changeLanguage } from "../../actions";
 
 function NavbarRus(props) {
-  console.log(props);
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
-    document.addEventListener("scroll", (e) => {
-      console.log(window.scrollY);
-      if (window.scrollY > 300) {
+    const interval = setInterval(() => {
+      if (window.self.scrollY > 300) {
         setScroll(true);
       } else {
         setScroll(false);
       }
-    });
+    }, 500);
+    return () => {
+      clearInterval(interval);
+    };
   });
   const [admin, setAdmin] = useState(false);
   useEffect(() => {
@@ -28,7 +33,7 @@ function NavbarRus(props) {
       setAdmin(false);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [window.location.pathname]);
+  }, []);
   // style.links
   if (admin) {
     return null;
@@ -149,10 +154,7 @@ function NavbarRus(props) {
           >
             <div className={style.container}>
               <div className={style.titleName}>
-              <Link
-                  className={style.home}
-                  to="/rus"
-                >
+                <Link className={style.home} to="/rus">
                   <AiTwotoneHome />
                 </Link>
                 <div className={style.navbarLink}>
@@ -252,6 +254,5 @@ const mapStateToProps = (state) => {
     language: state.language,
   };
 };
-
 
 export default connect(mapStateToProps, { changeLanguage })(NavbarRus);

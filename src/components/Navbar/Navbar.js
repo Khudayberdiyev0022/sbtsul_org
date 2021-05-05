@@ -14,13 +14,16 @@ import { changeLanguage } from "../../actions";
 function Navbar(props) {
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
-    document.addEventListener("scroll", (e) => {
-      if (window.scrollY > 300) {
+    const interval = setInterval(() => {
+      if (window.self.scrollY > 300) {
         setScroll(true);
       } else {
         setScroll(false);
       }
-    });
+    }, 500);
+    return () => {
+      clearInterval(interval);
+    };
   });
   const [admin, setAdmin] = useState(false);
   useEffect(() => {
@@ -30,7 +33,7 @@ function Navbar(props) {
       setAdmin(false);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [window.location.pathname]);
+  }, []);
   // style.links
   if (admin) {
     return null;
@@ -152,10 +155,7 @@ function Navbar(props) {
             <div className={style.container}>
               <div className={style.titleName}>
                 {/* <div className={style.home}> */}
-                <Link
-                  className={style.home}
-                  to="/"
-                >
+                <Link className={style.home} to="/">
                   <AiTwotoneHome />
                 </Link>
                 {/* </div> */}

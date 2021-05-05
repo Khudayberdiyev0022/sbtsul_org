@@ -1,7 +1,7 @@
 .main {
   display: none;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .main {
     width: 100%;
     box-sizing: border-box;
@@ -48,7 +48,7 @@
     justify-content: space-between;
   }
   .subPart.open {
-    height: 90vh;
+    height: 80vh;
   }
   .subPart.close {
     height: 0vh;

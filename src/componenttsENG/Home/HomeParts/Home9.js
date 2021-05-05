@@ -45,7 +45,6 @@ function Home9() {
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
-    console.log(pages);
     const interval = setInterval(() => {
       if (window.self.innerWidth < 1300 && window.self.innerWidth > 1000) {
         setPages(2);
@@ -74,10 +73,9 @@ function Home9() {
                 className={style.image}
                 style={{ backgroundImage: `url(${item.image})` }}
               ></div>
-              <a
-               rel="noreferrer"
-               target="__blank"
-              href={item.link}>{item.title}</a>
+              <a rel="noreferrer" target="__blank" href={item.link}>
+                {item.title}
+              </a>
             </div>
           ))}
         </Carousel>

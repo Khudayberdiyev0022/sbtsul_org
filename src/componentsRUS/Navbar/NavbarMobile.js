@@ -4,22 +4,23 @@ import { FiMenu } from "react-icons/fi";
 import { VscClose } from "react-icons/vsc";
 import logo from "../../assets/icons/logoFT.svg";
 import { Link } from "react-router-dom";
-import { connect } from 'react-redux'
-import { changeLanguage } from '../../actions'
-
-
+import { connect } from "react-redux";
+import { changeLanguage } from "../../actions";
 
 function NavbarMobile(props) {
   const [clicked, setClicked] = useState(false);
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
-    window.addEventListener("scroll", (e) => {
+    const interval = setInterval(() => {
       if (window.self.scrollY > 300) {
         setScroll(true);
       } else {
         setScroll(false);
       }
-    });
+    }, 500);
+    return () => {
+      clearInterval(interval);
+    };
   });
 
   return (
@@ -115,26 +116,35 @@ function NavbarMobile(props) {
           </div>
           <div className={style.languageBlock}>
             <div className={style.languageBox}>
-              <Link onClick={() => {
-                setClicked(false)
-                props.changeLanguage('UZB')
-              }} to="/uzb">
+              <Link
+                onClick={() => {
+                  setClicked(false);
+                  props.changeLanguage("UZB");
+                }}
+                to="/"
+              >
                 UZB
               </Link>
             </div>
             <div className={style.languageBox}>
-              <Link onClick={() => {
-                setClicked(false)
-                props.changeLanguage('RUS')
-              }} to="/rus">
+              <Link
+                onClick={() => {
+                  setClicked(false);
+                  props.changeLanguage("RUS");
+                }}
+                to="/rus"
+              >
                 RUS
               </Link>
             </div>
             <div className={style.languageBox}>
-              <Link onClick={() => {
-                setClicked(false)
-                props.changeLanguage('ENG')
-              }} to="eng">
+              <Link
+                onClick={() => {
+                  setClicked(false);
+                  props.changeLanguage("ENG");
+                }}
+                to="eng"
+              >
                 ENG
               </Link>
             </div>

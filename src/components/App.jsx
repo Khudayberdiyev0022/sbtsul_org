@@ -122,7 +122,7 @@ import XususiyHuquqiyRus from '../componentsRUS/Tuzilma/Kafedralar/XususiyHuquq/
 import KafedraRus from '../componentsRUS/Tuzilma/Kafedralar/Kafedra'
 import KengashRus from '../componentsRUS/Tuzilma/Kengash/Kengash'
 import RahbariyatRus from '../componentsRUS/Tuzilma/Rahbariyat/Rahbariyat'
-import Home1 from '../componentsRUS/Home/HomeParts/Home1'
+import Home1 from '../components/Home/HomeParts/Home1'
 
 
 
