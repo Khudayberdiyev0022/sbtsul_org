@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import style from "./Navbar.module.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import logo from "../../assets/icons/logoFT.svg";
-import { AiFillCaretDown, AiOutlineInstagram } from "react-icons/ai";
+import { AiFillCaretDown, AiOutlineInstagram, AiTwotoneHome } from "react-icons/ai";
 import { FaFacebook, FaYoutube, FaTelegram, FaTwitter } from "react-icons/fa";
 import { connect } from "react-redux";
 import { changeLanguage } from "../../actions";
@@ -103,28 +103,34 @@ function NavbarEng(props) {
                       : style.languageBox
                   }
                 >
-                  <NavLink
-                    onClick={() => props.changeLanguage("UZB")}
-                    to="/"
-                    activeStyle={{ color: "white" }}
-                  >
+                  <NavLink onClick={() => props.changeLanguage("UZB")} to="/">
                     UZB
                   </NavLink>
                 </div>
-                <div className={style.languageBox}>
+                <div
+                  className={
+                    props.language === "RUS"
+                      ? style.languageBoxActive
+                      : style.languageBox
+                  }
+                >
                   <NavLink
                     onClick={() => props.changeLanguage("RUS")}
                     to="/rus"
-                    activeStyle={{ color: "white" }}
                   >
                     RUS
                   </NavLink>
                 </div>
-                <div className={style.languageBox}>
+                <div
+                  className={
+                    props.language === "ENG"
+                      ? style.languageBoxActive
+                      : style.languageBox
+                  }
+                >
                   <NavLink
                     onClick={() => props.changeLanguage("ENG")}
                     to="/eng"
-                    activeStyle={{ color: "white" }}
                   >
                     ENG
                   </NavLink>
@@ -142,14 +148,27 @@ function NavbarEng(props) {
           >
             <div className={style.container}>
               <div className={style.titleName}>
+              <Link
+                  className={style.home}
+                  to="/rus"
+                  activeStyle={{ color: "rgb(2 162 255)" }}
+                >
+                  <AiTwotoneHome />
+                </Link>
                 <div className={style.navbarLink}>
-                  <NavLink to="/filial" activeStyle={{ color: "white" }}>
-                  Branch <span></span>
+                  <NavLink
+                    to="/eng/filial"
+                    activeStyle={{ color: "rgb(2 162 255)" }}
+                  >
+                    Branch <span></span>
                   </NavLink>
                 </div>
                 <div className={style.navbarLink}>
-                  <NavLink to="/eng/tuzilma" activeStyle={{ color: "white" }}>
-                  Structure <span></span>
+                  <NavLink
+                    to="/eng/tuzilma"
+                    activeStyle={{ color: "rgb(2 162 255)" }}
+                  >
+                    Structure <span></span>
                     <AiFillCaretDown />
                   </NavLink>
                   <div className={style.hoverDiv}>
@@ -160,43 +179,57 @@ function NavbarEng(props) {
                     <NavLink to="/eng/kafedralar">Chairs</NavLink>
                     <NavLink to="/eng/bolimlar">Sections</NavLink>
                     <NavLink to="/eng/axborot-resurs-markazi">
-                    Information Resource Center
+                      Information Resource Center
                     </NavLink>
                   </div>
                 </div>
                 <div className={style.navbarLink}>
                   {/* /Link ='/faoliyat' */}
-                  <NavLink to="/eng/faoliyat" activeStyle={{ color: "white" }}>
-                  Activity <span></span>
+                  <NavLink
+                    to="/eng/faoliyat"
+                    activeStyle={{ color: "rgb(2 162 255)" }}
+                  >
+                    Activity <span></span>
                     <AiFillCaretDown />
                   </NavLink>
                   <div className={style.hoverDiv}>
-                    <NavLink to="/eng/ilmiy-kengash">Scientific Council</NavLink>
+                    <NavLink to="/eng/ilmiy-kengash">
+                      Scientific Council
+                    </NavLink>
                     <NavLink to="/eng/xalqaro-hamkorlik">
-                    International Cooperation
+                      International Cooperation
                     </NavLink>
                   </div>
                 </div>
                 <div className={style.navbarLink}>
-                  <NavLink to="/eng/talabalar" activeStyle={{ color: "white" }}>
-                  Students <span></span>
+                  <NavLink
+                    to="/eng/talabalar"
+                    activeStyle={{ color: "rgb(2 162 255)" }}
+                  >
+                    Students <span></span>
                   </NavLink>
                 </div>
                 <div className={style.navbarLink}>
-                  <NavLink to="/eng/qabul" activeStyle={{ color: "white" }}>
-                  Acceptance <span></span>
+                  <NavLink
+                    to="/eng/qabul"
+                    activeStyle={{ color: "rgb(2 162 255)" }}
+                  >
+                    Acceptance <span></span>
                   </NavLink>
                 </div>
                 <div className={style.navbarLink}>
                   <NavLink
                     to="/eng/bizhaqimizda"
-                    activeStyle={{ color: "white" }}
+                    activeStyle={{ color: "rgb(2 162 255)" }}
                   >
                     About Us <span></span>
                   </NavLink>
                 </div>
                 <div className={style.navbarLink}>
-                  <NavLink to="/eng/aloqa" activeStyle={{ color: "white" }}>
+                  <NavLink
+                    to="/eng/aloqa"
+                    activeStyle={{ color: "rgb(2 162 255)" }}
+                  >
                     Contact <span></span>
                   </NavLink>
                 </div>
@@ -214,5 +247,10 @@ function NavbarEng(props) {
     );
   }
 }
+const mapStateToProps = (state) => {
+  return {
+    language: state.language,
+  };
+};
 
-export default connect(null, { changeLanguage })(NavbarEng);
+export default connect(mapStateToProps, { changeLanguage })(NavbarEng);

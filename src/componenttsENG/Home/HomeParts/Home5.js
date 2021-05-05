@@ -4,8 +4,10 @@ import style from "./Home5.module.css";
 import news1 from "../../../assets/img/news1.jpg";
 import news2 from "../../../assets/img/news2.jpg";
 import news3 from "../../../assets/img/news3.jpg";
+import { SelectedNew } from "../../../actions";
+import { connect } from "react-redux";
 
-const Home5 = () => {
+const Home5 = (props) => {
   // import api from backend with name faceapi and after that we cannot need to chabeg more things
   const fakeAPI = [
     {
@@ -52,7 +54,10 @@ const Home5 = () => {
                         : api.paragraph}
                     </p>
                     <div className={style.containerButton}>
-                      <Link to={`/each/news/${index}`}>
+                      <Link
+                        onClick={() => props.SelectedNew(api)}
+                        to={`/eng/each/news/${index}`}
+                      >
                         <span>More...</span>
                         <span>More...</span>
                       </Link>
@@ -69,7 +74,10 @@ const Home5 = () => {
           <h4>{fakeAPI[0].title}</h4>
           <p>{fakeAPI[0].paragraph}</p>
           <div className={style.containerButton}>
-            <Link to={`/each/news/0`}>
+            <Link
+              to={`/eng/each/news/0`}
+              onClick={() => props.SelectedNew(fakeAPI[0])}
+            >
               <span>More...</span>
               <span>More...</span>
             </Link>
@@ -79,5 +87,4 @@ const Home5 = () => {
     </div>
   );
 };
-
-export default Home5;
+export default connect(null, { SelectedNew })(Home5);

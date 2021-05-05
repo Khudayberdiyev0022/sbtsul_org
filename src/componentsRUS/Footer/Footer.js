@@ -25,7 +25,7 @@ const FooterRus = () => {
             </div>
           </div>
           <div className={style.sections}>
-            <h3>Другой</h3>
+            <h3>Другое</h3>
             <div className={style.links}>
               <Link to="/rus/yangiliklar">Новости</Link>
               <Link to="/rus/qabul">Приём</Link>

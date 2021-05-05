@@ -1,73 +1,79 @@
-import { combineReducers } from 'redux'
-import _ from 'lodash'
-
+import { combineReducers } from "redux";
+import _ from "lodash";
 
 //ALL APIS
 const fetchQuotasReducer = (state = [], action) => {
   switch (action.type) {
-    case 'FETCH_API_QUOTAS':
-      return [action.payload]
+    case "FETCH_API_QUOTAS":
+      return [action.payload];
     default:
-      return state
+      return state;
   }
-}
+};
 const fetchMessagesReducer = (state = [], action) => {
   switch (action.type) {
-    case 'FETCH_API_MESSAGES':
-      return [action.payload]
+    case "FETCH_API_MESSAGES":
+      return [action.payload];
     default:
-      return state
+      return state;
   }
-}
+};
 const fetchStudentsReducer = (state = [], action) => {
   switch (action.type) {
-    case 'FETCH_API_STUDENTS':
-      return [action.payload]
+    case "FETCH_API_STUDENTS":
+      return [action.payload];
     default:
-      return state
+      return state;
   }
-}
+};
 const fetchNewsReducer = (state = [], action) => {
   switch (action.type) {
-    case 'FETCH_API_NEWS':
-      return [action.payload]
+    case "FETCH_API_NEWS":
+      return [action.payload];
     default:
-      return state
+      return state;
   }
-}
+};
 //SELECTED_FOR_ANY_ACTION
 const selectedForAnyActionReducer = (state = [], action) => {
   switch (action.type) {
-    case 'SELECTED_ANY_ITEM':
-      return [action.payload]
+    case "SELECTED_ANY_ITEM":
+      return [action.payload];
     default:
-      return state
+      return state;
   }
-}
+};
 //CRUD OPERATIONS
 const productReducer = (state = {}, action) => {
   switch (action.type) {
-    case 'ADD_PRODUCT_QUOTAS':
+    case "ADD_PRODUCT_QUOTAS":
       return { ...state, [action.payload.id]: action.payload };
-    case 'EDIT_PRODUCT_QUOTAS':
-      return { ...state, [action.payload.id]: action.payload }
-    case 'DELETE_PRODUCT_QUOTAS':
-      return _.omit(state, action.payload)
+    case "EDIT_PRODUCT_QUOTAS":
+      return { ...state, [action.payload.id]: action.payload };
+    case "DELETE_PRODUCT_QUOTAS":
+      return _.omit(state, action.payload);
     default:
       return state;
   }
-}
+};
 // Change language
-const changeLanguageReducer = (state = 'UZB', action) => {
+const changeLanguageReducer = (state = "UZB", action) => {
   switch (action.type) {
-    case 'CHANGE_LANGUAGE':
-      return action.payload
+    case "CHANGE_LANGUAGE":
+      return action.payload;
     default:
       return state;
   }
-}
-
-
+};
+// SelectedNew
+const selectedNewReducer = (state = [], action) => {
+  switch (action.type) {
+    case "SELECTED_NEW":
+      return action.payload;
+    default:
+      return state;
+  }
+};
 
 export default combineReducers({
   productReducer: productReducer,
@@ -76,5 +82,6 @@ export default combineReducers({
   productsStudents: fetchStudentsReducer,
   productsNews: fetchNewsReducer,
   selected: selectedForAnyActionReducer,
-  language: changeLanguageReducer
-})
+  language: changeLanguageReducer,
+  new: selectedNewReducer,
+});

@@ -1,8 +1,12 @@
 import React, { useEffect, useState } from "react";
 import style from "./Navbar.module.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import logo from "../../assets/icons/logoFT.svg";
-import { AiFillCaretDown, AiOutlineInstagram } from "react-icons/ai";
+import {
+  AiFillCaretDown,
+  AiOutlineInstagram,
+  AiTwotoneHome,
+} from "react-icons/ai";
 import { FaFacebook, FaYoutube, FaTelegram, FaTwitter } from "react-icons/fa";
 import { connect } from "react-redux";
 import { changeLanguage } from "../../actions";
@@ -11,7 +15,6 @@ function Navbar(props) {
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
     document.addEventListener("scroll", (e) => {
-      console.log(window.scrollY);
       if (window.scrollY > 300) {
         setScroll(true);
       } else {
@@ -103,28 +106,34 @@ function Navbar(props) {
                       : style.languageBox
                   }
                 >
-                  <NavLink
-                    onClick={() => props.changeLanguage("UZB")}
-                    to="/"
-                    activeStyle={{ color: "white" }}
-                  >
+                  <NavLink onClick={() => props.changeLanguage("UZB")} to="/">
                     UZB
                   </NavLink>
                 </div>
-                <div className={style.languageBox}>
+                <div
+                  className={
+                    props.language === "RUS"
+                      ? style.languageBoxActive
+                      : style.languageBox
+                  }
+                >
                   <NavLink
                     onClick={() => props.changeLanguage("RUS")}
                     to="/rus"
-                    activeStyle={{ color: "white" }}
                   >
                     RUS
                   </NavLink>
                 </div>
-                <div className={style.languageBox}>
+                <div
+                  className={
+                    props.language === "ENG"
+                      ? style.languageBoxActive
+                      : style.languageBox
+                  }
+                >
                   <NavLink
                     onClick={() => props.changeLanguage("ENG")}
                     to="/eng"
-                    activeStyle={{ color: "white" }}
                   >
                     ENG
                   </NavLink>
@@ -142,13 +151,28 @@ function Navbar(props) {
           >
             <div className={style.container}>
               <div className={style.titleName}>
+                {/* <div className={style.home}> */}
+                <Link
+                  className={style.home}
+                  to="/"
+                  activeStyle={{ color: "rgb(2 162 255)" }}
+                >
+                  <AiTwotoneHome />
+                </Link>
+                {/* </div> */}
                 <div className={style.navbarLink}>
-                  <NavLink to="/filial" activeStyle={{ color: "white" }}>
+                  <NavLink
+                    to="/filial"
+                    activeStyle={{ color: "rgb(2 162 255)" }}
+                  >
                     Filial <span></span>
                   </NavLink>
                 </div>
                 <div className={style.navbarLink}>
-                  <NavLink to="/tuzilma" activeStyle={{ color: "white" }}>
+                  <NavLink
+                    to="/tuzilma"
+                    activeStyle={{ color: "rgb(2 162 255)" }}
+                  >
                     Tuzilma <span></span>
                     <AiFillCaretDown />
                   </NavLink>
@@ -166,7 +190,10 @@ function Navbar(props) {
                 </div>
                 <div className={style.navbarLink}>
                   {/* /Link ='/faoliyat' */}
-                  <NavLink to="/faoliyat" activeStyle={{ color: "white" }}>
+                  <NavLink
+                    to="/faoliyat"
+                    activeStyle={{ color: "rgb(2 162 255)" }}
+                  >
                     Faoliyat <span></span>
                     <AiFillCaretDown />
                   </NavLink>
@@ -176,22 +203,34 @@ function Navbar(props) {
                   </div>
                 </div>
                 <div className={style.navbarLink}>
-                  <NavLink to="/talabalar" activeStyle={{ color: "white" }}>
+                  <NavLink
+                    to="/talabalar"
+                    activeStyle={{ color: "rgb(2 162 255)" }}
+                  >
                     Talabalar <span></span>
                   </NavLink>
                 </div>
                 <div className={style.navbarLink}>
-                  <NavLink to="/qabul" activeStyle={{ color: "white" }}>
+                  <NavLink
+                    to="/qabul"
+                    activeStyle={{ color: "rgb(2 162 255)" }}
+                  >
                     Qabul <span></span>
                   </NavLink>
                 </div>
                 <div className={style.navbarLink}>
-                  <NavLink to="/bizhaqimizda" activeStyle={{ color: "white" }}>
+                  <NavLink
+                    to="/bizhaqimizda"
+                    activeStyle={{ color: "rgb(2 162 255)" }}
+                  >
                     Biz haqimizda <span></span>
                   </NavLink>
                 </div>
                 <div className={style.navbarLink}>
-                  <NavLink to="/aloqa" activeStyle={{ color: "white" }}>
+                  <NavLink
+                    to="/aloqa"
+                    activeStyle={{ color: "rgb(2 162 255)" }}
+                  >
                     Aloqa <span></span>
                   </NavLink>
                 </div>
@@ -209,5 +248,10 @@ function Navbar(props) {
     );
   }
 }
+const mapStateToProps = (state) => {
+  return {
+    language: state.language,
+  };
+};
 
-export default connect(null, { changeLanguage })(Navbar);
+export default connect(mapStateToProps, { changeLanguage })(Navbar);

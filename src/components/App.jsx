@@ -36,7 +36,7 @@ import Direktorat from './Tuzilma/Direktorat/Direktorat'
 import OquvUslubiy from './Tuzilma/Bolimlar/OquvUslubiy/OquvUslubiy'
 import Pictures from './Pictures/Pictures'
 import Tarbiyaviy from './Tuzilma/Bolimlar/Tarbiyaviy/Tarbiyaviy'
-
+import NewsCard from './Informations/Information'
 
 import GrantAdd from './admin-dashboard/admin-add/GrantAdd'
 import GrantDelete from './admin-dashboard/admin-add/GrantDelete'
@@ -52,7 +52,7 @@ import NewsDelete from './admin-dashboard/admin-add/NewsDelete'
 import NewsEdit from './admin-dashboard/admin-add/NewsEdit'
 import MainAdmin from './admin-dashboard/MainAdmin'
 
-
+import NewsCardEng from '../componenttsENG/Informations/Information'
 import NavbarEng from '../componenttsENG/Navbar/Navbar'
 import NavbarMobileEng from '../componenttsENG/Navbar/NavbarMobile'
 import HomeEng from '../componenttsENG/Home/Home'
@@ -88,7 +88,7 @@ import Home7Eng from '../componenttsENG/Home/HomeParts/Home7'
 import KengashEng from '../componenttsENG/Tuzilma/Kengash/Kengash'
 
 
-
+import NewsCardRus from '../componentsRUS/Informations/Information'
 import NavbarRus from '../componentsRUS/Navbar/Navbar'
 import NavbarMobileRus from '../componentsRUS/Navbar/NavbarMobile'
 import HomeRus from '../componentsRUS/Home/Home'
@@ -123,6 +123,7 @@ import KafedraRus from '../componentsRUS/Tuzilma/Kafedralar/Kafedra'
 import KengashRus from '../componentsRUS/Tuzilma/Kengash/Kengash'
 import RahbariyatRus from '../componentsRUS/Tuzilma/Rahbariyat/Rahbariyat'
 import Home1 from '../componentsRUS/Home/HomeParts/Home1'
+
 
 
 
@@ -234,7 +235,7 @@ function App(props) {
                             <Pictures />
                         </Route>
                         <Route path='/each/news/:id'>
-                            <h1>Hellooooooooooooo</h1>
+                            <NewsCard />
                         </Route>
                         <Route path='/tarbiyaviy-ishlar-bolimi'>
                             <Tarbiyaviy />
@@ -398,7 +399,7 @@ function App(props) {
                             <Pictures />
                         </Route>
                         <Route path='/eng/each/news/:id'>
-                            <h1>Hellooooooooooooo</h1>
+                        <NewsCardEng />
                         </Route>
                         <Route path='/eng/tarbiyaviy-ishlar-bolimi'>
                             <TarbiyaviyEng />
@@ -560,7 +561,7 @@ function App(props) {
                             <Pictures />
                         </Route>
                         <Route path='/rus/each/news/:id'>
-                            <h1>Hellooooooooooooo</h1>
+                        <NewsCardRus />
                         </Route>
                         <Route path='/rus/tarbiyaviy-ishlar-bolimi'>
                             <TarbiyaviyRus />

@@ -1,5 +1,5 @@
-import t1 from "../../../../../assets/img/usmanovTI.jpg";
-import t2 from "../../../../../assets/img/asadovTI.jpg";
+import t2 from "../../../../../assets/img/usmanovTI.jpg";
+import t1 from "../../../../../assets/img/asadovTI.jpg";
 import t3 from "../../../../../assets/img/egamovTI.jpg";
 
 export const teachers = [

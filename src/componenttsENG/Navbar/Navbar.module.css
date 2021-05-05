@@ -20,7 +20,7 @@
   transition: all 1s ease;
 }
 .socialMediaScroll {
-  background-color: #0f2b53;
+  background-color: #011b7c;
 }
 .socialMediaNotScroll {
   background-color: transparent;
@@ -34,6 +34,7 @@
 }
 .linksScroll {
   background-color: #fff;
+  box-shadow: 0 0 20px 0 #0f2b53;
 }
 .linksNotScroll {
   background-color: transparent;
@@ -57,7 +58,7 @@
   top: 0;
   left: 0;
   border-radius: 0px 0px 70px 70px;
-  background-color: #0f2b53;
+  background-color: #011b7c;
   box-shadow: 0px 0px 20px 4px;
   z-index: 1;
 }
@@ -200,6 +201,19 @@
   margin: auto;
   height: 100%;
 }
+.home {
+  width: 50px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.home svg {
+  width: 20px;
+  height: 20px;
+  color: #011b7c;
+}
 .navbarLink {
   display: flex;
   flex-direction: column;
@@ -228,7 +242,7 @@
   align-items: center;
   padding: 15px;
   width: 200px;
-  background: #0f2b53;
+  background: #011b7c;
   transition: all 1s ease;
 }
 .navbarLink .hoverDiv a {
