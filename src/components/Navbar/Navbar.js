@@ -155,7 +155,6 @@ function Navbar(props) {
                 <Link
                   className={style.home}
                   to="/"
-                  activeStyle={{ color: "rgb(2 162 255)" }}
                 >
                   <AiTwotoneHome />
                 </Link>

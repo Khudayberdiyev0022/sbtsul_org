@@ -152,7 +152,6 @@ function NavbarRus(props) {
               <Link
                   className={style.home}
                   to="/rus"
-                  activeStyle={{ color: "rgb(2 162 255)" }}
                 >
                   <AiTwotoneHome />
                 </Link>

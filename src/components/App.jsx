@@ -130,7 +130,6 @@ import Home1 from '../componentsRUS/Home/HomeParts/Home1'
 
 
 function App(props) {
-    console.log(props);
     const UzbRender = () => {
         return (
             <Fragment>
