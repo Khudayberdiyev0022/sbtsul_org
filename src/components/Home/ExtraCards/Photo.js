@@ -1,4 +1,4 @@
-import img1 from "../../../assets/img/slider2.webp";
+import img9 from "../../../assets/img/slider2.webp";
 import img2 from "../../../assets/img/football.jpg";
 import img3 from "../../../assets/img/sertificate.jpg";
 import img4 from "../../../assets/img/army.jpg";
@@ -6,7 +6,7 @@ import img5 from "../../../assets/img/marsh.jpg";
 import img6 from "../../../assets/img/kusherbayev.jpg";
 import img7 from "../../../assets/img/sports.jpg";
 import img8 from "../../../assets/img/happy.jpg";
-import img9 from "../../../assets/img/diplom.jpg";
+import img1 from "../../../assets/img/diplom.jpg";
 import icon1 from "../../../assets/icons/round-table.svg";
 import icon2 from "../../../assets/icons/team.svg";
 import icon3 from "../../../assets/icons/university.svg";

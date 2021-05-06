@@ -67,7 +67,6 @@ const Home5 = (props) => {
             })
           }
         </div>
-
         <div className={style.rightBlock}>
           <img src={fakeAPI[0].image} alt="news3" />
           <h4>{fakeAPI[0].title}</h4>

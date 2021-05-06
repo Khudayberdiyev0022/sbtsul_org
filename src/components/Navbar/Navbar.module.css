@@ -238,7 +238,7 @@
 }
 .navbarLink:hover .hoverDiv {
   position: absolute;
-  top: 50px;
+  top: 45px;
   left: -15px;
   display: flex;
   flex-direction: column;
@@ -300,7 +300,7 @@
 }
 
 .navbarLink a {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
