@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import style from "./Home9.module.css";
 import Carousel from "react-elastic-carousel";
 import img1 from "../../../assets/images/foydali1.png";
-import img2 from "../../../assets/images/foydali2.png";
+import img2 from "../../../assets/images/logo.png";
 import img3 from "../../../assets/images/foydali3.png";
 import img4 from "../../../assets/images/foydali2.png";
 import img5 from "../../../assets/images/foydali1.png";
@@ -32,7 +32,7 @@ function Home9() {
       id: 4,
       title: "O`zbekiston Respublikasi partali",
       image: img4,
-      link: "http://portal.uz/",
+      link: "https://president.uz/",
     },
     {
       id: 5,
@@ -73,10 +73,9 @@ function Home9() {
                 className={style.image}
                 style={{ backgroundImage: `url(${item.image})` }}
               ></div>
-              <a
-               rel="noreferrer"
-               target="__blank"
-              href={item.link}>{item.title}</a>
+              <a rel="noreferrer" target="__blank" href={item.link}>
+                {item.title}
+              </a>
             </div>
           ))}
         </Carousel>

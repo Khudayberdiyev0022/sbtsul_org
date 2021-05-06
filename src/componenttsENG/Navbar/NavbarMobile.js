@@ -33,7 +33,7 @@ function NavbarMobile(props) {
     >
       <div className={style.container}>
         <div className={style.mainPart}>
-          <Link onClick={() => setClicked(false)} to="/">
+          <Link onClick={() => setClicked(false)} to="/eng/">
             <img src={logo} alt="logo" />
           </Link>
           {clicked ? (
@@ -54,7 +54,7 @@ function NavbarMobile(props) {
               <Link
                 onClick={() => setClicked(false)}
                 datatext="Filial"
-                to="/filial"
+                to="/eng/filial"
               >
                 Branch <span></span>
               </Link>
@@ -63,7 +63,7 @@ function NavbarMobile(props) {
               <Link
                 onClick={() => setClicked(false)}
                 datatext="Tuzilma"
-                to="/tuzilma"
+                to="/eng/tuzilma"
               >
                 Structure <span></span>
               </Link>
@@ -72,7 +72,7 @@ function NavbarMobile(props) {
               <Link
                 onClick={() => setClicked(false)}
                 datatext="Faoliyat"
-                to="/faoliyat"
+                to="/eng/faoliyat"
               >
                 Activity <span></span>
               </Link>
@@ -81,7 +81,7 @@ function NavbarMobile(props) {
               <Link
                 onClick={() => setClicked(false)}
                 datatext="Talabalar"
-                to="/talabalar"
+                to="/eng/talabalar"
               >
                 Students <span></span>
               </Link>
@@ -90,7 +90,7 @@ function NavbarMobile(props) {
               <Link
                 onClick={() => setClicked(false)}
                 datatext="Qabul"
-                to="/qabul"
+                to="/eng/qabul"
               >
                 Acceptance <span></span>
               </Link>
@@ -99,7 +99,7 @@ function NavbarMobile(props) {
               <Link
                 onClick={() => setClicked(false)}
                 datatext="Biz haqimizda"
-                to="/bizhaqimizda"
+                to="/eng/bizhaqimizda"
               >
                 About Us <span></span>
               </Link>
@@ -108,7 +108,7 @@ function NavbarMobile(props) {
               <Link
                 onClick={() => setClicked(false)}
                 datatext="Aloqa"
-                to="/aloqa"
+                to="/eng/aloqa"
               >
                 Contact <span></span>
               </Link>
@@ -143,7 +143,7 @@ function NavbarMobile(props) {
                   setClicked(false);
                   props.changeLanguage("ENG");
                 }}
-                to="eng"
+                to="/eng"
               >
                 ENG
               </Link>

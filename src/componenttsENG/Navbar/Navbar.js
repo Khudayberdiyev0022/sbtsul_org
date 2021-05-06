@@ -6,8 +6,10 @@ import {
   AiFillCaretDown,
   AiOutlineInstagram,
   AiTwotoneHome,
+  AiOutlineMail
 } from "react-icons/ai";
-import { FaFacebook, FaYoutube, FaTelegram, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaYoutube, FaTelegram } from "react-icons/fa";
+import { FiPhone } from 'react-icons/fi'
 import { connect } from "react-redux";
 import { changeLanguage } from "../../actions";
 
@@ -87,20 +89,15 @@ function NavbarEng(props) {
                 >
                   <FaTelegram />
                 </a>
-                <a
-                  rel="norefer"
-                  traget="_blank"
-                  href="/"
-                  className={style.icon}
-                >
-                  <FaTwitter />
-                </a>
+
               </div>
               <div className={style.us}>
                 <a href="tel://+998 71 20703 78" rel="norefer" traget="_blank">
+                  <FiPhone />
                   +998 71 20703 78
                 </a>
                 <a href="mailto://info@sbtsul.uz" rel="norefer" traget="_blank">
+                  <AiOutlineMail />
                   info@sbtsul.uz
                 </a>
               </div>

@@ -12,31 +12,31 @@ function Home9() {
     {
       id: 1,
       title:
-        "O`zbekiston Respublikasi Qonun hujatlari ma`lumotlari milliy bazasi",
+        "National database of legislation of the Republic of Uzbekistan",
       image: img1,
       link: "https://lex.uz/",
     },
     {
       id: 2,
-      title: "Ta`lim oluvchilar reytingini hisobga olish elektron tizimi",
+      title: "Electronic system of student rating",
       image: img2,
       link: "https://ort.sbtsul.uz/",
     },
     {
       id: 3,
-      title: "Yagona interaktiv davlat xizmatlari portali",
+      title: "Single interactive public services portal",
       image: img3,
       link: "https://my.gov.uz/",
     },
     {
       id: 4,
-      title: "O`zbekiston Respublikasi partali",
+      title: "Portal of the Republic of Uzbekistan",
       image: img4,
-      link: "http://portal.uz/",
+      link: "https://president.uz/",
     },
     {
       id: 5,
-      title: "Alisher Navoiy nomidagi O‘zbekiston Milliy kutubxonasi",
+      title: "Alisher Navoi National Library of Uzbekistan",
       image: img5,
       link: "https://www.natlib.uz/",
     },

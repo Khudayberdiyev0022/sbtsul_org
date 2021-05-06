@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import style from "./Home9.module.css";
 import Carousel from "react-elastic-carousel";
 import img1 from "../../../assets/images/foydali1.png";
-import img2 from "../../../assets/images/foydali2.png";
+import img2 from "../../../assets/images/logo.png";
 import img3 from "../../../assets/images/foydali3.png";
 import img4 from "../../../assets/images/foydali2.png";
 import img5 from "../../../assets/images/foydali1.png";
@@ -12,31 +12,31 @@ function Home9() {
     {
       id: 1,
       title:
-        "O`zbekiston Respublikasi Qonun hujatlari ma`lumotlari milliy bazasi",
+        "Национальная база данных законодательства Республики Узбекистан",
       image: img1,
       link: "https://lex.uz/",
     },
     {
       id: 2,
-      title: "Ta`lim oluvchilar reytingini hisobga olish elektron tizimi",
+      title: "Электронная система студенческого рейтинга",
       image: img2,
       link: "https://ort.sbtsul.uz/",
     },
     {
       id: 3,
-      title: "Yagona interaktiv davlat xizmatlari portali",
+      title: "Единый интерактивный портал госуслуг",
       image: img3,
       link: "https://my.gov.uz/",
     },
     {
       id: 4,
-      title: "O`zbekiston Respublikasi partali",
+      title: "Портал Республики Узбекистан",
       image: img4,
-      link: "http://portal.uz/",
+      link: "https://president.uz/",
     },
     {
       id: 5,
-      title: "Alisher Navoiy nomidagi O‘zbekiston Milliy kutubxonasi",
+      title: "Национальная библиотека Узбекистана имени Алишера Навои",
       image: img5,
       link: "https://www.natlib.uz/",
     },

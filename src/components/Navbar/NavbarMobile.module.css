@@ -12,11 +12,11 @@
     position: fixed;
   }
   .mainStatic {
-    background-color: #0f2b53;
+    background-color: #011b7c;
     opacity: 0.9;
   }
   .mainFixed {
-    background-color: #0f2b53;
+    background-color: #011b7c;
   }
   .container {
     width: 100%;
@@ -115,7 +115,7 @@
     -webkit-text-stroke-color: rgb(255, 255, 255);
   }
   .navbarLink a::before {
-    color: #0f2b53d0;
+    color: #011b7cd0;
     transition: all 0.5s ease;
   }
   .languageBlock {
