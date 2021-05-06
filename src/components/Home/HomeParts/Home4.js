@@ -1,11 +1,13 @@
 import React from 'react'
 import style from './Home4.module.css'
 import Countup from 'react-countup'
+import Flip from 'react-reveal/Flip';
 
 const Home4 = () => {
    return (
       <div className={style.main}>
          <div className={style.container}>
+            <Flip top cascade>
             <div className={style.staticBlock}>
                <div className={style.card1}>
                   <div className={style.staticBox}>
@@ -78,6 +80,7 @@ const Home4 = () => {
                   </div>
                </div>
             </div>
+            </Flip>
          </div>
       </div >
    )

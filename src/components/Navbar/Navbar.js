@@ -6,12 +6,15 @@ import {
   AiFillCaretDown,
   AiOutlineInstagram,
   AiTwotoneHome,
-  AiOutlineMail
+  AiOutlineMail,
 } from "react-icons/ai";
 import { FaFacebook, FaYoutube, FaTelegram } from "react-icons/fa";
-import { FiPhone } from 'react-icons/fi'
+import { FiPhone } from "react-icons/fi";
 import { connect } from "react-redux";
 import { changeLanguage } from "../../actions";
+import uzbekistan from "../../assets/img/uzbekistan.gif";
+import russia from "../../assets/img/russia.gif";
+import england from "../../assets/img/england.gif";
 
 function Navbar(props) {
   const [scroll, setScroll] = useState(false);
@@ -55,33 +58,33 @@ function Navbar(props) {
             <div className={style.container}>
               <div className={style.social}>
                 <a
-                  rel="norefer"
-                  traget="_blank"
-                  href="/"
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://www.instagram.com/sbtsul.uz/"
                   className={style.icon}
                 >
                   <AiOutlineInstagram />
                 </a>
                 <a
-                  rel="norefer"
-                  traget="_blank"
-                  href="/"
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://fb.me/sbtsul"
                   className={style.icon}
                 >
                   <FaFacebook />
                 </a>
                 <a
-                  rel="norefer"
-                  traget="_blank"
+                  rel="noreferrer"
+                  target="_blank"
                   href="/"
                   className={style.icon}
                 >
                   <FaYoutube />
                 </a>
                 <a
-                  rel="norefer"
-                  traget="_blank"
-                  href="/"
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://t.me/TDYU_ixtisoslashtirilgan_filiali"
                   className={style.icon}
                 >
                   <FaTelegram />
@@ -96,11 +99,19 @@ function Navbar(props) {
                 </a> */}
               </div>
               <div className={style.us}>
-                <a href="tel://+998 71 20703 78" rel="norefer" traget="_blank">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="tel://+998 71 20703 78"
+                >
                   <FiPhone />
                   +998 71 20703 78
                 </a>
-                <a href="mailto://info@sbtsul.uz" rel="norefer" traget="_blank">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  href="mailto://info@sbtsul.uz"
+                >
                   <AiOutlineMail />
                   info@sbtsul.uz
                 </a>
@@ -114,7 +125,7 @@ function Navbar(props) {
                   }
                 >
                   <NavLink onClick={() => props.changeLanguage("UZB")} to="/">
-                    UZB
+                    <img src={uzbekistan} alt="uzbekistan" />
                   </NavLink>
                 </div>
                 <div
@@ -128,7 +139,7 @@ function Navbar(props) {
                     onClick={() => props.changeLanguage("RUS")}
                     to="/rus"
                   >
-                    RUS
+                    <img src={russia} alt="russia" />
                   </NavLink>
                 </div>
                 <div
@@ -142,7 +153,7 @@ function Navbar(props) {
                     onClick={() => props.changeLanguage("ENG")}
                     to="/eng"
                   >
-                    ENG
+                    <img src={england} alt="england" />
                   </NavLink>
                 </div>
               </div>

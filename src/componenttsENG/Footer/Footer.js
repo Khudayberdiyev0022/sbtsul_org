@@ -11,7 +11,7 @@ const FooterEng = () => {
           <div className={style.sections}>
             <h3>Pages</h3>
             <div className={style.links}>
-              <Link to="/eng/talim">Vacancies</Link>
+              <Link to="/eng/vakansiya">Vacancies</Link>
               <Link to="/eng/tuzilma">Structure</Link>
               <Link to="/eng/filial">Branch</Link>
             </div>

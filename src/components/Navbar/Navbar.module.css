@@ -42,7 +42,7 @@
 }
 .linksNotScroll .navbarLink a {
   color: #fff;
-  font-weight: 300;
+  font-weight: 600;
 }
 .container {
   justify-content: space-between;
@@ -146,14 +146,23 @@
   align-items: center;
   justify-content: space-between;
 }
-
+.language img {
+  height: 24px;
+  width: 100%;
+  object-fit: contain;
+}
+.language a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .languageBox {
-  padding: 2px;
-  border: 1px solid #fff;
+  border: 1px solid #0f2b53;
   margin: 4px;
   border-radius: 4px;
   cursor: pointer;
   transition: ease-in-out 0.4s all;
+  background: #fff;
 }
 
 .languageBox:hover {
@@ -190,6 +199,9 @@
   background-color: #fff;
   transition: ease-in-out 0.4s all;
   border: 1px solid #0f2b53;
+}
+.languageBoxActive img {
+  height: 30px;
 }
 .languageBoxActive a {
   color: #0f2b53;

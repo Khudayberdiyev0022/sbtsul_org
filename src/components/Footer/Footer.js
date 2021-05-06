@@ -23,7 +23,7 @@ const Footer = () => {
             <div className={style.sections}>
               <h3>Sahifalar</h3>
               <div className={style.links}>
-                <Link to="/talim">Bo'sh ish o'rinlari</Link>
+                <Link to="/vakansiya">Bo'sh ish o'rinlari</Link>
                 <Link to="/tuzilma">Tuzilma</Link>
                 <Link to="/filial">Filial</Link>
               </div>

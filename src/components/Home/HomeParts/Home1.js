@@ -27,19 +27,36 @@ function Home1() {
       clearInterval(interval);
     };
   });
-
-  return (
-    <Fragment>
-      <div className={style.main}>
-        <div
-          className={style.Home1}
-          style={{ backgroundImage: `url(${image})` }}
-        >
-          <div className={style.bg}></div>
+  const [admin, setAdmin] = useState(false);
+  useEffect(() => {
+    if (window.location.pathname.includes("admin")) {
+      setAdmin(true);
+    } else {
+      setAdmin(false);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+  // style.links
+  if (admin) {
+    return null;
+  } else {
+    return (
+      <Fragment>
+        <div className={style.main}>
+          <div
+            className={style.Home1}
+            style={{ backgroundImage: `url(${image})` }}
+          >
+            <div className={style.bg}></div>
+            <span></span>
+            <h1>
+              Toshkent davlat yuridik universiteti ixtisoslashtirilgan filiali
+            </h1>
+          </div>
         </div>
-      </div>
-    </Fragment>
-  );
+      </Fragment>
+    );
+  }
 }
 
 export default Home1;
