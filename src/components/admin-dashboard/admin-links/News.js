@@ -12,22 +12,23 @@ function News(props) {
         props.fetchNewsProducts()
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
+    console.log(props.news)
     const listRender = () => {
         if (name.length > 0) {
             return (
                 props.news
-                    ? props.news.map(newList => newList.title.toLowerCase().includes(name.toLowerCase()) && (
+                    ? props.news.map(newList => newList.titleUzb.toLowerCase().includes(name.toLowerCase()) && (
                         <div key={newList.id} className={style.tableDetail}>
                             <h2>{newList.id}</h2>
                             <h2>{
-                                newList.title.split('').length > 20
-                                    ? newList.title.slice(0, 20)
-                                    : newList.title
+                                newList.titleUzb.split('').length > 20
+                                    ? newList.titleUzb.slice(0, 20)
+                                    : newList.titleUzb
                             }</h2>
                             <h2>{
-                                newList.paragraph.split('').length > 30
-                                    ? newList.paragraph.slice(0, 30)
-                                    : newList.paragraph
+                                newList.paragraphUzb.split('').length > 30
+                                    ? newList.paragraphUzb.slice(0, 30)
+                                    : newList.paragraphUzb
                             }</h2>
                             <h2>{
                                 newList.date.split('').length > 10
@@ -51,14 +52,14 @@ function News(props) {
                                 <div key={newList.id} className={style.tableDetail}>
                                     <h2>{newList.id}</h2>
                                     <h2>{
-                                        newList.title.split('').length > 20
-                                            ? newList.title.slice(0, 20)
-                                            : newList.title
+                                        newList.titleUzb.split('').length > 20
+                                            ? newList.titleUzb.slice(0, 20)
+                                            : newList.titleUzb
                                     }</h2>
                                     <h2>{
-                                        newList.paragraph.split('').length > 30
-                                            ? newList.paragraph.slice(0, 30)
-                                            : newList.paragraph
+                                        newList.paragraphUzb.split('').length > 30
+                                            ? newList.paragraphUzb.slice(0, 30)
+                                            : newList.paragraphUzb
                                     }</h2>
                                     <h2>{
                                         newList.date.split('').length > 10

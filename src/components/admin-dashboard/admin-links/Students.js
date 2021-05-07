@@ -18,12 +18,12 @@ function Students(props) {
         if (name.length > 0) {
             return (
                 props.students
-                    ? props.students.map(student => student.name.toLowerCase().includes(name.toLowerCase()) && (
+                    ? props.students.map(student => student.nameUzb.toLowerCase().includes(name.toLowerCase()) && (
                         <div key={student.id} className={style.tableDetail}>
                             <h2>{student.id}</h2>
-                            <h2>{student.name.split('').length > 20 ? student.name.slice(0, 20) : student.name}</h2>
-                            <h2>{student.information.split('').length > 30 ? student.information.slice(0, 30) : student.information}</h2>
-                            <h2>{student.number.split('').length > 15 ? student.number.slice(0, 15) : student.number}</h2>
+                            <h2>{student.nameUzb.split('').length > 20 ? student.nameUzb.slice(0, 20) : student.nameUzb}</h2>
+                            <h2>{student.informationUzb.split('').length > 30 ? student.informationUzb.slice(0, 30) : student.informationUzb}</h2>
+                            <h2>{student.email.split('').length > 15 ? student.email.slice(0, 15) : student.email}</h2>
                             <div className={style.twoButtons}>
                                 <Link to='/admin/delete/students' onClick={() => props.selectedAnyItem(student)}>Delete</Link>
                                 <Link to='/admin/edit/students' onClick={() => props.selectedAnyItem(student)}> Edit</Link>
@@ -40,9 +40,9 @@ function Students(props) {
                             return (
                                 <div key={student.id} className={style.tableDetail}>
                                     <h2>{student.id}</h2>
-                                    <h2>{student.name.split('').length > 20 ? student.name.slice(0, 20) : student.name}</h2>
-                                    <h2>{student.information.split('').length > 30 ? student.information.slice(0, 30) : student.information}</h2>
-                                    <h2>{student.number.split('').length > 15 ? student.number.slice(0, 15) : student.number}</h2>
+                                    <h2>{student.nameUzb.split('').length > 20 ? student.nameUzb.slice(0, 20) : student.nameUzb}</h2>
+                                    <h2>{student.informationUzb.split('').length > 30 ? student.informationUzb.slice(0, 30) : student.informationUzb}</h2>
+                                    <h2>{student.email.split('').length > 15 ? student.email.slice(0, 15) : student.email}</h2>
                                     <div className={style.twoButtons}>
                                         <Link to='/admin/delete/students' onClick={() => props.selectedAnyItem(student)}>Delete</Link>
                                         <Link to='/admin/edit/students' onClick={() => props.selectedAnyItem(student)}> Edit</Link>

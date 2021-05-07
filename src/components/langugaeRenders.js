@@ -6,6 +6,8 @@ import {
   useLocation,
 } from "react-router-dom";
 
+//UZB
+
 import Navbar from "./Navbar/Navbar";
 import NavbarMobile from "./Navbar/NavbarMobile";
 import Home from "./Home/Home";
@@ -43,6 +45,8 @@ import Tarbiyaviy from "./Tuzilma/Bolimlar/Tarbiyaviy/Tarbiyaviy";
 import NewsCard from "./Informations/Information";
 import Vakansiya from "./Vacansiec/Vakansiya";
 
+//ENG
+
 import NewsCardEng from "../componenttsENG/Informations/Information";
 import NavbarEng from "../componenttsENG/Navbar/Navbar";
 import NavbarMobileEng from "../componenttsENG/Navbar/NavbarMobile";
@@ -79,6 +83,8 @@ import Home7Eng from "../componenttsENG/Home/HomeParts/Home7";
 import KengashEng from "../componenttsENG/Tuzilma/Kengash/Kengash";
 import VakansiyaEng from "../componenttsENG/Vacansiec/Vakansiya";
 
+// RUS
+
 import NewsCardRus from "../componentsRUS/Informations/Information";
 import NavbarRus from "../componentsRUS/Navbar/Navbar";
 import NavbarMobileRus from "../componentsRUS/Navbar/NavbarMobile";
@@ -93,7 +99,7 @@ import QabulRus from "../componentsRUS/Qabul/Qabul";
 import ArmRus from "../componentsRUS/Tuzilma/ARM/Arm";
 import ATRus from "../componentsRUS/Tuzilma/Bolimlar/AT/AT";
 import BuxgalteriyaRus from "../componentsRUS/Tuzilma/Bolimlar/Buxgalteriya/Buxgalteriya";
-import DirektoratRus from "../componentsRUS/Tuzilma/Bolimlar/Direktorat/Direktorat";
+import DirektoratRus from "../componentsRUS/Tuzilma/Direktorat/Direktorat";
 import EkspluatatsiyaRus from "../componentsRUS/Tuzilma/Bolimlar/Ekspluatatsiya/Ekspluatatsiya";
 import IkkinchiRus from "../componentsRUS/Tuzilma/Bolimlar/Ikkinchi/Ikkinchi";
 import KadrlarRus from "../componentsRUS/Tuzilma/Bolimlar/Kadrlar/Kadrlar";
@@ -129,6 +135,8 @@ import NewsAdd from "./admin-dashboard/admin-add/NewsAdd";
 import NewsDelete from "./admin-dashboard/admin-add/NewsDelete";
 import NewsEdit from "./admin-dashboard/admin-add/NewsEdit";
 import MainAdmin from "./admin-dashboard/MainAdmin";
+import Home1Eng from "../componenttsENG/Home/HomeParts/Home1";
+import Home1Rus from "../componentsRUS/Home/HomeParts/Home1";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -310,7 +318,7 @@ export const EngRender = () => {
         <ScrollToTop />
         <NavbarEng />
         <NavbarMobileEng />
-        <Home1 />
+        <Home1Eng />
         <Switch>
           <Route exact path="/eng">
             <HomeEng />
@@ -473,7 +481,7 @@ export const RusRender = () => {
         <ScrollToTop />
         <NavbarRus />
         <NavbarMobileRus />
-        <Home1 />
+        <Home1Rus />
         <Switch>
           <Route exact path="/rus">
             <HomeRus />

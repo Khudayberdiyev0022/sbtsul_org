@@ -5,26 +5,76 @@ import style from './GrantEdit.module.css'
 import { Link } from 'react-router-dom'
 import NotFound from '../main-parts/404'
 
+// const initialState = {
+//     title: '',
+//     paragraph: '',
+//     date: '',
+//     pictureURL: '',
+//     clicked: false
+// }
+// const reducer = (state, action) => {
+//     switch (action.type) {
+//         case 'TITLE':
+//             return {
+//                 ...state, title: action.payload
+//             }
+//         case 'PARAGRAPH':
+//             return {
+//                 ...state, paragraph: action.payload
+//             }
+//         case 'DATE':
+//             return {
+//                 ...state, date: action.payload
+//             }
+//         case 'URL':
+//             return {
+//                 ...state, pictureURL: action.payload
+//             }
+//         case 'CLEAR':
+//             return initialState
+//         case 'CLICKED':
+//             return {
+//                 ...state, clicked: true
+//             }
+//         default:
+//             return state
+//     }
+// }
 const initialState = {
-    title: '',
-    paragraph: '',
-    date: '',
+    titleUzb: '',
+    titleRus: '',
+    titleEng: '',
+    paragraphUzb: '',
+    paragraphRus: '',
+    paragraphEng: '',
     pictureURL: '',
     clicked: false
 }
 const reducer = (state, action) => {
     switch (action.type) {
-        case 'TITLE':
+        case 'TITLE_UZB':
             return {
-                ...state, title: action.payload
+                ...state, titleUzb: action.payload
             }
-        case 'PARAGRAPH':
+        case 'TITLE_RUS':
             return {
-                ...state, paragraph: action.payload
+                ...state, titleRus: action.payload
             }
-        case 'DATE':
+        case 'TITLE_ENG':
             return {
-                ...state, date: action.payload
+                ...state, titleEng: action.payload
+            }
+        case 'PARAGRAPH_UZB':
+            return {
+                ...state, paragraphUzb: action.payload
+            }
+        case 'PARAGRAPH_RUS':
+            return {
+                ...state, paragraphRus: action.payload
+            }
+        case 'PARAGRAPH_ENG':
+            return {
+                ...state, paragraphEng: action.payload
             }
         case 'URL':
             return {
@@ -42,7 +92,6 @@ const reducer = (state, action) => {
 }
 
 
-
 function NewsEdit(props) {
     const [state, dispatch] = useReducer(reducer, initialState)
 
@@ -50,9 +99,12 @@ function NewsEdit(props) {
         window.localStorage.setItem('admin', '12211221')
     }
     useEffect(() => {
-        dispatch({ type: 'TITLE', payload: props.item?.title })
-        dispatch({ type: 'PARAGRAPH', payload: props.item?.paragraph })
-        dispatch({ type: 'DATE', payload: props.item?.date })
+        dispatch({ type: 'TITLE_UZB', payload: props.item?.titleUzb })
+        dispatch({ type: 'TITLE_RUS', payload: props.item?.titleRus })
+        dispatch({ type: 'TITLE_ENG', payload: props.item?.titleEng })
+        dispatch({ type: 'PARAGRAPH_UZB', payload: props.item?.paragraphUzb })
+        dispatch({ type: 'PARAGRAPH_RUS', payload: props.item?.paragraphRus })
+        dispatch({ type: 'PARAGRAPH_ENG', payload: props.item?.paragraphEng })
         dispatch({ type: 'URL', payload: props.item?.pictureURL })
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
@@ -66,9 +118,13 @@ function NewsEdit(props) {
         e.preventDefault()
         if (state.title !== '' && state.numberOfQuotas !== '' && state.date !== '') {
             const item = {
-                title: state.title,
-                numberOfQuotas: state.numberOfQuotas,
-                date: state.date
+                titleUzb: state.titleUzb,
+                titleRus: state.titleRus,
+                titleEng: state.titleEng,
+                paragraphUzb: state.paragraphUzb,
+                paragraphRus: state.paragraphRus,
+                paragraphEng: state.paragraphEng,
+                pictureURL: state.pictureURL,
             }
             props.editProduct('news', props.item.id, item)
         }
@@ -83,40 +139,90 @@ function NewsEdit(props) {
                 <form
                     onSubmit={submitHandler}
                 >
-                    <h2>Title</h2>
-                    <input
-                        required
-                        value={state.title}
-                        type="text"
-                        onChange={e => dispatch({ type: 'TITLE', payload: e.target.value })}
-                    />
-                    <h2>Paragraph</h2>
-                    <input
-                        required
-                        value={state.paragraph}
-                        type="text"
-                        onChange={e => dispatch({ type: 'PARAGRAPH', payload: e.target.value })}
-                    />
-                    <h2>Date</h2>
-                    <input
-                        required
-                        value={state.date}
-                        type="text"
-                        onChange={e => dispatch({ type: 'DATE', payload: e.target.value })}
-                    />
-                    <h2>URL</h2>
-                    <input
-                        required
-                        value={state.pictureURL}
-                        type="text"
-                        onChange={e => dispatch({ type: 'URL', payload: e.target.value })}
-                        placeholder='https://www.picture.com'
-                    />
+                    <div className={style.forms}>
+                        <div className={style.block}>
+                            <h2>Sarlavha</h2>
+                            <input
+                                required
+                                value={state.titleUzb}
+                                type="text"
+                                onChange={e => dispatch({ type: 'TITLE_UZB', payload: e.target.value })}
+                            />
+                            <h2>Matn</h2>
+                            <textarea
+                                required
+                                value={state.paragraphUzb}
+                                type="text"
+                                onChange={e => dispatch({ type: 'PARAGRAPH_UZB', payload: e.target.value })}
+                            />
+                            <h2>Rasm manzili</h2>
+                            <input
+                                required
+                                value={state.pictureURL}
+                                type="text"
+                                onChange={e => dispatch({ type: 'URL', payload: e.target.value })}
+                                placeholder='https://www.picture.com'
+                            />
 
+
+                        </div>
+                        <div className={style.block}>
+                            <h2>Title</h2>
+                            <input
+                                required
+                                value={state.titleEng}
+                                type="text"
+                                onChange={e => dispatch({ type: 'TITLE_ENG', payload: e.target.value })}
+                            />
+                            <h2>Paragraph</h2>
+                            <textarea
+                                required
+                                value={state.paragraphEng}
+                                type="text"
+                                onChange={e => dispatch({ type: 'PARAGRAPH_ENG', payload: e.target.value })}
+                            />
+                            <h2>URL</h2>
+                            <input
+                                required
+                                value={state.pictureURL}
+                                type="text"
+                                onChange={e => dispatch({ type: 'URL', payload: e.target.value })}
+                                placeholder='https://www.picture.com'
+                            />
+
+
+                        </div>
+                        <div className={style.block}>
+                            <h2>Заголовок</h2>
+                            <input
+                                required
+                                value={state.titleRus}
+                                type="text"
+                                onChange={e => dispatch({ type: 'TITLE_RUS', payload: e.target.value })}
+                            />
+                            <h2>Параграф</h2>
+                            <textarea
+                                required
+                                value={state.paragraphRus}
+                                type="text"
+                                onChange={e => dispatch({ type: 'PARAGRAPH_RUS', payload: e.target.value })}
+                            />
+                            <h2>Адресс картинки</h2>
+                            <input
+                                required
+                                value={state.pictureURL}
+                                type="text"
+                                onChange={e => dispatch({ type: 'URL', payload: e.target.value })}
+                                placeholder='https://www.picture.com'
+                            />
+
+
+                        </div>
+
+                    </div>
                     <button type="submit">Submit</button>
-                    {/* <button value='Enabled'>Submit</button> */}
-
                 </form>
+
             </div>
             {
                 state.clicked && <div className={style.modal}>

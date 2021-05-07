@@ -6,24 +6,69 @@ import { Link } from 'react-router-dom'
 import NotFound from '../main-parts/404'
 
 const initialState = {
-    title: '',
-    number: '',
-    date: '',
+    titleUzb: '',
+    titleRus: '',
+    titleEng: '',
+    numberOfAllQuotasUzb: '',
+    numberOfAllQuotasRus: '',
+    numberOfAllQuotasEng: '',
+    numberOfStudentsAllUzb: '',
+    numberOfStudentsAllRus: '',
+    numberOfStudentsAllEng: '',
+    numberOfStudentsDailyUzb: '',
+    numberOfStudentsDailyRus: '',
+    numberOfStudentsDailyEng: '',
     clicked: false
 }
 const reducer = (state, action) => {
     switch (action.type) {
-        case 'TITLE':
+        case 'TITLE_UZB':
             return {
-                ...state, title: action.payload
+                ...state, titleUzb: action.payload
             }
-        case 'QUOTAS':
+        case 'TITLE_RUS':
             return {
-                ...state, number: action.payload
+                ...state, titleRus: action.payload
             }
-        case 'DATE':
+        case 'TITLE_ENG':
             return {
-                ...state, date: action.payload
+                ...state, titleEng: action.payload
+            }
+        case 'ALL_QUOTAS_UZB':
+            return {
+                ...state, numberOfAllQuotasUzb: action.payload
+            }
+        case 'ALL_QUOTAS_RUS':
+            return {
+                ...state, numberOfAllQuotasRus: action.payload
+            }
+        case 'ALL_QUOTAS_ENG':
+            return {
+                ...state, numberOfAllQuotasEng: action.payload
+            }
+        case 'DAILY_STUDENTS_UZB':
+            return {
+                ...state, numberOfStudentsDailyUzb: action.payload
+            }
+        case 'DAILY_STUDENTS_RUS':
+            return {
+                ...state, numberOfStudentsDailyRus: action.payload
+            }
+        case 'DAILY_STUDENTS_ENG':
+            return {
+                ...state, numberOfStudentsDailyEng: action.payload
+            }
+        case 'ALL_STUDENTS_UZB':
+            return {
+                ...state, numberOfStudentsAllUzb: action.payload
+            }
+        case 'ALL_STUDENTS_RUS':
+            return {
+                ...state, numberOfStudentsAllRus: action.payload
+            }
+        case 'ALL_STUDENTS_ENG':
+            return {
+                ...state, numberOfStudentsAllEng: action.payload
             }
         case 'CLEAR':
             return initialState
@@ -50,10 +95,8 @@ function GrantAdd(props) {
     }
     const submitHandler = (e) => {
         e.preventDefault()
-        console.log(state.title, '-', state.number, '-', state.date);
-        if (state.title !== '' && state.number !== '' && state.date !== '') {
+        if (state.title !== '' && state.number !== '') {
 
-            console.log(state.title, '-', state.number, '-', state.date);
             props.addProduct('quotas', state)
         }
         dispatch({ type: 'CLEAR' })
@@ -70,32 +113,102 @@ function GrantAdd(props) {
                 <form
                     onSubmit={submitHandler}
                 >
-                    <h2>Title</h2>
-                    <input
-                        required
-                        value={state.title}
-                        type="text"
-                        onChange={e => dispatch({ type: 'TITLE', payload: e.target.value })}
-                    />
-                    <h2>Number of quotas</h2>
-                    <input
-                        required
-                        value={state.number}
-                        type="text"
-                        onChange={e => dispatch({ type: 'QUOTAS', payload: e.target.value })}
-                    />
-                    <h2>Date</h2>
-                    <input
-                        required
-                        value={state.date}
-                        type="text"
-                        onChange={e => dispatch({ type: 'DATE', payload: e.target.value })}
-                    />
-
+                    <div className={style.forms}>
+                        <div className={style.block}>
+                            <h2>Sarlavha</h2>
+                            <input
+                                required
+                                value={state.titleUzb}
+                                type="text"
+                                onChange={e => dispatch({ type: 'TITLE_UZB', payload: e.target.value })}
+                            />
+                            <h2>Kvotalar soni</h2>
+                            <textarea
+                                required
+                                value={state.numberOfAllQuotasUzb}
+                                type="text"
+                                onChange={e => dispatch({ type: 'ALL_QUOTAS_UZB', payload: e.target.value })}
+                            />
+                            <h2>Kunlik qabul soni</h2>
+                            <textarea
+                                required
+                                value={state.numberOfStudentsDailyUzb}
+                                type="text"
+                                onChange={e => dispatch({ type: 'DAILY_STUDENTS_UZB', payload: e.target.value })}
+                            />
+                            <h2>Barcha qabul soni</h2>
+                            <input
+                                required
+                                value={state.numberOfStudentsAllUzb}
+                                type="text"
+                                onChange={e => dispatch({ type: 'ALL_STUDENTS_UZB', payload: e.target.value })}
+                            />
+                        </div>
+                        <div className={style.block}>
+                            <h2>Title</h2>
+                            <input
+                                required
+                                value={state.titleEng}
+                                type="text"
+                                onChange={e => dispatch({ type: 'TITLE_ENG', payload: e.target.value })}
+                            />
+                            <h2>Number of Quotas</h2>
+                            <textarea
+                                required
+                                value={state.numberOfAllQuotasEng}
+                                type="text"
+                                onChange={e => dispatch({ type: 'ALL_QUOTAS_ENG', payload: e.target.value })}
+                            />
+                            <h2>Number of admissions per day</h2>
+                            <textarea
+                                required
+                                value={state.numberOfStudentsDailyEng}
+                                type="text"
+                                onChange={e => dispatch({ type: 'DAILY_STUDENTS_ENG', payload: e.target.value })}
+                            />
+                            <h2>Number of all admissions </h2>
+                            <input
+                                required
+                                value={state.numberOfStudentsAllEng}
+                                type="text"
+                                onChange={e => dispatch({ type: 'ALL_STUDENTS_ENG', payload: e.target.value })}
+                            />
+                        </div>
+                        <div className={style.block}>
+                            <h2>Заголовок</h2>
+                            <input
+                                required
+                                value={state.titleRus}
+                                type="text"
+                                onChange={e => dispatch({ type: 'TITLE_RUS', payload: e.target.value })}
+                            />
+                            <h2>Обшие число квот</h2>
+                            <textarea
+                                required
+                                value={state.numberOfAllQuotasRus}
+                                type="text"
+                                onChange={e => dispatch({ type: 'ALL_QUOTAS_RUS', payload: e.target.value })}
+                            />
+                            <h2>Число прием документов за день </h2>
+                            <textarea
+                                required
+                                value={state.numberOfStudentsDailyRus}
+                                type="text"
+                                onChange={e => dispatch({ type: 'DAILY_STUDENTS_RUS', payload: e.target.value })}
+                            />
+                            <h2>Обшие число приема документов </h2>
+                            <input
+                                required
+                                value={state.numberOfStudentsAllRus}
+                                type="text"
+                                onChange={e => dispatch({ type: 'ALL_STUDENTS_RUS', payload: e.target.value })}
+                            />
+                        </div>
+                    </div>
                     <button type="submit">Submit</button>
-                    {/* <button value='Enabled'>Submit</button> */}
-
                 </form>
+
+
             </div>
             {
                 state.clicked && <div className={style.modal}>

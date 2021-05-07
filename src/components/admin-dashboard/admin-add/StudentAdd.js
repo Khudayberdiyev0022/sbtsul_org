@@ -6,24 +6,44 @@ import { Link } from 'react-router-dom'
 import NotFound from '../main-parts/404'
 
 const initialState = {
-    name: '',
-    information: '',
-    number: '',
+    nameUzb: '',
+    nameRus: '',
+    nameEng: '',
+    informationUzb: '',
+    informationRus: '',
+    informationEng: '',
+    email: '',
     clicked: false
 }
 const reducer = (state, action) => {
     switch (action.type) {
-        case 'NAME':
+        case 'NAME_UZB':
             return {
-                ...state, name: action.payload
+                ...state, nameUzb: action.payload
             }
-        case 'INFORMATION':
+        case 'NAME_RUS':
             return {
-                ...state, information: action.payload
+                ...state, nameRus: action.payload
             }
-        case 'NUMBER':
+        case 'NAME_ENG':
             return {
-                ...state, number: action.payload
+                ...state, nameEng: action.payload
+            }
+        case 'INFORMATION_UZB':
+            return {
+                ...state, informationUzb: action.payload
+            }
+        case 'INFORMATION_RUS':
+            return {
+                ...state, informationRus: action.payload
+            }
+        case 'INFORMATION_ENG':
+            return {
+                ...state, informationEng: action.payload
+            }
+        case 'EMAIL':
+            return {
+                ...state, email: action.payload
             }
         case 'CLEAR':
             return initialState
@@ -68,31 +88,82 @@ function StudentAdd(props) {
                 <form
                     onSubmit={submitHandler}
                 >
-                    <h2>NAME</h2>
-                    <input
-                        required
-                        value={state.name}
-                        type="text"
-                        onChange={e => dispatch({ type: 'NAME', payload: e.target.value })}
-                    />
-                    <h2>information</h2>
-                    <input
-                        required
-                        value={state.information}
-                        type="text"
-                        onChange={e => dispatch({ type: 'INFORMATION', payload: e.target.value })}
-                    />
-                    <h2>Number</h2>
-                    <input
-                        required
-                        value={state.number}
-                        type="text"
-                        onChange={e => dispatch({ type: 'NUMBER', payload: e.target.value })}
-                    />
+                    <div className={style.forms}>
+                        <div className={style.block}>
+                            <h2>Talabaning ismi</h2>
+                            <input
+                                required
+                                value={state.nameUzb}
+                                type="text"
+                                onChange={e => dispatch({ type: 'NAME_UZB', payload: e.target.value })}
+                            />
+                            <h2>Talaba haqida malumot</h2>
+                            <textarea
+                                required
+                                value={state.informationUzb}
+                                type="text"
+                                onChange={e => dispatch({ type: 'INFORMATION_UZB', payload: e.target.value })}
+                            />
+                            <h2>Email</h2>
+                            <textarea
+                                required
+                                value={state.email}
+                                type="text"
+                                onChange={e => dispatch({ type: 'EMAIL', payload: e.target.value })}
+                            />
 
+                        </div>
+                        <div className={style.block}>
+                            <h2>Name of student</h2>
+                            <input
+                                required
+                                value={state.nameEng}
+                                type="text"
+                                onChange={e => dispatch({ type: 'NAME_ENG', payload: e.target.value })}
+                            />
+                            <h2>About student</h2>
+
+                            <textarea
+                                required
+                                value={state.informationEng}
+                                type="text"
+                                onChange={e => dispatch({ type: 'INFORMATION_ENG', payload: e.target.value })}
+                            />
+                            <h2>Email</h2>
+                            <textarea
+                                required
+                                value={state.email}
+                                type="text"
+                                onChange={e => dispatch({ type: 'EMAIL', payload: e.target.value })}
+                            />
+
+                        </div>
+                        <div className={style.block}>
+                            <h2>Имя студента</h2>
+                            <input
+                                required
+                                value={state.nameRus}
+                                type="text"
+                                onChange={e => dispatch({ type: 'NAME_RUS', payload: e.target.value })}
+                            />
+                            <h2>Информация о студента</h2>
+                            <textarea
+                                required
+                                value={state.informationRus}
+                                type="text"
+                                onChange={e => dispatch({ type: 'INFORMATION_RUS', payload: e.target.value })}
+                            />
+                            <h2>Email </h2>
+                            <textarea
+                                required
+                                value={state.email}
+                                type="text"
+                                onChange={e => dispatch({ type: 'EMAIL', payload: e.target.value })}
+                            />
+
+                        </div>
+                    </div>
                     <button type="submit">Submit</button>
-                    {/* <button value='Enabled'>Submit</button> */}
-
                 </form>
             </div>
             {

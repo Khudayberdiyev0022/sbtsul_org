@@ -251,10 +251,12 @@ function NavbarEng(props) {
           </div>
         </div>
         <div className={style.logoContainer}>
-          <div
+         <Link to="/eng">
+         <div
             className={style.logo}
             style={{ backgroundImage: `url(${logo})` }}
           ></div>
+         </Link>
         </div>
       </div>
     );

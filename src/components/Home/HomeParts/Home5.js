@@ -36,6 +36,20 @@ const Home5 = (props) => {
         <Link to="/yangiliklar">So'nggi Yangiliklar</Link>
       </div>
       <div className={style.container}>
+        <div className={style.rightBlock}>
+          <img src={fakeAPI[0].image} alt="news3" />
+          <h4>{fakeAPI[0].title}</h4>
+          <p>{fakeAPI[0].paragraph}</p>
+          <div className={style.containerButton}>
+            <Link
+              onClick={() => props.SelectedNew(fakeAPI[0])}
+              to={`/each/news/0`}
+            >
+              <span>Batafsil...</span>
+              <span>Batafsil...</span>
+            </Link>
+          </div>
+        </div>
         <div className={style.leftBlock}>
           {
             // eslint-disable-next-line array-callback-return
@@ -68,21 +82,6 @@ const Home5 = (props) => {
               }
             })
           }
-        </div>
-
-        <div className={style.rightBlock}>
-          <img src={fakeAPI[0].image} alt="news3" />
-          <h4>{fakeAPI[0].title}</h4>
-          <p>{fakeAPI[0].paragraph}</p>
-          <div className={style.containerButton}>
-            <Link
-              onClick={() => props.SelectedNew(fakeAPI[0])}
-              to={`/each/news/0`}
-            >
-              <span>Batafsil...</span>
-              <span>Batafsil...</span>
-            </Link>
-          </div>
         </div>
       </div>
     </div>

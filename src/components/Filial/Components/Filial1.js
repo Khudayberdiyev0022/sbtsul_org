@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./Filial1.module.css";
 import pdf from "../../Data/УСТАВ ФИЛИАЛ Назорат режа 1-банд.pdf";
-import bg from "../../../assets/img/bg.jpg";
+import bg from "../../../assets/img/branch1.webp";
 import { BsCloudDownload } from "react-icons/bs";
 
 const Filial1 = () => {

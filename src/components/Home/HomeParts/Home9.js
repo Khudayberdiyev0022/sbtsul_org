@@ -30,7 +30,7 @@ function Home9() {
     },
     {
       id: 4,
-      title: "O`zbekiston Respublikasi partali",
+      title: "O`zbekiston Respublikasi Prezidenti portali",
       image: img4,
       link: "https://president.uz/",
     },

@@ -248,10 +248,12 @@ function NavbarRus(props) {
           </div>
         </div>
         <div className={style.logoContainer}>
-          <div
+         <Link to="/rus">
+         <div
             className={style.logo}
             style={{ backgroundImage: `url(${logo})` }}
           ></div>
+         </Link>
         </div>
       </div>
     );

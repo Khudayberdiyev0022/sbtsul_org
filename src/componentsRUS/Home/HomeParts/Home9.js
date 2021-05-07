@@ -30,7 +30,7 @@ function Home9() {
     },
     {
       id: 4,
-      title: "Портал Республики Узбекистан",
+      title: "Портал Президента Республики Узбекистана",
       image: img4,
       link: "https://president.uz/",
     },

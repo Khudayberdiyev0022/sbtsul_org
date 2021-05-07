@@ -8,7 +8,7 @@ import LoaderComponent from '../main-parts/Loader'
 
 function Grants(props) {
     const [name, setName] = useState('')
-
+    console.log(props);
 
     useEffect(() => {
         props.fetchQuotasProducts()
@@ -19,11 +19,13 @@ function Grants(props) {
         if (name.length > 0) {
             return (
                 props.quotas
-                    ? props.quotas.map((quota, id) => quota.title.toLowerCase().includes(name.toLowerCase()) && (
+                    ? props.quotas.map((quota, id) => quota.titleUzb.toLowerCase().includes(name.toLowerCase()) && (
                         <div key={quota.id} className={style.tableDetail}>
                             <h2>{id}</h2>
-                            <h2>{quota.title.split('').length > 20 ? quota.title.slice(0, 20) : quota.title}</h2>
-                            <h2>{quota.number.split('').length > 30 ? quota.number.slice(0, 30) : quota.number}</h2>
+                            <h2>{quota.titleUzb.split('').length > 20 ? quota.titleUzb.slice(0, 20) : quota.titleUzb}</h2>
+                            <h2>{quota.numberOfAllQuotasUzb.split('').length > 30 ? quota.numberOfAllQuotasUzb.slice(0, 30) : quota.numberOfAllQuotasUzb}</h2>
+                            {/* <h2>{quota.numberOfStudentsAllUzb.split('').length > 30 ? quota.numberOfStudentsAllUzb.slice(0, 30) : quota.numberOfStudentsAllUzb}</h2> */}
+                            {/* <h2>{quota.numberOfStudentsDailyUzb.split('').length > 30 ? quota.numberOfStudentsDailyUzb.slice(0, 30) : quota.numberOfStudentsDailyUzb}</h2> */}
                             <h2>{quota.date.split('').length > 15 ? quota.date.slice(0, 15) : quota.date}</h2>
                             <div className={style.twoButtons}>
                                 <Link to='/admin/delete/quotas' onClick={() => props.selectedAnyItem(quota)}>Delete</Link>
@@ -42,8 +44,10 @@ function Grants(props) {
                             return (
                                 <div key={quota.id} className={style.tableDetail}>
                                     <h2>{quota.id}</h2>
-                                    <h2>{quota.title.split('').length > 20 ? quota.title.slice(0, 20) : quota.title}</h2>
-                                    <h2>{quota.number.split('').length > 30 ? quota.number.slice(0, 30) : quota.number}</h2>
+                                    <h2>{quota.titleUzb.split('').length > 20 ? quota.titleUzb.slice(0, 20) : quota.titleUzb}</h2>
+                                    <h2>{quota.numberOfAllQuotasUzb.split('').length > 30 ? quota.numberOfAllQuotasUzb.slice(0, 30) : quota.numberOfAllQuotasUzb}</h2>
+                                    {/* <h2>{quota.numberOfStudentsAllUzb.split('').length > 30 ? quota.numberOfStudentsAllUzb.slice(0, 30) : quota.numberOfStudentsAllUzb}</h2> */}
+                                    {/* <h2>{quota.numberOfStudentsDailyUzb.split('').length > 30 ? quota.numberOfStudentsDailyUzb.slice(0, 30) : quota.numberOfStudentsDailyUzb}</h2> */}
                                     <h2>{quota.date.split('').length > 15 ? quota.date.slice(0, 15) : quota.date}</h2>
                                     <div className={style.twoButtons}>
                                         <Link to='/admin/delete/quotas' onClick={() => props.selectedAnyItem(quota)}>Delete</Link>

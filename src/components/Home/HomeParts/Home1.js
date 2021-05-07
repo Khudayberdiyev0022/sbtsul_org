@@ -5,7 +5,7 @@ import img3 from "../../../assets/img/slider3.webp";
 import style from "./Home1.module.css";
 import { Fragment } from "react";
 
-function Home1() {
+function Home1({ name }) {
   const [image, setImage] = useState(img1);
   useEffect(() => {
     const interval = setInterval(() => {
@@ -48,10 +48,13 @@ function Home1() {
             style={{ backgroundImage: `url(${image})` }}
           >
             <div className={style.bg}></div>
-            <span></span>
+            {/* <span></span> */}
             <h1>
-              Toshkent davlat yuridik universiteti ixtisoslashtirilgan filiali
+              Toshkent davlat yuridik universitetining ixtisoslashtirilgan
+              filiali
             </h1>
+
+            <h2 className={style.sections}>{name}</h2>
           </div>
         </div>
       </Fragment>

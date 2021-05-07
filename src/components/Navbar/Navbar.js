@@ -253,10 +253,12 @@ function Navbar(props) {
           </div>
         </div>
         <div className={style.logoContainer}>
-          <div
-            className={style.logo}
-            style={{ backgroundImage: `url(${logo})` }}
-          ></div>
+          <Link to="/">
+            <div
+              className={style.logo}
+              style={{ backgroundImage: `url(${logo})` }}
+            ></div>
+          </Link>
         </div>
       </div>
     );
