@@ -48,13 +48,11 @@ function Navbar(props) {
         <div className={style.containerMain}>
           <div
             className={
-              scroll
+              scroll && window.location.pathname === "/"
                 ? `${style.socialmedia} ${style.socialMediaScroll}`
                 : `${style.socialmedia} ${style.socialMediaNotScroll}`
             }
           >
-            {/* <div className={style.content}> */}
-
             <div className={style.container}>
               <div className={style.social}>
                 <a
@@ -193,7 +191,6 @@ function Navbar(props) {
                   <div className={style.hoverDiv}>
                     <NavLink to="/kengash">Kengash</NavLink>
                     <NavLink to="/rahbariyat">Rahbariyat</NavLink>
-                    {/* <NavLink to="/direktorat">Direktorat</NavLink> */}
                     <NavLink to="/dekanatlar">Dekanatlar</NavLink>
                     <NavLink to="/kafedralar">Kafedralar</NavLink>
                     <NavLink to="/bolimlar">Bo'limlar</NavLink>
@@ -204,10 +201,7 @@ function Navbar(props) {
                 </div>
                 <div className={style.navbarLink}>
                   {/* /Link ='/faoliyat' */}
-                  <NavLink
-                    to="/faoliyat"
-                    activeStyle={{ color: "rgb(2 162 255)" }}
-                  >
+                  <NavLink to="/" activeStyle={{ color: "rgb(2 162 255)" }}>
                     Faoliyat <span></span>
                     <AiFillCaretDown />
                   </NavLink>

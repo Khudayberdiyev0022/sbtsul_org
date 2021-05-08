@@ -33,7 +33,10 @@ function NavbarMobile(props) {
     >
       <div className={style.container}>
         <div className={style.mainPart}>
-          <Link onClick={() => setClicked(false)} to="/eng/">
+          <div>
+
+          </div>
+          <Link className={style.logo} onClick={() => setClicked(false)} to="/">
             <img src={logo} alt="logo" />
           </Link>
           {clicked ? (

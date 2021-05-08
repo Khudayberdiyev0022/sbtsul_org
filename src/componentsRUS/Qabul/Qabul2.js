@@ -4,8 +4,7 @@ import style from "./Qabul2.module.css";
 const Qabul2 = () => {
   return (
     <div className={style.main}>
-      <div className="block">
-        <div className="container">
+        <div className={style.container}>
           <h5>Уважаемые абитуриенты города Ташкента и Ташкентской области</h5>
           <p className={style.paragraf}>
           Приглашаем вас посетить Ташкентский государственный юридический университет
@@ -59,7 +58,7 @@ const Qabul2 = () => {
                 <td rowSpan="2">Женщины</td>
               </tr>
             </thead>
-            <tbody className="border">
+            <tbody className={style.border}>
               <tr>
                 <td>5240100</td>
                 <td>
@@ -212,7 +211,6 @@ const Qabul2 = () => {
           <p>(55) 501-11-58 (Колл-центр) </p>
           <p>(55) 501-11-59 (Колл-центр)</p>
         </div>
-      </div>
     </div>
   );
 };

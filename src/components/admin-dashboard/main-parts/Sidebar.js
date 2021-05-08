@@ -82,6 +82,28 @@ function Sidebar({ clicked }) {
                                 Grants
                             </h4>
                         </div>
+                        <div className={style.link}>
+                            <BsBuilding />
+                            <h4
+                                onClick={() => {
+                                    window.self.innerWidth < 800 && setSidebarOpen(false)
+                                    clicked('Images')
+                                }}
+                            >
+                                Images
+                            </h4>
+                        </div>
+                        <div className={style.link}>
+                            <BsBuilding />
+                            <h4
+                                onClick={() => {
+                                    window.self.innerWidth < 800 && setSidebarOpen(false)
+                                    clicked('Vacancy')
+                                }}
+                            >
+                                Vacancy
+                            </h4>
+                        </div>
                     </div>
                 </div>
             </div>

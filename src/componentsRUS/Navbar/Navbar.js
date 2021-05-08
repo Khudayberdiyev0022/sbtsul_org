@@ -54,8 +54,6 @@ function NavbarRus(props) {
                 : `${style.socialmedia} ${style.socialMediaNotScroll}`
             }
           >
-            {/* <div className={style.content}> */}
-
             <div className={style.container}>
               <div className={style.social}>
                 <a
@@ -90,14 +88,6 @@ function NavbarRus(props) {
                 >
                   <FaTelegram />
                 </a>
-                {/* <a
-                  rel="norefer"
-                  traget="_blank"
-                  href="/"
-                  className={style.icon}
-                >
-                  <FaTwitter />
-                </a> */}
               </div>
               <div className={style.us}>
                 <a href="tel://+998 71 20703 78" rel="norefer" traget="_blank">
@@ -151,7 +141,6 @@ function NavbarRus(props) {
                 </div>
               </div>
             </div>
-            {/* </div> */}
           </div>
           <div
             className={
@@ -184,7 +173,6 @@ function NavbarRus(props) {
                   <div className={style.hoverDiv}>
                     <NavLink to="/rus/kengash">Совет</NavLink>
                     <NavLink to="/rus/rahbariyat">Руководство</NavLink>
-                    {/* <NavLink to="/rus/direktorat">Direktorat</NavLink> */}
                     <NavLink to="/rus/dekanatlar">Деканаты</NavLink>
                     <NavLink to="/rus/kafedralar">Кафедры</NavLink>
                     <NavLink to="/rus/bolimlar">Отделы</NavLink>
@@ -194,11 +182,7 @@ function NavbarRus(props) {
                   </div>
                 </div>
                 <div className={style.navbarLink}>
-                  {/* /Link ='/faoliyat' */}
-                  <NavLink
-                    to="/rus/faoliyat"
-                    activeStyle={{ color: "rgb(2 162 255)" }}
-                  >
+                  <NavLink to="/rus" activeStyle={{ color: "rgb(2 162 255)" }}>
                     Деятельность <span></span>
                     <AiFillCaretDown />
                   </NavLink>
@@ -248,12 +232,12 @@ function NavbarRus(props) {
           </div>
         </div>
         <div className={style.logoContainer}>
-         <Link to="/rus">
-         <div
-            className={style.logo}
-            style={{ backgroundImage: `url(${logo})` }}
-          ></div>
-         </Link>
+          <Link to="/rus">
+            <div
+              className={style.logo}
+              style={{ backgroundImage: `url(${logo})` }}
+            ></div>
+          </Link>
         </div>
       </div>
     );

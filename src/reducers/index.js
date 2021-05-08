@@ -34,6 +34,23 @@ const fetchNewsReducer = (state = [], action) => {
       return state;
   }
 };
+
+const fetchImagesReducer = (state = [], action) => {
+  switch (action.type) {
+    case "FETCH_API_IMAGES":
+      return [action.payload];
+    default:
+      return state;
+  }
+};
+const fetchVacancysReducer = (state = [], action) => {
+  switch (action.type) {
+    case "FETCH_API_VACANCYES":
+      return [action.payload];
+    default:
+      return state;
+  }
+};
 //SELECTED_FOR_ANY_ACTION
 const selectedForAnyActionReducer = (state = [], action) => {
   switch (action.type) {
@@ -75,13 +92,27 @@ const selectedNewReducer = (state = [], action) => {
   }
 };
 
+// Open Modal
+const modalOpenReducer = (state = [], action) => {
+  switch (action.type) {
+    case "MODAL_OPEN":
+      return action.payload;
+    default:
+      return state;
+  }
+};
+
+
 export default combineReducers({
   productReducer: productReducer,
   productsQuotas: fetchQuotasReducer,
   productsMessages: fetchMessagesReducer,
   productsStudents: fetchStudentsReducer,
   productsNews: fetchNewsReducer,
+  productsImages: fetchImagesReducer,
+  productsVacancys: fetchVacancysReducer,
   selected: selectedForAnyActionReducer,
   language: changeLanguageReducer,
   new: selectedNewReducer,
+  modalPicture: modalOpenReducer
 });

@@ -44,7 +44,9 @@ const FooterRus = () => {
           >
             Telegram
           </a>
-          <img width="110px" src={logoFooter} alt="logoFooter" />
+          <Link to="/rus">
+            <img width="110px" src={logoFooter} alt="logoFooter" />
+          </Link>
           <a rel="noreferrer" target="_blank" href="#www">
             Youtube
           </a>

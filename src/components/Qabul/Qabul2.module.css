@@ -1,12 +1,24 @@
+.main {
+  width: 100%;
+  height: 100%;
+  padding-top: 120px;
+}
+.container {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+}
+
 .title {
   margin: 2rem 0;
-  width: 70%;
+  width: 90%;
   font-weight: 500;
 }
 
 .paragraf {
-  width: 70%;
+  width: 90%;
   font-weight: 300;
+  margin: auto;
 }
 
 .table thead,

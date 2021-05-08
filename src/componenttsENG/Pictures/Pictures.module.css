@@ -90,3 +90,53 @@
     width: 90%;
   }
 }
+
+.mainmodal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: all 1s ease;
+  z-index: 20;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.modalmodal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #0f2b53dc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease;
+  /* filter: blur(8px); */
+}
+.imgmodal {
+  width: 80%;
+  height: 80vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 2;
+}
+.modalmodal svg {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  transition: all 1s ease;
+}
+.modalmodal svg:hover {
+  color: #fff;
+  transition: all 1s ease;
+}

@@ -28,6 +28,20 @@ export const fetchNewsProducts = () => async (dispatch) => {
     payload: response.data,
   });
 };
+export const fetchImagesProducts = () => async (dispatch) => {
+  const response = await api.get(`/images/`);
+  dispatch({
+    type: "FETCH_API_IMAGES",
+    payload: response.data,
+  });
+};
+export const fetchVacancysProducts = () => async (dispatch) => {
+  const response = await api.get(`/vacancy/`);
+  dispatch({
+    type: "FETCH_API_VACANCYES",
+    payload: response.data,
+  });
+};
 
 //CRUD OPERATIONS
 
@@ -76,3 +90,10 @@ export const SelectedNew = (newObject) => {
     payload: newObject,
   };
 };
+// Open modal
+export const ModalPicture = (image) => {
+  return {
+    type: "MODAL_OPEN",
+    payload: image
+  }
+}

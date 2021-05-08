@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 
 //UZB
-
 import Navbar from "./Navbar/Navbar";
 import NavbarMobile from "./Navbar/NavbarMobile";
 import Home from "./Home/Home";
@@ -44,9 +43,12 @@ import Pictures from "./Pictures/Pictures";
 import Tarbiyaviy from "./Tuzilma/Bolimlar/Tarbiyaviy/Tarbiyaviy";
 import NewsCard from "./Informations/Information";
 import Vakansiya from "./Vacansiec/Vakansiya";
+import News from "./Home/Yangiliklar/News";
+import Students from "./Students/Students";
+
 
 //ENG
-
+import PicturesEng from "../componenttsENG/Pictures/Pictures";
 import NewsCardEng from "../componenttsENG/Informations/Information";
 import NavbarEng from "../componenttsENG/Navbar/Navbar";
 import NavbarMobileEng from "../componenttsENG/Navbar/NavbarMobile";
@@ -82,9 +84,12 @@ import RahbariyatEng from "../componenttsENG/Tuzilma/Rahbariyat/Rahbariyat";
 import Home7Eng from "../componenttsENG/Home/HomeParts/Home7";
 import KengashEng from "../componenttsENG/Tuzilma/Kengash/Kengash";
 import VakansiyaEng from "../componenttsENG/Vacansiec/Vakansiya";
+import NewsEng from "../componenttsENG/Home/Yangiliklar/News";
+// import Home1Eng from "../componenttsENG/Home/HomeParts/Home1";
+import StudentsEng from "../componenttsENG/Students/Students"
 
 // RUS
-
+import PicturesRus from "../componentsRUS/Pictures/Pictures";
 import NewsCardRus from "../componentsRUS/Informations/Information";
 import NavbarRus from "../componentsRUS/Navbar/Navbar";
 import NavbarMobileRus from "../componentsRUS/Navbar/NavbarMobile";
@@ -119,8 +124,12 @@ import XususiyHuquqiyRus from "../componentsRUS/Tuzilma/Kafedralar/XususiyHuquq/
 import KafedraRus from "../componentsRUS/Tuzilma/Kafedralar/Kafedra";
 import KengashRus from "../componentsRUS/Tuzilma/Kengash/Kengash";
 import RahbariyatRus from "../componentsRUS/Tuzilma/Rahbariyat/Rahbariyat";
-import Home1 from "../components/Home/HomeParts/Home1";
+// import Home1 from "../components/Home/HomeParts/Home1";
 import VakansiyaRus from "../componentsRUS/Vacansiec/Vakansiya";
+import NewsRus from "../componentsRUS/Home/Yangiliklar/News";
+// import Home1Rus from "../componentsRUS/Home/HomeParts/Home1";
+import StudentsRus from "../componentsRUS/Students/Students"
+
 
 import GrantAdd from "./admin-dashboard/admin-add/GrantAdd";
 import GrantDelete from "./admin-dashboard/admin-add/GrantDelete";
@@ -135,8 +144,6 @@ import NewsAdd from "./admin-dashboard/admin-add/NewsAdd";
 import NewsDelete from "./admin-dashboard/admin-add/NewsDelete";
 import NewsEdit from "./admin-dashboard/admin-add/NewsEdit";
 import MainAdmin from "./admin-dashboard/MainAdmin";
-import Home1Eng from "../componenttsENG/Home/HomeParts/Home1";
-import Home1Rus from "../componentsRUS/Home/HomeParts/Home1";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -155,7 +162,7 @@ export const UzbRender = () => {
         <ScrollToTop />
         <Navbar />
         <NavbarMobile />
-        <Home1 />
+        {/* <Home1 /> */}
         <Switch>
           <Route exact path="/">
             <Home />
@@ -260,6 +267,12 @@ export const UzbRender = () => {
           <Route path="/vakansiya">
             <Vakansiya />
           </Route>
+          <Route path="/yangiliklar">
+            <News />
+          </Route>
+          <Route path="/talabalar">
+            <Students />
+          </Route>
 
           <Route exact path="/admin">
             <MainAdmin />
@@ -318,7 +331,7 @@ export const EngRender = () => {
         <ScrollToTop />
         <NavbarEng />
         <NavbarMobileEng />
-        <Home1Eng />
+        {/* <Home1Eng /> */}
         <Switch>
           <Route exact path="/eng">
             <HomeEng />
@@ -412,7 +425,7 @@ export const EngRender = () => {
           </Route>
 
           <Route path="/eng/fotolavhalar">
-            <Pictures />
+            <PicturesEng />
           </Route>
           <Route path="/eng/each/news/:id">
             <NewsCardEng />
@@ -423,6 +436,13 @@ export const EngRender = () => {
           <Route path="/eng/vakansiya">
             <VakansiyaEng />
           </Route>
+          <Route path="/eng/yangiliklar">
+            <NewsEng />
+          </Route>
+          <Route path="/eng/talabalar">
+            <StudentsEng />
+          </Route>
+
 
           <Route exact path="/admin">
             <MainAdmin />
@@ -481,7 +501,7 @@ export const RusRender = () => {
         <ScrollToTop />
         <NavbarRus />
         <NavbarMobileRus />
-        <Home1Rus />
+        {/* <Home1Rus /> */}
         <Switch>
           <Route exact path="/rus">
             <HomeRus />
@@ -573,7 +593,7 @@ export const RusRender = () => {
           </Route>
 
           <Route path="/rus/fotolavhalar">
-            <Pictures />
+            <PicturesRus />
           </Route>
           <Route path="/rus/each/news/:id">
             <NewsCardRus />
@@ -583,6 +603,12 @@ export const RusRender = () => {
           </Route>
           <Route path="/rus/vakansiya">
             <VakansiyaRus />
+          </Route>
+          <Route path="/rus/yangiliklar">
+            <NewsRus />
+          </Route>
+          <Route path="/rus/talabalar">
+            <StudentsRus />
           </Route>
 
           <Route exact path="/admin">

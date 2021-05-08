@@ -19,12 +19,10 @@ function MainAdmin() {
 
     const loggedBefore = () => {
         if (window.localStorage.getItem('admin') === '12211221') {
-            console.log('hello');
             return (
                 <Main />
             )
         } else {
-            console.log('bye');
             return (
                 <Fragment>
                     {

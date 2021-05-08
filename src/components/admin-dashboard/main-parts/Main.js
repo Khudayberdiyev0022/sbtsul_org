@@ -6,6 +6,7 @@ import Messages from '../admin-links/Messages'
 import Students from '../admin-links/Students'
 import style from './Main.module.css'
 import MainPage from '../admin-links/MainPage'
+import Image from '../admin-links/Image'
 
 function Main() {
     const [nameOfLink, setNameOfLink] = useState('')
@@ -40,6 +41,14 @@ function Main() {
             case 'Grants':
                 return (
                     <Grants />
+                )
+            case 'Images':
+                return (
+                    <Image />
+                )
+            case 'Vacancy':
+                return (
+                    <h1>vacancy</h1>
                 )
             default:
                 return (

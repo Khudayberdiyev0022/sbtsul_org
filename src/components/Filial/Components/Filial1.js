@@ -80,7 +80,7 @@ const Filial1 = () => {
             {/* <Bounce right cascade> */}
             <div className={style.footer}>
               <p>
-                TDYU Ixtisoslashtirilgan filiali ustavini quyidagi havola
+              TDYU Ixtisoslashtirilgan filiali ustavini quyidagi havola
                 orqali yuklab olishingiz mumkin.
                   <span className={style.btn}>
                   <a href={pdf} rel="noreferrer" download>

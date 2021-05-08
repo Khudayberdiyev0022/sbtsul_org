@@ -8,7 +8,7 @@ const Home3 = () => {
       <div className={style.skewedBox}>
         <div className={style.container}>
           <div className={style.rahbariyatLink}>
-            <Link to="/rahbariyat">Руководство</Link>
+            <Link to="/rus/rahbariyat">Руководство</Link>
           </div>
           <h2>Джураев Ихтиёр Бахтиёрович</h2>
           <p className={style.rektor}>
@@ -42,7 +42,7 @@ const Home3 = () => {
             oʼquv-tarbiyaviy ishlar boʼyicha oʼrinbosari lavozimiga tayinlangan. */}
           </p>
           <div className={style.containerButton}>
-            <Link to="/rahbariyat">
+            <Link to="/rus/rahbariyat">
               <span>Подробнее...</span>
               <span>Подробнее...</span>
             </Link>
@@ -83,7 +83,7 @@ const Home3 = () => {
           ishlari boʼyicha oʼrinbosari lavozimiga tayinlangan. */}
         </p>
         <div className={style.containerButton}>
-          <Link to="/rahbariyat">
+          <Link to="/rus/rahbariyat">
             <span>Подробнее...</span>
             <span>Подробнее...</span>
           </Link>

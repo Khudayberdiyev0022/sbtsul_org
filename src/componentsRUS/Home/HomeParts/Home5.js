@@ -32,7 +32,7 @@ const Home5 = (props) => {
   return (
     <div className={style.main}>
       <div className={style.linkBlock}>
-        <Link to="/yangiliklar">Последние Новости</Link>
+        <Link to="/rus/yangiliklar">Последние Новости</Link>
       </div>
       <div className={style.container}>
         <div className={style.rightBlock}>

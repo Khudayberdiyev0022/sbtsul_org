@@ -52,6 +52,7 @@ function Home1Eng() {
             <h1>
             Specialized branch of Tashkent State Law University
             </h1>
+            
           </div>
         </div>
       </Fragment>

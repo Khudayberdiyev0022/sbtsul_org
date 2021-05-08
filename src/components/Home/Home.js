@@ -9,6 +9,7 @@ import Home9 from "./HomeParts/Home9";
 import style from "../../componenttsENG/Home/Home.module.css";
 import image from "../../assets/icons/logoFT.svg";
 import { Fragment } from "react";
+import Home1 from "./HomeParts/Home1";
 
 const Home = () => {
   const [loading, setLoading] = useState(false);
@@ -34,6 +35,7 @@ const Home = () => {
         ></div>
       </div>
       <Fragment>
+        <Home1 />
         <Home2 />
         <Home7 />
         <Home3 />

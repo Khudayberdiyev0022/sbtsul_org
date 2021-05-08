@@ -1,65 +1,186 @@
-import React from 'react'
-import style from './Vakansiya.module.css'
+import React from "react";
+import style from "./Vakansiya.module.css";
+import { BsCloudDownload } from "react-icons/bs";
+import docx from "../../components/Data/Ariza namuna tanlovga.docx";
+import doc from "../../components/Data/Vakansiya.doc";
 
 const VakansiyaRus = () => {
+  const apis = [
+    {
+      jobTitle: "Деканат подготовительных курсов",
+      job: "Декан",
+      salary: "2 000 000",
+      aboutJob1: `Имея степень магистра или кандидата юридических наук, по крайней мере, на соответствующих руководящих должностях в образовательных учреждениях (заведующий кафедрой, декан или заместитель курса, руководитель центра, заведующий кафедрой или подразделением и т. Д.)
+      5 лет эффективного опыта работы`,
+    },
+    {
+      jobTitle: "Директорат",
+      job: "Психолог",
+      salary: "1 913 835 ",
+      aboutJob1: `Потенциальные граждане Республики Узбекистан с высшим (специальным) образованием, компьютерной грамотностью, соответствующими знаниями и опытом.`,
+    },
+    {
+      jobTitle: "Канцелярия и архив",
+      job: "Курьер",
+      salary: "747 300 ",
+      aboutJob1: `Граждане Республики Узбекистан со средним специальным образованием
+      (поступая на работу впервые
+      Будут приняты выпускники 2018-2020 гг.)`,
+    },
+    {
+      jobTitle: "Департамент информационных технологий",
+      job: "Инженер-программист",
+      salary: "1 018 482 ",
+      aboutJob1: `Потенциальные граждане Республики Узбекистан с высшим (специальным) образованием, компьютерной грамотностью, соответствующими знаниями и опытом.`,
+    },
+    {
+      jobTitle: "Информационно-ресурсный центр",
+      job: "Библиотекарь",
+      salary: "1 124 687 ",
+      aboutJob1: `Потенциальные граждане Республики Узбекистан с высшим (специальным) образованием, компьютерной грамотностью, соответствующими знаниями и опытом.
+      (поступая на работу впервые
+      Будут приняты выпускники 2018-2020 гг.`,
+    },
+    {
+      jobTitle: "Информационно-ресурсный центр",
+      job: `Библиотекарь
+      (вместо работника по уходу за детьми)`,
+      salary: "1 124 687 ",
+      aboutJob1: `Потенциальные граждане Республики Узбекистан с высшим (специальным) образованием, компьютерной грамотностью, соответствующими знаниями и опытом.`,
+    },
+  ];
 
-    const apis = [
-        {
-            job: 'Учитель русского языка',
-            salary: '2 000 000',
-            aboutJob1: 'Aliqua esse eiusmod mollit esse minim cupidatat qui aliquip nisi cillum nisi occaecat incididunt. Sunt sit fugiat elit anim amet consectetur magna irure aliqua aute non eu voluptate. Ea aute fugiat cillum aute qui Lorem mollit occaecat. Sint elit deserunt ex non voluptate. Amet reprehenderit sint exercitation irure proident nulla. Esse quis nostrud ipsum pariatur non laboris velit laboris ea laboris cupidatat aliquip.',
-            tel: '+998712505050',
-
-        },
-        {
-            job: 'Учитель русского языка',
-            salary: '2 000 000',
-            aboutJob1: 'Aliqua esse eiusmod mollit esse minim cupidatat qui aliquip nisi cillum nisi occaecat incididunt. Sunt sit fugiat elit anim amet consectetur magna irure aliqua aute non eu voluptate. Ea aute fugiat cillum aute qui Lorem mollit occaecat. Sint elit deserunt ex non voluptate. Amet reprehenderit sint exercitation irure proident nulla. Esse quis nostrud ipsum pariatur non laboris velit laboris ea laboris cupidatat aliquip.',
-            tel: '+998712505050',
-
-        },
-        {
-            job: 'Учитель русского языка',
-            salary: '2 000 000',
-            aboutJob1: 'Aliqua esse eiusmod mollit esse minim cupidatat qui aliquip nisi cillum nisi occaecat incididunt. Sunt sit fugiat elit anim amet consectetur magna irure aliqua aute non eu voluptate. Ea aute fugiat cillum aute qui Lorem mollit occaecat. Sint elit deserunt ex non voluptate. Amet reprehenderit sint exercitation irure proident nulla. Esse quis nostrud ipsum pariatur non laboris velit laboris ea laboris cupidatat aliquip.',
-            tel: '+998712505050',
-
-        },
-    ]
-
-    return (
-        <div className={style.main} >
-            <div className={style.inMain} >
-                
-                {
-                    apis.map((api, index) => {
-                        return(
-                            <div className={style.card} key={index} >
-                                <div className={style.job} >
-                                    <h3>
-                                        {api.job}
-                                    </h3>
-                                    <h3>
-                                       <span> З/п:</span> {api.salary} <span>сум</span>
-                                    </h3>
-                                </div>
-                                <p>
-                                    {api.aboutJob1}
-                                </p>
-                                <a
-                                    href={`tel://${api.tel}`}
-                                    rel="noreferrer"
-                                    target="_blank"
-                                    >
-                                    <span>тел:</span> {api.tel}
-                                </a>
-                            </div>
-                        )
-                    })
-                }
-            </div>
+  return (
+    <div className={style.main}>
+      <div className={style.inMain}>
+        <div className={style.titleText}>
+          <h3>Добро пожаловать на работу!!!</h3>
+          <p>
+            Специализированный филиал Ташкентского государственного юридического
+            университета нанять квалифицированных специалистов по следующим
+            специальностям предложения. Набор осуществляется на конкурсной
+            основе. Узнайте больше о вакансиях и конкурсах ниже возможный.
+          </p>
+          <p>2021 год 10 апрель №2</p>
+          <div className={style.footer}>
+            <p>
+              Ташкентский Государственный Юридический Университет
+              Специализированный Филиал приглашает квалифицированный персонал
+              для заполнения вакансий. делает
+              <span className={style.btn}>
+                <a href={doc} rel="noreferrer" download>
+                  (doc) скачать файл
+                  <BsCloudDownload />
+                </a>
+              </span>
+            </p>
+          </div>
         </div>
-    )
-}
 
-export default VakansiyaRus
+        {apis.map((api, index) => {
+          return (
+            <div className={style.card} key={index}>
+              <h3>{api.jobTitle}</h3>
+              <div className={style.job}>
+                <h3>{api.job}</h3>
+                <h3>
+                  <span> З/П:</span> {api.salary} <span>so'm</span>
+                </h3>
+              </div>
+              <p>{api.aboutJob1}</p>
+            </div>
+          );
+        })}
+        <div className={style.vakantJobs}>
+          <h5>Условия труда</h5>
+          <ul>
+            <li>
+              Филиал предоставляет сотрудникам возможности профессионального и
+              карьерного роста (карьерного роста).;
+            </li>
+            <li>
+              Рекомендации к присвоению специальных званий (званий) работникам
+              судебной системы;
+            </li>
+            <li>
+              Наличие надбавок и надбавок (до 20-50% для карьерных уровней, до
+              5-40% при выслуге в судебной системе);
+            </li>
+            <li>
+              Наличие системы материального стимулирования (премии до 200% от
+              заработной платы сотрудника, бонусы);
+            </li>
+            <li>Размер заработной платы определяется трудовым договором..</li>
+            <li>
+              {" "}
+              Кандидатам: для участия в конкурсе необходимо предоставить личную
+              справку (линзу), копию диплома, копию паспорта на электронную
+              почту:{" "}
+              <a
+                href="mailto://kadr@sbtsul.uz"
+                rel="noreferrer"
+                target="_blank"
+              >
+                kadr@sbtsul.uz
+              </a>
+            </li>
+            <li>
+              {" "}
+              <strong>
+              Заявление и сопутствующие документы должны быть получены до 18:00 25 апреля 2021 года.
+                 принято пока.
+              </strong>{" "}
+            </li>
+            <li>
+            В справке указан адрес кандидата, мобильный телефон.
+               номера и адреса электронной почты
+               следует указать. Учить больше:
+              <a href="tel://+998909442962" rel="noreferrer" target="_blank">
+                +998 90 944 29 62
+              </a>
+            </li>
+            <li>
+            В случае нарушения процедуры отбора или коррупции
+               Министерства юстиции
+              <a href="tel://1008" rel="noreferrer" target="_blank">
+                “1008”
+              </a>
+              служба доверия,
+              <a
+                href="https://minjust.uz/uz/anticorruption/feedback/"
+                rel="noreferrer"
+                target="_blank"
+              >
+                @antikorbot
+              </a>
+              телеграмм канал и филиал
+              <a href="tel://+998712070378" rel="noreferrer" target="_blank">
+                +998 71 207 03 78
+              </a>{" "}
+              вы можете связаться с горячей линией.
+            </li>
+            <h5>Процесс отбора осуществляется в следующие этапы:</h5>
+            <p>1.Прием документов;</p>
+            <p>2.Изучение заявлений и документов;</p>
+            <p>3.Проведение тестов;</p>
+            <p>4.Беседа</p>
+          </ul>
+        </div>
+        <div className={style.footer}>
+          <p>
+          Участвуйте в конкурсе Специализированного филиала ТГЮУ.
+             Вы можете скачать образец по этой ссылке.
+            <span className={style.btn}>
+              <a href={docx} rel="noreferrer" download>
+                (docx) faylni yuklab olish
+                <BsCloudDownload />
+              </a>
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default VakansiyaRus;

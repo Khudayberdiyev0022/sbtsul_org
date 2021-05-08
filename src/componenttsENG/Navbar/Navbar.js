@@ -93,14 +93,6 @@ function NavbarEng(props) {
                 >
                   <FaTelegram />
                 </a>
-                {/* <a
-                  rel="norefer"
-                  traget="_blank"
-                  href="/"
-                  className={style.icon}
-                >
-                  <FaTwitter />
-                </a> */}
               </div>
               <div className={style.us}>
                 <a href="tel://+998 71 20703 78" rel="norefer" traget="_blank">
@@ -165,7 +157,7 @@ function NavbarEng(props) {
           >
             <div className={style.container}>
               <div className={style.titleName}>
-                <Link className={style.home} to="/rus">
+                <Link className={style.home} to="/eng">
                   <AiTwotoneHome />
                 </Link>
                 <div className={style.navbarLink}>
@@ -187,7 +179,6 @@ function NavbarEng(props) {
                   <div className={style.hoverDiv}>
                     <NavLink to="/eng/kengash">Council</NavLink>
                     <NavLink to="/eng/rahbariyat">Director</NavLink>
-                    {/* <NavLink to="/eng/direktorat">Direktorat</NavLink> */}
                     <NavLink to="/eng/dekanatlar">Dean's offices</NavLink>
                     <NavLink to="/eng/kafedralar">Chairs</NavLink>
                     <NavLink to="/eng/bolimlar">Sections</NavLink>
@@ -197,11 +188,7 @@ function NavbarEng(props) {
                   </div>
                 </div>
                 <div className={style.navbarLink}>
-                  {/* /Link ='/faoliyat' */}
-                  <NavLink
-                    to="/eng/faoliyat"
-                    activeStyle={{ color: "rgb(2 162 255)" }}
-                  >
+                  <NavLink to="/eng" activeStyle={{ color: "rgb(2 162 255)" }}>
                     Activity <span></span>
                     <AiFillCaretDown />
                   </NavLink>
@@ -251,12 +238,12 @@ function NavbarEng(props) {
           </div>
         </div>
         <div className={style.logoContainer}>
-         <Link to="/eng">
-         <div
-            className={style.logo}
-            style={{ backgroundImage: `url(${logo})` }}
-          ></div>
-         </Link>
+          <Link to="/eng">
+            <div
+              className={style.logo}
+              style={{ backgroundImage: `url(${logo})` }}
+            ></div>
+          </Link>
         </div>
       </div>
     );

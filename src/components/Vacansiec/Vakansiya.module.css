@@ -12,9 +12,25 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   width: 85%;
+   width: 90%;
    height: 100%;
    margin: auto;
+}
+.titleText {
+   width: 100%;
+   padding: 50px 0;
+   text-align: center;
+}
+.titleText h3 {
+   font-size: 34px;
+   text-transform: uppercase;
+   letter-spacing: 1.2px;
+   line-height: 1.2;
+}
+.titleText p {
+   padding-top: 1rem;
+   font-size: 24px;
+   line-height: 1.5;
 }
 .card{
    display: flex;
@@ -63,6 +79,59 @@
 .card a span{
    color: #0f2b53;
 }
+.footer {
+   display: flex;
+   flex-direction: column;
+   justify-content: left;
+   align-items: center;
+   width: 95%;
+ }
+ .footer p {
+   color: #838383;
+   font-size: 16px;
+   font-weight: 550;
+   line-height: 1.7;
+ }
+ .btn {
+   margin-left: 15px;
+ }
+ .btn svg {
+   margin-left: 5px;
+   vertical-align: text-top;
+ }
+ .btn a {
+   color: #011b7c;
+   font-size: 16px;
+   font-weight: 550;
+   line-height: 1.5;
+   text-decoration: none;
+   transition: all 0.4s ease;
+ }
+ .btn:hover a {
+   transition: all 0.4s ease;
+   color: green;
+ }
+ .btn:active a {
+   color: red;
+   text-decoration: underline;
+   transform: scale(0.9);
+   transition: all 0.1s ease;
+ }
+ .vakantJobs {
+    width: 90%;
+ }
+ .vakantJobs h5 {
+    font-size: 20px;
+    line-height: 1.5;
+ }
+ .vakantJobs ul, li, p {
+    padding: 5px 0;
+ }
+ .vakantJobs ul li a {
+    padding: 0px 10px;
+    /* text-decoration: none; */
+    /* color: #0f2b53; */
+ }
 
 
 @media screen and ( max-width: 756px){

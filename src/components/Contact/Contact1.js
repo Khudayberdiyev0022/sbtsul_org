@@ -56,7 +56,7 @@ const Contact1 = () => {
             </div>
             <div className={style.infoTop}>
               <h3>Email</h3>
-              <a href="mailto:info@sbtsul.uz" rel="noreferrer" target="_blank">
+              <a href="mailto://info@sbtsul.uz" rel="noreferrer" target="_blank">
                 info@sbtsul.uz
               </a>
             </div>
