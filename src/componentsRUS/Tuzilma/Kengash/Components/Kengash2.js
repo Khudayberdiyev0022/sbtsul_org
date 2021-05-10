@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./Kengash2.module.css";
+import style from "../../../../components/Tuzilma/Kengash/Components/Kengash2.module.css";
 import { nameKaf, teachers } from "../ExtraCard/Json";
 // import Zoom from "react-reveal/Zoom";
 

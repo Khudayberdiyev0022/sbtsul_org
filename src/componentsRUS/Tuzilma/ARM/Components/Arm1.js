@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./Arm1.module.css";
+import style from "../../../../components/Tuzilma/ARM/Components/Arm1.module.css";
 // import Rotate from "react-reveal/Rotate";
 
 const Arm1 = () => {

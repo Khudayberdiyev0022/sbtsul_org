@@ -1,13 +1,11 @@
 import React from "react";
-import style from "./Davlat5.module.css";
-// import Zoom from "react-reveal/Zoom";
+import style from "../../../../../components/Tuzilma/Kafedralar/DavlatHuquqiy/Components/Davlat5.module.css";
 import img from "../../../../../assets/img/manaviy111.jpg";
 
 const Davlat5 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        {/* <Zoom top> */}
           <h2>SCIENTIFIC AND SCIENTIFIC-METHODICAL WORKS</h2>
           <span></span>
           <div className={style.flex}>
@@ -44,7 +42,6 @@ const Davlat5 = () => {
              club ”; “Government” and “Legislative Techniques” are official documents
              training "scientific circles, including.
           </p>
-        {/* </Zoom> */}
       </div>
     </div>
   );

@@ -35,7 +35,10 @@ const Home = () => {
         ></div>
       </div>
       <Fragment>
-        <Home1 />
+        <Home1
+          name="Toshkent davlat yuridik universitetining ixtisoslashtirilgan
+              filiali"
+        />
         <Home2 />
         <Home7 />
         <Home3 />

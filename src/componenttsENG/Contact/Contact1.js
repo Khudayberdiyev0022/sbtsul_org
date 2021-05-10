@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import style from "./Contact1.module.css";
+import style from "../../components/Contact/Contact1.module.css";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdMail, MdLocationOn } from "react-icons/md";
 import { addProduct } from '../../actions'

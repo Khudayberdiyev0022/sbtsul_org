@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./Jinoyat4.module.css";
+import style from "../../../../../components/Tuzilma/Kafedralar/JinoyatHuquq/Components/Jinoyat4.module.css";
 import img1 from "../../../../../assets/img/oquvvv1.jpg";
 // import Bounce from "react-reveal/Bounce";
 

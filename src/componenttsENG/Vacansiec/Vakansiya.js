@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import style from "./Vakansiya.module.css";
+import style from "../../components/Vacansiec/Vakansiya.module.css";
 import { BsCloudDownload } from "react-icons/bs";
 import docx from "../../components/Data/Ariza namuna tanlovga.docx";
 import doc from "../../components/Data/Vakansiya.doc";

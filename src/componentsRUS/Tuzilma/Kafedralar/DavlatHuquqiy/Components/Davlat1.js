@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./Davlat1.module.css";
+import style from "../../../../../components/Tuzilma/Kafedralar/DavlatHuquqiy/Components/Davlat1.module.css";
 // import Rotate from "react-reveal/Rotate";
 
 const Davlat1 = () => {

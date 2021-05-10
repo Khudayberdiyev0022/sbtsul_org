@@ -1,12 +1,10 @@
 import React from "react";
-// import Zoom from "react-reveal/Zoom";
-import style from "./Tayyorlash6.module.css";
+import style from "../../../../components/Tuzilma/Dekanatlar/Tayyorlash/Tayyorlash6.module.css";
 
 const Tayyorlash6 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        {/* <Zoom top> */}
           <h2>РАБОТА С МОЛОДЕЖЬЮ</h2>
           <span></span>
           <p>
@@ -61,7 +59,6 @@ const Tayyorlash6 = () => {
  представлено. Команда филиала по киберспорту “Uzbekistan Cyber Cup”
  принимал активное участие в конкурсе им.
           </p>
-        {/* </Zoom> */}
       </div>
     </div>
   );

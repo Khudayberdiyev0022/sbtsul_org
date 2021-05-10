@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./Xususiy3.module.css";
+import style from "../../../../../components/Tuzilma/Kafedralar/XususiyHuquq/Components/Xususiy3.module.css";
 // import Fade from "react-reveal/Fade";
 // import Zoom from "react-reveal/Zoom";
 

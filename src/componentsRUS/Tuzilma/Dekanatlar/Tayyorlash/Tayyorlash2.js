@@ -1,16 +1,13 @@
 import React from "react";
-import style from "./Tayyorlash2.module.css";
+import style from "../../../../components/Tuzilma/Dekanatlar/Tayyorlash/Tayyorlash2.module.css";
 import { dek, nameDek } from "./Json";
-// import Zoom from "react-reveal/Zoom";
 
 const Tayyorlash2 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        {/* <Zoom right> */}
           <h2>СОСТАВ ДЕКАНАТА ПОДГОТОВИТЕЛЬНЫХ КУРСОВ</h2>
           <span></span>
-        {/* </Zoom> */}
 {/*  */}
         <div className={style.map}>
           {dek.map((teacher, index) => {

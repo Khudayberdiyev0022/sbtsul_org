@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import style from "./Home7.module.css";
+import style from "../../../components/Home/HomeParts/Home7.module.css";
 import { structures } from "../ExtraCards/Photo";
 
 const Home7Rus = () => {

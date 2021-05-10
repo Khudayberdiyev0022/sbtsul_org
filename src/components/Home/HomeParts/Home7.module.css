@@ -3,6 +3,8 @@
   box-sizing: border-box;
   padding: 150px 0;
   background-color: #011b7c;
+  border-bottom: 2px solid #fff;
+  border-top: 2px solid #fff;
 }
 .linkBlock {
   width: 80%;

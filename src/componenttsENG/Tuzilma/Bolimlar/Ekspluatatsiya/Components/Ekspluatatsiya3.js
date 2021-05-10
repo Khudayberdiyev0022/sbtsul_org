@@ -1,22 +1,19 @@
 import React from "react";
-import style from "./Ekspluatatsiya3.module.css";
-// import Fade from "react-reveal/Fade";
-// import Zoom from "react-reveal/Zoom";
+import style from "../../../../../components/Tuzilma/Bolimlar/Ekspluatatsiya/Components/Ekspluatatsiya3.module.css";
+
 
 const Ekspluatatsiya3 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        {/* <Fade top cascade> */}
           <div className={style.head}>
             <h2>DUTIES OF THE DEPARTMENT</h2>
             <span></span>
           </div>
-        {/* </Fade> */}
-        {/* <Zoom top cascade> */}
+
           <div className={style.grid}>
             <div className={style.block}>
-              <div className={style.svg}>{/* <VscOrganization/> */}</div>
+              <div className={style.svg}></div>
               <p>
               Branch buildings and the environment to maintain the required level of them
                  service management, room equipment
@@ -50,7 +47,6 @@ const Ekspluatatsiya3 = () => {
               </p>
             </div>
           </div>
-        {/* </Zoom> */}
       </div>
     </div>
   );

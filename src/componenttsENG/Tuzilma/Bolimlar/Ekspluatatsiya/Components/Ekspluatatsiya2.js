@@ -1,17 +1,14 @@
 import React from "react";
-import style from "./Ekspluatatsiya2.module.css";
+import style from "../../../../../components/Tuzilma/Bolimlar/Ekspluatatsiya/Components/Ekspluatatsiya2.module.css";
 import { nameKaf, teachers } from "../ExtraCard/Json";
-// import Zoom from "react-reveal/Zoom";
 
 const Ekspluatatsiya2 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        {/* <Zoom right> */}
           <h2>STAFF OF THE OPERATIONAL AND ECONOMIC DEPARTMENT</h2>
           <span></span>
-        {/* </Zoom> */}
-        {/* <Zoom top cascade> */}
+
           <div className={style.map}>
             {teachers.map((teacher, index) => {
               return (
@@ -39,7 +36,6 @@ const Ekspluatatsiya2 = () => {
               );
             })}
           </div>
-        {/* </Zoom> */}
       </div>
     </div>
   );

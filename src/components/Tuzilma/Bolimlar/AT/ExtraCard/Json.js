@@ -4,14 +4,6 @@ import t3 from '../../../../../assets/img/abdiaxatovAT.webp'
 
 
 export const teachers = [
-   
-    {
-        img: t2,
-        name: 'Urazmuhammedov Sardor Valijonovich ',
-        abTeach1: 'Axborot texnologiyalari bo’limi Tarmoq administratori ',
-        abTeach2: '',
-        email: 'u.sardor@sbtsul.uz'
-    },
     {
         img: t1,
         name: 'Maxmudov Abduvoxid Abduraximovich',
@@ -23,6 +15,14 @@ export const teachers = [
             }   
         ],
         email: 'abduvoxid@sbtsul.uz',  
+    },
+   
+    {
+        img: t2,
+        name: 'Urazmuhammedov Sardor Valijonovich ',
+        abTeach1: 'Axborot texnologiyalari bo’limi Tarmoq administratori ',
+        abTeach2: '',
+        email: 'u.sardor@sbtsul.uz'
     },
     {
         img: t3,

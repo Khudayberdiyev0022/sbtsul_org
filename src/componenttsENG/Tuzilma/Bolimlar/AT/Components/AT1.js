@@ -1,12 +1,10 @@
 import React from "react";
-import style from "./AT1.module.css";
-// import Rotate from "react-reveal/Rotate";
+import style from "../../../../../components/Tuzilma/Bolimlar/AT/Components/AT1.module.css";
 
 const AT1 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        {/* <Rotate bottom left cascade> */}
           <div className={style.head}>
             <h2>DEPARTMENT OF INFORMATION TECHNOLOGIES</h2>
             <span></span>
@@ -20,7 +18,6 @@ const AT1 = () => {
                established.
             </p>
           </div>
-        {/* </Rotate> */}
       </div>
     </div>
   );

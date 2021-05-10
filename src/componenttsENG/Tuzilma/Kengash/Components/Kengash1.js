@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./Kengash1.module.css";
+import style from "../../../../components/Tuzilma/Kengash/Components/Kengash1.module.css";
 // import Rotate from "react-reveal/Rotate";
 
 const Kengash1 = () => {

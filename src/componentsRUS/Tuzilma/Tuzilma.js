@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { structures } from "../Home/ExtraCards/Photo";
-import style from "./Tuzilma.module.css";
+import style from "../../components/Tuzilma/Tuzilma.module.css";
 
 const TuzilmaRus = () => {
   return (

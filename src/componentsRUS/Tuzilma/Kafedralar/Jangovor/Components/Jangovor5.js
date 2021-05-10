@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./Jangovor5.module.css";
+import style from "../../../../../components/Tuzilma/Kafedralar/Jangovor/Components/Jangovor5.module.css";
 // import Zoom from "react-reveal/Zoom";
 
 const Jangovor5 = () => {

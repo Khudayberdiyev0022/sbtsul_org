@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import style from './Pictures.module.css'
+import style from '../../components/Pictures/Pictures.module.css'
 import { ModalPicture } from '../../actions'
 import { connect } from 'react-redux'
 import { AiOutlineCloseSquare } from 'react-icons/ai'

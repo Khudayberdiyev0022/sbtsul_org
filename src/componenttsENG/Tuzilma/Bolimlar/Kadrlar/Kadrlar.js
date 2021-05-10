@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./Kadrlar.module.css";
+import style from "../../../../components/Tuzilma/Bolimlar/Kadrlar/Kadrlar.module.css";
 import zarifa from "../../../../assets/img/zarifa.jpg";
 import aziza from "../../../../assets/img/aziza.jpg";
 import { Link } from "react-router-dom";

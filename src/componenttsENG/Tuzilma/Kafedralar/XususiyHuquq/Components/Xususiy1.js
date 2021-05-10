@@ -1,5 +1,6 @@
 import React from "react";
-import style from "./Xususiy1.module.css";
+import style from "../../../../../components/Tuzilma/Kafedralar/XususiyHuquq/Components/Xususiy1.module.css";
+
 // import Rotate from "react-reveal/Rotate";
 
 const Xususiy1 = () => {

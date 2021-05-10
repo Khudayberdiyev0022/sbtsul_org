@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./Tayyorlash1.module.css";
+import style from "../../../../components/Tuzilma/Dekanatlar/Tayyorlash/Tayyorlash1.module.css";
 
 const Tayyorlash1 = () => {
   return (

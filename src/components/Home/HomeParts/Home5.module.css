@@ -18,6 +18,7 @@
   /* height: 80%; */
   display: flex;
   justify-content: space-between;
+  /* margin-bottom: 20px; */
   /* border: 1px solid #fff; */
 }
 .leftBlock .box {
@@ -27,12 +28,14 @@
 }
 .box img {
   width: inherit;
-  height: 250px;
+  /* max-height: 250px; */
 }
 .rightBlock {
   width: 100%;
   margin: auto;
   padding-top: 10px;
+  margin-bottom: 20px;
+
   /* display: flex;
   flex-direction: column;
   align-items: center;

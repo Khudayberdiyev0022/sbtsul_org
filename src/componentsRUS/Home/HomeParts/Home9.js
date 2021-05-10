@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import style from "./Home9.module.css";
-import Carousel from "react-elastic-carousel";
+import style from "../../../components/Home/HomeParts/Home9.module.css";
+import Slider from "react-carousel-responsive";
+import "react-carousel-responsive/dist/styles.css";
 import img1 from "../../../assets/images/foydali1.png";
 import img2 from "../../../assets/images/logo.png";
 import img3 from "../../../assets/images/foydali3.png";
@@ -42,7 +43,6 @@ function Home9() {
     },
   ];
   const [pages, setPages] = useState(3);
-
   // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const interval = setInterval(() => {
@@ -58,28 +58,21 @@ function Home9() {
   });
   return (
     <div className={style.main}>
-      <h3>Полезные ссылки</h3>
+      <h3>Foydali havolalar</h3>
       <div className={style.container}>
-        <Carousel
-          disableArrowsOnEnd={false}
-          enableAutoPlay={true}
-          itemsToShow={pages}
-          autoTabIndexVisibleItems={false}
-          pagination={false}
-        >
+        <Slider slidesToShow={pages} autoplaySpeed={3000} autoplay={true}>
           {items.map((item) => (
-            <div key={item.id} className={style.card}>
+            <div key={item.id} className={`${style.card} slide`}>
               <div
                 className={style.image}
                 style={{ backgroundImage: `url(${item.image})` }}
               ></div>
-              <a
-               rel="noreferrer"
-               target="__blank"
-              href={item.link}>{item.title}</a>
+              <a rel="noreferrer" target="__blank" href={item.link}>
+                {item.title}
+              </a>
             </div>
           ))}
-        </Carousel>
+        </Slider>
       </div>
     </div>
   );

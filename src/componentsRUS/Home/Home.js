@@ -6,12 +6,10 @@ import Home4 from "./HomeParts/Home4";
 import Home5 from "./HomeParts/Home5";
 import Home6 from "./HomeParts/Home6";
 import Home7 from "./HomeParts/Home7";
-// import Home8 from "./HomeParts/Home8";
 import Home9 from "./HomeParts/Home9";
 import style from "../../componenttsENG/Home/Home.module.css";
 import image from "../../assets/icons/logoFT.svg";
-// import Home1 from "../../components/Home/HomeParts/Home1";
-import Home1Rus from "./HomeParts/Home1";
+import Home1 from "../../components/Home/HomeParts/Home1";
 const HomeRus = () => {
   const [loading, setLoading] = useState(false);
 
@@ -36,7 +34,7 @@ const HomeRus = () => {
         ></div>
       </div>
       <Fragment>
-        <Home1Rus />
+        <Home1 name="Специализированный филиал Ташкентского государственного юридического университета" />
         <Home2 />
         <Home7 />
         <Home3 />

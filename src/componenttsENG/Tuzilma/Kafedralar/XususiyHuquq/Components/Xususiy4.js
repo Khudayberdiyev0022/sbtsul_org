@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./Xususiy4.module.css";
+import style from "../../../../../components/Tuzilma/Kafedralar/XususiyHuquq/Components/Xususiy4.module.css";
 // import Bounce from "react-reveal/Bounce";
 
 const Xususiy4 = () => {

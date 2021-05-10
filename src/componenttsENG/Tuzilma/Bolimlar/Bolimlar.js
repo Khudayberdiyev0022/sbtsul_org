@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import style from "./Bolimlar.module.css";
+import style from "../../../components/Tuzilma/Bolimlar/Bolimlar.module.css";
 import { AiOutlineBank } from 'react-icons/ai'
 import { MdMonetizationOn } from 'react-icons/md'
 import { BiDollar, BiStreetView, BiNetworkChart } from 'react-icons/bi'

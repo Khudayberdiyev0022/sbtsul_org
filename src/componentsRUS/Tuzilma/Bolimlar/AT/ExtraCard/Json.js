@@ -4,6 +4,13 @@ import t3 from '../../../../../assets/img/abdiaxatovAT.webp'
 
 
 export const teachers = [
+    {
+        img: t1,
+        name: 'Махмудов Абдувохид Абдурахимович',
+        abTeach1: 'Начальник отдела информационных технологий-советник юстиции 3-го ранга.',
+        abTeach2: '',
+        email: 'abduvoxid@sbtsul.uz',  
+    },
    
     {
         img: t2,
@@ -11,13 +18,6 @@ export const teachers = [
         abTeach1: 'Отдел информационных технологий сетевой администратор ',
         abTeach2: '',
         email: 'u.sardor@sbtsul.uz'
-    },
-    {
-        img: t1,
-        name: 'Махмудов Абдувохид Абдурахимович',
-        abTeach1: 'Начальник отдела информационных технологий-советник юстиции 3-го ранга.',
-        abTeach2: '',
-        email: 'abduvoxid@sbtsul.uz',  
     },
     {
         img: t3,

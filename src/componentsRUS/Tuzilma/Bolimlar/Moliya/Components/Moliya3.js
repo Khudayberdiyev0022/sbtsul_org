@@ -1,22 +1,19 @@
 import React from "react";
-import style from "./Moliya3.module.css";
-// import Fade from "react-reveal/Fade";
-// import Zoom from "react-reveal/Zoom";
+import style from "../../../../../components/Tuzilma/Bolimlar/Moliya/Components/Moliya3.module.css";
+
+
 
 const Moliya3 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        {/* <Fade top cascade> */}
           <div className={style.head}>
             <h2>ЗАДАЧИ ОТДЕЛА</h2>
             <span></span>
           </div>
-        {/* </Fade> */}
-        {/* <Zoom top cascade> */}
           <div className={style.grid}>
             <div className={style.block}>
-              <div className={style.svg}>{/* <VscOrganization/> */}</div>
+              <div className={style.svg}></div>
               <p>
                 <li>
                 Дальнейшее укрепление финансово-экономического положения филиала,
@@ -74,7 +71,6 @@ const Moliya3 = () => {
               </p>
             </div>
           </div>
-        {/* </Zoom> */}
       </div>
     </div>
   );

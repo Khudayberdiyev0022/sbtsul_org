@@ -1,12 +1,10 @@
 import React from "react";
-import style from "./Ikkinchi1.module.css";
-// import Rotate from "react-reveal/Rotate";
+import style from "../../../../../components/Tuzilma/Bolimlar/Ikkinchi/Components/Ikkinchi1.module.css";
 
 const Ikkinchi1 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        {/* <Rotate bottom left cascade> */}
           <div className={style.head}>
             <h2>ВТОРОЙ РАЗДЕЛ</h2>
             <span></span>
@@ -20,7 +18,6 @@ const Ikkinchi1 = () => {
  организуется в соответствии с.
             </p>
           </div>
-        {/* </Rotate> */}
       </div>
     </div>
   );

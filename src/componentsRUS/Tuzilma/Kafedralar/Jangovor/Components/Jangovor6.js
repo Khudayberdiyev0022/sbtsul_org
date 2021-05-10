@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./Jangovor6.module.css";
+import style from "../../../../../components/Tuzilma/Kafedralar/Jangovor/Components/Jangovor6.module.css";
 import bg from "../../../../../assets/img/section_bg04.jpg";
 import img from "../../../../../assets/img/mm1.jpg";
 // import Bounce from "react-reveal/Bounce";

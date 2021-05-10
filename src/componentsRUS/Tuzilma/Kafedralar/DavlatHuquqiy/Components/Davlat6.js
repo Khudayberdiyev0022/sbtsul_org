@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./Davlat6.module.css";
+import style from "../../../../../components/Tuzilma/Kafedralar/DavlatHuquqiy/Components/Davlat6.module.css";
 import bg from "../../../../../assets/img/section_bg04.jpg";
 import img from "../../../../../assets/img/manaviy12.jpg";
 // import Bounce from "react-reveal/Bounce";

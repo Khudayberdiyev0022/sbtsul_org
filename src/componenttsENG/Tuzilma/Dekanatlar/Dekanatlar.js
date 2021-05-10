@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import React from 'react'
-import style from './Dekanatlar.module.css'
+import style from '../../../components/Tuzilma/Dekanatlar/Dekanatlar.module.css'
 
 
 const DekanatlarEng = () => {

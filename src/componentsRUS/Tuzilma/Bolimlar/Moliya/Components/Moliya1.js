@@ -1,12 +1,10 @@
 import React from "react";
-import style from "./Moliya1.module.css";
-// import Rotate from "react-reveal/Rotate";
+import style from "../../../../../components/Tuzilma/Bolimlar/Moliya/Components/Moliya1.module.css";
 
 const Moliya1 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        {/* <Rotate bottom left cascade> */}
           <div className={style.head}>
             <h2>ФИНАНСОВО-ЭКОНОМИЧЕСКИЙ ОТДЕЛ</h2>
             <span></span>
@@ -20,7 +18,6 @@ const Moliya1 = () => {
             организуется в соответствии с.
             </p>
           </div>
-        {/* </Rotate> */}
       </div>
     </div>
   );

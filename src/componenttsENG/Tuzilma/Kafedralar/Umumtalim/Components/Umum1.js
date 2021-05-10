@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./Umum1.module.css";
+import style from "../../../../../components/Tuzilma/Kafedralar/Umumtalim/Components/Umum1.module.css";
 
 const Umum1 = () => {
   return (

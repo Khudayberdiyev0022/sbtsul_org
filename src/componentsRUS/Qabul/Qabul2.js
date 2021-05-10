@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./Qabul2.module.css";
+import style from "../../components/Qabul/Qabul2.module.css";
 
 const Qabul2 = () => {
   return (

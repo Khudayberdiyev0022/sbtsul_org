@@ -9,8 +9,7 @@ import Home7 from "./HomeParts/Home7";
 import Home9 from "./HomeParts/Home9";
 import style from "./Home.module.css";
 import image from "../../assets/icons/logoFT.svg";
-// import Home1 from "../../components/Home/HomeParts/Home1";
-import Home1Eng from "./HomeParts/Home1";
+import Home1 from "../../components/Home/HomeParts/Home1";
 
 const HomeEng = () => {
   const [loading, setLoading] = useState(false);
@@ -36,7 +35,7 @@ const HomeEng = () => {
         ></div>
       </div>
       <Fragment>
-        <Home1Eng />
+        <Home1 name="Specialized branch of Tashkent State Law University" />
         <Home2 />
         <Home7 />
         <Home3 />

@@ -1,5 +1,5 @@
 import React from 'react'
-import style from './Home4.module.css'
+import style from "../../../components/Home/HomeParts/Home4.module.css";
 import Countup from 'react-countup'
 
 const Home4 = () => {

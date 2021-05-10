@@ -1,5 +1,5 @@
 import React from 'react'
-import style from './Students.module.css'
+import style from '../../components/Students/Students.module.css'
 import img1 from '../../assets/img/students1.jpg'
 import img2 from '../../assets/img/students2.jpg'
 import img3 from '../../assets/img/students3.jpg'

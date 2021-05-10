@@ -1,7 +1,6 @@
 import React from "react";
-import style from "./Davlat4.module.css";
+import style from "../../../../../components/Tuzilma/Kafedralar/DavlatHuquqiy/Components/Davlat4.module.css";
 import img1 from "../../../../../assets/img/oquv111.jpg";
-// import Bounce from "react-reveal/Bounce";
 
 const Davlat4 = () => {
   return (
@@ -16,7 +15,6 @@ const Davlat4 = () => {
               className={style.img}
               style={{ backgroundImage: `url(${img1})` }}
             ></div>
-            {/* <Bounce top cascade> */}
               <div className={style.text1}>
                 <p>
                 A number of educational activities to date
@@ -31,9 +29,7 @@ const Davlat4 = () => {
                    scheduled; {""}
                 </p>
               </div>
-            {/* </Bounce> */}
           </div>
-          {/* <Bounce top cascade> */}
             <div className={style.text}>
               <p>
               Develop appropriate curricula and study plans
@@ -43,7 +39,6 @@ const Davlat4 = () => {
                  is coming. {""}
               </p>
             </div>
-          {/* </Bounce> */}
         </div>
       </div>
     </div>

@@ -1,13 +1,11 @@
 import React from "react";
-import style from "./Tayyorlash3.module.css";
-// import Fade from "react-reveal/Fade";
-// import Zoom from "react-reveal/Zoom";
+import style from "../../../../components/Tuzilma/Dekanatlar/Tayyorlash/Tayyorlash3.module.css";
+
 
 const Tayyorlash4 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        {/* <Fade top cascade> */}
           <div className={style.head}>
             <h2>       
             Deputy Dean for Youth Affairs
@@ -15,8 +13,6 @@ const Tayyorlash4 = () => {
             </h2>
             <span></span>
           </div>
-        {/* </Fade> */}
-        {/* <Zoom top cascade> */}
           <div className={style.grid}>
             <div className={style.block}>
               <div className={style.svg}></div>
@@ -135,7 +131,6 @@ const Tayyorlash4 = () => {
               </p>
             </div>
           </div>
-        {/* </Zoom> */}
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./Davlat5.module.css";
+import style from "../../../../../components/Tuzilma/Kafedralar/DavlatHuquqiy/Components/Davlat5.module.css";
 // import Zoom from "react-reveal/Zoom";
 import img from "../../../../../assets/img/manaviy111.jpg";
 

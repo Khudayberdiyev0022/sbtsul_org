@@ -1,6 +1,5 @@
 import React from "react";
-import style from "./IlmiyKengash.module.css";
-// import Rotate from "react-reveal/Rotate";
+import style from "../../../components/Faoliyat/IlmiyKengash/IlmiyKengash.module.css";
 
 const IlmiyKengashEng = () => {
   return (

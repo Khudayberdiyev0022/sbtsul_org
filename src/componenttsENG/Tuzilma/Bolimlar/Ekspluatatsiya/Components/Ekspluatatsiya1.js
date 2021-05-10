@@ -1,12 +1,10 @@
 import React from "react";
-import style from "./Ekspluatatsiya1.module.css";
-// import Rotate from "react-reveal/Rotate";
+import style from "../../../../../components/Tuzilma/Bolimlar/Ekspluatatsiya/Components/Ekspluatatsiya1.module.css";
 
 const Ekspluatatsiya1 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        {/* <Rotate bottom left cascade> */}
           <div className={style.head}>
             <h2>GENERAL INFORMATION ABOUT THE OPERATIONAL AND ECONOMIC DEPARTMENT</h2>
             <span></span>
@@ -20,7 +18,6 @@ const Ekspluatatsiya1 = () => {
                Organized in accordance with Resolution No. PQ-4166
             </p>
           </div>
-        {/* </Rotate> */}
       </div>
     </div>
   );

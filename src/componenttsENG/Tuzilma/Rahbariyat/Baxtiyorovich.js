@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./Baxtiyorovich.module.css";
+import style from "../../../components/Tuzilma/Rahbariyat/Baxtiyorovich.module.css";
 import img from "../../../assets/img/djuraev.jpg";
 // import Zoom from "react-reveal/Zoom";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./Direktorat.module.css";
+import style from "../../../components/Tuzilma/Direktorat/Direktorat.module.css";
 import sultanovDR from "../../../assets/img/sultanovDR.jpg";
 import nurxodjayevDR from "../../../assets/img/nurxodjayevDR.jpg";
 import yusupovDR from "../../../assets/img/yusupovDR.jpg";

@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./Qabul1.module.css";
+import style from "../../components/Qabul/Qabul1.module.css";
 import { BsCheckBox } from "react-icons/bs";
 import { RiUserVoiceLine } from "react-icons/ri";
 import { BsExclamationTriangle } from "react-icons/bs";

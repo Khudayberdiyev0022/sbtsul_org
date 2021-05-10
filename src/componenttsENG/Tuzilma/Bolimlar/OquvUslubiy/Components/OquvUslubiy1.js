@@ -1,12 +1,10 @@
 import React from "react";
-import style from "./OquvUslubiy1.module.css";
-// import Rotate from "react-reveal/Rotate";
+import style from "../../../../../components/Tuzilma/Bolimlar/OquvUslubiy/Components/OquvUslubiy1.module.css";
 
 const OquvUslubiy1 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        {/* <Rotate bottom left cascade> */}
           <div className={style.head}>
             <h2>EDUCATIONAL AND METHODOLOGICAL DEPARTMENT</h2>
             <span></span>
@@ -20,7 +18,6 @@ const OquvUslubiy1 = () => {
                properly organized.
             </p>
           </div>
-        {/* </Rotate> */}
       </div>
     </div>
   );

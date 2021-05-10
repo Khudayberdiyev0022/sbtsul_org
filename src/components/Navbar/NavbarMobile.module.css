@@ -16,7 +16,7 @@
   .main {
     width: 100%;
     box-sizing: border-box;
-    z-index: 20;
+    z-index: 101;
     transition: all 1s ease;
     display: block;
     min-height: 8vh;

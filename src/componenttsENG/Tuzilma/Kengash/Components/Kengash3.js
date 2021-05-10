@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./Kengash3.module.css";
+import style from "../../../../components/Tuzilma/Kengash/Components/Kengash3.module.css";
 // import Fade from "react-reveal/Fade";
 // import Zoom from "react-reveal/Zoom";
 

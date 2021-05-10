@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import style from "./Jangovor2.module.css";
+import style from "../../../../../components/Tuzilma/Kafedralar/Jangovor/Components/Jangovor2.module.css";
 import { nameKaf, teachers } from "../ExtraCard/Json";
 // import Zoom from "react-reveal/Zoom";
 

@@ -49,12 +49,9 @@ function Home1({ name }) {
           >
             <div className={style.bg}></div>
             {/* <span></span> */}
-            <h1>
-              Toshkent davlat yuridik universitetining ixtisoslashtirilgan
-              filiali
-            </h1>
+            <h1>{name}</h1>
 
-            <h2 className={style.sections}>{name}</h2>
+            {/* <h2 className={style.sections}>{name}</h2> */}
           </div>
         </div>
       </Fragment>

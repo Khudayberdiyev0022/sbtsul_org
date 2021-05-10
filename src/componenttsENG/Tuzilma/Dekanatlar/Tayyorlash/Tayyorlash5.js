@@ -1,12 +1,10 @@
 import React from "react";
-// import Zoom from "react-reveal/Zoom";
-import style from "./Tayyorlash5.module.css";
+import style from "../../../../components/Tuzilma/Dekanatlar/Tayyorlash/Tayyorlash5.module.css";
 
 const Tayyorlash5 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        {/* <Zoom top> */}
           <h2>WORKS WITH YOUNG PEOPLE</h2>
           <span></span>
           <p>
@@ -54,7 +52,6 @@ const Tayyorlash5 = () => {
              A line inspection is being conducted on the branch board. All students are special
              provided with clothing (uniform).
           </p>
-        {/* </Zoom> */}
       </div>
     </div>
   );

@@ -1,12 +1,10 @@
 import React from "react";
-import style from "./Arm1.module.css";
-// import Rotate from "react-reveal/Rotate";
+import style from "../../../../components/Tuzilma/ARM/Components/Arm1.module.css";
 
 const Arm1 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        {/* <Rotate bottom left cascade> */}
           <div className={style.head}>
             <h2>INFORMATION RESOURCE CENTER </h2>
             <span></span>
@@ -20,7 +18,6 @@ const Arm1 = () => {
                properly organized.
             </p>
           </div>
-        {/* </Rotate> */}
       </div>
     </div>
   );

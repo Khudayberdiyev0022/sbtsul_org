@@ -1,13 +1,11 @@
 import React from "react";
-import style from "./Davlat6.module.css";
+import style from "../../../../../components/Tuzilma/Kafedralar/DavlatHuquqiy/Components/Davlat6.module.css";
 import bg from "../../../../../assets/img/section_bg04.jpg";
 import img from "../../../../../assets/img/manaviy12.jpg";
-// import Bounce from "react-reveal/Bounce";
 
 const Davlat6 = () => {
   return (
     <div className={style.main} style={{ backgroundImage: `url(${bg})` }}>
-      {/* <Bounce top cascade> */}
         <div className={style.inMain}>
           <h2>SPIRITUAL-EDUCATIONAL AND EDUCATIONAL-MORAL WORK</h2>
           <span></span>
@@ -35,7 +33,6 @@ const Davlat6 = () => {
              have been giving reasoned answers to the questions posed.
           </p>
         </div>
-      {/* </Bounce> */}
     </div>
   );
 };

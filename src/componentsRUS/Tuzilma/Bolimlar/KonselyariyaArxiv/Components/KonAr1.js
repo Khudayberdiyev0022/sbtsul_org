@@ -1,12 +1,10 @@
 import React from "react";
-import style from "./KonAr1.module.css";
-// import Rotate from "react-reveal/Rotate";
+import style from "../../../../../components/Tuzilma/Bolimlar/KonselyariyaArxiv/Components/KonAr1.module.css";
 
 const KonAr1 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        {/* <Rotate bottom left cascade> */}
           <div className={style.head}>
             <h2>КАНЦЕЛЯРИЯ И АРХИВНЫЙ ОТДЕЛ</h2>
             <span></span>
@@ -19,7 +17,6 @@ const KonAr1 = () => {
             в соответствии с постановлением правительства Кыргызской Республики.
             </p>
           </div>
-        {/* </Rotate> */}
       </div>
     </div>
   );

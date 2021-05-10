@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import style from "./NavbarMobile.module.css";
+import style from "../../components/Navbar/NavbarMobile.module.css";
 import { FiMenu } from "react-icons/fi";
 import { VscClose } from "react-icons/vsc";
 import logo from "../../assets/icons/logoFT.svg";

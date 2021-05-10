@@ -1,6 +1,6 @@
 import React, { useEffect, Fragment } from "react";
 import { Link } from "react-router-dom";
-import style from "./Home5.module.css";
+import style from "../../../components/Home/HomeParts/Home5.module.css";
 import { SelectedNew, fetchNewsProducts } from "../../../actions";
 import { connect } from "react-redux";
 

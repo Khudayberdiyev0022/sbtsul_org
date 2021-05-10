@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./Jangovor1.module.css";
+import style from "../../../../../components/Tuzilma/Kafedralar/Jangovor/Components/Jangovor1.module.css";
 // import Rotate from "react-reveal/Rotate";
 
 const Jangovor1 = () => {

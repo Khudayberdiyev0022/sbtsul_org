@@ -1,17 +1,13 @@
 import React from "react";
-import style from "./OquvUslubiy2.module.css";
+import style from "../../../../../components/Tuzilma/Bolimlar/OquvUslubiy/Components/OquvUslubiy2.module.css";
 import { nameKaf, teachers } from "../ExtraCard/Json";
-// import Zoom from "react-reveal/Zoom";
 
 const OquvUslubiy2 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        {/* <Zoom right> */}
           <h2>СОСТАВ СОТРУДНИКОВ УЧЕБНО-МЕТОДИЧЕСКОГО ОТДЕЛА</h2>
           <span></span>
-        {/* </Zoom> */}
-        {/* <Zoom top cascade> */}
           <div className={style.map}>
             {teachers.map((teacher, index) => {
               return (
@@ -39,7 +35,6 @@ const OquvUslubiy2 = () => {
               );
             })}
           </div>
-        {/* </Zoom> */}
       </div>
     </div>
   );

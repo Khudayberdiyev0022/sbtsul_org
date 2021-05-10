@@ -1,12 +1,10 @@
 import React from "react";
-import style from "./Qayta1.module.css";
-// import Rotate from "react-reveal/Rotate";
+import style from "../../../../components/Tuzilma/Dekanatlar/QaytaTayyorlash/Qayta1.module.css";
 
 const Qayta1 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        {/* <Rotate bottom left cascade> */}
           <div className={style.head}>
             <h2>ДЕКАНАТ КУРСОВ ПЕРЕПОДГОТОВКИ</h2>
             <span></span>
@@ -19,7 +17,6 @@ const Qayta1 = () => {
             в соответствии с постановлением правительства Кыргызской Республики.
             </p>
           </div>
-        {/* </Rotate> */}
       </div>
     </div>
   );

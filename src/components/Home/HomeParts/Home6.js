@@ -11,6 +11,10 @@ function Home6(props) {
     props.fetchImagesProducts()
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
+useEffect(() => {
+    props.fetchImagesProducts()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
 
   return (

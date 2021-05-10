@@ -1,12 +1,10 @@
 import React from "react";
-import style from "./Tarbiyaviy1.module.css";
-// import Rotate from "react-reveal/Rotate";
+import style from "../../../../../components/Tuzilma/Bolimlar/Tarbiyaviy/Components/Tarbiyaviy1.module.css";
 
 const Tarbiyaviy1 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        {/* <Rotate bottom left cascade> */}
           <div className={style.head}>
             <h2>ОТДЕЛ ВОСПИТАТЕЛЬНОЙ РАБОТЫ</h2>
             <span></span>
@@ -20,7 +18,6 @@ const Tarbiyaviy1 = () => {
             Образован в соответствии с постановлением ПП-4166.
             </p>
           </div>
-        {/* </Rotate> */}
       </div>
     </div>
   );

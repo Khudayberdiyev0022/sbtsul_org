@@ -1,5 +1,5 @@
 import React from "react";
-import style from "./Home2.module.css";
+import style from "../../../components/Home/HomeParts/Home2.module.css";
 import president from "../../../assets/img/pr.webp";
 
 const Home2 = () => {
