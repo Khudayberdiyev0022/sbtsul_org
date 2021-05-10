@@ -1,54 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import style from "./Vakansiya.module.css";
 import { BsCloudDownload } from "react-icons/bs";
 import docx from "../../components/Data/Ariza namuna tanlovga.docx";
 import doc from "../../components/Data/Vakansiya.doc";
+import { fetchVacancysProducts } from '../../actions'
+import { connect } from 'react-redux'
 
-const VakansiyaRus = () => {
-  const apis = [
-    {
-      jobTitle: "Деканат подготовительных курсов",
-      job: "Декан",
-      salary: "2 000 000",
-      aboutJob1: `Имея степень магистра или кандидата юридических наук, по крайней мере, на соответствующих руководящих должностях в образовательных учреждениях (заведующий кафедрой, декан или заместитель курса, руководитель центра, заведующий кафедрой или подразделением и т. Д.)
-      5 лет эффективного опыта работы`,
-    },
-    {
-      jobTitle: "Директорат",
-      job: "Психолог",
-      salary: "1 913 835 ",
-      aboutJob1: `Потенциальные граждане Республики Узбекистан с высшим (специальным) образованием, компьютерной грамотностью, соответствующими знаниями и опытом.`,
-    },
-    {
-      jobTitle: "Канцелярия и архив",
-      job: "Курьер",
-      salary: "747 300 ",
-      aboutJob1: `Граждане Республики Узбекистан со средним специальным образованием
-      (поступая на работу впервые
-      Будут приняты выпускники 2018-2020 гг.)`,
-    },
-    {
-      jobTitle: "Департамент информационных технологий",
-      job: "Инженер-программист",
-      salary: "1 018 482 ",
-      aboutJob1: `Потенциальные граждане Республики Узбекистан с высшим (специальным) образованием, компьютерной грамотностью, соответствующими знаниями и опытом.`,
-    },
-    {
-      jobTitle: "Информационно-ресурсный центр",
-      job: "Библиотекарь",
-      salary: "1 124 687 ",
-      aboutJob1: `Потенциальные граждане Республики Узбекистан с высшим (специальным) образованием, компьютерной грамотностью, соответствующими знаниями и опытом.
-      (поступая на работу впервые
-      Будут приняты выпускники 2018-2020 гг.`,
-    },
-    {
-      jobTitle: "Информационно-ресурсный центр",
-      job: `Библиотекарь
-      (вместо работника по уходу за детьми)`,
-      salary: "1 124 687 ",
-      aboutJob1: `Потенциальные граждане Республики Узбекистан с высшим (специальным) образованием, компьютерной грамотностью, соответствующими знаниями и опытом.`,
-    },
-  ];
+const VakansiyaRus = (props) => {
+  useEffect(() => {
+    props.fetchVacancysProducts()
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   return (
     <div className={style.main}>
@@ -77,17 +40,17 @@ const VakansiyaRus = () => {
           </div>
         </div>
 
-        {apis.map((api, index) => {
+        {props.vacancys?.map((api, index) => {
           return (
             <div className={style.card} key={index}>
-              <h3>{api.jobTitle}</h3>
+              <h3>{api.titleRus}</h3>
               <div className={style.job}>
-                <h3>{api.job}</h3>
+                <h3>{api.subTitleRus}</h3>
                 <h3>
-                  <span> З/П:</span> {api.salary} <span>so'm</span>
+                  <span> З/П:</span> {api.costRus} <span>so'm</span>
                 </h3>
               </div>
-              <p>{api.aboutJob1}</p>
+              <p>{api.paragraphRus}</p>
             </div>
           );
         })}
@@ -127,21 +90,21 @@ const VakansiyaRus = () => {
             <li>
               {" "}
               <strong>
-              Заявление и сопутствующие документы должны быть получены до 18:00 25 апреля 2021 года.
-                 принято пока.
+                Заявление и сопутствующие документы должны быть получены до 18:00 25 апреля 2021 года.
+                принято пока.
               </strong>{" "}
             </li>
             <li>
-            В справке указан адрес кандидата, мобильный телефон.
-               номера и адреса электронной почты
-               следует указать. Учить больше:
+              В справке указан адрес кандидата, мобильный телефон.
+              номера и адреса электронной почты
+              следует указать. Учить больше:
               <a href="tel://+998909442962" rel="noreferrer" target="_blank">
                 +998 90 944 29 62
               </a>
             </li>
             <li>
-            В случае нарушения процедуры отбора или коррупции
-               Министерства юстиции
+              В случае нарушения процедуры отбора или коррупции
+              Министерства юстиции
               <a href="tel://1008" rel="noreferrer" target="_blank">
                 “1008”
               </a>
@@ -168,8 +131,8 @@ const VakansiyaRus = () => {
         </div>
         <div className={style.footer}>
           <p>
-          Участвуйте в конкурсе Специализированного филиала ТГЮУ.
-             Вы можете скачать образец по этой ссылке.
+            Участвуйте в конкурсе Специализированного филиала ТГЮУ.
+            Вы можете скачать образец по этой ссылке.
             <span className={style.btn}>
               <a href={docx} rel="noreferrer" download>
                 (docx) faylni yuklab olish
@@ -182,5 +145,11 @@ const VakansiyaRus = () => {
     </div>
   );
 };
+const mapStateToProps = state => {
+  return {
+    vacancys: state.productsVacancys[0]
+  }
+}
 
-export default VakansiyaRus;
+
+export default connect(mapStateToProps, { fetchVacancysProducts })(VakansiyaRus);

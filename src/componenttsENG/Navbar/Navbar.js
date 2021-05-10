@@ -21,10 +21,14 @@ function NavbarEng(props) {
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
     const interval = setInterval(() => {
-      if (window.self.scrollY > 300) {
-        setScroll(true);
+      if (window.location.pathname === '/eng') {
+        if (window.self.scrollY > 300) {
+          setScroll(true);
+        } else {
+          setScroll(false);
+        }
       } else {
-        setScroll(false);
+        setScroll(true);
       }
     }, 500);
     return () => {
@@ -188,7 +192,7 @@ function NavbarEng(props) {
                   </div>
                 </div>
                 <div className={style.navbarLink}>
-                  <NavLink to="/eng" activeStyle={{ color: "rgb(2 162 255)" }}>
+                  <NavLink to="/eng/kafedralar" activeStyle={{ color: "rgb(2 162 255)" }}>
                     Activity <span></span>
                     <AiFillCaretDown />
                   </NavLink>

@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import style from "./Contact1.module.css";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdMail, MdLocationOn } from "react-icons/md";
+import { addProduct } from '../../actions'
+import { connect } from 'react-redux'
 // import Rotate from "react-reveal/Rotate";
 // import Flip from "react-reveal/Flip";
 
-const Contact1 = () => {
+const Contact1 = (props) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [surName, setSurName] = useState("");
@@ -13,7 +15,7 @@ const Contact1 = () => {
 
   const submit = (e) => {
     e.preventDefault();
-    console.log(name, email, surName, message);
+    props.addProduct('messages', { name: `${name} ${surName}`, paragraph: message, email: email })
     setName("");
     setEmail("");
     setSurName("");
@@ -121,4 +123,4 @@ const Contact1 = () => {
   );
 };
 
-export default Contact1;
+export default connect(null, { addProduct })(Contact1);

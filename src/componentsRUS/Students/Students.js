@@ -33,8 +33,8 @@ const StudentsRus = () => {
          <div className={style.container}>
             {
                Students.map((student, index) => {
-                  return(
-                     <div key={index}>
+                  return (
+                     <div className={style.image} key={index}>
                         <img src={student.img} alt="students" />
                      </div>
                   )

@@ -20,10 +20,14 @@ function Navbar(props) {
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
     const interval = setInterval(() => {
-      if (window.self.scrollY > 300) {
-        setScroll(true);
+      if (window.location.pathname === '/') {
+        if (window.self.scrollY > 300) {
+          setScroll(true);
+        } else {
+          setScroll(false);
+        }
       } else {
-        setScroll(false);
+        setScroll(true);
       }
     }, 500);
     return () => {
@@ -48,7 +52,7 @@ function Navbar(props) {
         <div className={style.containerMain}>
           <div
             className={
-              scroll && window.location.pathname === "/"
+              scroll
                 ? `${style.socialmedia} ${style.socialMediaScroll}`
                 : `${style.socialmedia} ${style.socialMediaNotScroll}`
             }
@@ -87,14 +91,6 @@ function Navbar(props) {
                 >
                   <FaTelegram />
                 </a>
-                {/* <a
-                  rel="norefer"
-                  traget="_blank"
-                  href="/"
-                  className={style.icon}
-                >
-                  <FaTwitter />
-                </a> */}
               </div>
               <div className={style.us}>
                 <a
@@ -201,7 +197,7 @@ function Navbar(props) {
                 </div>
                 <div className={style.navbarLink}>
                   {/* /Link ='/faoliyat' */}
-                  <NavLink to="/" activeStyle={{ color: "rgb(2 162 255)" }}>
+                  <NavLink to="/kafedralar" activeStyle={{ color: "rgb(2 162 255)" }}>
                     Faoliyat <span></span>
                     <AiFillCaretDown />
                   </NavLink>

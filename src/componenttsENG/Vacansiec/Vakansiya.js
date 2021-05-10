@@ -1,54 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import style from "./Vakansiya.module.css";
 import { BsCloudDownload } from "react-icons/bs";
 import docx from "../../components/Data/Ariza namuna tanlovga.docx";
 import doc from "../../components/Data/Vakansiya.doc";
+import { fetchVacancysProducts } from '../../actions'
+import { connect } from 'react-redux'
 
-const VakansiyaEng = () => {
-  const apis = [
-    {
-      jobTitle: "Dean's Office of Preparatory Courses",
-      job: "Dean",
-      salary: "2 000 000",
-      aboutJob1: `Have a master's degree or PhD in higher legal education, at least in relevant management positions in educational institutions (head of department, dean or deputy course, head of the center, head of department or division, etc.)
-      Have 5 years of effective work experience`,
-    },
-    {
-      jobTitle: "Directorate",
-      job: "Psychologist",
-      salary: "1 913 835 ",
-      aboutJob1: `Potential citizens of the Republic of Uzbekistan with higher (special) education, computer literacy, relevant knowledge and experience`,
-    },
-    {
-      jobTitle: "Office and archive",
-      job: "Courier",
-      salary: "747 300 ",
-      aboutJob1: `Citizens of the Republic of Uzbekistan with secondary special education
-      (first time working
-      2018-2020 graduates will be accepted)`,
-    },
-    {
-      jobTitle: "Department of Information Technology",
-      job: "Engineer-programmer",
-      salary: "1 018 482 ",
-      aboutJob1: `Potential citizens of the Republic of Uzbekistan with higher (special) education, computer literacy, relevant knowledge and experience`,
-    },
-    {
-      jobTitle: "Information resource center",
-      job: "Librarian",
-      salary: "1 124 687 ",
-      aboutJob1: `Potential citizens of the Republic of Uzbekistan with higher (special) education, computer literacy, relevant knowledge and experience
-      (first time working
-      2018-2020 graduates will be accepted`,
-    },
-    {
-      jobTitle: "Аinformation resource center",
-      job: `Librarian
-      (instead of childcare worker)`,
-      salary: "1 124 687 ",
-      aboutJob1: `Potential citizens of the Republic of Uzbekistan with higher (special) education, computer literacy, relevant knowledge and experience`,
-    },
-  ];
+
+const VakansiyaEng = (props) => {
+
+  useEffect(() => {
+    props.fetchVacancysProducts()
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+
 
   return (
     <div className={style.main}>
@@ -76,17 +43,17 @@ const VakansiyaEng = () => {
           </div>
         </div>
 
-        {apis.map((api, index) => {
+        {props.vacancys?.map((api, index) => {
           return (
             <div className={style.card} key={index}>
-              <h3>{api.jobTitle}</h3>
+              <h3>{api.titleEng}</h3>
               <div className={style.job}>
-                <h3>{api.job}</h3>
+                <h3>{api.subTitleEng}</h3>
                 <h3>
-                  <span> Salary:</span> {api.salary} <span>sum</span>
+                  <span> З/П:</span> {api.costEng} <span>so'm</span>
                 </h3>
               </div>
-              <p>{api.aboutJob1}</p>
+              <p>{api.paragraphEng}</p>
             </div>
           );
         })}
@@ -184,4 +151,11 @@ const VakansiyaEng = () => {
   );
 };
 
-export default VakansiyaEng;
+const mapStateToProps = state => {
+  return {
+    vacancys: state.productsVacancys[0]
+  }
+}
+
+
+export default connect(mapStateToProps, { fetchVacancysProducts })(VakansiyaEng);

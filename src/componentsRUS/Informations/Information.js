@@ -1,45 +1,29 @@
 import React from "react";
 import style from "./NewsCard.module.css";
-import img from "../../assets/img/army.jpg";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
-const NewsCardRus = (props) => {
-  console.log(props.new);
-  const apis = [
-    {
-      img: img,
-      title: "MА'NАVIY VА MА'RIFIY TАSHАBBUS АMАLDА",
-      data: "5.05.2021",
-      p1:
-        "Mamlakatimizda mustaqil va erkin fikrlaydigan, zamonaviy ilm-fan yutuqlarini, oʼz kasbini puxta oʼzlashtirgan talaba yoshlarni malakaliy mutaxassis qilib yetkazishga alohida eʼtibor...",
-      p2:
-        "Mamlakatimizda mustaqil va erkin fikrlaydigan, zamonaviy ilm-fan yutuqlarini, oʼz kasbini puxta oʼzlashtirgan talaba yoshlarni malakaliy mutaxassis qilib yetkazishga alohida eʼtibor...",
-    },
-  ];
+const NewsCard = (props) => {
+
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        {apis.map((api, index) => {
-          return (
-            <div className={style.card} key={index}>
-              <div
-                className={style.img}
-                style={{ backgroundImage: `url(${props.new.image})` }}
-              ></div>
-              <div className={style.text}>
-                <h3>{props.new.title}</h3>
-                {/* <h5>{api.data}</h5> */}
-                <p>{props.new.paragraph}</p>
-                {/* <p>{api.p2}</p> */}
-              </div>
-            </div>
-          );
-        })}
+        <div className={style.card} >
+          <div
+            className={style.img}
+            style={{ backgroundImage: `url(${props.new.pictureURL})` }}
+          ></div>
+          <div className={style.text}>
+            <h3>{props.new.titleRus}</h3>
+            <h5>{props.new.date}</h5>
+            <p>{props.new.paragraphRus}</p>
+            {/* <p>{api.p2}</p> */}
+          </div>
+        </div>
         <div className={style.containerButton}>
           <Link to="/rus">
-            <span>Назад...</span>
-            <span>Назад...</span>
+            <span>НАЗАД...</span>
+            <span>НАЗАД...</span>
           </Link>
         </div>
       </div>
@@ -53,4 +37,4 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps, null)(NewsCardRus);
+export default connect(mapStateToProps, null)(NewsCard);

@@ -145,6 +145,14 @@ import NewsDelete from "./admin-dashboard/admin-add/NewsDelete";
 import NewsEdit from "./admin-dashboard/admin-add/NewsEdit";
 import MainAdmin from "./admin-dashboard/MainAdmin";
 
+
+import ImageAdd from "./admin-dashboard/admin-add/ImageAdd";
+import ImageEdit from "./admin-dashboard/admin-add/ImageEdit";
+import ImageDelete from "./admin-dashboard/admin-add/ImageDelete";
+import VacancyAdd from "./admin-dashboard/admin-add/VacancyAdd";
+import VacancyEdit from "./admin-dashboard/admin-add/VacancyEdit";
+import VacancyDelete from "./admin-dashboard/admin-add/VacancyDelete";
+
 function ScrollToTop() {
   const { pathname } = useLocation();
 
@@ -316,6 +324,26 @@ export const UzbRender = () => {
           </Route>
           <Route exact path="/admin/delete/news">
             <NewsDelete />
+          </Route>
+          {/* images */}
+          <Route exact path="/admin/add/images">
+            <ImageAdd />
+          </Route>
+          <Route exact path="/admin/edit/images">
+            <ImageEdit />
+          </Route>
+          <Route exact path="/admin/delete/images">
+            <ImageDelete />
+          </Route>
+          {/* vacancy */}
+          <Route exact path="/admin/add/vacancys">
+            <VacancyAdd />
+          </Route>
+          <Route exact path="/admin/edit/vacancys">
+            <VacancyEdit />
+          </Route>
+          <Route exact path="/admin/delete/vacancys">
+            <VacancyDelete />
           </Route>
         </Switch>
         <Footer />

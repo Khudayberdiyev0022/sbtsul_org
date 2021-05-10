@@ -27,6 +27,7 @@
 }
 .box img {
   width: inherit;
+  height: 250px;
 }
 .rightBlock {
   width: 100%;
@@ -175,6 +176,9 @@
   }
   .rightBlock p {
     font-size: 16px;
+  }
+  .box img {
+    height: 100%;
   }
 }
 

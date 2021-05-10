@@ -1,54 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import style from "./Vakansiya.module.css";
 import { BsCloudDownload } from "react-icons/bs";
 import docx from "../../components/Data/Ariza namuna tanlovga.docx";
 import doc from "../../components/Data/Vakansiya.doc";
+import { fetchVacancysProducts } from '../../actions'
+import { connect } from 'react-redux'
 
-const Vakansiya = () => {
-  const apis = [
-    {
-      jobTitle: "Tayyorlash kurslari dekanati",
-      job: "Dekan",
-      salary: "2 000 000",
-      aboutJob1: `Oliy yuridik ma'lumotga boʼyicha magistr darajasiga yoki PhD ilmiy darajasiga ega bo'lish, ta'lim muassasalarida tegishli boshqaruv lavozimlarda ( kafedra mudiri, kurs dekani yoki o'rinbosari, markaz rahbari, boshqarma yoki bo'lim boshlig'i va h.k. ) kamida 
-      5 yillik samarali ish stajiga ega bo'lishi`,
-    },
-    {
-      jobTitle: "Direktorat",
-      job: "Psixolog",
-      salary: "1 913 835 ",
-      aboutJob1: `Oliy (maxsus) maʼlumotga, kompьyuter savodxonligiga, tegishli bilim va tajribaga ega boʼlgan salohiyatli Oʼzbekiston Respublikasi fuqarolari`,
-    },
-    {
-      jobTitle: "Kanselyariya va arxiv",
-      job: "Kuryer",
-      salary: "747 300 ",
-      aboutJob1: `Oʼtra maxsus maʼlumotga ega Oʼzbekiston Respublikasi fuqarolari 
-      (birincha marta ishga kirayotgan 
-      2018-2020 yil bitiruvchilari qabul qilinadi)`,
-    },
-    {
-      jobTitle: "Аxborot texnologiyalari boʼlimi",
-      job: "Muhandis-dasturchi",
-      salary: "1 018 482 ",
-      aboutJob1: `Oliy (maxsus) maʼlumotga, kompьyuter savodxonligiga, tegishli bilim va tajribaga ega boʼlgan salohiyatli Oʼzbekiston Respublikasi fuqarolari`,
-    },
-    {
-      jobTitle: "Аxborot-resurs markazi",
-      job: "Kutubxonachi",
-      salary: "1 124 687 ",
-      aboutJob1: `Oliy (maxsus) maʼlumotga, kompьyuter savodxonligiga, tegishli bilim va tajribaga ega boʼlgan salohiyatli Oʼzbekiston Respublikasi fuqarolari 
-      (birincha marta ishga kirayotgan 
-      2018-2020 yil bitiruvchilari qabul qilinadi`,
-    },
-    {
-      jobTitle: "Аxborot-resurs markazi",
-      job: `Kutubxonachi
-      (bola parvarishlash taʼtilidagi xodim oʼrniga)`,
-      salary: "1 124 687 ",
-      aboutJob1: `Oliy (maxsus) maʼlumotga, kompьyuter savodxonligiga, tegishli bilim va tajribaga ega boʼlgan salohiyatli Oʼzbekiston Respublikasi fuqarolari`,
-    },
-  ];
+const Vakansiya = (props) => {
+
+
+  useEffect(() => {
+    props.fetchVacancysProducts()
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   return (
     <div className={style.main}>
@@ -78,17 +43,17 @@ const Vakansiya = () => {
           </div>
         </div>
 
-        {apis.map((api, index) => {
+        {props.vacancys?.map((api, index) => {
           return (
             <div className={style.card} key={index}>
-              <h3>{api.jobTitle}</h3>
+              <h3>{api.titleUzb}</h3>
               <div className={style.job}>
-                <h3>{api.job}</h3>
+                <h3>{api.subTitleUzb}</h3>
                 <h3>
-                  <span> Maosh:</span> {api.salary} <span>so'm</span>
+                  <span> З/П:</span> {api.costUzb} <span>so'm</span>
                 </h3>
               </div>
-              <p>{api.aboutJob1}</p>
+              <p>{api.paragraphUzb}</p>
             </div>
           );
         })}
@@ -184,4 +149,12 @@ const Vakansiya = () => {
   );
 };
 
-export default Vakansiya;
+
+const mapStateToProps = state => {
+  return {
+    vacancys: state.productsVacancys[0]
+  }
+}
+
+
+export default connect(mapStateToProps, { fetchVacancysProducts })(Vakansiya);

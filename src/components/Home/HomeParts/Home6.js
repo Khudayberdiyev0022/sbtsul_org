@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Carousel from "react-material-ui-carousel";
 import { Link } from "react-router-dom";
 import style from "./Home6.module.css";
-import { pictures } from "../ExtraCards/Photo";
+import { fetchImagesProducts } from '../../../actions'
+import { connect } from 'react-redux'
 
-function Home6() {
+function Home6(props) {
+
+  useEffect(() => {
+    props.fetchImagesProducts()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+
   return (
     <div className={style.main}>
       <div className={style.linkBlock}>
@@ -16,11 +24,11 @@ function Home6() {
         interval={3000}
         swipe={true}
       >
-        {pictures.map((picture, i) => (
+        {props.pictures?.map((picture, i) => (
           <div
             key={i}
             className={style.image}
-            style={{ backgroundImage: `url(${picture.img})` }}
+            style={{ backgroundImage: `url(${picture.pictureURL})` }}
           ></div>
         ))}
       </Carousel>
@@ -33,5 +41,11 @@ function Home6() {
     </div>
   );
 }
+const mapStateToProps = state => {
+  return {
+    pictures: state.productsImages[0]
+  }
+}
 
-export default Home6;
+
+export default connect(mapStateToProps, { fetchImagesProducts })(Home6);

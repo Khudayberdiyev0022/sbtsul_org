@@ -7,6 +7,7 @@ import Students from '../admin-links/Students'
 import style from './Main.module.css'
 import MainPage from '../admin-links/MainPage'
 import Image from '../admin-links/Image'
+import Vacancy from '../admin-links/Vacancy'
 
 function Main() {
     const [nameOfLink, setNameOfLink] = useState('')
@@ -48,7 +49,7 @@ function Main() {
                 )
             case 'Vacancy':
                 return (
-                    <h1>vacancy</h1>
+                    <Vacancy />
                 )
             default:
                 return (

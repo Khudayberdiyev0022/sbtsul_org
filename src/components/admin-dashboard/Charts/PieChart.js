@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Pie } from 'react-chartjs-2';
 import { connect } from 'react-redux'
-import { fetchMessagesProducts, fetchNewsProducts, fetchStudentProducts, fetchQuotasProducts } from '../../../actions'
+import { fetchVacancysProducts, fetchImagesProducts, fetchMessagesProducts, fetchNewsProducts, fetchStudentProducts, fetchQuotasProducts } from '../../../actions'
 import LoaderComponent from '../main-parts/Loader';
 
 
@@ -24,23 +24,31 @@ const PieChart = (props) => {
     const quotaLength = props.quotas[0]?.length
     const newLength = props.news[0]?.length
     const studentLength = props.students[0]?.length
+    const imagesLength = props.images[0]?.length
+    const vacancytLength = props.vacancys[0]?.length
+
+
     const data = {
-        labels: ['Messages', 'Quotas', 'News', 'Students'],
+        labels: ['Messages', 'Quotas', 'News', 'Students', 'Images', 'Vacancys'],
         datasets: [
             {
-                label: '# of Votes',
-                data: [messageLength, quotaLength, newLength, studentLength],
+                label: 'Cards',
+                data: [messageLength, quotaLength, newLength, studentLength, imagesLength, vacancytLength],
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
                     'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
                     'rgba(75, 192, 192, 0.2)',
                 ],
                 borderColor: [
                     'rgba(255, 99, 132, 1)',
                     'rgba(54, 162, 235, 1)',
                     'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(75, 102, 132, 0.7)',
+                    'rgba(175, 23, 12, 1)',
                 ],
                 borderWidth: 1,
             },
@@ -58,8 +66,10 @@ const mapStateToProps = state => {
         news: state.productsNews,
         messages: state.productsMessages,
         students: state.productsStudents,
+        images: state.productsImages,
+        vacancys: state.productsVacancys
     }
 }
 
 
-export default connect(mapStateToProps, { fetchMessagesProducts, fetchNewsProducts, fetchStudentProducts, fetchQuotasProducts })(PieChart);
+export default connect(mapStateToProps, { fetchVacancysProducts, fetchImagesProducts, fetchMessagesProducts, fetchNewsProducts, fetchStudentProducts, fetchQuotasProducts })(PieChart);
