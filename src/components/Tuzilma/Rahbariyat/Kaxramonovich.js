@@ -45,6 +45,14 @@ const Kaxramonovich = () => {
               Ixtisoslashtirilgan filiali direktorining moliya-xoʼjalik ishlari
               boʼyicha oʼrinbosari lavozimiga tayinlangan.
             </p>
+            <p>Fuqarolarni chorshanba kuni soat 10:00 dan 12:00 gacha qabul qiladi.</p>
+          <p>
+            <b>Telefon:</b> 233-66-36 (1110)
+          </p>
+          <p>
+            {" "}
+            <b>E-mail: </b> z.xurozov.@tsul.uz
+          </p>
           </div>
         {/* </Zoom> */}
       </div>

@@ -26,7 +26,7 @@ const Home3 = () => {
             college of Karshi district From 2003 to 2005 he studied at the
             Tashkent State Law Institute Senior Inspector of the Department,
             2007–2012 Tashkent State Law Institute of Judicial and Law
-            Enforcement
+            Enforcement...
           </p>
 
           <div className={style.containerButton}>
@@ -51,7 +51,7 @@ const Home3 = () => {
           Banking and Finance of the Republic of Uzbekistan “State He graduated
           with a master's degree in "Financial Management". SHE IS Sweden in
           2005, Switzerland in 2006-2007 and Japan in 2016 He is a listener of
-          international student exchange programs in many countries
+          international student exchange programs in many countries...
         </p>
         <div className={style.containerButton2}>
           <Link to="/eng/rahbariyat">
