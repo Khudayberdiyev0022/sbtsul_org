@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../../../../../components/Tuzilma/Bolimlar/OquvUslubiy/Components/OquvUslubiy1.module.css";
+import style from "../../../../../components/Tuzilma/Bolimlar/OquvUslubiy/Components/OquvUslubiy3.module.css";
 
 const OquvUslubiy3 = () => {
   return (

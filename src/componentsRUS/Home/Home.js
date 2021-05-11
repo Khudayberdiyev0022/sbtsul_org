@@ -7,9 +7,12 @@ import Home5 from "./HomeParts/Home5";
 import Home6 from "./HomeParts/Home6";
 import Home7 from "./HomeParts/Home7";
 import Home9 from "./HomeParts/Home9";
-import style from "../../componenttsENG/Home/Home.module.css";
 import image from "../../assets/icons/logoFT.svg";
+import style from '../../components/Home/Home.module.css'
 import Home1 from "../../components/Home/HomeParts/Home1";
+
+
+
 const HomeRus = () => {
   const [loading, setLoading] = useState(false);
 

@@ -1,6 +1,6 @@
 import React from "react";
 import style from "../../../components/Filial/Components/Filial1.module.css";
-import pdf from "../../Data/УСТАВ ФИЛИАЛ Назорат режа 1-банд.pdf";
+import pdf from "../../../components/Data/УСТАВ ФИЛИАЛ Назорат режа 1-банд.pdf";
 import bg from "../../../assets/img/branch2.webp";
 import { BsCloudDownload } from "react-icons/bs";
 

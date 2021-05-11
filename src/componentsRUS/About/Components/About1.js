@@ -1,8 +1,7 @@
 import React from "react";
 import style from "../../../components/About/Components/About1.module.css";
-import doc from "../../Data/МАЪЛУМОТ_матбуот_анжуманига_тўлиқ.doc";
+import doc from "../../../components/Data/МАЪЛУМОТ_матбуот_анжуманига_тўлиқ.doc";
 import bg from "../../../assets/img/about.jpg";
-// import Rotate from "react-reveal/Rotate";
 import { BsCloudDownload } from "react-icons/bs";
 
 const About1 = () => {

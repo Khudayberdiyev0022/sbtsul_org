@@ -7,6 +7,13 @@ import { Link } from "react-router-dom";
 const Kadrlar = () => {
   return (
     <div className={style.main}>
+      <div className={style.head}>
+        <h2>ОТДЕЛ КАДРОВ</h2>
+        <span></span>
+        <p>
+        Toshkent davlat yuridik universitetining Ixtisoslashtirilgan filiali Kadrlar bo’limi Filial tarkibiy bo’linmasi sifatida O‘zbekiston Respublikasi Prezidentining 2019-yil 7-fevraldagi “Huquqbuzarliklar profilaktikasi va jamoat xafsizligini ta’minlash sohasida kadrlar tayyorlash tizimini takomillashtirishga doir qo‘shimcha chora-tadbirlar to‘g‘risida”gi PQ-4166-sonli qaroriga muvofiq tashkil etilgan.
+        </p>
+      </div>
       <div className={style.container}>
         <div className={style.title}>
           <h2>Kadrlar bo'limi</h2>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import style from "./Kafedra.module.css";
+import style from "../../../components/Tuzilma/Kafedralar/Kafedra.module.css";
 import img1 from "../../../assets/img/manaviy111.jpg";
 import img2 from "../../../assets/img/kafedra1.jpg";
 import img3 from "../../../assets/img/kafedra2.jpg";

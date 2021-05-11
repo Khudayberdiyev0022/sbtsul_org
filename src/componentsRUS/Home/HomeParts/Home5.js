@@ -9,10 +9,6 @@ const Home5 = (props) => {
     props.fetchNewsProducts()
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
-
-
-
-
   return (
     <div className={style.main}>
       <div className={style.linkBlock}>

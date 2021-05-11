@@ -17,7 +17,6 @@ const NewsCard = (props) => {
             <h3>{props.new.titleRus}</h3>
             <h5>{props.new.date}</h5>
             <p>{props.new.paragraphRus}</p>
-            {/* <p>{api.p2}</p> */}
           </div>
         </div>
         <div className={style.containerButton}>

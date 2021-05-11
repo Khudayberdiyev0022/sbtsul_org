@@ -6,7 +6,6 @@ const IlmiyKengashRus = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        {/* <Rotate bottom left cascade> */}
         <div className={style.head}>
           <h2>
             PhD.07/28.08.2020.Yu.22a.04 деятельность Совета по цифровой науке
@@ -23,7 +22,6 @@ const IlmiyKengashRus = () => {
             Есть цифровой ученый совет.
             </p>
         </div>
-        {/* </Rotate> */}
       </div>
     </div>
   );

@@ -57,7 +57,7 @@ const BolimlarRus = () => {
         <div className={style.card}>
           <RiHistoryLine />
           <Link to="/rus/ka-bolimi">
-          ОТДЕЛЕНИЕ ОФИСА И АРХИВОВ
+          ОТДЕЛЕНИЕ КАНЦЕЛЯРИЯ И АРХИВА
           </Link>
         </div>
         <div className={style.card}>
