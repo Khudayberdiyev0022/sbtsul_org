@@ -4,14 +4,6 @@ import t3 from "../../../../assets/img/umaraliyevaARM.jpg";
 
 export const teachers = [
   {
-    img: t2,
-    name: "Xolmuratova Farogat Nuraliyevna",
-    abTeach1:
-      "Аxborot kutubxona resurslari bilan xizmat koʼrsatish boʼlimi 1-toifali kutubxonachisi, 3-darajali yurist.",
-    abTeach2: "",
-    email: "Farogatxolmuratova@mail.ru",
-  },
-  {
     img: t1,
     name: "Tillashayxova Shaxnoza Erkinovna",
     abTeach1: "Axborot-resurs markazi direktori, 3-darajali yurist.",
@@ -23,7 +15,14 @@ export const teachers = [
     ],
     email: "shahnoza210480@gmail.com",
   },
-
+  {
+    img: t2,
+    name: "Xolmuratova Farogat Nuraliyevna",
+    abTeach1:
+      "Аxborot kutubxona resurslari bilan xizmat koʼrsatish boʼlimi 1-toifali kutubxonachisi, 3-darajali yurist.",
+    abTeach2: "",
+    email: "Farogatxolmuratova@mail.ru",
+  },
   {
     img: t3,
     name: "Umaraliyeva Feruza Faxritdin qizi",

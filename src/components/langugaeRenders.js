@@ -53,40 +53,39 @@ import NewsCardEng from "../componenttsENG/Informations/Information";
 import NavbarEng from "../componenttsENG/Navbar/Navbar";
 import NavbarMobileEng from "../componenttsENG/Navbar/NavbarMobile";
 import HomeEng from "../componenttsENG/Home/Home";
+import Home7Eng from "../componenttsENG/Home/HomeParts/Home7";
 import AboutEng from "../componenttsENG/About/About";
 import ContactEng from "../componenttsENG/Contact/Contact";
-import IlmiyKengashEng from "../componenttsENG/Faoliyat/IlmiyKengash/IlmiyKengash";
 import FilialEng from "../componenttsENG/Filial/Filial";
 import FooterEng from "../componenttsENG/Footer/Footer";
-import QabulEng from "../componenttsENG/Qabul/Qabul";
-import ArmEng from "../componenttsENG/Tuzilma/ARM/Arm";
-import ATEng from "../componenttsENG/Tuzilma/Bolimlar/AT/AT";
-import BuxgalteriyaEng from "../componenttsENG/Tuzilma/Bolimlar/Buxgalteriya/Buxgalteriya";
-import DirektoratEng from "../componenttsENG/Tuzilma/Bolimlar/Direktorat/Direktorat";
-import EkspluatatsiyaEng from "../componenttsENG/Tuzilma/Bolimlar/Ekspluatatsiya/Ekspluatatsiya";
-import IkkinchiEng from "../componenttsENG/Tuzilma/Bolimlar/Ikkinchi/Ikkinchi";
-import KadrlarEng from "../componenttsENG/Tuzilma/Bolimlar/Kadrlar/Kadrlar";
-import KonselyariyaArxivEng from "../componenttsENG/Tuzilma/Bolimlar/KonselyariyaArxiv/KonselyariyaArxiv";
-import MoliyaEng from "../componenttsENG/Tuzilma/Bolimlar/Moliya/Moliya";
-import OquvUslubiyEng from "../componenttsENG/Tuzilma/Bolimlar/OquvUslubiy/OquvUslubiy";
 import BolimlarEng from "../componenttsENG/Tuzilma/Bolimlar/Bolimlar";
-import TarbiyaviyEng from "../componenttsENG/Tuzilma/Bolimlar/Tarbiyaviy/Tarbiyaviy";
 import DekanatlarEng from "../componenttsENG/Tuzilma/Dekanatlar/Dekanatlar";
-import TayyorlashEng from "../componenttsENG/Tuzilma/Dekanatlar/Tayyorlash";
-import QaytaTayyorlashEng from "../componenttsENG/Tuzilma/Dekanatlar/QaytaTayyorlash";
-import KafedraEng from "../componenttsENG/Tuzilma/Kafedralar/Kafedra";
-import XususiyHuquqiyEng from "../componenttsENG/Tuzilma/Kafedralar/XususiyHuquq/XususiyHuquqiy";
 import UmumtalimEng from "../componenttsENG/Tuzilma/Kafedralar/Umumtalim/Umumtalim";
-import JinoyatHuquqEng from "../componenttsENG/Tuzilma/Kafedralar/JinoyatHuquq/JinoyatHuquq";
-import JangovorEng from "../componenttsENG/Tuzilma/Kafedralar/Jangovor/Jangovor";
-import DavlatHuquqiyEng from "../componenttsENG/Tuzilma/Kafedralar/DavlatHuquqiy/DavlatHuquqiy";
-import RahbariyatEng from "../componenttsENG/Tuzilma/Rahbariyat/Rahbariyat";
-import Home7Eng from "../componenttsENG/Home/HomeParts/Home7";
-import KengashEng from "../componenttsENG/Tuzilma/Kengash/Kengash";
-import VakansiyaEng from "../componenttsENG/Vacansiec/Vakansiya";
+import KafedraEng from "../componenttsENG/Tuzilma/Kafedralar/Kafedra";
 import NewsEng from "../componenttsENG/Home/Yangiliklar/News";
-// import Home1Eng from "../componenttsENG/Home/HomeParts/Home1";
 import StudentsEng from "../componenttsENG/Students/Students"
+import RahbariyatEng from "../componenttsENG/Tuzilma/Rahbariyat/Rahbariyat";
+// import IlmiyKengashEng from "../componenttsENG/Faoliyat/IlmiyKengash/IlmiyKengash";
+// import QabulEng from "../componenttsENG/Qabul/Qabul";
+// import ArmEng from "../componenttsENG/Tuzilma/ARM/Arm";
+// import ATEng from "../componenttsENG/Tuzilma/Bolimlar/AT/AT";
+// import BuxgalteriyaEng from "../componenttsENG/Tuzilma/Bolimlar/Buxgalteriya/Buxgalteriya";
+// import DirektoratEng from "../componenttsENG/Tuzilma/Bolimlar/Direktorat/Direktorat";
+// import EkspluatatsiyaEng from "../componenttsENG/Tuzilma/Bolimlar/Ekspluatatsiya/Ekspluatatsiya";
+// import IkkinchiEng from "../componenttsENG/Tuzilma/Bolimlar/Ikkinchi/Ikkinchi";
+// import KadrlarEng from "../componenttsENG/Tuzilma/Bolimlar/Kadrlar/Kadrlar";
+// import KonselyariyaArxivEng from "../componenttsENG/Tuzilma/Bolimlar/KonselyariyaArxiv/KonselyariyaArxiv";
+// import MoliyaEng from "../componenttsENG/Tuzilma/Bolimlar/Moliya/Moliya";
+// import OquvUslubiyEng from "../componenttsENG/Tuzilma/Bolimlar/OquvUslubiy/OquvUslubiy";
+// import TarbiyaviyEng from "../componenttsENG/Tuzilma/Bolimlar/Tarbiyaviy/Tarbiyaviy";
+// import TayyorlashEng from "../componenttsENG/Tuzilma/Dekanatlar/Tayyorlash";
+// import QaytaTayyorlashEng from "../componenttsENG/Tuzilma/Dekanatlar/QaytaTayyorlash";
+// import XususiyHuquqiyEng from "../componenttsENG/Tuzilma/Kafedralar/XususiyHuquq/XususiyHuquqiy";
+// import JinoyatHuquqEng from "../componenttsENG/Tuzilma/Kafedralar/JinoyatHuquq/JinoyatHuquq";
+// import JangovorEng from "../componenttsENG/Tuzilma/Kafedralar/Jangovor/Jangovor";
+// import DavlatHuquqiyEng from "../componenttsENG/Tuzilma/Kafedralar/DavlatHuquqiy/DavlatHuquqiy";
+// import KengashEng from "../componenttsENG/Tuzilma/Kengash/Kengash";
+// import VakansiyaEng from "../componenttsENG/Vacansiec/Vakansiya";
 
 // RUS
 import PicturesRus from "../componentsRUS/Pictures/Pictures";
@@ -97,38 +96,36 @@ import HomeRus from "../componentsRUS/Home/Home";
 import Home7Rus from "../componentsRUS/Home/HomeParts/Home7";
 import AboutRus from "../componentsRUS/About/About";
 import ContactRus from "../componentsRUS/Contact/Contact";
-import IlmiyKengashRus from "../componentsRUS/Faoliyat/IlmiyKengash/IlmiyKengash";
 import FilialRus from "../componentsRUS/Filial/Filial";
 import FooterRus from "../componentsRUS/Footer/Footer";
-import QabulRus from "../componentsRUS/Qabul/Qabul";
-import ArmRus from "../componentsRUS/Tuzilma/ARM/Arm";
-import ATRus from "../componentsRUS/Tuzilma/Bolimlar/AT/AT";
-import BuxgalteriyaRus from "../componentsRUS/Tuzilma/Bolimlar/Buxgalteriya/Buxgalteriya";
-import DirektoratRus from "../componentsRUS/Tuzilma/Direktorat/Direktorat";
-import EkspluatatsiyaRus from "../componentsRUS/Tuzilma/Bolimlar/Ekspluatatsiya/Ekspluatatsiya";
-import IkkinchiRus from "../componentsRUS/Tuzilma/Bolimlar/Ikkinchi/Ikkinchi";
-import KadrlarRus from "../componentsRUS/Tuzilma/Bolimlar/Kadrlar/Kadrlar";
-import KonselyariyaArxivRus from "../componentsRUS/Tuzilma/Bolimlar/KonselyariyaArxiv/KonselyariyaArxiv";
-import MoliyaRus from "../componentsRUS/Tuzilma/Bolimlar/Moliya/Moliya";
-import OquvUslubiyRus from "../componentsRUS/Tuzilma/Bolimlar/OquvUslubiy/OquvUslubiy";
-import TarbiyaviyRus from "../componentsRUS/Tuzilma/Bolimlar/Tarbiyaviy/Tarbiyaviy";
 import BolimlarRus from "../componentsRUS/Tuzilma/Bolimlar/Bolimlar";
 import DekanatlarRus from "../componentsRUS/Tuzilma/Dekanatlar/Dekanatlar";
-import TayyorlashRus from "../componentsRUS/Tuzilma/Dekanatlar/Tayyorlash";
-import QaytaTayyorlashRus from "../componentsRUS/Tuzilma/Dekanatlar/QaytaTayyorlash";
-import DavlatHuquqiyRus from "../componentsRUS/Tuzilma/Kafedralar/DavlatHuquqiy/DavlatHuquqiy";
-import JangovorRus from "../componentsRUS/Tuzilma/Kafedralar/Jangovor/Jangovor";
-import JinoyatHuquqRus from "../componentsRUS/Tuzilma/Kafedralar/JinoyatHuquq/JinoyatHuquq";
 import UmumtalimRus from "../componentsRUS/Tuzilma/Kafedralar/Umumtalim/Umumtalim";
-import XususiyHuquqiyRus from "../componentsRUS/Tuzilma/Kafedralar/XususiyHuquq/XususiyHuquqiy";
 import KafedraRus from "../componentsRUS/Tuzilma/Kafedralar/Kafedra";
-import KengashRus from "../componentsRUS/Tuzilma/Kengash/Kengash";
-import RahbariyatRus from "../componentsRUS/Tuzilma/Rahbariyat/Rahbariyat";
-// import Home1 from "../components/Home/HomeParts/Home1";
-import VakansiyaRus from "../componentsRUS/Vacansiec/Vakansiya";
 import NewsRus from "../componentsRUS/Home/Yangiliklar/News";
-// import Home1Rus from "../componentsRUS/Home/HomeParts/Home1";
 import StudentsRus from "../componentsRUS/Students/Students"
+import RahbariyatRus from "../componentsRUS/Tuzilma/Rahbariyat/Rahbariyat";
+// import IlmiyKengashRus from "../componentsRUS/Faoliyat/IlmiyKengash/IlmiyKengash";
+// import QabulRus from "../componentsRUS/Qabul/Qabul";
+// import ArmRus from "../componentsRUS/Tuzilma/ARM/Arm";
+// import ATRus from "../componentsRUS/Tuzilma/Bolimlar/AT/AT";
+// import BuxgalteriyaRus from "../componentsRUS/Tuzilma/Bolimlar/Buxgalteriya/Buxgalteriya";
+// import DirektoratRus from "../componentsRUS/Tuzilma/Direktorat/Direktorat";
+// import EkspluatatsiyaRus from "../componentsRUS/Tuzilma/Bolimlar/Ekspluatatsiya/Ekspluatatsiya";
+// import IkkinchiRus from "../componentsRUS/Tuzilma/Bolimlar/Ikkinchi/Ikkinchi";
+// import KadrlarRus from "../componentsRUS/Tuzilma/Bolimlar/Kadrlar/Kadrlar";
+// import KonselyariyaArxivRus from "../componentsRUS/Tuzilma/Bolimlar/KonselyariyaArxiv/KonselyariyaArxiv";
+// import MoliyaRus from "../componentsRUS/Tuzilma/Bolimlar/Moliya/Moliya";
+// import OquvUslubiyRus from "../componentsRUS/Tuzilma/Bolimlar/OquvUslubiy/OquvUslubiy";
+// import TarbiyaviyRus from "../componentsRUS/Tuzilma/Bolimlar/Tarbiyaviy/Tarbiyaviy";
+// import TayyorlashRus from "../componentsRUS/Tuzilma/Dekanatlar/Tayyorlash";
+// import QaytaTayyorlashRus from "../componentsRUS/Tuzilma/Dekanatlar/QaytaTayyorlash";
+// import DavlatHuquqiyRus from "../componentsRUS/Tuzilma/Kafedralar/DavlatHuquqiy/DavlatHuquqiy";
+// import JangovorRus from "../componentsRUS/Tuzilma/Kafedralar/Jangovor/Jangovor";
+// import JinoyatHuquqRus from "../componentsRUS/Tuzilma/Kafedralar/JinoyatHuquq/JinoyatHuquq";
+// import XususiyHuquqiyRus from "../componentsRUS/Tuzilma/Kafedralar/XususiyHuquq/XususiyHuquqiy";
+// import KengashRus from "../componentsRUS/Tuzilma/Kengash/Kengash";
+// import VakansiyaRus from "../componentsRUS/Vacansiec/Vakansiya";
 
 
 import GrantAdd from "./admin-dashboard/admin-add/GrantAdd";
@@ -371,10 +368,10 @@ export const EngRender = () => {
             <Home7Eng />
           </Route>
           <Route path="/eng/kengash">
-            <KengashEng />
+            {/* <KengashEng /> */}
           </Route>
           <Route path="/eng/ilmiy-kengash">
-            <IlmiyKengashEng />
+            {/* <IlmiyKengashEng /> */}
           </Route>
           <Route path="/eng/kafedralar">
             <KafedraEng />
@@ -383,64 +380,64 @@ export const EngRender = () => {
             <RahbariyatEng />
           </Route>
           <Route path="/eng/dx-fanlar-kafedrasi">
-            <DavlatHuquqiyEng />
+            {/* <DavlatHuquqiyEng /> */}
           </Route>
           <Route path="/eng/jh-fanlar-kafedrasi">
-            <JinoyatHuquqEng />
+            {/* <JinoyatHuquqEng /> */}
           </Route>
           <Route path="/eng/u-fanlar-kafedrasi">
             <UmumtalimEng />
           </Route>
           <Route path="/eng/kjt-fanlar-kafedrasi">
-            <JangovorEng />
+            {/* <JangovorEng /> */}
           </Route>
           <Route path="/eng/xh-fanlar-kafedrasi">
-            <XususiyHuquqiyEng />
+            {/* <XususiyHuquqiyEng /> */}
           </Route>
           <Route path="/eng/bolimlar">
             <BolimlarEng />
           </Route>
           <Route path="/eng/mi-bolimi">
-            <MoliyaEng />
+            {/* <MoliyaEng /> */}
           </Route>
           <Route path="/eng/at-bolimi">
-            <ATEng />
+            {/* <ATEng /> */}
           </Route>
           <Route path="/eng/ex-bolimi">
-            <EkspluatatsiyaEng />
+            {/* <EkspluatatsiyaEng /> */}
           </Route>
           <Route path="/eng/buxgalteriya-bolimi">
-            <BuxgalteriyaEng />
+            {/* <BuxgalteriyaEng /> */}
           </Route>
           <Route path="/eng/ka-bolimi">
-            <KonselyariyaArxivEng />
+            {/* <KonselyariyaArxivEng /> */}
           </Route>
           <Route path="/eng/kadrlar-bolimi">
-            <KadrlarEng />
+            {/* <KadrlarEng /> */}
           </Route>
           <Route path="/eng/ikkinchi-bolim">
-            <IkkinchiEng />
+            {/* <IkkinchiEng /> */}
           </Route>
           <Route path="/eng/ou-bolimi">
-            <OquvUslubiyEng />
+            {/* <OquvUslubiyEng /> */}
           </Route>
           <Route path="/eng/axborot-resurs-markazi">
-            <ArmEng />
+            {/* <ArmEng /> */}
           </Route>
           <Route path="/eng/dekanatlar">
             <DekanatlarEng />
           </Route>
           <Route path="/eng/tayyorlash">
-            <TayyorlashEng />
+            {/* <TayyorlashEng /> */}
           </Route>
           <Route path="/eng/qayta-tayyorlash">
-            <QaytaTayyorlashEng />
+            {/* <QaytaTayyorlashEng /> */}
           </Route>
           <Route path="/eng/bizhaqimizda">
             <AboutEng />
           </Route>
           <Route path="/eng/qabul">
-            <QabulEng />
+            {/* <QabulEng /> */}
           </Route>
           <Route path="/eng/aloqa">
             <ContactEng />
@@ -449,7 +446,7 @@ export const EngRender = () => {
             <DekanatlarEng />
           </Route>
           <Route path="/eng/direktorat">
-            <DirektoratEng />
+            {/* <DirektoratEng /> */}
           </Route>
 
           <Route path="/eng/fotolavhalar">
@@ -459,10 +456,10 @@ export const EngRender = () => {
             <NewsCardEng />
           </Route>
           <Route path="/eng/tarbiyaviy-ishlar-bolimi">
-            <TarbiyaviyEng />
+            {/* <TarbiyaviyEng /> */}
           </Route>
           <Route path="/eng/vakansiya">
-            <VakansiyaEng />
+            {/* <VakansiyaEng /> */}
           </Route>
           <Route path="/eng/yangiliklar">
             <NewsEng />
@@ -529,7 +526,6 @@ export const RusRender = () => {
         <ScrollToTop />
         <NavbarRus />
         <NavbarMobileRus />
-        {/* <Home1Rus /> */}
         <Switch>
           <Route exact path="/rus">
             <HomeRus />
@@ -541,10 +537,10 @@ export const RusRender = () => {
             <Home7Rus />
           </Route>
           <Route path="/rus/kengash">
-            <KengashRus />
+            {/* <KengashRus /> */}
           </Route>
           <Route path="/rus/ilmiy-kengash">
-            <IlmiyKengashRus />
+            {/* <IlmiyKengashRus /> */}
           </Route>
           <Route path="/rus/kafedralar">
             <KafedraRus />
@@ -553,71 +549,71 @@ export const RusRender = () => {
             <RahbariyatRus />
           </Route>
           <Route path="/rus/dx-fanlar-kafedrasi">
-            <DavlatHuquqiyRus />
+            {/* <DavlatHuquqiyRus /> */}
           </Route>
           <Route path="/rus/jh-fanlar-kafedrasi">
-            <JinoyatHuquqRus />
+            {/* <JinoyatHuquqRus /> */}
           </Route>
           <Route path="/rus/u-fanlar-kafedrasi">
             <UmumtalimRus />
           </Route>
           <Route path="/rus/kjt-fanlar-kafedrasi">
-            <JangovorRus />
+            {/* <JangovorRus /> */}
           </Route>
           <Route path="/rus/xh-fanlar-kafedrasi">
-            <XususiyHuquqiyRus />
+            {/* <XususiyHuquqiyRus /> */}
           </Route>
           <Route path="/rus/bolimlar">
             <BolimlarRus />
           </Route>
           <Route path="/rus/mi-bolimi">
-            <MoliyaRus />
+            {/* <MoliyaRus /> */}
           </Route>
           <Route path="/rus/at-bolimi">
-            <ATRus />
+            {/* <ATRus /> */}
           </Route>
           <Route path="/rus/ex-bolimi">
-            <EkspluatatsiyaRus />
+            {/* <EkspluatatsiyaRus /> */}
           </Route>
           <Route path="/rus/buxgalteriya-bolimi">
-            <BuxgalteriyaRus />
+            {/* <BuxgalteriyaRus /> */}
           </Route>
           <Route path="/rus/ka-bolimi">
-            <KonselyariyaArxivRus />
+            {/* <KonselyariyaArxivRus /> */}
           </Route>
           <Route path="/rus/kadrlar-bolimi">
-            <KadrlarRus />
+            {/* <KadrlarRus /> */}
           </Route>
           <Route path="/rus/ikkinchi-bolim">
-            <IkkinchiRus />
+            {/* <IkkinchiRus /> */}
           </Route>
           <Route path="/rus/ou-bolimi">
-            <OquvUslubiyRus />
+            {/* <OquvUslubiyRus /> */}
           </Route>
           <Route path="/rus/axborot-resurs-markazi">
-            <ArmRus />
+            {/* <ArmRus /> */}
           </Route>
           <Route path="/rus/dekanatlar">
             <DekanatlarRus />
           </Route>
           <Route path="/rus/tayyorlash">
-            <TayyorlashRus />
+            {/* <TayyorlashRus /> */}
           </Route>
           <Route path="/rus/qayta-tayyorlash">
-            <QaytaTayyorlashRus />
+            {/* <QaytaTayyorlashRus /> */}
           </Route>
           <Route path="/rus/bizhaqimizda">
             <AboutRus />
           </Route>
-          <Route path="/rus/qabul">
-            <QabulRus />
+          <Route path="/rus/qabul"> 
+            {/* <QabulRus /> */}
           </Route>
           <Route path="/rus/aloqa">
             <ContactRus />
           </Route>
 
           <Route path="/rus/direktorat">
-            <DirektoratRus />
+            {/* <DirektoratRus /> */}
           </Route>
 
           <Route path="/rus/fotolavhalar">
@@ -627,10 +623,10 @@ export const RusRender = () => {
             <NewsCardRus />
           </Route>
           <Route path="/rus/tarbiyaviy-ishlar-bolimi">
-            <TarbiyaviyRus />
+            {/* <TarbiyaviyRus /> */}
           </Route>
           <Route path="/rus/vakansiya">
-            <VakansiyaRus />
+            {/* <VakansiyaRus /> */}
           </Route>
           <Route path="/rus/yangiliklar">
             <NewsRus />

@@ -58,7 +58,7 @@ function Home9() {
   });
   return (
     <div className={style.main}>
-      <h3>Foydali havolalar</h3>
+      <h3>Полезные ссылки</h3>
       <div className={style.container}>
         <Slider slidesToShow={pages} autoplaySpeed={3000} autoplay={true}>
           {items.map((item) => (

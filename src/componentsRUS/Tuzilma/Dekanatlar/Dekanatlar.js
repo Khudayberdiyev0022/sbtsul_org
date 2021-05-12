@@ -9,7 +9,7 @@ const DekanatlarRus = () => {
       <h1>Деканаты</h1>
       <div className={style.container}>
         <Link to="/rus/tayyorlash">
-          <span>ДЕКАНАТ ПОДГОТОВИТЕЛЬНЫХ КУРСОВ</span>
+          <span>ДЕКАНАТ КУРСОВ ПОДГОТОВИ</span>
         </Link>
         <Link to="/rus/qayta-tayyorlash">
           <span>ДЕКАНАТ КУРСОВ ПЕРЕПОДГОТОВКИ</span>
@@ -17,7 +17,7 @@ const DekanatlarRus = () => {
       </div>
       <div className={style.mobile}>
         <Link to="/tayyorlash">
-          <span>ДЕКАНАТ ПОДГОТОВИТЕЛЬНЫХ КУРСОВ</span>
+          <span>ДЕКАНАТ КУРСОВ ПОДГОТОВИ</span>
         </Link>
         <Link to="/rus/qayta-tayyorlash">
           <span>ДЕКАНАТ КУРСОВ ПЕРЕПОДГОТОВКИ</span>

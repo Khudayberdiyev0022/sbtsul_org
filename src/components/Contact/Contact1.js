@@ -34,7 +34,7 @@ const Contact1 = (props) => {
             </div>
             <div className={style.infoTop}>
               <h3>Manzilimiz:</h3>
-              <p>Toshkent shahri, Rixsiliy ko'chasi, 9 uy</p>
+              <p>Toshkent sh., Rixsiliy, 9 uy</p>
             </div>
           </div>
           <div className={style.inTop}>

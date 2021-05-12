@@ -28,7 +28,7 @@ const Umum2 = () => {
                     <h3>{teacher.name}</h3>
                     <p>
                       <span></span>
-                      {nameKaf} {teacher.abTeach1}
+                       {teacher.abTeach1} {nameKaf}
                     </p>
                     <p>
                       <span></span> {teacher.abTeach2}
@@ -40,7 +40,7 @@ const Umum2 = () => {
 
                     {teacher.yutuqlari ? (
                       <div className={style.yut}>
-                        <h4>Yutuqlari:</h4>
+                        <h4>Достижения:</h4>
                         <p>{teacher.yut}</p>
                         <ul>
                           {teacher.yutuqlari.map((yutuq, index) => {
@@ -56,7 +56,7 @@ const Umum2 = () => {
 
                     {teacher.malaka ? (
                       <div className={style.yut}>
-                        <h4>Malaka oshirish:</h4>
+                        <h4>Профессиональное развитие:</h4>
                         <ul>
                           {teacher.malaka.map((malakaO, index) => {
                             return (

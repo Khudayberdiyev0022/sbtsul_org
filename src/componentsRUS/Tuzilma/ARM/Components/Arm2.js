@@ -6,7 +6,7 @@ const Arm2 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-          <h2>СОСТАВ СОТРУДНИКОВ ИНФОРМАЦИОННО-РЕСУРСНОГО ЦЕНТРА</h2>
+          <h2>СТРУКТУРА ПЕРСОНАЛА ИНФОРМАЦИОННО-РЕСУРСНОГО ЦЕНТРА</h2>
           <span></span>
 
           <div className={style.map}>

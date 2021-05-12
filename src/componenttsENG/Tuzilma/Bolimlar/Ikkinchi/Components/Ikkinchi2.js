@@ -6,7 +6,7 @@ const Ikkinchi2 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-          <h2>SECOND DEPARTMENT STAFF STRUCTURE</h2>
+          <h2>THE STRUCTURE OF THE SECOND DIVISION </h2>
           <span></span>
 
           <div className={style.map}>

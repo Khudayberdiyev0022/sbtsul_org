@@ -6,14 +6,14 @@ export const teachers = [
     {
         img: t1,
         name: 'Ниязов Максуд Кадамович',
-        abTeach1: 'инженер второго отделения, советник юстиции 2-го разряда.',
+        abTeach1: 'Инженер второго отдела, советник юстиции 2-категории.         ',
         abTeach2: '',
         email: 'niyazov@sbtsul.uz',  
     },
     {
         img: t2,
         name: 'Кямова Насиба Гульмурадовна',
-        abTeach1: 'инженер второго отдела.',
+        abTeach1: 'Инженер второго отдела.',
         abTeach2: '',
         email: 'nasibakiyamova20@mail.ru'
     },

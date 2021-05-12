@@ -9,7 +9,7 @@ const Umum3 = () => {
       <div className={style.inMain}>
         {/* <Fade top cascade> */}
           <div className={style.head}>
-            <h2>DUTIES OF THE DEPARTMENT</h2>
+            <h2>Main objectives of the department</h2>
 
             <span></span>
           </div>
@@ -17,104 +17,49 @@ const Umum3 = () => {
         {/* <Zoom top cascade> */}
           <div className={style.grid}>
             <p>
-              <span></span> The department was founded in September 2019.
-               The department has a total of 10 faculty members
-               operates. Two of them have PhD degrees, one
-               one of them has the title of associate professor.
+              <span></span> The department was found in September 2019. 10 teachers are employed as a full-time. Two of them have PhD degrees, and one teacher is an associate professor of the Higher Attestation Commission.
             </p>
 
             <div className={style.block}>
               <div className={style.svg}></div>
               <p>
-                <span></span>At the department for 1 course "For lawyers
-                 foreign language ”,“ Russian / Uzbek language for lawyers ”,“ Legal
-                 information technology ”,“ Oral and written speech of a lawyer
-                 skills ”are taught; "Fundamentals of Islam" in the 2nd year and
-                 Foreign Language for Lawyers 3 courses
-                 “Crime Prevention and Community
-                 Psychology of Security Activities
-                 intended to be taught. {""}
+                <span></span>The following disciplines are taught at the department: "Foreign language for lawyers", "Russian / Uzbek language for lawyers", "Legal information technologies", "Oral and written skills of a lawyer" for Year I students; Year II students are taught "Basics of Islam" and "Foreign languages for lawyers". The course "Psychology of Crime Prevention and Public Safety" is delivered in Year III.
               </p>
             </div>
             <div className={style.block}>
               <div className={style.svg}></div>
               <p>
-                <span></span> Science module "Foreign language for lawyers" is foreign
-                 language communication and research activities in the legal field
-                 students are communicative, linguistic and
-                 to form sociolinguistic, pragmatic competence
-                 directed. {""}
+                <span></span>The module "Foreign language for lawyers" is aimed at developing  communicative, linguistic and sociolinguistic, pragmatic competence of students in conversing in a foreign language and conducting research in the field of law.
               </p>
             </div>
             <div className={style.block}>
               <div className={style.svg}></div>
               <p>
-                <span></span> Fundamentals of Islam module for students
-                 on the fundamentals of Islam, national and religious values
-                 identify some problems in improving their knowledge,
-                 analysis and evaluation skills and competencies
-                 to form. {""}
+                <span></span> The scientific module "Basics of Islam" is targeted at enhancing students' skills and competencies in identifying, analyzing and assessing some of the problems associated with improving knowledge about the fundamentals of Islam, national and religious values.
               </p>
             </div>
             <div className={style.block}>
               <div className={style.svg}></div>
               <p>
-                <span></span> Russian / Uzbek language module for lawyers
-                 Uzbek / Russian students in Russian-speaking and Uzbek groups
-                 increase their knowledge of the language, their own opinions
-                 oral and written substantiation, from Uzbek literary language
-                 to form the ability to use skillfully and
-                 development, on the linguistic factors of legal language
-                 to be fluent in the state language.
+                <span></span> The module "Russian / Uzbek language for lawyers" in Russian-speaking and Uzbek groups is aimed at increasing the level of knowledge of students of the Uzbek / Russian languages, for substantiating and expressing their opinions orally and written, for mastering the Uzbek literary language, forming and developing communication skills, for mastering the state language in the specialization of the direction.
               </p>
             </div>
             <div className={style.block}>
               <div className={style.svg}></div>
               <p>
-                <span></span> Oral and written skills of a lawyer
-                 The module is a variety of professional communication skills in students
-                 correct use of speech in legal situations, related to activities
-                 in the process of all correspondence and communication
-                 pragmatic factor, polemical skills development, literary language
-                 highly accurate and rational use of tools
-                 formation of learning, logical-semantic and linguistic norms
-                 be able to compose, speak, and communicate effectively with the public
-                 to develop the ability to communicate
-                 to develop focused practical skills
-                 directed.
+                <span></span> The module "Written and oral communication skills of a lawyer's speech" provides students with professional communication skills, the correct use of speech in any legal situation, pragmatic efficiency in all correspondence and communication, improving polemic skills, a high level of literary language. Formation of practical skills intended at developing students’ ability to compose, speak and effectively communicate with the population in accordance with logical-semantic and linguistic norms, to form the ability to clearly and rational use.
               </p>
             </div>
             <div className={style.block}>
               <div className={style.svg}></div>
               <p>
-                <span></span> Scientific module "Legal Information Technologies"
-                 The purpose of teaching is to provide students with modern information and communication
-                 Introduction to modern computers
-                 general information about software and hardware, legal
-                 information and communication technologies in solving problems
-                 application, on the main sections of information technology
-                 in-depth knowledge, statistical processing of data,
-                 application of information retrieval systems in legal practice
-                 from the formation of knowledge, skills and competencies to do
-                 consists of.
+                <span></span> The objective of teaching the module "Legal Information Technologies" is to familiarize students with modern information and communication technologies, providing general information about the software and hardware of modern computers, the use of information and communication technologies in solving legal problems, basic information technologies. It consists of the acquisition of in-depth knowledge of the subject, statistical data processing, the formation of knowledge, skills and competencies in the use of information retrieval systems in legal practice.
               </p>
             </div>
             <div className={style.block}>
               <div className={style.svg}></div>
               <p>
-                <span></span> “Crime Prevention and Community
-                 Psychology of Security Activity
-                 the criminogenic situation of future experts
-                 comprehensive and systematic analysis of information about
-                 from the available forces and means in the prevention of offenses
-                 Evaluate the effectiveness of their use, as well as their occurrence
-                 the reasons for their maturity and the conditions that allow them
-                 elimination, in the framework of crime prevention
-                 coordination of the situation, offenses and crimes
-                 preventive measures, i.e. public safety
-                 occurs in the social life of individuals involved
-                 real-world solutions to possible events
-                 to be able to see and be ready for any situation.
+                <span></span> The "Psychology of Crime Prevention and Public Security" module provides a comprehensive and systematic analysis of information about the crime situation of future specialists, an assessment of the effectiveness of existing forces and tools in crime prevention, as well as the factors for their occurrence and measures. Furthermore, this course aimed at teaching students to explore the conditions in the field of crime prevention, prevention of delinquency and crime, that is, the ability to see real solutions for events in public life and staying ready for any situation.
               </p>
             </div>
           </div>

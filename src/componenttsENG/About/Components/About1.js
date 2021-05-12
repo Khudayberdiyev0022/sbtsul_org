@@ -15,51 +15,25 @@ const About1 = () => {
             style={{ backgroundImage: `url(${bg})` }}
           ></div>
           <div className={style.text}>
-            <h3>Branch team</h3>
+            <h3>Branch staff</h3>
             <p>
-              <span></span> Branch retraining course training
-                 29 people on an hourly basis for training
-                 in the system of law enforcement agencies and Tashkent
-                 working at the State Law University
-                 professors and teachers are involved
+              <span></span> The retraining course of the branch have outsourced 29 professors and teachers on an hourly basis who work at the Law Enforcement System and Tashkent State University of Law.
               </p>
             <p>
-              <span></span>Professors and teachers in the main staff 4
-                 in the system of the Prosecutor General's Office of the Republic of Uzbekistan, 2
-                 of them in the system of the Ministry of Internal Affairs, 2 in the Ministry of Defense
-                 in the system of the Ministry, 2 of them work in the system of the National Guard
-                 of which 1 is the current staff of the system
-                 operates in the Branch, included in the reserve.
+              <span></span>The majority of scientific and teaching staff are employed on full-time and four of them have prior experience in the system of the General Prosecutor's Office of the Republic of Uzbekistan, two are experienced in the Ministry of Internal Affairs, two of them were engaged in the Ministry of Defense, and the latter has been reserved in the existing personnel of the branch.
               </p>
             <p>
-              <span></span>3 of the manager and management staff are science
-                 has a PhD degree. 1 of the management staff
-                 In the system of the Ministry of Internal Affairs, 1 in the system of the prosecutor's office
-                 was included in the existing personnel reserve
-                 is operating in the Branch.
+              <span></span>Three personnel of directory and managerial staff hold PhD degrees. One of the managerial staff has prior work experience at the Ministry of Internal Affairs, one was employed at the Prosecutor's Office, and is currently enrolled in the existing personnel reserve of the branch.
               </p>
             <p>
-              <span></span>To the Ministry of Justice of the Republic of Uzbekistan
-                 recommending employees to specific titles and career levels
-                 belongs to the Minister of Justice for 2019-2020
-                 18 people working in the Branch on the basis of orders
-                 the employee was awarded special-title career ranks, 14 employees
-                 titles obtained from previous employment in the judiciary
-                 equated to career levels.
+              <span></span>In accordance  with the relevant orders of the Ministry of Justice of the Republic of Uzbekistan, eighteen employees of the Branch were awarded special degrees in 2019-2020, the awards of fourteen employees from previous jobs were entitled to professional degrees.
               </p>
             <p>
-              <span></span>A special example of productivity
-                 faculty and staff
-                 In order to encourage 1 employee of the Ministry of Justice
-                 "Excellence in Justice" badge, 6 professors and teachers
-                 and staff “Certificate of Honor” of the Minister of Justice, 13 people
-                 Professors and staff of the Branch “Honorary
-                 was awarded the "label".
+              <span></span>To encourage professors and teachers who have contributed a great asset to the work productivity, a staff member was awarded the “Excellence in Justice” badge of the Ministry of Justice, six professors and staff members were presented the “Certificate of Honour” of the Ministry of Justice, thirteen professors and staff members of the Branch were handed in the "Certificate of Honour" of the director.
               </p>
             <div className={style.footer}>
               <p>
-                For information on the Specialized Branch of TSU
-                click the link below.
+              Click the link below for further information about Specialized Branch of TSUL
                   <span className={style.btn}>
                   <a href={doc} rel="noreferrer" download>
                     Download the pdf file

@@ -31,7 +31,7 @@ const Contact1 = (props) => {
             </div>
             <div className={style.infoTop}>
               <h3>Наш адресс:</h3>
-              <p>Город Ташкент, улица Риксилий, 9</p>
+              <p>г.Ташкент, ул.Риксилий, 9</p>
             </div>
           </div>
           <div className={style.inTop}>
@@ -55,7 +55,7 @@ const Contact1 = (props) => {
               <MdMail />{" "}
             </div>
             <div className={style.infoTop}>
-              <h3>Электронное почта</h3>
+              <h3>Электронная почта</h3>
               <a href="mailto:info@sbtsul.uz" rel="noreferrer" target="_blank">
                 info@sbtsul.uz
               </a>
@@ -97,7 +97,7 @@ const Contact1 = (props) => {
               />
               <input
                 type="email"
-                placeholder="Электронное почта"
+                placeholder="Электронная почта"
                 name="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -109,7 +109,7 @@ const Contact1 = (props) => {
                 placeholder="Ваша цель связаться с нами"
                 onChange={(e) => setMessage(e.target.value)}
               />
-              <button type="submit">Послать сообщение</button>
+              <button type="submit">Отправить сообщение</button>
             </form>
           </div>
         </div>

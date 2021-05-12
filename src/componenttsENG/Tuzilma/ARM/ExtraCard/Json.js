@@ -4,14 +4,6 @@ import t3 from "../../../../assets/img/umaraliyevaARM.jpg";
 
 export const teachers = [
   {
-    img: t2,
-    name: "Kholmuratova Farogat Nuraliyevna",
-    abTeach1:
-      "1st category librarian, 3rd level lawyer, Information Library Resources Service Department.",
-    abTeach2: "",
-    email: "Farogatxolmuratova@mail.ru",
-  },
-  {
     img: t1,
     name: "Tillashaykhova Shakhnoza Erkinovna",
     abTeach1: "Director of the Information Resource Center, Level 3 Lawyer.",
@@ -23,8 +15,15 @@ export const teachers = [
     ],
     email: "shahnoza210480@gmail.com",
   },
-
   {
+    img: t2,
+    name: "Kholmuratova Farogat Nuraliyevna",
+    abTeach1:
+      "1st category librarian, 3rd level lawyer, Information Library Resources Service Department.",
+    abTeach2: "",
+    email: "Farogatxolmuratova@mail.ru",
+  },
+   {
     img: t3,
     name: "Umaraliyeva Feruza Fakhritdin kizi",
     abTeach1:

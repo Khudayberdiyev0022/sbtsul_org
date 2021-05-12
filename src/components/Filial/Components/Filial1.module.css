@@ -53,11 +53,13 @@
   text-align: center;
 }
 .text p {
+  width: 80%;
   color: #0f2b54;
   font-size: 18px;
   font-weight: 550;
   line-height: 1.5;
   margin-bottom: 25px;
+  text-align: center;
 }
 .text ul {
   color: #0f2b54;

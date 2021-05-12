@@ -228,7 +228,7 @@ function NavbarRus(props) {
                     to="/rus/aloqa"
                     activeStyle={{ color: "rgb(2 162 255)" }}
                   >
-                    Контакт <span></span>
+                    Контакты <span></span>
                   </NavLink>
                 </div>
               </div>

@@ -33,7 +33,7 @@ const Contact1 = (props) => {
             </div>
             <div className={style.infoTop}>
               <h3>Our address:</h3>
-              <p>Tashkent city, Rikhsily street, 9</p>
+              <p>Tashkent, Rikhsily st., 9</p>
             </div>
           </div>
           <div className={style.inTop}>

@@ -64,7 +64,6 @@ function Home9() {
           slidesToShow={pages}
           autoplaySpeed={3000}
           autoplay={true}
-          id={style.slider}
         >
           {items.map((item) => (
             <div key={item.id} className={`${style.card} slide`}>

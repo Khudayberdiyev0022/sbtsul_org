@@ -24,7 +24,7 @@
 }
 .inTop {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
@@ -78,14 +78,14 @@
 }
 .infoTop p {
   color: #adadad;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 450;
   line-height: 1.5;
 }
 
 .infoTop a {
   color: #adadad;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 450;
   line-height: 1.5;
   text-decoration: none;
