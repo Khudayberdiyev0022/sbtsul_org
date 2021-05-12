@@ -6,16 +6,10 @@ const Ekspluatatsiya1 = () => {
     <div className={style.main}>
       <div className={style.inMain}>
           <div className={style.head}>
-            <h2>GENERAL INFORMATION ABOUT THE OPERATIONAL AND ECONOMIC DEPARTMENT</h2>
+            <h2>GENERAL INFORMATION ABOUT THE DEPARTMENT OF EXPLOITING AND MAINTENANCE</h2>
             <span></span>
             <p>
-            Tashkent State Law University Specialized
-               branch Operational and economic department branch structural subdivision
-               President of the Republic of Uzbekistan in 2019
-               February 7, “Crime Prevention and Community
-               security training system
-               on Additional Measures for Improvement ”
-               Organized in accordance with Resolution No. PQ-4166
+            The Department of exploiting and maintenanceof the specialized branch of  Tashkent State University of law was established in accordance with the decree of the president of the Republic of Uzbekistan dated February 7, 2019 “on additional measures to improve the system of training of personnel in the field of offence prevention and public safety”PP-4166.
             </p>
           </div>
       </div>

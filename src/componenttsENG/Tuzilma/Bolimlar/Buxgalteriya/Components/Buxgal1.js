@@ -5,19 +5,18 @@ const Buxgal1 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-          <div className={style.head}>
-            <h2>ACCOUNTING DEPARTMENT</h2>
-            <span></span>
-            <p>
-            Tashkent State Law University Specialized
-               branch Accounting Department as a structural unit of the Branch
-               President of the Republic of Uzbekistan February 7, 2019
-               “Crime prevention and public safety
-               to improve the system of training in the field
-               Resolution No. PQ-4166 "On Additional Measures"
-               properly organized.
-            </p>
-          </div>
+        <div className={style.head}>
+          <h2>THE ACCOUNTING DEPARTMENT</h2>
+          <span></span>
+          <p>
+            The Accounting Department of the Specialized Branch of Tashkent
+            State University of Law was created as a structural unit of the
+            branch in accordance with the decree of the President of the
+            Republic of Uzbekistan dated February 7, 2019 No. PD-4166 "On
+            additional measures to improve the training system in the field of
+            crime prevention and public safety."
+          </p>
+        </div>
       </div>
     </div>
   );

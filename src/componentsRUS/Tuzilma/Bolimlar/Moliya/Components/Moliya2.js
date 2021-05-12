@@ -8,7 +8,7 @@ const Moliya2 = () => {
     <div className={style.main}>
       <div className={style.inMain}>
         
-          <h2>СОСТАВ СОТРУДНИКОВ ФИНАНСОВО-ЭКОНОМИЧЕСКОГО ОТДЕЛА</h2>
+          <h2>СТРУКТУРА ПЕРСОНАЛА ФИНАНСОВО-ЭКОНОМИЧЕСКОГО ОТДЕЛА </h2>
           <span></span>
         
         
@@ -28,7 +28,7 @@ const Moliya2 = () => {
                     <h3>{teacher.name}</h3>
                     <p>
                       <span></span>
-                      {nameKaf} {teacher.abTeach1}
+                      {teacher.abTeach1}  {nameKaf}
                     </p>
                     <p>
                       <span></span>

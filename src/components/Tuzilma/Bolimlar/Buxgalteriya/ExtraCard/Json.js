@@ -30,17 +30,6 @@ export const teachers = [
     email: "akbarshox.abdulatipov@bk.ru",
   },
 ];
-// {
-//     img: t1,
-//     name: '',
-//     abTeach1: '',
-//     abTeach2: '',
-//     yutuqlari:[
-//         {
-//             a:''
-//         }
-//     ],
-//     email: ''
-// },
+
 
 export const nameKaf = `${""}`;

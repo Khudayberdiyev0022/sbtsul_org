@@ -6,7 +6,7 @@ export const teachers = [
   {
     img: t1,
     name: "Саимов Латиф Исматуллаевич",
-    abTeach1: "Главный бухгалтер, юрист 3го категории",
+    abTeach1: "главный бухгалтер, юрист 3-категории.",
     abTeach2: "",
     yutuqlari: [
       {
@@ -18,7 +18,7 @@ export const teachers = [
   {
     img: t2,
     name: "Раджабова Феруза Равшановна",
-    abTeach1: "Заместитель главного бухгалтера, юрист 3 ранга.",
+    abTeach1: "Заместитель главного бухгалтера, юрист 3-категории.",
     abTeach2: "",
     email: "feruzarajabova@gmail.com",
   },
@@ -30,17 +30,5 @@ export const teachers = [
     email: "akbarshox.abdulatipov@bk.ru",
   },
 ];
-// {
-//     img: t1,
-//     name: '',
-//     abTeach1: '',
-//     abTeach2: '',
-//     yutuqlari:[
-//         {
-//             a:''
-//         }
-//     ],
-//     email: ''
-// },
 
 export const nameKaf = `${""}`;

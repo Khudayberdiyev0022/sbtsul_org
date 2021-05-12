@@ -6,7 +6,7 @@ const Buxgal2 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-          <h2>STAFF OF ACCOUNTING DEPARTMENT</h2>
+          <h2>THE STAFF OF THE ACOUNTING DEPARTMENT</h2>
           <span></span>
           <div className={style.map}>
             {teachers.map((teacher, index) => {

@@ -1,52 +1,46 @@
 import React from "react";
 import style from "../../../../../components/Tuzilma/Bolimlar/Ekspluatatsiya/Components/Ekspluatatsiya3.module.css";
 
-
 const Ekspluatatsiya3 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-          <div className={style.head}>
-            <h2>DUTIES OF THE DEPARTMENT</h2>
-            <span></span>
-          </div>
+        <div className={style.head}>
+          <h2>FUNCTIONS OF THE DEPARTMENT</h2>
+          <span></span>
+        </div>
 
-          <div className={style.grid}>
-            <div className={style.block}>
-              <div className={style.svg}></div>
-              <p>
-              Branch buildings and the environment to maintain the required level of them
-                 service management, room equipment
-                 control all materials to ensure compliance with the required level
-                 inventory equipment at least once a year
-                 transfer, funds allocated to the farm and the farm
-                 control the economical use of materials, to the Branch
-                 at the reception of visiting guests and delegations
-                 work organization, departmental work plans and
-                 ensure their implementation.
-              </p>
-              <p>
-              Carry out organizational work and activities related to the activities of the department
-                 increase, about the economic activity of the Branch
-                 organization of information provision, taking office
-                 go, prepare materials for department meetings,
-                 of incoming and outgoing documents
-                 maintenance of the file and the report and their execution
-                 monthly information for department management
-                 preparation
-              </p>
-              <p>
-              Equipment and supplies from the relevant departments
-                 participation in the provision of, out of work in the rooms
-                 organization of repair of equipment and items, building
-                 employing service workers and technicians
-                 to ensure and manage them, to keep the building clean,
-                 on the storage of the building and equipment and items in it
-                 to give an account in the account for the appropriate periods, in the building
-                 maintain an inventory of available equipment and supplies.
-              </p>
-            </div>
+        <div className={style.grid}>
+          <div className={style.block}>
+            <div className={style.svg}></div>
+            <p>
+              To maintain the premises and the environment of the branch at the
+              required level, to manage their maintenance work, to control the
+              maintenance of the equipment in the rooms at the required level,
+              to carry out inventory of all material equipment at least once a
+              year, to control the cost-effective consumption of the allocated
+              amount and economic goods for Economic Work, to organize.
+            </p>
+            <p>
+              Carrying out organizational works and events related to the
+              activities of the Department, Organization of providing
+              information on the activities of the branch in the economic
+              sphere, carrying out the proceedings, preparation of materials for
+              the meetings of the department, maintaining the card and report of
+              the documents incoming and outgoing in the department and
+              preparing monthly information for the management.
+            </p>
+            <p>
+              Participation in the provision of equipment and items of relevant
+              departments from the material and technical side, organization of
+              repair work on equipment and items that have left their work in
+              the rooms, employment of workers and technical personnel serving
+              for the building, their management, maintenance of the building,
+              accounting for the relevant periods for the maintenance of
+              equipment and items in the building.
+            </p>
           </div>
+        </div>
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ const Jangovor2 = () => {
     <div className={style.main}>
       <div className={style.inMain}>
         {/* <Zoom right> */}
-          <h2>СОСТАВ ПРОФЕССОРСКО-ПРЕПОДАВАТЕЛЬСКОГО СОСТАВА КАФЕДРЫ</h2>
+          <h2>ПРОФЕССОРСКО-ПРЕПОДАВАТЕЛЬСКИЙ СОСТАВ КАФЕДРЫ</h2>
           <span></span>
         {/* </Zoom> */}
         {/* <Zoom top cascade> */}
@@ -40,7 +40,7 @@ const Jangovor2 = () => {
 
                     {teacher.yutuqlari ? (
                       <div className={style.yut}>
-                        <h4>Yutuqlari:</h4>
+                        <h4>Достижения: </h4>
                         <ul>
                           {teacher.yutuqlari.map((yutuq, index) => {
                             return (

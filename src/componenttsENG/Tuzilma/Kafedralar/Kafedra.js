@@ -60,7 +60,7 @@ const KafedraEng = () => {
           </div>
           <div className={style.content}>
             {/* <h2>Kafedra</h2>/ */}
-            <p>DEPARTMENT OF PROFESSIONAL FIGHTING SCIENCES</p>
+            <p>DEPARTMENT OF PROFESSIONAL COMBAT TRAINING SCIENCES</p>
             <Link to="/eng/kjt-fanlar-kafedrasi">Information </Link>
           </div>
         </div>

@@ -1,26 +1,17 @@
 import React from "react";
 import style from "../../../../../components/Tuzilma/Kafedralar/Jangovor/Components/Jangovor1.module.css";
-// import Rotate from "react-reveal/Rotate";
 
 const Jangovor1 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        {/* <Rotate bottom left cascade> */}
           <div className={style.head}>
-            <h2>DEPARTMENT OF PROFESSIONAL FIGHTING SCIENCES</h2>
+            <h2>DEPARTMENT OF PROFESSIONAL COMBAT TRAINING SCIENCES</h2>
             <span></span>
             <p>
-            Tashkent State Law University Specialized
-               Branch Vocational Training Department Uzbekistan
-               On February 7, 2019, the President of the Republic of Kazakhstan issued a decree “On offenses
-               personnel in the field of prevention and public safety
-               in addition to improving the training system
-               in accordance with the Resolution No. PQ-4166 "On measures"
-               established.
+            The department of "Professional combat training" of the Specialized Branch of the Tashkent State University of Law was established by the Decree of the President of the Republic of Uzbekistan dated February 7, 2019 No. PP-4166 "On additional measures to improve the training system in the field of crime prevention and public safety."
             </p>
           </div>
-        {/* </Rotate> */}
       </div>
     </div>
   );

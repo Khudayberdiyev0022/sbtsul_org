@@ -6,7 +6,7 @@ const Ekspluatatsiya2 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-          <h2>STAFF OF THE OPERATIONAL AND ECONOMIC DEPARTMENT</h2>
+          <h2>COMPOSITION OF EMPLOYEES OF THE DEPARTMENT OF EXPLOITING-MAINTENANCE</h2>
           <span></span>
 
           <div className={style.map}>

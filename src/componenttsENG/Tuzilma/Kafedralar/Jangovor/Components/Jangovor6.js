@@ -2,54 +2,47 @@ import React from "react";
 import style from "../../../../../components/Tuzilma/Kafedralar/Jangovor/Components/Jangovor6.module.css";
 import bg from "../../../../../assets/img/section_bg04.jpg";
 import img from "../../../../../assets/img/mm1.jpg";
-// import Bounce from "react-reveal/Bounce";
 
 const Jangovor6 = () => {
   return (
     <div className={style.main} style={{ backgroundImage: `url(${bg})` }}>
-      {/* <Bounce top cascade> */}
-        <div className={style.inMain}>
-          <h2>SPIRITUAL-EDUCATIONAL AND EDUCATIONAL-MORAL WORK</h2>
-          <span></span>
-          <div className={style.text}>
-            <div
-              className={style.img}
-              style={{ backgroundImage: `url(${img})` }}
-            ></div>
-            <p>
-              <span></span> Department of "Professional combat training"
-               professors and teachers talk to students
-               organizes Every year the teachers of the department meet with students
-               together with the Central Armed Forces of the Republic of Uzbekistan
-               Museum Victory Park and visits to various venues and the military
-               organizes meetings with veterans.
-            </p>
-          </div>
+      <div className={style.inMain}>
+        <h2>MORAL-EDUCATIONAL WORK</h2>
+        <span></span>
+        <div className={style.text}>
+          <div
+            className={style.img}
+            style={{ backgroundImage: `url(${img})` }}
+          ></div>
           <p>
-            <span></span> Physical training and sports
-             The club was established, under which today the sport "MMA",
-             Sambo and mini-football clubs are launched
-             set. Currently playing badminton and basketball
-             work on organizing the activities of the clubs
-             being increased. Sambo and Athletics Federations of Uzbekistan
-             Memorandums of cooperation were signed with
-          </p>
-          <p>
-            <span></span> Our students who have achieved high results in the branch
-             including two-time World Belt Wrestling
-             Winner of the Championship (Tatarstan and Kazakhstan - 2019),
-             Two-time world champion in sambo (Uzbekistan,
-             Germany). In addition, throughout the country, "Jui-jitsu", "Hand
-             "War", "Freestyle wrestling" and "Greek rum"
-             there are more than 10 students who have achieved results. Currently,
-             qualifying among students in a variety of other sports
-             (selection) work is underway. Future activity in the Branch
-             Universiade of our students on behalf of the sports club
-             and national and international
-             It is planned to participate in competitions.
+            <span></span> The teaching staff of the department on an ongoing
+            basis with students carry out various educational and spiritual and
+            educational activities. Teachers regularly organize cultural and
+            leisure activities through students visiting various places of
+            interest, museums and other objects of cultural and spiritual
+            heritage of our people and country.
           </p>
         </div>
-      {/* </Bounce> */}
+        <p>
+          <span></span> A sports club has been created in the Branch, within the
+          framework of which the details of mini-football, MMA and SAMBO clubs
+          and sections are organized. Work is underway to create badminton and
+          basketball clubs. Memorandums of cooperation were signed with the
+          Sambo and Athletics Federations of Uzbekistan.
+        </p>
+        <p>
+          <span></span> The branch has certain achievements in sports terms,
+          including a two-time winner of the world belt wrestling championship
+          (Tatarstan and Kazakhstan - 2019), a two-time world champion in sambo
+          (Uzbekistan, Germany). In addition, more than 10 students who have
+          achieved high results of a republican scale in such sports as
+          jiu-jitsu, hand-to-hand fighting, freestyle and Greco-Roman wrestling
+          are studying at the school. The selection of students from other
+          sports is currently underway. In the future, it is planned to ensure
+          the participation of students in the framework of the created club in
+          the Universiade, national and international competitions.
+        </p>
+      </div>
     </div>
   );
 };

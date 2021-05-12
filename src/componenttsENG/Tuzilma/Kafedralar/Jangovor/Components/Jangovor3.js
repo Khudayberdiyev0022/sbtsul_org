@@ -1,74 +1,67 @@
 import React from "react";
 import style from "../../../../../components/Tuzilma/Kafedralar/Jangovor/Components/Jangovor3.module.css";
-// import Fade from "react-reveal/Fade";
-// import Zoom from "react-reveal/Zoom";
 
 const Jangovor3 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        {/* <Fade top cascade> */}
-          <div className={style.head}>
-            <h2>DUTIES OF THE DEPARTMENT</h2>
-            <span></span>
+        <div className={style.head}>
+          <h2>OBJECTIVES OF THE DEPARTMENT</h2>
+          <span></span>
+        </div>
+        <div className={style.grid}>
+          <div className={style.block}>
+            <div className={style.svg}></div>
+            <p>
+              <span>In the field of scientific and methodological work </span> –
+              the development of scientific and methodological foundations of
+              the educational process, the provision of educational materials,
+              the study of foreign experience in this area, the use of modern
+              technologies to increase the effectiveness and quality and
+              efficiency of education, the introduction of modern educational
+              technologies;
+            </p>
           </div>
-        {/* </Fade> */}
-        {/* <Zoom top cascade> */}
-          <div className={style.grid}>
-            <div className={style.block}>
-              <div className={style.svg}>{/* <VscOrganization/> */}</div>
-              <p>
-                <span>In the field of scientific and methodical work</span> – of the learning process
-                 development of scientific and methodological bases, teaching methods
-                 provision of materials, foreign experience in this field
-                 the productivity of professors and teachers in the study
-                 and improving the quality and effectiveness of education
-                 introduction of modern educational technologies;
-              </p>
-            </div>
-            <div className={style.block}>
-              <div className={style.svg}></div>
-              <p>
-                <span>In the field of research</span> – performed in the country
-                 increasing socio-economic, democratic and judicial
-                 priorities of reforms, advanced world experience and
-                 modern legal science, taking into account international standards
-                 research on development priorities
-                 perform their work and put their results into practice
-                 to ensure maturity;
-              </p>
-            </div>
-            <div className={style.block}>
-              <div className={style.svg}></div>
-              <p>
-                <span>In the field of organizational and methodological work</span> –quality of education
-                 evaluation, its analysis, as well as
-                 crime prevention and public safety
-                 methodological and consulting activities in the field of supply
-                 and other organizational and methodological measures
-                 to establish;
-              </p>
-            </div>
-            <div className={style.block}>
-              <div className={style.svg}></div>
-              <p>
-                <span>In the field of spiritual, moral and educational work</span> –
-                students' spiritual, intellectual, physical and moral
-                 promoting national development and national values
-                 respect, patriotism, a sense of citizenship,
-                 tolerance, laws, national and universal values
-                 in a spirit of respect, against harmful influences and currents
-                 has a strong belief and outlook on life
-                 and their responsibility to the state and society
-                 feeling, humanity, interethnic harmony, justice and
-                 understanding and adhering to the rule of law criteria
-                 educating in the spirit, as well as their population and the masses
-                 working with and interacting with the media
-                 improve skills.
-              </p>
-            </div>
+          <div className={style.block}>
+            <div className={style.svg}></div>
+            <p>
+              <span>in the field of scientific work</span> – conducting a study
+              of the priorities of the socio-economic, democratic, judicial and
+              military reform in the country, taking into account the best
+              international experience and international standards, the
+              priorities of modern legal science and ensuring their results,
+              their implementation in practice;
+            </p>
           </div>
-        {/* </Zoom> */}
+          <div className={style.block}>
+            <div className={style.svg}></div>
+            <p>
+              <span>
+                in the field of organizational and methodological work
+              </span>{" "}
+              – assessment of the quality of education, its comprehensive
+              analysis, effective organization of methodological and advisory
+              support and other organizational and methodological measures in
+              the field of crime prevention and public safety;
+            </p>
+          </div>
+          <div className={style.block}>
+            <div className={style.svg}></div>
+            <p>
+              <span>
+                in the field of spiritual, moral and educational work{" "}
+              </span>{" "}
+              – promoting the spiritual, intellectual, physical and moral
+              development of students and respect for national values, the
+              development of patriotism, civic stance, tolerance, respect for
+              laws, national and universal values, the development of students'
+              firm faith and outlook on life , a sense of responsibility to the
+              state and society, understanding and adherence to the principles
+              of humanity, interethnic harmony, justice and the rule of law, as
+              well as love and devotion to their people.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

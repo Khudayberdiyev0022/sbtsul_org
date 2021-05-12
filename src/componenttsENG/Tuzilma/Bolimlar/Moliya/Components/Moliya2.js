@@ -6,7 +6,7 @@ const Moliya2 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-          <h2>STAFF OF THE FINANCE AND ECONOMY DEPARTMENT</h2>
+          <h2>STUFF’S OF THE FINANCIAL AND ECONOMIC DEPARTMENT </h2>
           <span></span>
 
           <div className={style.map}>
@@ -25,7 +25,7 @@ const Moliya2 = () => {
                     <h3>{teacher.name}</h3>
                     <p>
                       <span></span>
-                      {nameKaf} {teacher.abTeach1}
+                       {teacher.abTeach1} {nameKaf}
                     </p>
                     <p>
                       <span></span>

@@ -1,76 +1,73 @@
 import React from "react";
 import style from "../../../../../components/Tuzilma/Bolimlar/Moliya/Components/Moliya3.module.css";
 
-
 const Moliya3 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-          <div className={style.head}>
-            <h2>DUTIES OF THE DEPARTMENT</h2>
-            <span></span>
+        <div className={style.head}>
+          <h2>DEPARTMENT TASKS </h2>
+          <span></span>
+        </div>
+        <div className={style.grid}>
+          <div className={style.block}>
+            <div className={style.svg}></div>
+            <p>
+              <li>
+                further strengthening of the financial and economic position of
+                the branch, strict compliance with budget discipline,
+                organization of planned financial and economic activities,
+                increasing the efficiency of targeted use of budget and
+                extra-budgetary funds;
+              </li>
+            </p>
+            <p>
+              <li>
+                implementing of work on the development of staff schedules, cost
+                estimates, making changes and additions to the staff schedule of
+                employees of the branch;
+              </li>
+            </p>
+            <p>
+              <li>
+                controlling over the correct use of the funds specified in the
+                cost estimate for their own purposes, preventing inappropriate
+                or excessive spending;
+              </li>
+            </p>
+            <p>
+              <li>
+                implementing of works related to the provision of allowances to
+                employees;
+              </li>
+            </p>
+            <p>
+              <li>
+                constantly update, timely acquaint the management with the
+                current financial and economic indicators;
+              </li>
+            </p>
+            <p>
+              <li>
+                timely preparation and submission of all financial and economic
+                reports to the relevant organizations;
+              </li>
+            </p>
+            <p>
+              <li>
+                provision and control over the placement of brands and services
+                to be purchased for the activities of the branch on a special
+                trade and information portal of public procurement;
+              </li>
+            </p>
+            <p>
+              <li>
+                performance of other duties stipulated by the legislation and by
+                the Regulation of the branch and by the director of the branch.
+              </li>
+            </p>
           </div>
-          <div className={style.grid}>
-            <div className={style.block}>
-              <div className={style.svg}></div>
-              <p>
-                <li>
-                Further strengthening the financial and economic position of the branch,
-                   strict adherence to budgetary discipline, finance and economics
-                   scheduled activities, budgetary and extra-budgetary
-                   the effectiveness of the targeted use of funds
-                   organization of increase;
-                </li>
-              </p>
-              <p>
-                <li>
-                Branch staffing tables, cost estimates
-                   develop, modify and add
-                   to carry out their work;
-                </li>
-              </p>
-              <p>
-                <li>
-                their purposes from the funds specified in the cost estimates
-                   proper use, inappropriate or excessive cost
-                   control of inadmissibility;
-                </li>
-              </p>
-              <p>
-                <li>
-                overtime pay
-                   make it happen;
-                </li>
-              </p>
-              <p>
-                <li>
-                constantly updated
-                   financial and economic performance
-                   timely introduction;
-                </li>
-              </p>
-              <p>
-                <li>
-                all financial and economic to the relevant organizations
-                   timely preparation and submission of reports;
-                </li>
-              </p>
-              <p>
-                <li>
-                Goods to be purchased for the activities of the branch,
-                   public procurement of works and services special trade information
-                   provision and control of placement on the portal;
-                </li>
-              </p>
-              <p>
-                <li>
-                provided by the legislation and the Charter of the Branch and
-                   Other duties assigned by the branch director
-                   do
-                </li>
-              </p>
-            </div>
-          </div>
+        </div>
       </div>
     </div>
   );

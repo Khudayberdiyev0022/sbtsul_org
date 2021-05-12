@@ -6,7 +6,7 @@ const Ekspluatatsiya2 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-          <h2>СОСТАВ РАБОТНИКОВ ЭКСПЛУАТАЦИОННО-ХОЗЯЙСТВЕННОГО ОТДЕЛА</h2>
+          <h2>СТРУКТУРА  ПЕРСОНАЛА ЭКСПЛУАТАЦИОННО-ХОЗЯЙСТВЕННОГО ОТДЕЛА</h2>
           <span></span>
 
           <div className={style.map}>

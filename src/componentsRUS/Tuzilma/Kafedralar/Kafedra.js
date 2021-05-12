@@ -57,7 +57,7 @@ const KafedraRus = () => {
             <img src={img5}  alt='dxd'/>
           </div>
           <div className={style.content}>
-=            <p>КАФЕДРА ПРОФЕССИОНАЛЬНЫХ БОЕВЫХ ДИСЦИПЛИН</p>
+=            <p>КАФЕДРА ПРОФЕССИОНАЛЬНО-БОЕВОЙ ПОДГОТОВКИ</p>
             <Link to="/rus/kjt-fanlar-kafedrasi">Инфомация</Link>
           </div>
         </div>
