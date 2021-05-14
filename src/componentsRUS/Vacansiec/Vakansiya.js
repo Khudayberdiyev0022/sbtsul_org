@@ -3,36 +3,62 @@ import style from "../../components/Vacansiec/Vakansiya.module.css";
 import { BsCloudDownload } from "react-icons/bs";
 import docx from "../../components/Data/Ariza namuna tanlovga.docx";
 import doc from "../../components/Data/Vakansiya.doc";
-import { fetchVacancysProducts } from '../../actions'
-import { connect } from 'react-redux'
+import document from "../../components/Data/Taxminiy savollar.docx";
+import { fetchVacancysProducts } from "../../actions";
+import { connect } from "react-redux";
 
 const VakansiyaRus = (props) => {
   useEffect(() => {
-    props.fetchVacancysProducts()
+    props.fetchVacancysProducts();
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  }, []);
 
   return (
     <div className={style.main}>
       <div className={style.inMain}>
         <div className={style.titleText}>
-          <h3>Добро пожаловать на работу!!!</h3>
+          <h3>Ishga marhamat!!!</h3>
           <p>
-            Специализированный филиал Ташкентского государственного юридического
-            университета нанять квалифицированных специалистов по следующим
-            специальностям предложения. Набор осуществляется на конкурсной
-            основе. Узнайте больше о вакансиях и конкурсах ниже возможный.
+            Toshkent davlat yuridik universitetining Ixtisoslashtirilgan filiali
+            malakali mutaxassislarni quyidagi mutaxassiliklar boʼyicha ishga
+            taklif etadi. Ishga qabul qilish tanlov asosida amalga oshiriladi.
+            Boʼsh ish oʼrinlari va tanlov haqida quyida batafsil tanishishingiz
+            mumkin.
           </p>
-          <p>2021 год 10 апрель №2</p>
+          <p>2021 yil 10 aprel №2-son</p>
           <div className={style.footer}>
             <p>
-              Ташкентский Государственный Юридический Университет
-              Специализированный Филиал приглашает квалифицированный персонал
-              для заполнения вакансий. делает
+              TDYU Ixtisoslashtirilgan filiali boʼsh ish oʼrinlariga malakali
+              kadrlarni ishga taklif qiladi 15.04.2021y
               <span className={style.btn}>
                 <a href={doc} rel="noreferrer" download>
-                  (doc) скачать файл
+                  (doc) faylni yuklab olish
+                  <BsCloudDownload />
+                </a>
+              </span>
+            </p>
+          </div>
+          <div className={style.footer}>
+            <p>
+              TDYU Ixtisoslashtirilgan filiali nomozdlar uchun suhbat vaqtidagi
+              taxminiy savollar ro'yhati 15.04.2021y
+              <span className={style.btn}>
+                <a href={document} rel="noreferrer" download>
+                  (docx) faylni yuklab olish
+                  <BsCloudDownload />
+                </a>
+              </span>
+            </p>
+          </div>
+          <div className={style.footer}>
+            <p>
+              TDYU Ixtisoslashtirilgan filiali tanlovda ishtirok etish
+              to'g'risidagi namunani ushbu havola orqali yuklab olishingiz
+              mumkin.
+              <span className={style.btn}>
+                <a href={docx} rel="noreferrer" download>
+                  (docx) faylni yuklab olish
                   <BsCloudDownload />
                 </a>
               </span>
@@ -43,42 +69,41 @@ const VakansiyaRus = (props) => {
         {props.vacancys?.map((api, index) => {
           return (
             <div className={style.card} key={index}>
-              <h3>{api.titleRus}</h3>
+              <h3>{api.titleUzb}</h3>
               <div className={style.job}>
-                <h3>{api.subTitleRus}</h3>
+                <h3>{api.subTitleUzb}</h3>
                 <h3>
-                  <span> З/П:</span> {api.costRus} <span>so'm</span>
+                  <span> З/П:</span> {api.costUzb} <span>so'm</span>
                 </h3>
               </div>
-              <p>{api.paragraphRus}</p>
+              <p>{api.paragraphUzb}</p>
             </div>
           );
         })}
         <div className={style.vakantJobs}>
-          <h5>Условия труда</h5>
+          <h5>Ish sharoiti</h5>
           <ul>
             <li>
-              Филиал предоставляет сотрудникам возможности профессионального и
-              карьерного роста (карьерного роста).;
+              Filial xodimlarga kasbiy va lavozim boʼyicha oʼsish (karьera)
+              imkonini beradi;
             </li>
             <li>
-              Рекомендации к присвоению специальных званий (званий) работникам
-              судебной системы;
+              Аdliya organlari xodimlariga beriladigan maxsus unvon – martaba
+              daraja (chin)lariga tavsiya etish;
             </li>
             <li>
-              Наличие надбавок и надбавок (до 20-50% для карьерных уровней, до
-              5-40% при выслуге в судебной системе);
+              Lavozim maoshlariga ustama va qoʼshimcha haq (martaba darajalari
+              uchun 20-50 % gacha, adliya organlari tizimida uzoq muddat xizmat
+              koʼrsatganligi uchun 5-40 % gacha) mavjudligi;
             </li>
             <li>
-              Наличие системы материального стимулирования (премии до 200% от
-              заработной платы сотрудника, бонусы);
+              Mehnatni moddiy ragʼbatlantirish tizimining mavjudligi (xodimning
+              lavozim maoshiga 200 % gacha ustama haq, mukofotlar);
             </li>
-            <li>Размер заработной платы определяется трудовым договором..</li>
+            <li>Ish haqi hajmi mehnat shartnomasi bilan belgilanadi.</li>
             <li>
-              {" "}
-              Кандидатам: для участия в конкурсе необходимо предоставить личную
-              справку (линзу), копию диплома, копию паспорта на электронную
-              почту:{" "}
+              Nomzodlar: tanlov uchun ariza shaxsiy maʼlumotnoma (obʼektivka),
+              diplom nusxasi, pasport nusxasini e-mail:
               <a
                 href="mailto://kadr@sbtsul.uz"
                 rel="noreferrer"
@@ -86,29 +111,30 @@ const VakansiyaRus = (props) => {
               >
                 kadr@sbtsul.uz
               </a>
+              elektron pochtasiga taqdim etishlari lozim.
             </li>
             <li>
               {" "}
               <strong>
-                Заявление и сопутствующие документы должны быть получены до 18:00 25 апреля 2021 года.
-                принято пока.
+                Аriza va tegishli hujjatlar 2021 yil 25 aprel kuni soat 18:00 ga
+                qadar qabul qilinadi.
               </strong>{" "}
             </li>
             <li>
-              В справке указан адрес кандидата, мобильный телефон.
-              номера и адреса электронной почты
-              следует указать. Учить больше:
+              Maʼlumotnomada nomzodning yashash manzili, mobilь telefon
+              raqamlari va elektron pochta manzili toʼgʼrisidagi maʼlumotlar ham
+              koʼrsatilishi kerak. Batafsil maʼlumot:
               <a href="tel://+998909442962" rel="noreferrer" target="_blank">
                 +998 90 944 29 62
               </a>
             </li>
             <li>
-              В случае нарушения процедуры отбора или коррупции
-              Министерства юстиции
+              Tanlov tartibi buzilgan taqdirda yoki korruptsiya holatlari yuz
+              berganda bu haqda Аdliya vazirligining
               <a href="tel://1008" rel="noreferrer" target="_blank">
                 “1008”
               </a>
-              служба доверия,
+              ishonch telefoniga,
               <a
                 href="https://minjust.uz/uz/anticorruption/feedback/"
                 rel="noreferrer"
@@ -116,40 +142,28 @@ const VakansiyaRus = (props) => {
               >
                 @antikorbot
               </a>
-              телеграмм канал и филиал
+              telegram kanaliga hamda Filialning
               <a href="tel://+998712070378" rel="noreferrer" target="_blank">
                 +998 71 207 03 78
               </a>{" "}
-              вы можете связаться с горячей линией.
+              ishonch telefoniga murojaat qilishingiz mumkin.
             </li>
-            <h5>Процесс отбора осуществляется в следующие этапы:</h5>
-            <p>1.Прием документов;</p>
-            <p>2.Изучение заявлений и документов;</p>
-            <p>3.Проведение тестов;</p>
-            <p>4.Беседа</p>
+            <h5>Saralash jarayoni quyidagi bosqichlarda oʼtkaziladi:</h5>
+            <p>1.Hujjatlar qabuli;</p>
+            <p>2.Arizalar va hujjatlarni o'rganish;</p>
+            <p>3.Test sinovlarini o'tkazish;</p>
+            <p>4.Suhbat</p>
           </ul>
-        </div>
-        <div className={style.footer}>
-          <p>
-            Участвуйте в конкурсе Специализированного филиала ТГЮУ.
-            Вы можете скачать образец по этой ссылке.
-            <span className={style.btn}>
-              <a href={docx} rel="noreferrer" download>
-                (docx) faylni yuklab olish
-                <BsCloudDownload />
-              </a>
-            </span>
-          </p>
         </div>
       </div>
     </div>
   );
 };
-const mapStateToProps = state => {
-  return {
-    vacancys: state.productsVacancys[0]
-  }
-}
 
+const mapStateToProps = (state) => {
+  return {
+    vacancys: state.productsVacancys[0],
+  };
+};
 
 export default connect(mapStateToProps, { fetchVacancysProducts })(VakansiyaRus);

@@ -29,7 +29,7 @@ const FooterRus = () => {
             <div className={style.links}>
               <Link to="/rus/yangiliklar">Новости</Link>
               <Link to="/rus/qabul">Приём</Link>
-              <Link to="/rus/aloqa">Контакт</Link>
+              <Link to="/rus/aloqa">Контакты</Link>
             </div>
           </div>
         </div>

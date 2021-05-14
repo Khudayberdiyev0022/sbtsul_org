@@ -69,6 +69,7 @@ import JangovorEng from "../componenttsENG/Tuzilma/Kafedralar/Jangovor/Jangovor"
 import BuxgalteriyaEng from "../componenttsENG/Tuzilma/Bolimlar/Buxgalteriya/Buxgalteriya";
 import KadrlarEng from "../componenttsENG/Tuzilma/Bolimlar/Kadrlar/Kadrlar";
 import MoliyaEng from "../componenttsENG/Tuzilma/Bolimlar/Moliya/Moliya";
+// import VakansiyaEng from "../componenttsENG/Vacansiec/Vakansiya";
 // import IlmiyKengashEng from "../componenttsENG/Faoliyat/IlmiyKengash/IlmiyKengash";
 // import QabulEng from "../componenttsENG/Qabul/Qabul";
 // import ArmEng from "../componenttsENG/Tuzilma/ARM/Arm";
@@ -84,7 +85,6 @@ import MoliyaEng from "../componenttsENG/Tuzilma/Bolimlar/Moliya/Moliya";
 // import JinoyatHuquqEng from "../componenttsENG/Tuzilma/Kafedralar/JinoyatHuquq/JinoyatHuquq";
 // import DavlatHuquqiyEng from "../componenttsENG/Tuzilma/Kafedralar/DavlatHuquqiy/DavlatHuquqiy";
 // import KengashEng from "../componenttsENG/Tuzilma/Kengash/Kengash";
-// import VakansiyaEng from "../componenttsENG/Vacansiec/Vakansiya";
 
 // RUS
 import PicturesRus from "../componentsRUS/Pictures/Pictures";
@@ -109,6 +109,7 @@ import JangovorRus from "../componentsRUS/Tuzilma/Kafedralar/Jangovor/Jangovor";
 import BuxgalteriyaRus from "../componentsRUS/Tuzilma/Bolimlar/Buxgalteriya/Buxgalteriya";
 import KadrlarRus from "../componentsRUS/Tuzilma/Bolimlar/Kadrlar/Kadrlar";
 import MoliyaRus from "../componentsRUS/Tuzilma/Bolimlar/Moliya/Moliya";
+// import VakansiyaRus from "../componentsRUS/Vacansiec/Vakansiya";
 // import IlmiyKengashRus from "../componentsRUS/Faoliyat/IlmiyKengash/IlmiyKengash";
 // import QabulRus from "../componentsRUS/Qabul/Qabul";
 // import ArmRus from "../componentsRUS/Tuzilma/ARM/Arm";
@@ -124,7 +125,6 @@ import MoliyaRus from "../componentsRUS/Tuzilma/Bolimlar/Moliya/Moliya";
 // import JinoyatHuquqRus from "../componentsRUS/Tuzilma/Kafedralar/JinoyatHuquq/JinoyatHuquq";
 // import XususiyHuquqiyRus from "../componentsRUS/Tuzilma/Kafedralar/XususiyHuquq/XususiyHuquqiy";
 // import KengashRus from "../componentsRUS/Tuzilma/Kengash/Kengash";
-// import VakansiyaRus from "../componentsRUS/Vacansiec/Vakansiya";
 
 import GrantAdd from "./admin-dashboard/admin-add/GrantAdd";
 import GrantDelete from "./admin-dashboard/admin-add/GrantDelete";
@@ -390,7 +390,9 @@ export const EngRender = () => {
           <Route path="/eng/bolimlar">
             <BolimlarEng />
           </Route>
-          <Route path="/eng/mi-bolimi"><MoliyaEng /></Route>
+          <Route path="/eng/mi-bolimi">
+            <MoliyaEng />
+          </Route>
           <Route path="/eng/at-bolimi">{/* <ATEng /> */}</Route>
           <Route path="/eng/ex-bolimi">
             <EkspluatatsiyaEng />
@@ -399,7 +401,9 @@ export const EngRender = () => {
             <BuxgalteriyaEng />
           </Route>
           <Route path="/eng/ka-bolimi">{/* <KonselyariyaArxivEng /> */}</Route>
-          <Route path="/eng/kadrlar-bolimi"><KadrlarEng /></Route>
+          <Route path="/eng/kadrlar-bolimi">
+            <KadrlarEng />
+          </Route>
           <Route path="/eng/ikkinchi-bolim">{/* <IkkinchiEng /> */}</Route>
           <Route path="/eng/ou-bolimi">{/* <OquvUslubiyEng /> */}</Route>
           <Route path="/eng/axborot-resurs-markazi">{/* <ArmEng /> */}</Route>
@@ -431,7 +435,7 @@ export const EngRender = () => {
           <Route path="/eng/tarbiyaviy-ishlar-bolimi">
             {/* <TarbiyaviyEng /> */}
           </Route>
-          <Route path="/eng/vakansiya">{/* <VakansiyaEng /> */}</Route>
+          {/* <Route path="/eng/vakansiya"><VakansiyaEng /></Route> */}
           <Route path="/eng/yangiliklar">
             <NewsEng />
           </Route>
@@ -532,7 +536,9 @@ export const RusRender = () => {
           <Route path="/rus/bolimlar">
             <BolimlarRus />
           </Route>
-          <Route path="/rus/mi-bolimi"><MoliyaRus /></Route>
+          <Route path="/rus/mi-bolimi">
+            <MoliyaRus />
+          </Route>
           <Route path="/rus/at-bolimi">{/* <ATRus /> */}</Route>
           <Route path="/rus/ex-bolimi">
             <EkspluatatsiyaRus />
@@ -541,7 +547,9 @@ export const RusRender = () => {
             <BuxgalteriyaRus />
           </Route>
           <Route path="/rus/ka-bolimi">{/* <KonselyariyaArxivRus /> */}</Route>
-          <Route path="/rus/kadrlar-bolimi"><KadrlarRus /></Route>
+          <Route path="/rus/kadrlar-bolimi">
+            <KadrlarRus />
+          </Route>
           <Route path="/rus/ikkinchi-bolim">{/* <IkkinchiRus /> */}</Route>
           <Route path="/rus/ou-bolimi">{/* <OquvUslubiyRus /> */}</Route>
           <Route path="/rus/axborot-resurs-markazi">{/* <ArmRus /> */}</Route>
@@ -571,7 +579,7 @@ export const RusRender = () => {
           <Route path="/rus/tarbiyaviy-ishlar-bolimi">
             {/* <TarbiyaviyRus /> */}
           </Route>
-          <Route path="/rus/vakansiya">{/* <VakansiyaRus /> */}</Route>
+          {/* <Route path="/rus/vakansiya"><VakansiyaRus /></Route> */}
           <Route path="/rus/yangiliklar">
             <NewsRus />
           </Route>

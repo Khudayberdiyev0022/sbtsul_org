@@ -3,17 +3,16 @@ import style from "./Vakansiya.module.css";
 import { BsCloudDownload } from "react-icons/bs";
 import docx from "../../components/Data/Ariza namuna tanlovga.docx";
 import doc from "../../components/Data/Vakansiya.doc";
-import { fetchVacancysProducts } from '../../actions'
-import { connect } from 'react-redux'
+import document from "../../components/Data/Taxminiy savollar.docx";
+import { fetchVacancysProducts } from "../../actions";
+import { connect } from "react-redux";
 
 const Vakansiya = (props) => {
-
-
   useEffect(() => {
-    props.fetchVacancysProducts()
+    props.fetchVacancysProducts();
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  }, []);
 
   return (
     <div className={style.main}>
@@ -30,12 +29,36 @@ const Vakansiya = (props) => {
           <p>2021 yil 10 aprel №2-son</p>
           <div className={style.footer}>
             <p>
-              Toshkent davlat yuridik universitetining Ixtisoslashtirilgan
-              filiali boʼsh ish oʼrinlariga malakali kadrlarni ishga taklif
-              qiladi
+              TDYU Ixtisoslashtirilgan filiali boʼsh ish oʼrinlariga malakali
+              kadrlarni ishga taklif qiladi 15.04.2021y
               <span className={style.btn}>
                 <a href={doc} rel="noreferrer" download>
                   (doc) faylni yuklab olish
+                  <BsCloudDownload />
+                </a>
+              </span>
+            </p>
+          </div>
+          <div className={style.footer}>
+            <p>
+              TDYU Ixtisoslashtirilgan filiali nomozdlar uchun suhbat vaqtidagi
+              taxminiy savollar ro'yhati 15.04.2021y
+              <span className={style.btn}>
+                <a href={document} rel="noreferrer" download>
+                  (docx) faylni yuklab olish
+                  <BsCloudDownload />
+                </a>
+              </span>
+            </p>
+          </div>
+          <div className={style.footer}>
+            <p>
+              TDYU Ixtisoslashtirilgan filiali tanlovda ishtirok etish
+              to'g'risidagi namunani ushbu havola orqali yuklab olishingiz
+              mumkin.
+              <span className={style.btn}>
+                <a href={docx} rel="noreferrer" download>
+                  (docx) faylni yuklab olish
                   <BsCloudDownload />
                 </a>
               </span>
@@ -132,29 +155,15 @@ const Vakansiya = (props) => {
             <p>4.Suhbat</p>
           </ul>
         </div>
-        <div className={style.footer}>
-          <p>
-            TDYU Ixtisoslashtirilgan filiali tanlovda ishtirok etish
-            to'g'risidagi namunani ushbu havola orqali yuklab olishingiz mumkin.
-            <span className={style.btn}>
-              <a href={docx} rel="noreferrer" download>
-                (docx) faylni yuklab olish
-                <BsCloudDownload />
-              </a>
-            </span>
-          </p>
-        </div>
       </div>
     </div>
   );
 };
 
-
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
-    vacancys: state.productsVacancys[0]
-  }
-}
-
+    vacancys: state.productsVacancys[0],
+  };
+};
 
 export default connect(mapStateToProps, { fetchVacancysProducts })(Vakansiya);
