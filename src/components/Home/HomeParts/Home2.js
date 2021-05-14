@@ -1,29 +1,32 @@
-import React from "react";
+import React, { useEffect } from "react";
 import style from "./Home2.module.css";
 import president from "../../../assets/img/pr.webp";
-import Fade from "react-reveal/Fade";
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 const Home2 = () => {
+
+  useEffect(() => {
+   AOS.init()
+  })
+
   return (
-    <div className={style.main}>
+    <div className={style.main} data-aos="fade-up-right">
       <div className={style.container}>
-        <Fade left cascade>
-          <div className={style.textPresident}>
-            <h2>
+          <div className={style.textPresident} >
+            <h2 data-aos="fade-down">
               O'ZBEKISTON RESPUBLIKASI PREZIDENTINING 2019 YIL 7 FEVRALDAGI{" "}
               <br /> PQ–4166 - SON QARORI
             </h2>
-            <h3>Ixtisoslashtirilgan filial tashkil etildi</h3>
+            <h3 data-aos="fade-up">Ixtisoslashtirilgan filial tashkil etildi</h3>
           </div>
-        </Fade>
         <div className={style.bgAll}>
           <div
             className={style.leftImg}
             style={{ backgroundImage: `url(${president})` }}
           ></div>
-          <Fade top cascade>
-          <div className={style.rightCenter}>
-            <p>
+          <div className={style.rightCenter} >
+            <p data-aos="fade-down">
               O'zbekiston Respublikasi Prezidentining 07.02.2019 yildagi
               “Huqubuzarliklar profilaktikasi va jamoa xavfsizligi ta'minlash
               sohasida kadrlar tayyorlash tizimini takomillashtirishga doir
@@ -32,7 +35,6 @@ const Home2 = () => {
               filiali tashkil etilgan.
             </p>
           </div>
-          </Fade>
           <div className={style.rightText}></div>
         </div>
       </div>

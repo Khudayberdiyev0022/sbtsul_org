@@ -1,14 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import style from "../../../components/Home/HomeParts/Home4.module.css";
 import Countup from "react-countup";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Home4 = () => {
+  useEffect(() => {
+    AOS.init();
+  });
   return (
     <div className={style.main}>
       <div className={style.container}>
         <div className={style.staticBlock}>
           <div className={style.card1}>
-            <div className={style.staticBox}>
+            <div
+              className={style.staticBox}
+              data-aos="zoom-in-up"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <Countup
                 start={1991}
                 end={2019}
@@ -37,7 +47,10 @@ const Home4 = () => {
                 separator=","
                 className={style.countText}
               ></Countup>
-              <p>Количество профессоров и преподавателей в профильном отделении ТГУ</p>
+              <p>
+                Количество профессоров и преподавателей в профильном отделении
+                ТГУ
+              </p>
             </div>
             <div className={style.staticBoxBg}>
               <Countup
@@ -46,7 +59,10 @@ const Home4 = () => {
                 separator=","
                 className={style.countText}
               ></Countup>
-              <p>Количество профессоров и преподавателей в профильном отделении ТГУ</p>
+              <p>
+                Количество профессоров и преподавателей в профильном отделении
+                ТГУ
+              </p>
             </div>
           </div>
           <div className={style.card1}>

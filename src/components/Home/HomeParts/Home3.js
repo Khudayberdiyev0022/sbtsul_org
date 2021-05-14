@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import style from "./Home3.module.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Home3 = () => {
+  useEffect(() => {
+    AOS.init();
+  });
+
   return (
-    <div className={style.main}>
+    <div className={style.main} data-aos="fade-up-right">
       <div className={style.skewedBox}>
         <div className={style.container}>
-          <div className={style.rahbariyatLink}>
+          <div className={style.rahbariyatLink} data-aos="fade-down" data-aos-easing="linear">
             <Link to="/rahbariyat">Rahbariyat</Link>
           </div>
           <h2>Djuraev Ixtiyor Baxtiyorovich</h2>
@@ -35,7 +41,7 @@ const Home3 = () => {
           </div>
         </div>
       </div>
-      <div className={style.sec2}>
+      <div className={style.sec2} data-aos="fade-up-left">
         <h2>Xurozov Zafar Kaxramonovich</h2>
         <p className={style.rektor}>
           Moliya-xoʼjalik ishlari boʼyicha direktori oʼrinbosari
@@ -49,7 +55,8 @@ const Home3 = () => {
           Oʼzbekiston Respublikasi Bank-moliya akademiyasining “Davlat
           moliyasini boshqarish” ixtisosligi boʼyicha magistraturani tugatgan. U
           2005 yil Shvetsiya, 2006-2007 yillar Shveytsariya va 2016 yil Yaponiya
-          davlatlarida xalqaro student almashish dasturlari tinglovchisi boʼlib...
+          davlatlarida xalqaro student almashish dasturlari tinglovchisi
+          boʼlib...
         </p>
         <div className={style.containerButton2}>
           <Link to="/rahbariyat">

@@ -7,6 +7,8 @@ import img2 from "../../../assets/images/logo.png";
 import img3 from "../../../assets/images/foydali3.png";
 import img4 from "../../../assets/images/foydali2.png";
 import img5 from "../../../assets/images/foydali1.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Home9() {
   const items = [
@@ -44,6 +46,7 @@ function Home9() {
   const [pages, setPages] = useState(3);
   // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
+    AOS.init();
     const interval = setInterval(() => {
       if (window.self.innerWidth < 1300 && window.self.innerWidth > 1000) {
         setPages(2);
@@ -56,7 +59,7 @@ function Home9() {
     return () => clearInterval(interval);
   });
   return (
-    <div className={style.main}>
+    <div className={style.main} data-aos="fade-up">
       <h3>Useful links</h3>
       <div className={style.container}>
         <Slider slidesToShow={pages} autoplaySpeed={3000} autoplay={true}>
@@ -65,8 +68,9 @@ function Home9() {
               <div
                 className={style.image}
                 style={{ backgroundImage: `url(${item.image})` }}
+                data-aos="flip-down"
               ></div>
-              <a rel="noreferrer" target="__blank" href={item.link}>
+              <a rel="noreferrer" target="__blank" href={item.link} data-aos="fade-right" data-aos-delay="900">
                 {item.title}
               </a>
             </div>

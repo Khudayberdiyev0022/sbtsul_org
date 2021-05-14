@@ -3,29 +3,32 @@ import { Link } from "react-router-dom";
 import style from "../../../components/Home/HomeParts/Home5.module.css";
 import { SelectedNew, fetchNewsProducts } from "../../../actions";
 import { connect } from "react-redux";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 const Home5 = (props) => {
-
-
   useEffect(() => {
+    AOS.init();
     props.fetchNewsProducts()
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-
-
   return (
     <div className={style.main}>
-      <div className={style.linkBlock}>
+      <div className={style.linkBlock}  data-aos="flip-left"
+        data-aos-easing="ease-out-cubic">
         <Link to="/eng/yangiliklar">Latest News</Link>
       </div>
       <div className={style.container}>
         <div className={style.rightBlock}>
           {
             props.news && <Fragment>
-              <img src={props.news[0]?.pictureURL} alt="news3" />
-              <h4>{props.news[0]?.titleEng}</h4>
-              <p>{props.news[0]?.paragraphEng}</p>
+              <img src={props.news[0]?.pictureURL} alt="news3" data-aos="flip-right"
+                data-aos-delay="800"
+              data-aos-easing="ease-in-sine"/>
+              <h4 data-aos="zoom-in">{props.news[0]?.titleEng}</h4>
+              <p data-aos="zoom-out">{props.news[0]?.paragraphEng}</p>
               <div className={style.containerButton}>
                 <Link
                   onClick={() => props.SelectedNew(props.news[0])}
@@ -45,9 +48,11 @@ const Home5 = (props) => {
               if (index >= 1 && index < 3) {
                 return (
                   <div key={index} className={style.box}>
-                    <img src={api.pictureURL} alt={api.pictureURL} />
-                    <h4>{api.titleEng}</h4>
-                    <p>
+                    <img src={api.pictureURL} alt={api.pictureURL} data-aos="flip-left"
+                      data-aos-delay="800"
+                      data-aos-easing="linear"/>
+                    <h4 data-aos="zoom-out">{api.titleEng}</h4>
+                    <p data-aos="zoom-in">
                       {api.paragraphEng.split(" ").length > 10
                         ? `${api.paragraphEng
                           .split(" ")

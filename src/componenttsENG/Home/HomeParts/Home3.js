@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import style from "../../../components/Home/HomeParts/Home3.module.css";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Home3 = () => {
+  useEffect(() => {
+    AOS.init();
+  });
   return (
-    <div className={style.main}>
+    <div className={style.main} data-aos="fade-up-right">
       <div className={style.skewedBox}>
         <div className={style.container}>
-          <div className={style.rahbariyatLink}>
+          <div className={style.rahbariyatLink} data-aos="fade-down" data-aos-easing="linear">
             <Link to="/eng/rahbariyat">Directors</Link>
           </div>
           <h2>Djuraev Ikhtiyor Bakhtiyorovich</h2>
@@ -37,7 +41,7 @@ const Home3 = () => {
           </div>
         </div>
       </div>
-      <div className={style.sec2}>
+      <div className={style.sec2} data-aos="fade-up-left">
         <h2>Khurozov Zafar Kahramonovich</h2>
         <p className={style.rektor}>
           Deputy Director for Finance and Economics
