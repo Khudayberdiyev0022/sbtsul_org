@@ -14,13 +14,10 @@ const Filial1 = () => {
             style={{ backgroundImage: `url(${bg})` }}
           ></div>
           <div className={style.text}>
-            {/* <Roll right cascade> */}
             <h3>
               O'ZBEKISTON RESPUBLIKASI PREZIDENTINING <br /> 7 FEVRAL 2019
                 YILDAGI PQ–4166-SON QARORI
               </h3>
-            {/* </Roll> */}
-            {/* <Bounce right cascade> */}
             <p>
               Prezidentimiz tashabbusi bilan 2019 yil 7 fevraldagi PQ–4166-son
               qaroriga muvofiq Toshkent shahar va Toshkent viloyatida
@@ -31,8 +28,6 @@ const Filial1 = () => {
               etilgan hamda o'z faoliyatini amalga oshirib kelmoqda.
               </p>
             <p>Filialning asosiy vazifalari etib:</p>
-            {/* </Bounce> */}
-            {/* <Bounce right cascade> */}
             <ul>
               <li>
                 yurisprudentsiya sohasida bazaviy va amaliy kasbiy
@@ -76,8 +71,6 @@ const Filial1 = () => {
                 belgilangan.
                 </li>
             </ul>
-            {/* </Bounce> */}
-            {/* <Bounce right cascade> */}
             <div className={style.footer}>
               <p>
               TDYU Ixtisoslashtirilgan filiali ustavini quyidagi havola
@@ -90,7 +83,6 @@ const Filial1 = () => {
                 </span>
               </p>
             </div>
-            {/* </Bounce> */}
           </div>
         </div>
       </div>

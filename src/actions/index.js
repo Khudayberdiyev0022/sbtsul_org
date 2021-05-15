@@ -42,6 +42,14 @@ export const fetchVacancysProducts = () => async (dispatch) => {
     payload: response.data,
   });
 };
+export const fetchAdminsProducts = () => async (dispatch) => {
+  const response = await api.get(`/admin/`);
+  dispatch({
+    type: "FETCH_API_ADMINS",
+    payload: response.data,
+  });
+};
+
 
 //CRUD OPERATIONS
 
@@ -95,5 +103,82 @@ export const ModalPicture = (image) => {
   return {
     type: "MODAL_OPEN",
     payload: image
+  }
+}
+
+
+
+// Curent Admin
+export const CurentAdmin = data => {
+  if (data === '') {
+    return {
+      type: "CURENT_ADMIN_LOGOUT",
+    }
+  }
+  return {
+    type: "CURENT_ADMIN",
+    payload: data
+  }
+}
+//CRUD OPERATIONS CONTINUE !!!!!!!!!!READ!!!!!!!!!!!!!!
+
+
+//Read Admin
+
+export const ReadAdmin = admin => {
+  return {
+    type: "READ_ADMIN",
+    payload: admin
+  }
+}
+//Read Quota
+
+export const ReadQuota = quota => {
+  return {
+    type: "READ_QUOTA",
+    payload: quota
+  }
+}
+
+//Read new
+
+export const ReadNew = news => {
+  return {
+    type: "READ_NEW",
+    payload: news
+  }
+}
+//Read image
+
+export const ReadImage = image => {
+  return {
+    type: "READ_IMAGE",
+    payload: image
+  }
+}
+
+//Read message
+
+export const ReadMessage = message => {
+  return {
+    type: "READ_MESSAGE",
+    payload: message
+  }
+}
+//Read vacancy
+
+export const ReadVacancy = vacancy => {
+  return {
+    type: "READ_VACANCY",
+    payload: vacancy
+  }
+}
+
+//Read student
+
+export const ReadStudent = student => {
+  return {
+    type: "READ_STUDENT",
+    payload: student
   }
 }

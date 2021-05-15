@@ -51,6 +51,15 @@ const fetchVacancysReducer = (state = [], action) => {
       return state;
   }
 };
+const fetchAdminsReducer = (state = [], action) => {
+  switch (action.type) {
+    case "FETCH_API_ADMINS":
+      return [action.payload];
+    default:
+      return state;
+  }
+};
+
 //SELECTED_FOR_ANY_ACTION
 const selectedForAnyActionReducer = (state = [], action) => {
   switch (action.type) {
@@ -101,6 +110,43 @@ const modalOpenReducer = (state = [], action) => {
       return state;
   }
 };
+// Current Admin
+const currentAdminReducer = (state = [], action) => {
+  switch (action.type) {
+    case "CURENT_ADMIN":
+      return [action.payload];
+    case 'CURENT_ADMIN_LOGOUT':
+      return []
+    default:
+      return state;
+  }
+};
+
+//Read All
+
+const readEachOne = (state = [], action) => {
+  switch (action.type) {
+    case "READ_ADMIN":
+      return [action.payload];
+    case 'READ_QUOTA':
+      return [action.payload];
+    case "READ_NEW":
+      return [action.payload];
+    case 'READ_IMAGE':
+      return [action.payload];
+    case "READ_MESSAGE":
+      return [action.payload];
+    case 'READ_VACANCY':
+      return [action.payload];
+    case 'READ_STUDENT':
+      return [action.payload];
+    default:
+      return state;
+  }
+};
+
+
+
 
 
 export default combineReducers({
@@ -111,8 +157,11 @@ export default combineReducers({
   productsNews: fetchNewsReducer,
   productsImages: fetchImagesReducer,
   productsVacancys: fetchVacancysReducer,
+  productsAdmins: fetchAdminsReducer,
   selected: selectedForAnyActionReducer,
   language: changeLanguageReducer,
   new: selectedNewReducer,
-  modalPicture: modalOpenReducer
+  modalPicture: modalOpenReducer,
+  admin: currentAdminReducer,
+  read: readEachOne
 });

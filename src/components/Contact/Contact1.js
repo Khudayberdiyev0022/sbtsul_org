@@ -4,8 +4,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { MdMail, MdLocationOn } from "react-icons/md";
 import { addProduct } from '../../actions'
 import { connect } from 'react-redux'
-// import Rotate from "react-reveal/Rotate";
-// import Flip from "react-reveal/Flip";
+
 
 const Contact1 = (props) => {
   const [name, setName] = useState("");
@@ -27,7 +26,6 @@ const Contact1 = (props) => {
     <div className={style.main}>
       <div className={style.inMain}>
         <div className={style.top}>
-          {/* <Rotate top left cascade> */}
           <div className={style.inTop}>
             <div className={style.icon}>
               <MdLocationOn />{" "}
@@ -64,7 +62,6 @@ const Contact1 = (props) => {
               </a>
             </div>
           </div>
-          {/* </Rotate> */}
         </div>
         <div className={style.flex}>
           <div className={style.map}>
@@ -82,7 +79,6 @@ const Contact1 = (props) => {
             />
           </div>
           <div className={style.inputDiv}>
-            {/* <Flip left cascade> */}
             <h2>Biz bilan bog'lanish</h2>
             <form onSubmit={submit}>
               <input
@@ -115,7 +111,6 @@ const Contact1 = (props) => {
               />
               <button type="submit">Xabarni jo'natish</button>
             </form>
-            {/* </Flip> */}
           </div>
         </div>
       </div>

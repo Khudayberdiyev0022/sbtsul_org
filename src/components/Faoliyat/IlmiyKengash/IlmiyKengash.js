@@ -1,12 +1,10 @@
 import React from "react";
 import style from "./IlmiyKengash.module.css";
-// import Rotate from "react-reveal/Rotate";
 
 const IlmiyKengash = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        {/* <Rotate bottom left cascade> */}
           <div className={style.head}>
             <h2>
               PhD.07/28.08.2020.Yu.22a.04 рақамли илмий Кенгашнинг фаолияти
@@ -23,7 +21,6 @@ const IlmiyKengash = () => {
               рақамли илмий кенгаш фаолият юритиб келмоқда.
             </p>
           </div>
-        {/* </Rotate> */}
       </div>
     </div>
   );
