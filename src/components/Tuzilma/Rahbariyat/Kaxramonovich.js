@@ -47,11 +47,11 @@ const Kaxramonovich = () => {
             </p>
             <p>Fuqarolarni chorshanba kuni soat 10:00 dan 12:00 gacha qabul qiladi.</p>
           <p>
-            <b>Telefon:</b> 233-66-36 (1110)
+            <b>Telefon:</b> (55) 501-11-06 (3001)
           </p>
           <p>
             {" "}
-            <b>E-mail: </b> z.xurozov.@tsul.uz
+            <b>E-mail: </b> z.xurozov@tsul.uz
           </p>
           </div>
         {/* </Zoom> */}

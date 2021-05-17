@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import img1 from "../../../assets/img/slider1.webp";
 import img2 from "../../../assets/img/slider2.webp";
 import img3 from "../../../assets/img/slider3.webp";
-import img4 from "../../../assets/img/slider4.jpg"
 import style from "./Home1.module.css";
 import { Fragment } from "react";
 
@@ -18,11 +17,8 @@ function Home1({ name }) {
           setImage(img3);
           break;
         case img3:
-          setImage(img4);
+          setImage(img1);
           break;
-          case img4:
-            setImage(img1);
-            break;
         default:
           setImage(img1);
       }
