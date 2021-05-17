@@ -2,10 +2,8 @@ import React, { useState } from "react";
 import style from "../../components/Contact/Contact1.module.css";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdMail, MdLocationOn } from "react-icons/md";
-import { addProduct } from '../../actions'
-import { connect } from 'react-redux'
-// import Rotate from "react-reveal/Rotate";
-// import Flip from "react-reveal/Flip";
+import { addProduct } from "../../actions";
+import { connect } from "react-redux";
 
 const Contact1 = (props) => {
   const [name, setName] = useState("");
@@ -15,7 +13,11 @@ const Contact1 = (props) => {
 
   const submit = (e) => {
     e.preventDefault();
-    props.addProduct('messages', { name: `${name} ${surName}`, paragraph: message, email: email })
+    props.addProduct("messages", {
+      name: `${name} ${surName}`,
+      paragraph: message,
+      email: email,
+    });
     setName("");
     setEmail("");
     setSurName("");
@@ -26,7 +28,6 @@ const Contact1 = (props) => {
     <div className={style.main}>
       <div className={style.inMain}>
         <div className={style.top}>
-          {/* <Rotate top left cascade> */}
           <div className={style.inTop}>
             <div className={style.icon}>
               <MdLocationOn />{" "}
@@ -58,15 +59,11 @@ const Contact1 = (props) => {
             </div>
             <div className={style.infoTop}>
               <h3>Email</h3>
-              <a
-                href="mailto:info@sbtsul.uz"
-                rel="noreferrer"
-                target="_blank">
+              <a href="mailto:info@sbtsul.uz" rel="noreferrer" target="_blank">
                 info@sbtsul.uz
               </a>
             </div>
           </div>
-          {/* </Rotate> */}
         </div>
         <div className={style.flex}>
           <div className={style.map}>
@@ -84,7 +81,6 @@ const Contact1 = (props) => {
             />
           </div>
           <div className={style.inputDiv}>
-            {/* <Flip left cascade> */}
             <h2>Contact US</h2>
             <form onSubmit={submit}>
               <input
@@ -117,7 +113,6 @@ const Contact1 = (props) => {
               />
               <button type="submit">Send message</button>
             </form>
-            {/* </Flip> */}
           </div>
         </div>
       </div>

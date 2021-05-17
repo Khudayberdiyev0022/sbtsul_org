@@ -8,7 +8,6 @@ const Buxgal2 = () => {
       <div className={style.inMain}>
         <h2>СТРУКТУРА ПЕРСОНАЛА БУХГАЛТЕРИИ</h2>
         <span></span>
-
         <div className={style.map}>
           {teachers.map((teacher, index) => {
             return (

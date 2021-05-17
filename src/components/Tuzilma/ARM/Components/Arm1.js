@@ -1,12 +1,10 @@
 import React from "react";
 import style from "./Arm1.module.css";
-// import Rotate from "react-reveal/Rotate";
 
 const Arm1 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        {/* <Rotate bottom left cascade> */}
         <div className={style.head}>
           <h2>AXBOROT-RESURS MARKAZI </h2>
           <span></span>
@@ -20,9 +18,9 @@ const Arm1 = () => {
             muvofiq tashkil etilgan.
           </p>
           <p>
-            Bugungi kunda Аxborot-resurs markazining umumiy maydoni - 122,5 m<sup>2</sup>,
-            oʼquv zalidagi oʼrinlar soni - 24 ta, kompьyuter zalidagi
-            kompьyuterlar soni -15 tani tashkil etadi. Аxborot-resurs
+            Bugungi kunda Аxborot-resurs markazining umumiy maydoni - 122,5 m
+            <sup>2</sup>, oʼquv zalidagi oʼrinlar soni - 24 ta, kompьyuter
+            zalidagi kompьyuterlar soni -15 tani tashkil etadi. Аxborot-resurs
             markazining umumiy fondi 2824 nusxa oʼquv, badiiy, ilmiy-ommabop va
             boshqa adabiyotlardan iborat. Аxborot-resurs markazi
             foydalanuvchilar soni - 630 nafar boʼlib, ular Filial talabalari,
@@ -53,7 +51,6 @@ const Arm1 = () => {
             taʼtilida.
           </p>
         </div>
-        {/* </Rotate> */}
       </div>
     </div>
   );

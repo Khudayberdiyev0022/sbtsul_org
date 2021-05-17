@@ -6,27 +6,32 @@ import { connect } from "react-redux";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-
 const Home5 = (props) => {
   useEffect(() => {
     AOS.init();
-    props.fetchNewsProducts()
+    props.fetchNewsProducts();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
-
+  }, []);
   return (
     <div className={style.main}>
-      <div className={style.linkBlock}  data-aos="flip-left"
-        data-aos-easing="ease-out-cubic">
+      <div
+        className={style.linkBlock}
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+      >
         <Link to="/eng/yangiliklar">Latest News</Link>
       </div>
       <div className={style.container}>
         <div className={style.rightBlock}>
-          {
-            props.news && <Fragment>
-              <img src={props.news[0]?.pictureURL} alt="news3" data-aos="flip-right"
+          {props.news && (
+            <Fragment>
+              <img
+                src={`http://sbtsul1.pythonanywhere.com${props.news[0]?.image}`}
+                alt="news3"
+                data-aos="flip-right"
                 data-aos-delay="800"
-              data-aos-easing="ease-in-sine"/>
+                data-aos-easing="ease-in-sine"
+              />
               <h4 data-aos="zoom-in">{props.news[0]?.titleEng}</h4>
               <p data-aos="zoom-out">{props.news[0]?.paragraphEng}</p>
               <div className={style.containerButton}>
@@ -39,7 +44,7 @@ const Home5 = (props) => {
                 </Link>
               </div>
             </Fragment>
-          }
+          )}
         </div>
         <div className={style.leftBlock}>
           {
@@ -48,16 +53,20 @@ const Home5 = (props) => {
               if (index >= 1 && index < 3) {
                 return (
                   <div key={index} className={style.box}>
-                    <img src={api.pictureURL} alt={api.pictureURL} data-aos="flip-left"
+                    <img
+                      src={`http://sbtsul1.pythonanywhere.com${api.image}`}
+                      alt={api.pictureURL}
+                      data-aos="flip-left"
                       data-aos-delay="800"
-                      data-aos-easing="linear"/>
+                      data-aos-easing="linear"
+                    />
                     <h4 data-aos="zoom-out">{api.titleEng}</h4>
                     <p data-aos="zoom-in">
                       {api.paragraphEng.split(" ").length > 10
                         ? `${api.paragraphEng
-                          .split(" ")
-                          .slice(0, 10)
-                          .join(" ")}...`
+                            .split(" ")
+                            .slice(0, 10)
+                            .join(" ")}...`
                         : api.paragraphEng}
                     </p>
                     <div className={style.containerButton}>
@@ -79,11 +88,12 @@ const Home5 = (props) => {
     </div>
   );
 };
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
-    news: state.productsNews[0]
-  }
-}
+    news: state.productsNews[0],
+  };
+};
 
-export default connect(mapStateToProps, { SelectedNew, fetchNewsProducts })(Home5);
-
+export default connect(mapStateToProps, { SelectedNew, fetchNewsProducts })(
+  Home5
+);

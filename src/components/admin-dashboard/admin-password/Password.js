@@ -1,3 +1,1 @@
-export const password = '12211221'
-
-
+export const password = "12211221";

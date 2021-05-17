@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import style from "../../../components/Home/HomeParts/Home2.module.css";
 import president from "../../../assets/img/pr.webp";
-import AOS from 'aos'
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Home2 = () => {
   useEffect(() => {
-    AOS.init()
-   })
+    AOS.init();
+  });
   return (
     <div className={style.main} data-aos="fade-up-right">
       <div className={style.container}>

@@ -16,27 +16,25 @@ const KafedraRus = () => {
       <div className={style.container}>
         <div className={style.box}>
           <div className={style.imgBx}>
-            <img src={img1} alt='img1'/>
+            <img src={img1} alt="img1" />
           </div>
           <div className={style.content}>
-            {/* <h2>Kafedra</h2> */}
             <p>КАФЕДРА ГОСУДАРСТВЕННО-ПРАВОВЫХ ДИСЦИПЛИН</p>
             <Link to="/rus/dx-fanlar-kafedrasi">Инфомация</Link>
           </div>
         </div>
         <div className={style.box}>
           <div className={style.imgBx}>
-            <img src={img2} alt='dxd'/>
+            <img src={img2} alt="dxd" />
           </div>
           <div className={style.content}>
-            {/* <h2>Kafedra</h2> */}
             <p>КАФЕДРА УГОЛОВНО-ПРАВОВОЙ ДИСЦИПЛИН</p>
             <Link to="/rus/jh-fanlar-kafedrasi">Инфомация</Link>
           </div>
         </div>
         <div className={style.box}>
           <div className={style.imgBx}>
-            <img alt='dxd' src={img3} />
+            <img alt="dxd" src={img3} />
           </div>
           <div className={style.content}>
             <p>КАФЕДРА ЧАСТНЫХ ПРАВОВЫХ ДИСЦИПЛИН</p>
@@ -45,7 +43,7 @@ const KafedraRus = () => {
         </div>
         <div className={style.box}>
           <div className={style.imgBx}>
-            <img src={img4} alt='dxd' />
+            <img src={img4} alt="dxd" />
           </div>
           <div className={style.content}>
             <p>КАФЕДРА ОБЩЕОБРАЗОВТЕЛЬНИХ ДИСЦИПЛИН</p>
@@ -54,17 +52,16 @@ const KafedraRus = () => {
         </div>
         <div className={style.box}>
           <div className={style.imgBx}>
-            <img src={img5}  alt='dxd'/>
+            <img src={img5} alt="dxd" />
           </div>
           <div className={style.content}>
-=            <p>КАФЕДРА ПРОФЕССИОНАЛЬНО-БОЕВОЙ ПОДГОТОВКИ</p>
+            = <p>КАФЕДРА ПРОФЕССИОНАЛЬНО-БОЕВОЙ ПОДГОТОВКИ</p>
             <Link to="/rus/kjt-fanlar-kafedrasi">Инфомация</Link>
           </div>
         </div>
       </div>
     </div>
-  )
- 
+  );
 };
 
 export default KafedraRus;

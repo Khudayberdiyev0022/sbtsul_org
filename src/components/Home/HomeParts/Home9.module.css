@@ -45,7 +45,6 @@
   background-color: #011b7c !important;
 }
 .main h3 {
-  /* width: 100%; */
   color: #0f2b53;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -73,6 +72,3 @@
   left: 0%;
   width: 100%;
 }
-/* #slider {
-  z-index: 10;
-} */

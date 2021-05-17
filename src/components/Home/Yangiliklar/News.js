@@ -22,7 +22,7 @@ const News = (props) => {
         {props.news?.map((eachNews, index) => {
           return (
             <div key={index} className={style.card}>
-              <img src={eachNews.pictureURL} alt="eachNews" />
+              <img src={`http://sbtsul1.pythonanywhere.com${eachNews.image}`} alt="eachNews" />
               <h3>{eachNews.titleUzb}</h3>
               <p>{eachNews.paragraphUzb.split(" ").length > 10
                 ? `${eachNews.paragraphUzb

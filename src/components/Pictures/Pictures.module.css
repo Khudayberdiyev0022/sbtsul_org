@@ -117,7 +117,7 @@
   justify-content: center;
   align-items: center;
   transition: all 1s ease;
-  /* filter: blur(8px); */
+  margin-top: 8vh;
 }
 .imgmodal {
   width: 80%;
@@ -125,16 +125,16 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  z-index: 2;
 }
 .modalmodal svg {
   position: absolute;
   top: 50px;
   right: 50px;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   color: #fff;
   transition: all 1s ease;
+  cursor: pointer;
 }
 .modalmodal svg:hover {
   color: #fff;

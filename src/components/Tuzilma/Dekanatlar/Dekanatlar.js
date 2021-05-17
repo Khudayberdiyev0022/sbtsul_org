@@ -1,7 +1,6 @@
-import { Link } from 'react-router-dom'
-import React from 'react'
-import style from './Dekanatlar.module.css'
-
+import { Link } from "react-router-dom";
+import React from "react";
+import style from "./Dekanatlar.module.css";
 
 const Dekanatlar = () => {
   return (
@@ -24,7 +23,7 @@ const Dekanatlar = () => {
         </Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Dekanatlar
+export default Dekanatlar;

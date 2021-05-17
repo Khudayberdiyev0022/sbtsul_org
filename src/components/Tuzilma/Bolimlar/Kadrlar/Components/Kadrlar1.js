@@ -5,10 +5,10 @@ const Kadrlar1 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-          <div className={style.head}>
-            <h2>KADRLAR BO‘LIMI</h2>
-            <span></span>
-            <p>
+        <div className={style.head}>
+          <h2>KADRLAR BO‘LIMI</h2>
+          <span></span>
+          <p>
             Toshkent davlat yuridik universitetining Ixtisoslashtirilgan filiali
             Kadrlar bo’limi Filial tarkibiy bo’linmasi sifatida O‘zbekiston
             Respublikasi Prezidentining 2019-yil 7-fevraldagi “Huquqbuzarliklar
@@ -16,8 +16,8 @@ const Kadrlar1 = () => {
             tayyorlash tizimini takomillashtirishga doir qo‘shimcha
             chora-tadbirlar to‘g‘risida”gi PQ-4166-sonli qaroriga muvofiq
             tashkil etilgan.
-            </p>
-          </div>
+          </p>
+        </div>
       </div>
     </div>
   );

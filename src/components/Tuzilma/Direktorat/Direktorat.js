@@ -15,9 +15,9 @@ const Direktorat = () => {
             Toshkent davlat yuridik universitetining Ixtisoslashtirilgan filiali
             Direktorati O‘zbekiston Respublikasi Prezidentining 2019-yil
             7-fevraldagi “Huquqbuzarliklar profilaktikasi va jamoat xafsizligini
-            ta’minlash sohasida Direktorat tayyorlash tizimini takomillashtirishga
-            doir qo‘shimcha chora-tadbirlar to‘g‘risida”gi PQ-4166-sonli
-            qaroriga muvofiq tashkil etilgan.{" "}
+            ta’minlash sohasida Direktorat tayyorlash tizimini
+            takomillashtirishga doir qo‘shimcha chora-tadbirlar to‘g‘risida”gi
+            PQ-4166-sonli qaroriga muvofiq tashkil etilgan.{" "}
           </p>
         </div>
         <div className={style.users}>

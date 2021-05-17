@@ -8,12 +8,15 @@ const Home3 = () => {
   useEffect(() => {
     AOS.init();
   });
-
   return (
     <div className={style.main} data-aos="fade-up-right">
       <div className={style.skewedBox}>
         <div className={style.container}>
-          <div className={style.rahbariyatLink} data-aos="fade-down" data-aos-easing="linear">
+          <div
+            className={style.rahbariyatLink}
+            data-aos="fade-down"
+            data-aos-easing="linear"
+          >
             <Link to="/rahbariyat">Rahbariyat</Link>
           </div>
           <h2>Djuraev Ixtiyor Baxtiyorovich</h2>
@@ -32,7 +35,6 @@ const Home3 = () => {
             boshlab, 2003-2005 yillarda Toshkent davlat yuridik instituti oʼquv
             boʼlimi katta noziri, 2007–2012 yillarda...
           </p>
-
           <div className={style.containerButton}>
             <Link to="/rahbariyat">
               <span>Batafsil...</span>

@@ -10,10 +10,8 @@ import { connect } from "react-redux";
 const VakansiyaRus = (props) => {
   useEffect(() => {
     props.fetchVacancysProducts();
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
   return (
     <div className={style.main}>
       <div className={style.inMain}>
@@ -77,6 +75,7 @@ const VakansiyaRus = (props) => {
                 </h3>
               </div>
               <p>{api.paragraphUzb}</p>
+              <h4>{api.date.split("-").reverse().join(".")}</h4>
             </div>
           );
         })}
@@ -166,4 +165,6 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps, { fetchVacancysProducts })(VakansiyaRus);
+export default connect(mapStateToProps, { fetchVacancysProducts })(
+  VakansiyaRus
+);

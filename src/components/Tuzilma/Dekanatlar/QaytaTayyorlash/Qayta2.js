@@ -1,16 +1,13 @@
 import React from "react";
 import style from "./Qayta2.module.css";
 import { nameKaf, teachers } from "./ExtraCard/Json";
-// import Zoom from "react-reveal/Zoom";
 
 const Qayta2 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        {/* <Zoom right> */}
-          <h2>QAYTA TAYYORLASH KURSLARI DEKANATI XODIMLARINING TARKIBI</h2>
-          <span></span>
-        {/* </Zoom> */}
+        <h2>QAYTA TAYYORLASH KURSLARI DEKANATI XODIMLARINING TARKIBI</h2>
+        <span></span>
         <div className={style.map}>
           {teachers.map((teacher, index) => {
             return (

@@ -1,7 +1,6 @@
 import React from "react";
 import style from "./Baxtiyorovich.module.css";
 import img from "../../../assets/img/djuraev.jpg";
-// import Zoom from "react-reveal/Zoom";
 
 const Baxtiyorovich = () => {
   return (
@@ -11,7 +10,6 @@ const Baxtiyorovich = () => {
           className={style.img}
           style={{ backgroundImage: `url(${img})` }}
         ></div>
-        {/* <Zoom top cascade> */}
         <div className={style.text}>
           <h2>Djuraev Ixtiyor Baxtiyorovich</h2>
           <h4>Oʼquv-tarbiyaviy ishlar boʼyicha direktor oʼrinbosari</h4>
@@ -43,16 +41,16 @@ const Baxtiyorovich = () => {
             Ixtisoslashtirilgan filiali direktorining oʼquv-tarbiyaviy ishlar
             boʼyicha oʼrinbosari lavozimiga tayinlangan.
           </p>
-          <p>Fuqarolarni dushanba kuni soat 10:00 dan 12:00 gacha qabul qiladi.</p>
           <p>
-            <b>Telefon:</b> (55) 5011103 (2001)
+            Fuqarolarni dushanba kuni soat 10:00 dan 12:00 gacha qabul qiladi.
           </p>
           <p>
-            {" "}
+            <b>Telefon:</b> (55) 501-11-03 (2001)
+          </p>
+          <p>
             <b>E-mail: </b> i.djurayev@tsul.uz
           </p>
         </div>
-        {/* </Zoom> */}
       </div>
     </div>
   );

@@ -60,21 +60,24 @@ function Home9() {
     return () => clearInterval(interval);
   });
   return (
-    <div
-      className={style.main}
-      data-aos="fade-up"
-    >
+    <div className={style.main} data-aos="fade-up">
       <h3>Foydali havolalar</h3>
       <div className={style.container}>
         <Slider slidesToShow={pages} autoplaySpeed={3000} autoplay={true}>
           {items.map((item) => (
-            <div key={item.id} className={`${style.card} slide`} >
+            <div key={item.id} className={`${style.card} slide`}>
               <div
                 className={style.image}
                 style={{ backgroundImage: `url(${item.image})` }}
                 data-aos="flip-down"
               ></div>
-              <a rel="noreferrer" target="__blank" href={item.link} data-aos="fade-right" data-aos-delay="900">
+              <a
+                rel="noreferrer"
+                target="__blank"
+                href={item.link}
+                data-aos="fade-right"
+                data-aos-delay="900"
+              >
                 {item.title}
               </a>
             </div>

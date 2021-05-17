@@ -14,8 +14,7 @@ function Home9() {
   const items = [
     {
       id: 1,
-      title:
-        "Национальная база данных законодательства Республики Узбекистан",
+      title: "Национальная база данных законодательства Республики Узбекистан",
       image: img1,
       link: "https://lex.uz/",
     },
@@ -71,7 +70,13 @@ function Home9() {
                 style={{ backgroundImage: `url(${item.image})` }}
                 data-aos="flip-down"
               ></div>
-              <a rel="noreferrer" target="__blank" href={item.link} data-aos="fade-right" data-aos-delay="900">
+              <a
+                rel="noreferrer"
+                target="__blank"
+                href={item.link}
+                data-aos="fade-right"
+                data-aos-delay="900"
+              >
                 {item.title}
               </a>
             </div>

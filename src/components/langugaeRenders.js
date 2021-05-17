@@ -129,9 +129,7 @@ import MoliyaRus from "../componentsRUS/Tuzilma/Bolimlar/Moliya/Moliya";
 import GrantAdd from "./admin-dashboard/admin-add/GrantAdd";
 import GrantDelete from "./admin-dashboard/admin-add/GrantDelete";
 import GrantEdit from "./admin-dashboard/admin-add/GrantEdit";
-import MessageAdd from "./admin-dashboard/admin-add/MessageAdd";
 import MessageDelete from "./admin-dashboard/admin-add/MessageDelete";
-import MessageEdit from "./admin-dashboard/admin-add/MessageEdit";
 import StudentAdd from "./admin-dashboard/admin-add/StudentAdd";
 import StudentDelete from "./admin-dashboard/admin-add/StudentDelete";
 import StudentEdit from "./admin-dashboard/admin-add/StudentEdit";
@@ -146,6 +144,16 @@ import ImageDelete from "./admin-dashboard/admin-add/ImageDelete";
 import VacancyAdd from "./admin-dashboard/admin-add/VacancyAdd";
 import VacancyEdit from "./admin-dashboard/admin-add/VacancyEdit";
 import VacancyDelete from "./admin-dashboard/admin-add/VacancyDelete";
+import NewRead from "./admin-dashboard/readEach/NewRead";
+import ImageRead from "./admin-dashboard/readEach/ImageRead";
+import VacancyRead from "./admin-dashboard/readEach/VacancyRead";
+import StudentRead from "./admin-dashboard/readEach/StudentRead";
+import GrantRead from "./admin-dashboard/readEach/GrantRead";
+import MessageRead from "./admin-dashboard/readEach/MessageRead";
+import AdminAdd from "./admin-dashboard/admin-add/AdminAdd";
+import AdminDelete from "./admin-dashboard/admin-add/AdminDelete";
+import AdminEdit from "./admin-dashboard/admin-add/AdminEdit";
+import AdminRead from "./admin-dashboard/readEach/AdminRead";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -289,15 +297,15 @@ export const UzbRender = () => {
           <Route exact path="/admin/delete/quotas">
             <GrantDelete />
           </Route>
+          <Route exact path="/admin/read/quotas">
+            <GrantRead />
+          </Route>
           {/* messages */}
-          <Route exact path="/admin/add/messages">
-            <MessageAdd />
-          </Route>
-          <Route exact path="/admin/edit/messages">
-            <MessageEdit />
-          </Route>
           <Route exact path="/admin/delete/messages">
             <MessageDelete />
+          </Route>
+          <Route exact path="/admin/read/messages">
+            <MessageRead />
           </Route>
           {/* students */}
           <Route exact path="/admin/add/students">
@@ -309,6 +317,9 @@ export const UzbRender = () => {
           <Route exact path="/admin/delete/students">
             <StudentDelete />
           </Route>
+          <Route exact path="/admin/read/students">
+            <StudentRead />
+          </Route>
           {/* news */}
           <Route exact path="/admin/add/news">
             <NewsAdd />
@@ -318,6 +329,9 @@ export const UzbRender = () => {
           </Route>
           <Route exact path="/admin/delete/news">
             <NewsDelete />
+          </Route>
+          <Route exact path="/admin/read/news">
+            <NewRead />
           </Route>
           {/* images */}
           <Route exact path="/admin/add/images">
@@ -329,6 +343,9 @@ export const UzbRender = () => {
           <Route exact path="/admin/delete/images">
             <ImageDelete />
           </Route>
+          <Route exact path="/admin/read/images">
+            <ImageRead />
+          </Route>
           {/* vacancy */}
           <Route exact path="/admin/add/vacancys">
             <VacancyAdd />
@@ -338,6 +355,22 @@ export const UzbRender = () => {
           </Route>
           <Route exact path="/admin/delete/vacancys">
             <VacancyDelete />
+          </Route>
+          <Route exact path="/admin/read/vacancys">
+            <VacancyRead />
+          </Route>
+          {/* admin */}
+          <Route exact path="/admin/add/admin">
+            <AdminAdd />
+          </Route>
+          <Route exact path="/admin/edit/admin">
+            <AdminEdit />
+          </Route>
+          <Route exact path="/admin/delete/admin">
+            <AdminDelete />
+          </Route>
+          <Route exact path="/admin/read/admin">
+            <AdminRead />
           </Route>
         </Switch>
         <Footer />
@@ -442,50 +475,6 @@ export const EngRender = () => {
           <Route path="/eng/talabalar">
             <StudentsEng />
           </Route>
-
-          <Route exact path="/admin">
-            <MainAdmin />
-          </Route>
-          {/* quotas */}
-          <Route exact path="/admin/add/quotas">
-            <GrantAdd />
-          </Route>
-          <Route exact path="/admin/edit/quotas">
-            <GrantEdit />
-          </Route>
-          <Route exact path="/admin/delete/quotas">
-            <GrantDelete />
-          </Route>
-          {/* messages */}
-          <Route exact path="/admin/add/messages">
-            <MessageAdd />
-          </Route>
-          <Route exact path="/admin/edit/messages">
-            <MessageEdit />
-          </Route>
-          <Route exact path="/admin/delete/messages">
-            <MessageDelete />
-          </Route>
-          {/* students */}
-          <Route exact path="/admin/add/students">
-            <StudentAdd />
-          </Route>
-          <Route exact path="/admin/edit/students">
-            <StudentEdit />
-          </Route>
-          <Route exact path="/admin/delete/students">
-            <StudentDelete />
-          </Route>
-          {/* news */}
-          <Route exact path="/admin/add/news">
-            <NewsAdd />
-          </Route>
-          <Route exact path="/admin/edit/news">
-            <NewsEdit />
-          </Route>
-          <Route exact path="/admin/delete/news">
-            <NewsDelete />
-          </Route>
         </Switch>
         <FooterEng />
       </Router>
@@ -585,50 +574,6 @@ export const RusRender = () => {
           </Route>
           <Route path="/rus/talabalar">
             <StudentsRus />
-          </Route>
-
-          <Route exact path="/admin">
-            <MainAdmin />
-          </Route>
-          {/* quotas */}
-          <Route exact path="/admin/add/quotas">
-            <GrantAdd />
-          </Route>
-          <Route exact path="/admin/edit/quotas">
-            <GrantEdit />
-          </Route>
-          <Route exact path="/admin/delete/quotas">
-            <GrantDelete />
-          </Route>
-          {/* messages */}
-          <Route exact path="/admin/add/messages">
-            <MessageAdd />
-          </Route>
-          <Route exact path="/admin/edit/messages">
-            <MessageEdit />
-          </Route>
-          <Route exact path="/admin/delete/messages">
-            <MessageDelete />
-          </Route>
-          {/* students */}
-          <Route exact path="/admin/add/students">
-            <StudentAdd />
-          </Route>
-          <Route exact path="/admin/edit/students">
-            <StudentEdit />
-          </Route>
-          <Route exact path="/admin/delete/students">
-            <StudentDelete />
-          </Route>
-          {/* news */}
-          <Route exact path="/admin/add/news">
-            <NewsAdd />
-          </Route>
-          <Route exact path="/admin/edit/news">
-            <NewsEdit />
-          </Route>
-          <Route exact path="/admin/delete/news">
-            <NewsDelete />
           </Route>
         </Switch>
         <FooterRus />

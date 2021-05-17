@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import style from "./News.module.css";
+import style from "../../../components/Home/Yangiliklar/News.module.css";
 import { Link } from "react-router-dom";
 import { SelectedNew, fetchNewsProducts } from "../../../actions";
 import { connect } from "react-redux";
@@ -24,7 +24,7 @@ const NewsRus = (props) => {
         {props.news?.map((eachNews, index) => {
           return (
             <div key={index} className={style.card}>
-              <img src={eachNews.pictureURL} alt="eachNews" />
+              <img src={`http://sbtsul1.pythonanywhere.com${eachNews.image}`} alt="eachNews" />
               <h3>{eachNews.titleRus}</h3>
               <p>{eachNews.paragraphRus.split(" ").length > 10
                 ? `${eachNews.paragraphRus

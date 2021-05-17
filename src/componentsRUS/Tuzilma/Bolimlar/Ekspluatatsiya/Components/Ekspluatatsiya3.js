@@ -9,7 +9,6 @@ const Ekspluatatsiya3 = () => {
           <h2>ЗАДАЧИ ОТДЕЛА</h2>
           <span></span>
         </div>
-
         <div className={style.grid}>
           <div className={style.block}>
             <div className={style.svg}></div>

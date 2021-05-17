@@ -5,8 +5,7 @@ export const dek = [
   {
     img: img1,
     name: "Israilov Dilshod Shavkatovich ",
-    abTeach1:
-      "Deputy Dean for Youth Affairs, 1st Class Justice Adviser.",
+    abTeach1: "Deputy Dean for Youth Affairs, 1st Class Justice Adviser.",
     abTeach2: "",
     email: "israilov@sbtsul.uz",
   },

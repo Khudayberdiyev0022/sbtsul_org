@@ -4,19 +4,17 @@ import { Link } from "react-router-dom";
 import style from "../../../components/Home/HomeParts/Home6.module.css";
 import { fetchImagesProducts } from "../../../actions";
 import { connect } from "react-redux";
-import AOS from 'aos'
-import 'aos/dist/aos.css';
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Home6(props) {
   useEffect(() => {
     AOS.init({
-      delay: 500
+      delay: 500,
     });
     props.fetchImagesProducts();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
   return (
     <div className={style.main} data-aos="zoom-out">
       <div className={style.linkBlock} data-aos="zoom-in">
@@ -32,7 +30,9 @@ function Home6(props) {
           <div
             key={i}
             className={style.image}
-            style={{ backgroundImage: `url(${picture.pictureURL})` }}
+            style={{
+              backgroundImage: `url(http://sbtsul1.pythonanywhere.com${picture.image})`,
+            }}
           ></div>
         ))}
       </Carousel>

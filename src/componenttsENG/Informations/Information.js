@@ -4,20 +4,20 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
 const NewsCard = (props) => {
-
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        <div className={style.card} >
+        <div className={style.card}>
           <div
             className={style.img}
-            style={{ backgroundImage: `url(${props.new.pictureURL})` }}
+            style={{
+              backgroundImage: `url(http://sbtsul1.pythonanywhere.com${props.new.image})`,
+            }}
           ></div>
           <div className={style.text}>
             <h3>{props.new.titleEng}</h3>
-            <h5>{props.new.date}</h5>
+            <h5>{props.new.date.split("-").reverse().join(".")}</h5>
             <p>{props.new.paragraphEng}</p>
-            {/* <p>{api.p2}</p> */}
           </div>
         </div>
         <div className={style.containerButton}>

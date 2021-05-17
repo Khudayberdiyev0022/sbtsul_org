@@ -12,7 +12,11 @@ const Home3 = () => {
     <div className={style.main} data-aos="fade-up-right">
       <div className={style.skewedBox}>
         <div className={style.container}>
-          <div className={style.rahbariyatLink} data-aos="fade-down" data-aos-easing="linear">
+          <div
+            className={style.rahbariyatLink}
+            data-aos="fade-down"
+            data-aos-easing="linear"
+          >
             <Link to="/eng/rahbariyat">Directors</Link>
           </div>
           <h2>Djuraev Ikhtiyor Bakhtiyorovich</h2>

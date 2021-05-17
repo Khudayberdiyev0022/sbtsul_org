@@ -4,18 +4,19 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
 const NewsCard = (props) => {
-
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        <div className={style.card} >
+        <div className={style.card}>
           <div
             className={style.img}
-            style={{ backgroundImage: `url(${props.new.pictureURL})` }}
+            style={{
+              backgroundImage: `url(http://sbtsul1.pythonanywhere.com${props.new.image})`,
+            }}
           ></div>
           <div className={style.text}>
             <h3>{props.new.titleRus}</h3>
-            <h5>{props.new.date}</h5>
+            <h5>{props.new.date.split("-").reverse().join(".")}</h5>
             <p>{props.new.paragraphRus}</p>
           </div>
         </div>

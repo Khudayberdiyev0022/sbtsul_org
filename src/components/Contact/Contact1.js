@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import style from "./Contact1.module.css";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdMail, MdLocationOn } from "react-icons/md";
-import { addProduct } from '../../actions'
-import { connect } from 'react-redux'
-
+import { addProduct } from "../../actions";
+import { connect } from "react-redux";
 
 const Contact1 = (props) => {
   const [name, setName] = useState("");
@@ -14,7 +13,11 @@ const Contact1 = (props) => {
 
   const submit = (e) => {
     e.preventDefault();
-    props.addProduct('messages', { name: `${name} ${surName}`, paragraph: message, email: email })
+    props.addProduct("messages", {
+      name: `${name} ${surName}`,
+      paragraph: message,
+      email: email,
+    });
     console.log(name, email, surName, message);
     setName("");
     setEmail("");
@@ -57,7 +60,11 @@ const Contact1 = (props) => {
             </div>
             <div className={style.infoTop}>
               <h3>Email</h3>
-              <a href="mailto://info@sbtsul.uz" rel="noreferrer" target="_blank">
+              <a
+                href="mailto://info@sbtsul.uz"
+                rel="noreferrer"
+                target="_blank"
+              >
                 info@sbtsul.uz
               </a>
             </div>
@@ -102,7 +109,6 @@ const Contact1 = (props) => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
-
               <textarea
                 name="message"
                 value={message}

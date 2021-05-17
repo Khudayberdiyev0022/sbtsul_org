@@ -27,7 +27,7 @@ const Home5 = (props) => {
           {props.news && (
             <Fragment>
               <img
-                src={props.news[0]?.pictureURL}
+                src={`http://sbtsul1.pythonanywhere.com${props.news[0]?.image}`}
                 alt="news3"
                 data-aos="flip-right"
                 data-aos-delay="800"
@@ -55,7 +55,7 @@ const Home5 = (props) => {
                 return (
                   <div key={index} className={style.box}>
                     <img
-                      src={api.pictureURL}
+                      src={`http://sbtsul1.pythonanywhere.com${api.image}`}
                       alt={api.pictureURL}
                       data-aos="flip-left"
                       data-aos-delay="800"

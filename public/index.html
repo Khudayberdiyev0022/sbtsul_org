@@ -43,6 +43,7 @@
       padding-bottom: 1rem;
       margin-top: -2rem;
     }
+
     #root {
       overflow-y: hidden;
     }
@@ -94,7 +95,10 @@
     <!-- FINISH WWW.UZ TOP-RATING -->
   </div>
 
-
+  <script>
+    const rating = document.querySelector('#raiting')
+    window.location.pathname.includes('admin') && (rating.style.display = 'none')
+  </script>
 </body>
 
 </html>

@@ -57,7 +57,7 @@ const Footer = () => {
               Telegram
             </a>
             <Link to="/">
-            <img width="110px" src={logoFooter} alt="logoFooter" />
+              <img width="110px" src={logoFooter} alt="logoFooter" />
             </Link>
             <a rel="noreferrer" target="_blank" href="#www">
               Youtube

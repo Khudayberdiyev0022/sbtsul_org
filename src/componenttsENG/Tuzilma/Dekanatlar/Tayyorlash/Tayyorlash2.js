@@ -6,9 +6,8 @@ const Tayyorlash2 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-          <h2>STRUCTURE OF THE DEANATE OF PREPARATORY COURSES</h2>
-          <span></span>
-{/*  */}
+        <h2>STRUCTURE OF THE DEANATE OF PREPARATORY COURSES</h2>
+        <span></span>
         <div className={style.map}>
           {dek.map((teacher, index) => {
             return (

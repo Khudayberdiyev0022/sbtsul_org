@@ -1,12 +1,10 @@
 import React from "react";
 import style from "./Jangovor1.module.css";
-// import Rotate from "react-reveal/Rotate";
 
 const Jangovor1 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        {/* <Rotate bottom left cascade> */}
           <div className={style.head}>
             <h2>KASBIY-JANGOVOR TAYYORGARLIK FANLAR KAFEDRASI</h2>
             <span></span>
@@ -20,7 +18,6 @@ const Jangovor1 = () => {
               tashkil etilgan.
             </p>
           </div>
-        {/* </Rotate> */}
       </div>
     </div>
   );

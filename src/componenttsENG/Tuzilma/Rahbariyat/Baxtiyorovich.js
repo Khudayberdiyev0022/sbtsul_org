@@ -1,7 +1,6 @@
 import React from "react";
 import style from "../../../components/Tuzilma/Rahbariyat/Baxtiyorovich.module.css";
 import img from "../../../assets/img/djuraev.jpg";
-// import Zoom from "react-reveal/Zoom";
 
 const BaxtiyorovichEng = () => {
   return (
@@ -11,7 +10,6 @@ const BaxtiyorovichEng = () => {
           className={style.img}
           style={{ backgroundImage: `url(${img})` }}
         ></div>
-        {/* <Zoom top cascade> */}
         <div className={style.text}>
           <h2>Djuraev Ixtiyor Bakhtiyorovich</h2>
           <h4>Deputy Director of Educational Affairs</h4>
@@ -46,11 +44,9 @@ const BaxtiyorovichEng = () => {
             <b>Telephone:</b> 233-66-36 (1110)
           </p>
           <p>
-            {" "}
             <b>E-mail: </b> z.xurozov.@tsul.uz
           </p>
         </div>
-        {/* </Zoom> */}
       </div>
     </div>
   );

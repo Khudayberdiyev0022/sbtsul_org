@@ -65,7 +65,6 @@ const VakansiyaEng = (props) => {
             </p>
           </div>
         </div>
-
         {props.vacancys?.map((api, index) => {
           return (
             <div className={style.card} key={index}>
@@ -77,6 +76,7 @@ const VakansiyaEng = (props) => {
                 </h3>
               </div>
               <p>{api.paragraphUzb}</p>
+              <h4>{api.date.split("-").reverse().join(".")}</h4>
             </div>
           );
         })}

@@ -8,7 +8,6 @@ const Home2 = () => {
   useEffect(() => {
     AOS.init();
   });
-
   return (
     <div className={style.main} data-aos="fade-up-right">
       <div className={style.container}>

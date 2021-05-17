@@ -17,10 +17,10 @@ function AdminDelete(props) {
     return (
         <div className={style.main}>
             <div className={style.container}>
-                <h1>Do you want to delete that admin?</h1>
+                <h1>Хотите ли удалить админа?</h1>
                 <div className={style.buttons}>
-                    <Link to='/admin' >Back</Link>
-                    <Link to='/admin' onClick={del}>Delete</Link>
+                    <Link to='/admin' >Назад</Link>
+                    <Link to='/admin' onClick={del}>Удалить</Link>
                 </div>
             </div>
         </div>

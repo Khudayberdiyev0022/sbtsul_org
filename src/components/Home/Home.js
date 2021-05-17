@@ -8,7 +8,7 @@ import Home7 from "./HomeParts/Home7";
 import Home9 from "./HomeParts/Home9";
 import image from "../../assets/icons/logoFT.svg";
 import { Fragment } from "react";
-import style from './Home.module.css'
+import style from "./Home.module.css";
 import Home1 from "./HomeParts/Home1";
 
 const Home = () => {

@@ -9,17 +9,14 @@ import { Fragment } from 'react';
 function StudentRead(props) {
     const [language, setLanguage] = useState('UZB')
     if (!props.admin) {
-        // window.localStorage.removeItem('admin')
         return (
             <NotFound />
         )
     }
-    console.log(props.information);
-
     return (
         <div className={style.main}>
             <div className={style.container}>
-                <h1>Kvota  Bo`yicha ma`lumotlar</h1>
+                <h1>Информация о студенты</h1>
                 <div className={style.language}>
                     <h1 onClick={() => setLanguage('UZB')}>UZB</h1>
                     <h1 onClick={() => setLanguage('RUS')}>RUS</h1>
@@ -54,7 +51,7 @@ function StudentRead(props) {
                         </Fragment>
                     }
                 </div>
-                <Link to='/admin'>Main Page</Link>
+                <Link to='/admin'>Главная страница</Link>
             </div>
         </div>
     )

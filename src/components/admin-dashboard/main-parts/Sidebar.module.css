@@ -125,6 +125,7 @@
 }
 .hello span {
   font-size: 24px;
+  display: block;
 }
 @keyframes animate {
   from {
@@ -133,4 +134,9 @@
   to {
     background-position: 500%;
   }
+}
+h4.click {
+  font-size: 24px;
+  font-weight: 800;
+  color: #01107c;
 }

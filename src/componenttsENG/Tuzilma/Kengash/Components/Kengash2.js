@@ -1,16 +1,13 @@
 import React from "react";
 import style from "../../../../components/Tuzilma/Kengash/Components/Kengash2.module.css";
 import { nameKaf, teachers } from "../ExtraCard/Json";
-// import Zoom from "react-reveal/Zoom";
 
 const Kengash2 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-        {/* <Zoom right> */}
-          <h2>STRUCTURE OF THE COUNCIL</h2>
-          <span></span>
-        {/* </Zoom> */}
+        <h2>STRUCTURE OF THE COUNCIL</h2>
+        <span></span>
         <div className={style.map}>
           {teachers.map((teacher, index) => {
             return (

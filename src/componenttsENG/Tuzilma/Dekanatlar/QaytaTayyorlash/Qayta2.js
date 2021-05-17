@@ -6,8 +6,8 @@ const Qayta2 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-          <h2>STAFF OF THE DEANATE OF RETRAINING COURSES</h2>
-          <span></span>
+        <h2>STAFF OF THE DEANATE OF RETRAINING COURSES</h2>
+        <span></span>
         <div className={style.map}>
           {teachers.map((teacher, index) => {
             return (

@@ -17,9 +17,13 @@ const Home7Eng = () => {
       <div className={style.container}>
         {structures.map((structure, index) => {
           return (
-            <div key={index} className={style.box} data-aos="fade-up"
-            data-aos-delay="1000"
-            data-aos-easing="ease-in-sine">
+            <div
+              key={index}
+              className={style.box}
+              data-aos="fade-up"
+              data-aos-delay="1000"
+              data-aos-easing="ease-in-sine"
+            >
               <div className={style.side}>
                 <img src={structure.icon} alt="icon" />
               </div>

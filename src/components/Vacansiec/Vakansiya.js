@@ -13,7 +13,6 @@ const Vakansiya = (props) => {
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
   return (
     <div className={style.main}>
       <div className={style.inMain}>
@@ -73,10 +72,11 @@ const Vakansiya = (props) => {
               <div className={style.job}>
                 <h3>{api.subTitleUzb}</h3>
                 <h3>
-                  <span> З/П:</span> {api.costUzb} <span>so'm</span>
+                  <span> Maosh:</span> {api.costUzb} <span>so'm</span>
                 </h3>
               </div>
               <p>{api.paragraphUzb}</p>
+              <h4>{api.date.split("-").reverse().join(".")}</h4>
             </div>
           );
         })}

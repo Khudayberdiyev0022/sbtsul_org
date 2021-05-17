@@ -6,8 +6,8 @@ const Davlat2 = () => {
   return (
     <div className={style.main}>
       <div className={style.inMain}>
-          <h2>STRUCTURE OF PROFESSOR-TEACHERS OF THE DEPARTMENT</h2>
-          <span></span>
+        <h2>STRUCTURE OF PROFESSOR-TEACHERS OF THE DEPARTMENT</h2>
+        <span></span>
         <div className={style.map}>
           {teachers.map((teacher, index) => {
             return (
